@@ -128,7 +128,7 @@ const BusinessModelSlideV2 = () => {
           <span className="text-gradient text-glow-animate">Proven SaaS</span> Economics
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          Hybrid model: One-time integration + recurring SaaS + compliance reporting. 80%+ expand to 4–8 lines <12 months.
+          Hybrid model: One-time integration + recurring SaaS + compliance reporting. 80%+ expand to 4–8 lines &lt;12 months.
         </p>
       </div>
 
