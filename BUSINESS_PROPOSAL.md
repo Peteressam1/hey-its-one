@@ -1,11 +1,17 @@
 # **EVENTIDE VISION AI**
-## Professional Business Proposal for Investment
+## Executive Investment Memorandum
 ---
 
 **CONFIDENTIAL & PROPRIETARY**  
 *Prepared for Strategic Investment Partnership*  
 **Date:** January 2025  
-**Version:** 1.0
+**Version:** 2.0
+
+---
+
+## **The First Full-Stack Event Vision Platform for Industrial QA**
+
+**First-mover in €40B machine vision market • Production-ready event sensors • SaaS + integration = category-defining ROI**
 
 ---
 
