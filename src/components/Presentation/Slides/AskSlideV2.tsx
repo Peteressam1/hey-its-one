@@ -7,25 +7,19 @@ import { motion } from "framer-motion";
 const AskSlideV2 = () => {
   const fundingAllocation = [
     {
-      category: "Product Development",
+      category: "Product",
       amount: "€200K",
       percentage: "40%",
       details: [
-        "MVP completion & testing",
-        "Prophesee evaluation kits (3x)",
-        "Cloud infrastructure setup",
-        "IP & patent filing"
+        "MVP completion, Prophesee eval, infrastructure"
       ]
     },
     {
-      category: "Team Building",
+      category: "Team",
       amount: "€175K",
       percentage: "35%",
       details: [
-        "3-5 Class A engineers (0–9 mo)",
-        "Brand & Content Lead (Design + Social) (0–3 mo)",
-        "ESOP pool setup (10–15%)",
-        "Advisory board compensation"
+        "Engineers, ESOP"
       ]
     },
     {
@@ -33,10 +27,7 @@ const AskSlideV2 = () => {
       amount: "€75K",
       percentage: "15%",
       details: [
-        "Pilot projects (3-5 customers)",
-        "Industry trade shows",
-        "GCC market exploration",
-        "XPRENEURS program"
+        "Pilots, GCC/DACH sales"
       ]
     },
     {
@@ -44,10 +35,7 @@ const AskSlideV2 = () => {
       amount: "€50K",
       percentage: "10%",
       details: [
-        "GmbH establishment",
-        "Legal & compliance",
-        "Office setup (Egypt/Germany)",
-        "Working capital"
+        "Legal, compliance, ops"
       ]
     }
   ];
@@ -96,7 +84,7 @@ const AskSlideV2 = () => {
           €500K Pre‑Seed to Build the <span className="text-primary">Future of Industrial Vision</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          15–18‑month runway — standard pre‑seed equity terms (SAFE alternative available)
+          €500K gets us to €300–600K ARR + 5–8 customers → seed at €10–12M pre
         </p>
       </div>
 

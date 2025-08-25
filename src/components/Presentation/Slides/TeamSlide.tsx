@@ -104,9 +104,9 @@ const TeamSlide = () => {
     },
     {
       icon: <Target className="w-8 h-8" />,
-      title: "Egypt Networks & GCC Access",
-      description: "Egypt tech ecosystem (ITIDA/TIEC) • Cairo/AUC/GUC alumni • local SIs • GCC connectors (KSA/UAE) • manufacturers/pilot sites",
-      metric: "Egypt ↔ GCC intros • pilots • partners"
+      title: "German Trust + Egypt Scale",
+      description: "German GmbH for enterprise trust, IP protection, DACH sales. Egypt for cost-effective R&D scaling, GCC market access.",
+      metric: "Best of both: Trust + Scale"
     }
   ];
 
@@ -150,10 +150,10 @@ const TeamSlide = () => {
           TEAM & HIRING STRATEGY
         </Badge>
         <h1 className="text-4xl md:text-5xl font-bold text-white tracking-[-0.01em]">
-          <span className="text-primary">Experienced Founders</span><br />+ Critical Tech Hires
+          <span className="text-primary">Dual-Base Strategy:</span> German GmbH HQ + Egypt R&D Hub
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          Proven founding team with complementary skills, focused on rapid technical team scaling
+          German GmbH HQ (for trust, sales, IP) + Egypt R&D hub (for cost advantage, scale)
         </p>
       </div>
 
@@ -284,7 +284,7 @@ const TeamSlide = () => {
         <div className="space-y-6">
           {/* Egypt Advantages */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Why Egypt Hub?</h3>
+            <h3 className="text-2xl font-bold mb-4">Dual-Base Advantage</h3>
             <div className="grid grid-cols-2 gap-4">
               {egyptAdvantages.map((advantage, index) => (
                 <motion.div

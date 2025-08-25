@@ -83,7 +83,7 @@ const CompetitionSlide = () => {
       fullStackPaaS: false,
       eventExpertise: true,
       mesErp: false,
-      position: "Event sensors + SDK"
+      position: "Event sensors + SDK (Partner)"
     },
     {
       name: "LuminaX AI",
@@ -123,10 +123,10 @@ const CompetitionSlide = () => {
           COMPETITIVE LANDSCAPE
         </Badge>
         <h1 className="text-4xl md:text-5xl font-bold text-white tracking-[-0.01em]">
-          <span className="text-primary">Few Integrated</span> Event-Centric Options
+          <span className="text-primary">Partners, Not Competitors:</span> We Layer SaaS on Hardware
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          Sensor vendors ≠ turnkey PaaS; integrators mainly frame-based in industrial QA
+          Prophesee sells sensors; they don't integrate into plant MES/QA workflows. We're the SaaS layer + integrator.
         </p>
       </div>
 
@@ -237,14 +237,14 @@ const CompetitionSlide = () => {
               <div className="absolute -bottom-8 left-0 text-xs text-muted/70">Low</div>
               <div className="absolute -bottom-8 right-0 text-xs text-muted/70">High</div>
               <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-sm font-medium text-white">
-                Real-Time Line Speed Capability
+                Real-Time Line Speed (objects/min)
               </div>
               
               {/* Y-Axis Labels */}
               <div className="absolute -left-8 bottom-0 text-xs text-muted/70">Low</div>
               <div className="absolute -left-8 top-0 text-xs text-muted/70">High</div>
               <div className="absolute -left-16 top-1/2 transform -translate-y-1/2 -rotate-90 text-sm font-medium text-white origin-center">
-                Data Efficiency / Edge Suitability
+                Data Efficiency (GB/hour)
               </div>
               
               {/* Data Points */}
@@ -293,7 +293,7 @@ const CompetitionSlide = () => {
             </div>
             
             <div className="mt-4 text-xs text-muted text-center">
-              Event-based sparsity; edge-first architecture
+              Illustrative positioning based on real-time capability vs. data efficiency
             </div>
           </Card>
         </div>
@@ -307,12 +307,12 @@ const CompetitionSlide = () => {
         className="relative z-10 mt-8"
       >
         <Card className="p-8 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-2xl shadow-lg text-center">
-          <h4 className="text-xl font-bold mb-3 text-white">Our Unique Position</h4>
+          <h4 className="text-xl font-bold mb-3 text-white">What We Do That They Don't</h4>
           <p className="text-base text-muted mb-4">
-            Only full-stack event-based PaaS focused on QA/Inspection for high-speed lines
+            Event-first SDK + on-prem edge orchestrator + one-click MES/ERP connectors + ROI calculator + SLA
           </p>
           <div className="text-sm text-primary">
-            <strong>First-mover edge in MENA (GCC) + EU</strong> — fewer local event-based specialists; leverage German network via XPRENEURS.
+            <strong>Lock-in moat:</strong> Once our SaaS integrates QC data + compliance reports into ERP/MES, we are sticky. Hardware partners enable us, competitors can't replicate integration depth.
           </div>
         </Card>
       </motion.div>
