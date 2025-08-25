@@ -227,7 +227,7 @@ const AskSlideV2 = () => {
             <Card className="p-6 bg-primary text-white text-center">
               <h4 className="text-xl font-bold mb-3">Transforming Industrial Vision</h4>
               <div className="space-y-2 text-sm opacity-95">
-                <p>• <strong>75% cost reduction</strong> in data infrastructure</p>
+                <p>• <strong>€6–12k annual infrastructure savings</strong> per production line (75–90% reduction)</p>
                 <p>• <strong>10x lower power</strong> consumption</p>
                 <p>• <strong>Microsecond latency</strong> for real-time decisions</p>
                 <p className="text-base font-semibold pt-2 border-t border-white/20">

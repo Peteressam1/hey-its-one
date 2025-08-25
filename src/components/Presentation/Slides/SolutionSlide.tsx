@@ -61,7 +61,7 @@ const SolutionSlide = () => {
           <span className="text-primary">Event-Based Vision</span> in Action
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          Real deployments: High-speed counting, defect detection, and motion analysis with 75% cost reduction.
+          Real deployments: High-speed counting, defect detection, and motion analysis with €6–12k annual infrastructure savings per line.
         </p>
       </div>
 
@@ -211,7 +211,7 @@ const SolutionSlide = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-white">75% infrastructure savings</span>
+                    <span className="text-white">€6–12k annual infrastructure savings</span>
                   </div>
                 </div>
                 
