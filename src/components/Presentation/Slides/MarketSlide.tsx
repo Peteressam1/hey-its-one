@@ -154,21 +154,46 @@ const MarketSlide = () => {
             </div>
           </div>
 
-          {/* TAM/SAM/SOM */}
-          <div>
-            <h4 className="text-lg font-bold mb-2 text-white">TAM / SAM / SOM</h4>
-            <div className="space-y-1">
-              <div className="text-sm text-muted">
-                <strong className="text-white">TAM:</strong> GVR total = $20.38B → $41.74B
+          {/* SAM/SOM Arithmetic Panel */}
+          <Card className="p-4 bg-card border border-primary/20 rounded-xl shadow-lg">
+            <h4 className="text-lg font-bold mb-3 text-white flex items-center gap-2">
+              <Target className="w-5 h-5 text-primary" />
+              SAM / SOM Calculation
+            </h4>
+            
+            {/* SAM Calculation */}
+            <div className="space-y-3">
+              <div className="bg-primary/10 p-3 rounded-lg border border-primary/20">
+                <h5 className="text-sm font-semibold text-primary mb-2">SAM (Serviceable Available Market)</h5>
+                <div className="text-xs text-muted space-y-1">
+                  <div>QA/inspection on high-speed lines</div>
+                  <div>(pharma packaging, F&B, wire/cable) in DACH+GCC:</div>
+                </div>
+                <div className="mt-2 text-sm font-mono text-white">
+                  ~4,000 plants × 2 lines × €30–60k ARR/line
+                </div>
+                <div className="text-lg font-bold text-primary mt-1">
+                  = €240–480M
+                </div>
               </div>
-              <div className="text-sm text-muted">
-                <strong className="text-white">SAM:</strong> QA/predictive in Pharma + F&B (conservative % of TAM; validate with pilots)
+
+              {/* SOM Calculation */}
+              <div className="bg-accent/10 p-3 rounded-lg border border-accent/20">
+                <h5 className="text-sm font-semibold text-accent mb-2">SOM 24 mo (Serviceable Obtainable Market)</h5>
+                <div className="text-sm font-mono text-white">
+                  100 plants × 2 lines × €36k ARR/line
+                </div>
+                <div className="text-lg font-bold text-accent mt-1">
+                  ≈ €7.2M
+                </div>
               </div>
-              <div className="text-sm text-muted">
-                <strong className="text-white">SOM:</strong> Egypt+GCC+DACH early adopters (target plant count)
+
+              {/* TAM Reference */}
+              <div className="text-xs text-muted-foreground border-t pt-2">
+                <strong className="text-white">TAM:</strong> $41.7B global machine vision market by 2030 (GVR)
               </div>
             </div>
-          </div>
+          </Card>
         </div>
 
         {/* Right Column - Market Charts */}
