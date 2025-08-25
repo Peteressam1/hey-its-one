@@ -7,19 +7,25 @@ import { motion } from "framer-motion";
 const AskSlideV2 = () => {
   const fundingAllocation = [
     {
-      category: "Product",
+      category: "Product Development",
       amount: "€200K",
       percentage: "40%",
       details: [
-        "MVP completion, Prophesee eval, infrastructure"
+        "MVP completion & testing",
+        "Prophesee evaluation kits (3x)",
+        "Cloud infrastructure setup",
+        "IP & patent filing"
       ]
     },
     {
-      category: "Team",
+      category: "Team Building",
       amount: "€175K",
       percentage: "35%",
       details: [
-        "Engineers, ESOP"
+        "3-5 Class A engineers (0–9 mo)",
+        "Brand & Content Lead (Design + Social) (0–3 mo)",
+        "ESOP pool setup (10–15%)",
+        "Advisory board compensation"
       ]
     },
     {
@@ -27,7 +33,10 @@ const AskSlideV2 = () => {
       amount: "€75K",
       percentage: "15%",
       details: [
-        "Pilots, GCC/DACH sales"
+        "Pilot projects (3-5 customers)",
+        "Industry trade shows",
+        "GCC market exploration",
+        "XPRENEURS program"
       ]
     },
     {
@@ -35,7 +44,10 @@ const AskSlideV2 = () => {
       amount: "€50K",
       percentage: "10%",
       details: [
-        "Legal, compliance, ops"
+        "GmbH establishment",
+        "Legal & compliance",
+        "Office setup (Egypt/Germany)",
+        "Working capital"
       ]
     }
   ];

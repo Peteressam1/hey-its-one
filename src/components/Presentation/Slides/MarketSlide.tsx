@@ -78,7 +78,7 @@ const MarketSlide = () => {
         </h1>
         <div className="flex items-center justify-center gap-3">
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-            Initial SAM = €14.6B (Pharma + F&B + wire/cable QA). SOM = early adopters in GCC + DACH (€200M). Urgency: $2B food recalls 2024.
+            Target 0.5% of $41.7B market = $200M. Initial focus: ~190K DACH + 19K GCC factories (growing to 30K+ by 2030).
           </p>
           <TooltipProvider>
             <Tooltip>
@@ -203,29 +203,29 @@ const MarketSlide = () => {
             <MarketAreaChart />
           </div>
           
-          {/* Application Share Card */}
+          {/* Market Target Card */}
           <Card className="p-4 bg-card border border-border rounded-2xl shadow-lg">
-            <h4 className="text-base font-bold text-white mb-2 text-center">Application Share</h4>
+            <h4 className="text-base font-bold text-white mb-2 text-center">Our Target: 0.5% Share</h4>
             <div className="text-center">
-              <div className="text-lg font-bold text-accent">QA & Inspection</div>
-              <div className="text-sm text-muted-foreground mt-1">Largest segment (illustrative; see source)</div>
+              <div className="text-lg font-bold text-primary">$200M</div>
+              <div className="text-sm text-muted-foreground mt-1">0.5% of $41.7B market by 2030</div>
               <div className="mt-2 text-xs text-muted">
-                <strong className="text-white">Hover micro-panel:</strong> Largest application: QA/Inspection; Fastest-growing regions include MEA
+                Focus on QA/Inspection segment (largest application area)
               </div>
             </div>
           </Card>
 
-          {/* Regional Growth Card */}
+          {/* Factory Count Card */}
           <Card className="p-4 bg-card border border-border rounded-2xl shadow-lg">
-            <h4 className="text-base font-bold text-white mb-2 text-center">Regional Growth</h4>
+            <h4 className="text-base font-bold text-white mb-2 text-center">Target Factory Base</h4>
             <div className="grid grid-cols-2 gap-4 text-center">
               <div>
-                <div className="text-lg font-bold text-primary">13.5%</div>
-                <div className="text-xs text-muted">MEA CAGR</div>
+                <div className="text-lg font-bold text-primary">~190K</div>
+                <div className="text-xs text-muted">DACH factories</div>
               </div>
               <div>
-                <div className="text-lg font-bold text-accent">14.0%</div>
-                <div className="text-xs text-muted">UAE CAGR</div>
+                <div className="text-lg font-bold text-accent">19K → 30K+</div>
+                <div className="text-xs text-muted">GCC by 2030</div>
               </div>
             </div>
           </Card>
