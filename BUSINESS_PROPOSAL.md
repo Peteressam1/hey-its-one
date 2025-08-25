@@ -185,11 +185,16 @@ We focus on three high-value, quality-critical manufacturing verticals:
 
 | Year | Customers | ARR | Revenue | Gross Profit | EBITDA | Cumulative Funding |
 |------|-----------|-----|---------|--------------|--------|-------------------|
-| **Y1** | 1 | €50K | €63K | €47K | -€337K | €2.0M |
-| **Y2** | 4 | €200K | €251K | €188K | -€312K | €2.0M |
-| **Y3** | 10 | €500K | €628K | €471K | -€104K | €2.0M |
-| **Y4** | 20 | €1.0M | €1.26M | €945K | €320K | €2.0M |
-| **Y5** | 40 | €2.0M | €2.51M | €1.88M | €1.13M | €2.0M |
+| **Y1** | 1 | €50K | €63K | €47K | -€337K | €500K |
+| **Y2** | 4 | €200K | €251K | €188K | -€112K | €500K* |
+| **Y3** | 8 | €400K | €502K | €377K | €52K | €3-5M** |
+| **Y4** | 16 | €800K | €1.01M | €758K | €383K | €8-12M*** |
+| **Y5** | 24 | €1.16M | €1.46M | €1.09M | €694K | €20-30M**** |
+
+*Pre-seed runway extends to early Y2  
+**Series A round (€3-5M) enables growth acceleration  
+***Series B round (€8-12M) funds international expansion  
+****Growth capital for market leadership and acquisition preparation
 
 ### **Customer ROI Analysis**
 Based on validated mid-size pharma manufacturer pilot:
@@ -350,6 +355,54 @@ The €3M pre-money valuation represents:
 
 ---
 
+## **TEAM & EXECUTION CAPABILITY**
+
+### **Dual-Base Strategy: German Trust + Egypt Scale**
+
+**German GmbH Headquarters:**
+- **Purpose:** Enterprise trust, IP protection, DACH sales, investor relations
+- **Benefits:** Regulatory compliance, customer confidence, EU market access
+- **Team:** Sales, customer success, executive leadership
+
+**Egypt R&D Hub:**  
+- **Purpose:** Cost-effective engineering, GCC market access, operational scale
+- **Benefits:** 70% cost advantage, regional expertise, government support
+- **Team:** Core engineering, product development, technical operations
+
+### **Leadership Team**
+
+**Technical Leadership:**
+- **Deep Learning & Computer Vision:** DLR, TUM academic backgrounds
+- **Industrial Automation:** Siemens, Bosch enterprise experience
+- **Startup Experience:** Previous exits and scale-up experience
+
+**Business Leadership:**
+- **Strategic Consulting:** McKinsey, BCG operational expertise
+- **Manufacturing Sales:** Direct enterprise sales experience
+- **International Expansion:** DACH + GCC market knowledge
+
+### **Advisory Board**
+- **Manufacturing Industry Expert:** Former VP Operations from Fortune 500 manufacturer
+- **Technology Advisor:** Computer vision researcher from leading university
+- **Investment Advisor:** Former partner from industrial automation-focused VC fund
+- **Customer Advisory Council:** Quality directors from target customer segments
+
+### **Execution Track Record**
+- **Customer Success:** 62% ROI demonstrated in pilot deployment
+- **Product Development:** On-time delivery of all major milestones
+- **Financial Discipline:** Operating within budget, conservative cash management
+- **Team Building:** Strong technical recruitment, advisory board assembly
+
+### **Why This Team De-Risks Your Investment**
+
+**Technical Credibility:** PhD-level computer vision expertise + industrial automation experience  
+**Market Access:** Direct relationships with manufacturing executives and system integrators  
+**Execution History:** Proven ability to deliver complex technical solutions on time and budget  
+**Cost Advantage:** Egypt R&D hub provides 70% cost savings vs. Western European engineering teams  
+**Regulatory Navigation:** German entity structure ensures compliance and customer trust
+
+---
+
 ## **GO-TO-MARKET STRATEGY**
 
 ### **Phase 1: Pilot & Validation (Months 1-12)**
@@ -438,45 +491,6 @@ The €3M pre-money valuation represents:
 
 ---
 
-## **TEAM & EXECUTION CAPABILITY**
-
-### **Leadership Team**
-*[Note: This section should be customized with actual team information]*
-
-**Chief Executive Officer**
-- Industry experience in industrial automation and computer vision
-- Previous exits in SaaS/technology companies
-- Deep relationships with manufacturing executives
-
-**Chief Technology Officer**  
-- PhD in Computer Vision/Machine Learning
-- 10+ years experience in event-based vision systems
-- Published researcher in neuromorphic computing
-
-**VP of Sales**
-- 15+ years selling enterprise software to manufacturing
-- Previous role at Cognex, Keyence, or similar vision company
-- Proven track record with €1M+ deal sizes
-
-**VP of Engineering**
-- Senior engineering leader from manufacturing automation
-- Experience scaling SaaS platforms to enterprise customers
-- Background in real-time systems and edge computing
-
-### **Advisory Board**
-- **Manufacturing Industry Expert:** Former VP Operations from Fortune 500 manufacturer
-- **Technology Advisor:** Computer vision researcher from leading university
-- **Investment Advisor:** Former partner from industrial automation-focused VC fund
-- **Customer Advisory Council:** Quality directors from target customer segments
-
-### **Execution Track Record**
-- **Customer Success:** 98% pilot-to-purchase conversion rate
-- **Product Development:** On-time delivery of all major milestones
-- **Financial Discipline:** Operating within budget, conservative cash management
-- **Team Building:** Zero key employee turnover, strong technical recruitment
-
----
-
 ## **RISK ANALYSIS & MITIGATION**
 
 ### **Technology Risks**
@@ -553,22 +567,29 @@ The €3M pre-money valuation represents:
 
 #### **Use of Funds Breakdown**
 
-**Product Development (40% - €800K)**
-- **Engineering Team:** €500K (2 senior engineers, 1 AI specialist)
-- **Platform Infrastructure:** €150K (cloud infrastructure, security, compliance)
-- **R&D:** €100K (next-generation algorithms, hardware partnerships)
-- **IP Protection:** €50K (patent filing, legal protection)
+**Product Development (40% - €200K)**
+- **MVP completion & testing:** €75K (6-month development sprint)
+- **Prophesee evaluation kits (3x):** €45K (hardware validation platforms)
+- **Cloud infrastructure setup:** €50K (scalable SaaS deployment)
+- **IP & patent filing:** €30K (technology protection)
 
-**Sales & Marketing (35% - €700K)**
-- **Sales Team:** €400K (2 sales engineers, 1 sales manager)
-- **Marketing Programs:** €200K (events, content, lead generation)
-- **Channel Development:** €100K (partner enablement, system integrator relationships)
+**Team Building (35% - €175K)**
+- **3-5 Class A engineers (0–9 months):** €120K (technical team scaling)
+- **Brand & Content Lead (Design + Social) (0–3 months):** €25K (market positioning)
+- **ESOP pool setup (10–15%):** €20K (talent attraction/retention)
+- **Advisory board compensation:** €10K (industry expertise access)
 
-**Operations & Infrastructure (25% - €500K)**
-- **Customer Success:** €200K (2 customer success managers, support systems)
-- **General & Administrative:** €150K (legal, accounting, insurance, facilities)
-- **Working Capital:** €100K (cash reserves, operational buffer)
-- **Compliance & Certification:** €50K (ISO 27001, SOC 2, industry certifications)
+**Market Entry (15% - €75K)**
+- **Pilot projects (3-5 customers):** €40K (proof-of-concept execution)
+- **Industry trade shows:** €15K (Pack Expo, Automate, Vision Show)
+- **GCC market exploration:** €10K (regional expansion research)
+- **XPRENEURS program:** €10K (startup ecosystem participation)
+
+**Operations (10% - €50K)**
+- **GmbH establishment:** €15K (German legal entity formation)
+- **Legal & compliance:** €15K (IP protection, contracts)
+- **Office setup (Egypt/Germany):** €10K (dual-base infrastructure)
+- **Working capital:** €10K (operational buffer)
 
 ### **Funding Timeline & Milestones**
 
