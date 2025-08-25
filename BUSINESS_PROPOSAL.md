@@ -13,7 +13,7 @@
 
 **Investment Opportunity:** €2M Seed Round for Revolutionary Event-Based Vision AI Platform
 
-Eventide Vision AI is pioneering the industrial automation revolution through breakthrough event-based vision technology that delivers **75% infrastructure cost reduction** and **62% first-year ROI** for manufacturing enterprises. Our SaaS platform addresses critical limitations of traditional frame-based vision systems—motion blur, metallic surface reflections, and excessive data overhead—that cost the global manufacturing industry billions annually.
+Eventide Vision AI is pioneering the industrial automation revolution through breakthrough event-based vision technology that delivers **€6–12k annual infrastructure savings per production line (75–90% reduction)** and **62% first-year ROI** for manufacturing enterprises. Our SaaS platform addresses critical limitations of traditional frame-based vision systems—motion blur, metallic surface reflections, and excessive data overhead—that cost the global manufacturing industry billions annually.
 
 ### **Key Investment Highlights:**
 - **Market Opportunity:** $41.7B machine vision market by 2030, targeting 0.5% share ($200M)
@@ -150,7 +150,7 @@ We focus on three high-value, quality-critical manufacturing verticals:
    - **Market Cap:** $6.8B
    - **Technology:** Traditional frame-based vision
    - **Limitations:** Motion blur, reflective surface issues
-   - **Our Advantage:** 75% infrastructure cost reduction, motion blur immunity
+   - **Our Advantage:** €6–12k annual infrastructure savings per line (75–90% reduction), motion blur immunity
 
 2. **Keyence Corporation**
    - **Revenue:** $7.2B (2024)
@@ -171,7 +171,7 @@ We focus on three high-value, quality-critical manufacturing verticals:
 
 ### **Competitive Differentiation**
 1. **Technology:** Only event-based vision platform for industrial automation
-2. **Economics:** 75% infrastructure cost reduction vs. incumbent solutions
+2. **Economics:** €6–12k annual infrastructure savings per line (75–90% reduction) vs. incumbent solutions
 3. **Deployment:** SaaS model vs. complex hardware sales cycles
 4. **Performance:** Motion blur immunity and metallic surface mastery
 5. **Data Efficiency:** 20-150x data reduction enables edge deployment
@@ -529,7 +529,7 @@ Based on validated mid-size pharma manufacturer pilot:
 
 ### **Investment Thesis Summary**
 
-Eventide Vision AI represents a **transformational opportunity** in the €41.7B machine vision market. Our breakthrough event-based technology delivers validated **75% infrastructure cost reduction** and **62% customer ROI**, addressing fundamental limitations of incumbent frame-based systems.
+Eventide Vision AI represents a **transformational opportunity** in the €41.7B machine vision market. Our breakthrough event-based technology delivers validated **€6–12k annual infrastructure savings per production line (75–90% reduction)** and **62% customer ROI**, addressing fundamental limitations of incumbent frame-based systems.
 
 **Key Investment Drivers:**
 1. **Proven Technology:** Dataset-validated performance with real customer deployments
