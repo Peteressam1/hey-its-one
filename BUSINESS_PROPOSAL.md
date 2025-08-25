@@ -533,7 +533,7 @@ Eventide Vision AI represents a **transformational opportunity** in the €41.7B
 
 **Key Investment Drivers:**
 1. **Proven Technology:** Dataset-validated performance with real customer deployments
-2. **Strong Unit Economics:** €50K ARPU, 7.8-month payback, 10:1 LTV:CAC ratio
+2. **Strong Unit Economics:** €50K ARPU, 7.8-month payback, 4:1 LTV:CAC ratio
 3. **Large Market:** 0.5% of quality inspection segment = €200M opportunity
 4. **Experienced Team:** Proven execution capability and industry expertise
 5. **Clear Path to Scale:** Conservative growth plan to €2M ARR and profitable exit
