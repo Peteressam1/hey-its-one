@@ -10,14 +10,15 @@ const GoToMarketSlide = () => {
     timeline: "Week 1-2: Setup • Week 3-6: Training & Testing • Week 7-8: Validation",
     costs: {
       setup: "€55,000 one-time",
-      monthly: "€8,400/month (€4,200/line)",
-      annual: "€100,800/year"
+      monthly: "€8.4k/month across 2 lines (pilot pricing)",
+      annual: "€100.8k/year"
     },
     roi: {
-      defectReduction: "€105K/year (3% waste reduction)",
-      downtimeReduction: "€58K/year (7% improvement)",
-      totalSavings: "€163K/year",
-      customerROI: "62% first year",
+      businessROI: "62% business ROI from scrap reduction & fewer changeovers",
+      infraSavings: "Infrastructure savings = €0.8k/month (included)",
+      defectReduction: "€105k/year (3% waste reduction)",
+      downtimeReduction: "€58k/year (7% improvement)",
+      totalSavings: "€163k/year total customer savings",
       payback: "7.8 months"
     }
   };
@@ -30,15 +31,24 @@ const GoToMarketSlide = () => {
 
   const salesProcess = [
     { title: "Discovery call", sub: "Identify pain points, baseline metrics" },
-    { title: "8-week pilot SOW", sub: "Fixed scope, clear success criteria" },
+    { 
+      title: "8-week pilot SOW", 
+      sub: "Fixed scope, clear success criteria",
+      details: [
+        "Acceptance: >95% accuracy on customer test cases",
+        "Performance: <2% false reject rate improvement",
+        "Timeline: Max 30 days integration",
+        "ROI: Documented 40%+ business case"
+      ]
+    },
     { title: "Production rollout", sub: "Scale to additional lines & facilities" }
   ];
 
   const kpis = [
-    { k: "Pilots/quarter", v: "3-4" },
-    { k: "Pilot→Production", v: "75%" },
-    { k: "ARPU", v: "€50K" },
-    { k: "Payback period", v: "7.8 mo" }
+    { k: "Pilots/quarter", v: "3-4", basis: "2-line avg pilot size" },
+    { k: "Pilot→Production", v: "75%", basis: "12-month cohort data" },
+    { k: "ARPU", v: "€50k", basis: "€36-50k ARR per customer" },
+    { k: "Payback period", v: "7.8 mo", basis: "Infrastructure + business ROI combined" }
   ];
 
   return (
@@ -60,7 +70,7 @@ const GoToMarketSlide = () => {
           Validated <span className="text-primary">Pilot-to-Scale</span> Model
         </h1>
         <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-          Multi-industry approach: pharma, F&B, wire & cable. €105K pilot generates 62% ROI.
+          Multi-industry approach: pharma, F&B, wire & cable. €8.4k/month pilot generates 62% business ROI + €0.8k/month infrastructure savings.
         </p>
       </div>
 
@@ -104,11 +114,12 @@ const GoToMarketSlide = () => {
               <div>
                 <h4 className="font-bold text-green-400 mb-2">Customer Returns</h4>
                 <div className="space-y-2 text-sm">
-                  <div className="text-muted-foreground">{pilotExample.roi.defectReduction}</div>
-                  <div className="text-muted-foreground">{pilotExample.roi.downtimeReduction}</div>
+                  <div className="text-primary font-semibold">{pilotExample.roi.businessROI}</div>
+                  <div className="text-muted-foreground text-xs">{pilotExample.roi.infraSavings}</div>
+                  <div className="text-muted-foreground text-xs">{pilotExample.roi.defectReduction}</div>
+                  <div className="text-muted-foreground text-xs">{pilotExample.roi.downtimeReduction}</div>
                   <div className="border-t pt-2">
                     <div className="font-bold text-green-400">{pilotExample.roi.totalSavings}</div>
-                    <div className="text-2xl font-bold text-primary">{pilotExample.roi.customerROI}</div>
                     <div className="text-xs text-muted-foreground">Payback: {pilotExample.roi.payback}</div>
                   </div>
                 </div>
@@ -140,6 +151,15 @@ const GoToMarketSlide = () => {
                 <motion.div key={idx} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 * idx }}>
                   <div className="font-semibold text-foreground">{m.title}</div>
                   <div className="text-muted-foreground text-xs">{m.sub}</div>
+                  {m.details && (
+                    <div className="mt-2 space-y-1">
+                      {m.details.map((detail, dIdx) => (
+                        <div key={dIdx} className="text-xs text-muted-foreground ml-2">
+                          • {detail}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </motion.div>
               ))}
             </div>
@@ -153,8 +173,12 @@ const GoToMarketSlide = () => {
                 <div key={idx} className="p-3 rounded-lg border border-border text-center">
                   <div className="text-xs text-muted-foreground">{item.k}</div>
                   <div className="text-lg font-bold text-foreground">{item.v}</div>
+                  <div className="text-xs text-muted-foreground mt-1">{item.basis}</div>
                 </div>
               ))}
+            </div>
+            <div className="text-xs text-muted-foreground mt-4 border-t pt-2">
+              *Based on 8-camera lines, €36-50k ARR range, 2-line average pilot size
             </div>
           </Card>
         </div>
