@@ -33,6 +33,18 @@ Eventide Vision AI is pioneering the industrial automation revolution through br
 **Use of Funds:** Product development (40%), team building (35%), market entry (15%), operations (10%)  
 **Projected Returns:** 6-12x multiple for pre-seed investors by month 48-60
 
+### **Investment Narrative for Non-Tech Investors**
+
+**The Problem (€30B+ annual crisis):** Traditional manufacturing cameras fail at high speeds and on metallic surfaces, causing billions in quality failures and recalls. Current solutions generate massive data overhead that's becoming economically unsustainable.
+
+**Our Breakthrough:** Event-based vision (like human retinas) solves motion blur, works on any surface, and reduces data by 20-150x. We're the first full-stack SaaS platform bringing this technology to industrial quality control.
+
+**Why It's a No-Brainer:** Customers get 62% first-year ROI with 7.8-month payback. We've proven €6–12k annual infrastructure savings per production line while improving quality outcomes.
+
+**The Team:** PhD-level computer vision expertise + industrial automation experience + dual-base cost advantage (German trust + Egypt R&D efficiency).
+
+**The Ask:** €500K at €3M pre-money (YC-standard) gets you 15% of a category-defining opportunity with 6x+ returns even if we capture half our conservative market target.
+
 ---
 
 ## **MARKET OPPORTUNITY & PROBLEM STATEMENT**
