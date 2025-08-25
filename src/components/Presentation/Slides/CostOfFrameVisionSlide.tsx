@@ -29,25 +29,28 @@ const CostOfFrameVisionSlide = () => {
   // Real-world scenario definitions based on datasets and deployments
   const scenarios = {
     conservative: {
-      bitrateMbps: 6,        // 1080p@30fps H.264 compressed
+      bitrateMbps: 4,        // 1080p@30fps H.264 high-quality
       dataReduction: 20,     // High-activity scenes (validated: 10-50x)
       retention: 30,
       description: "High-activity scenes, fast conveyors",
-      eventRate: "500K events/sec"
+      eventRate: "500K events/sec",
+      specs: "8 cams, 24×7 @ 1080p30, H.264 4 Mbps, 30-day retention"
     },
     typical: {
-      bitrateMbps: 8,        // 1080p@60fps H.264 compressed  
+      bitrateMbps: 3,        // 1080p@30fps H.264 standard quality  
       dataReduction: 50,     // Medium activity (validated: 50-200x)
       retention: 30,
       description: "Production line monitoring",
-      eventRate: "150K events/sec"
+      eventRate: "150K events/sec",
+      specs: "8 cams, 24×7 @ 1080p30, H.264 3 Mbps, 30-day retention"
     },
     aggressive: {
-      bitrateMbps: 12,       // 1080p@60fps higher bitrate
+      bitrateMbps: 2.5,      // 1080p@30fps H.264 optimized
       dataReduction: 150,    // Low-medium activity (validated: 100-1000x)
       retention: 30,
       description: "Optimized scenes, moderate motion",
-      eventRate: "80K events/sec"
+      eventRate: "80K events/sec",
+      specs: "8 cams, 24×7 @ 1080p30, H.264 2.5 Mbps, 30-day retention"
     }
   };
 
@@ -75,15 +78,16 @@ const CostOfFrameVisionSlide = () => {
     const rgbEgressCost = rgbMonthlyDataGB * totalEgressPercentage * 0.09;
     const eventEgressCost = eventMonthlyDataGB * totalEgressPercentage * 0.09;
     
-    // Compute costs (hardware amortization + energy)
-    // RGB: $4000 system → $111/mo amortization + 250W × 24/7 × $0.12/kWh
-    // Event: $1000 system → $28/mo amortization + 25W × 24/7 × $0.12/kWh
-    const rgbHardwareCost = 111; // 3-year amortization of $4000 system
-    const eventHardwareCost = 28; // 3-year amortization of $1000 system
+    // Compute costs (hardware amortization + energy) - PER 8-CAMERA LINE
+    // RGB: Edge box with 300W GPU → $83/mo amortization + power
+    // Event: Jetson/X86 NPU with 30W → $21/mo amortization + power
+    const rgbHardwareCost = 83; // 3-year amortization of $3000 edge box
+    const eventHardwareCost = 21; // 3-year amortization of $750 edge device
     
     const energyCostKWh = 0.12;
-    const rgbEnergyCost = (250 / 1000) * 24 * daysPerMonth * energyCostKWh;
-    const eventEnergyCost = (25 / 1000) * 24 * daysPerMonth * energyCostKWh;
+    // Power consumption per 8-camera production line
+    const rgbEnergyCost = (300 / 1000) * 24 * daysPerMonth * energyCostKWh; // 300W edge box
+    const eventEnergyCost = (30 / 1000) * 24 * daysPerMonth * energyCostKWh; // 30W edge device
     
     const rgbComputeCost = rgbHardwareCost + rgbEnergyCost;
     const eventComputeCost = eventHardwareCost + eventEnergyCost;
@@ -162,11 +166,11 @@ const CostOfFrameVisionSlide = () => {
         </div>
         
         <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
-          <span className="text-gradient">75% Infrastructure</span> Cost Reduction
+          <span className="text-gradient">€6–12k Annual</span> Infrastructure Savings
         </h1>
         
         <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-          Dataset-validated analysis: Event cameras deliver 20-150x data reduction in real industrial environments
+          Per 8-camera production line: 75–90% reduction in storage, compute & power costs vs. RGB systems
         </p>
 
         {/* Scenario Pills */}
@@ -197,7 +201,7 @@ const CostOfFrameVisionSlide = () => {
             <Card className="p-6 glass-card hover-lift text-center relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
               <div className="relative z-10">
-                <div className="text-sm text-muted-foreground mb-2">Monthly Savings</div>
+                <div className="text-sm text-muted-foreground mb-2">Monthly Infrastructure Savings</div>
                 <div className="text-5xl font-bold text-glow-animate mb-2">
                   {animateValues && (
                     <motion.span
@@ -209,7 +213,7 @@ const CostOfFrameVisionSlide = () => {
                     </motion.span>
                   )}
                 </div>
-                <div className="text-xs text-muted-foreground">per 8-camera production line</div>
+                <div className="text-xs text-muted-foreground">per 8-camera line • {scenarios[selectedScenario].specs}</div>
               </div>
             </Card>
           </motion.div>
@@ -266,16 +270,16 @@ const CostOfFrameVisionSlide = () => {
                   </div>
                 </div>
                 
-                <div className="space-y-2">
-                  <h4 className="font-semibold">Fixed Parameters</h4>
+                                  <div className="space-y-2">
+                  <h4 className="font-semibold">Fixed Parameters (Per 8-Camera Line)</h4>
                   <div className="text-sm space-y-1">
-                    <div>• Cameras: 8 × 1080p@60fps</div>
-                    <div>• RGB: H.264 compressed (realistic 10-20x)</div>
+                    <div>• Cameras: 8 × 1080p@30fps, 24×7 operation</div>
+                    <div>• RGB: H.264 compressed, 2.5-4 Mbps/camera</div>
                     <div>• Event: 5-7 bytes per event (address+timestamp)</div>
                     <div>• Storage: $0.023/GB-month (S3 Standard)</div>
                     <div>• Energy: $0.12/kWh</div>
-                    <div>• RGB Power: 250W/system</div>
-                    <div>• Event Power: 25W/system</div>
+                    <div>• RGB Edge Box: 300W GPU system per line</div>
+                    <div>• Event Edge Device: 30W Jetson/NPU per line</div>
                     <div>• Data egress: $0.09/GB (first 10TB)</div>
                   </div>
                 </div>
@@ -297,10 +301,10 @@ const CostOfFrameVisionSlide = () => {
           {/* ROI Footnote */}
           <Card className="p-4 bg-destructive/10 backdrop-blur-sm border border-destructive/20 rounded-2xl shadow-lg">
             <div className="text-xs text-destructive font-medium">
-              ⚠️ Infrastructure savings only; customer business ROI is 62%
+              ⚠️ Infrastructure cost savings only (storage + compute + power)
             </div>
             <p className="text-xs text-muted mt-1">
-              75% infrastructure savings + quality/downtime improvements = 62% total customer ROI. Calculations based on H.264 compressed RGB vs actual event rates from MVSEC/DSEC datasets.
+              Total customer business ROI is 62% first-year including: infrastructure savings (above) + quality improvements (30% defect reduction) + operational efficiency (25% faster cycles). Infrastructure represents ~15% of total customer ROI.
             </p>
           </Card>
         </div>
@@ -420,16 +424,16 @@ const CostOfFrameVisionSlide = () => {
             <h4 className="font-semibold text-white mb-3">Power & Compute</h4>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-muted">RGB system:</span>
-                <span className="text-white">250W + amortization</span>
+                <span className="text-muted">RGB edge box:</span>
+                <span className="text-white">300W per line</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted">Event system:</span>
-                <span className="text-primary">25W + amortization</span>
+                <span className="text-muted">Event edge device:</span>
+                <span className="text-primary">30W per line</span>
               </div>
               <div className="flex justify-between border-t border-border pt-2">
                 <span className="text-muted">Power reduction:</span>
-                <span className="text-accent font-semibold">10×</span>
+                <span className="text-accent font-semibold">10× per line</span>
               </div>
             </div>
           </Card>
