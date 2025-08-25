@@ -58,10 +58,10 @@ const SolutionSlide = () => {
           PROVEN INDUSTRIAL APPLICATIONS
         </Badge>
         <h1 className="text-4xl md:text-5xl font-bold text-white tracking-[-0.01em]">
-          <span className="text-primary">Event-Based Vision</span> in Action
+          <span className="text-primary">Full-Stack Integration SaaS</span> with Event Sensors
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          Real deployments: High-speed counting, defect detection, and motion analysis with €6–12k annual infrastructure savings per line.
+          We partner with Prophesee/Sony sensors, layer edge + cloud software, deliver turnkey SaaS with ROI tracking. KAUST-validated performance.
         </p>
       </div>
 
@@ -211,7 +211,7 @@ const SolutionSlide = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-white">€6–12k annual infrastructure savings</span>
+                    <span className="text-white">Pilot validated: Mid-size pharma 62% ROI</span>
                   </div>
                 </div>
                 

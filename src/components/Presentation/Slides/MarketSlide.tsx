@@ -78,7 +78,7 @@ const MarketSlide = () => {
         </h1>
         <div className="flex items-center justify-center gap-3">
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-            Machine vision growing at 13% CAGR. Our target: 0.5% share ($200M) in quality inspection segment.
+            Initial SAM = €14.6B (Pharma + F&B + wire/cable QA). SOM = early adopters in GCC + DACH (€200M). Urgency: $2B food recalls 2024.
           </p>
           <TooltipProvider>
             <Tooltip>
@@ -240,19 +240,19 @@ const MarketSlide = () => {
         transition={{ delay: 1, duration: 0.6 }}
       >
         <div className="text-center p-4 bg-card border border-primary/20 rounded-2xl shadow-lg">
-          <h4 className="text-lg font-bold mb-2 text-white">🎯 First Mover Edge in MENA + EU</h4>
+          <h4 className="text-lg font-bold mb-2 text-white">🚨 Market Urgency Drivers</h4>
           <p className="text-sm mb-3 text-muted">
-            <strong className="text-primary">First-mover edge in MENA (GCC) + EU</strong> — fewer local event-based specialists; leverage German network via XPRENEURS.
+            <strong className="text-primary">Regulatory pressure + scaling demands create immediate need</strong> for next-gen QC solutions.
           </p>
           <div className="grid grid-cols-3 gap-4 text-xs">
             <div className="text-muted">
-              <strong className="text-white">Sensor vendors ≠ turnkey PaaS:</strong> Prophesee + Sony IMX636 provide hardware, not complete solutions
+              <strong className="text-warning">$2B food recalls 2024:</strong> Quality failures cost billions; pharma counterfeit/pill counting is regulatory-critical
             </div>
             <div className="text-muted">
-              <strong className="text-white">Few integrated options:</strong> Integrators mainly frame-based in industrial QA
+              <strong className="text-accent">GCC F&B scaling 2×:</strong> Production capacity doubling requires automated QC at unprecedented speeds
             </div>
             <div className="text-muted">
-              <strong className="text-white">Perfect timing:</strong> Event sensors matured + edge compute ready + Industry 4.0 budgets
+              <strong className="text-primary">DACH Industry 4.0:</strong> Manufacturing digitization budgets peak 2024-2026; early adoption advantage
             </div>
           </div>
         </div>

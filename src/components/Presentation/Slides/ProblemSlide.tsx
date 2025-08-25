@@ -10,30 +10,30 @@ const ProblemSlide = () => {
   const problems = [
     {
       icon: <Clock className="w-12 h-12 text-primary" />,
-      title: "Processing Latency",
-      description: "Frame pipelines choke on high-speed lines; events happen between frames.",
-      impact: "",
+      title: "Latency Ceiling",
+      description: "RGB/AI: 20-100ms processing. High-speed QC needs <1ms response. Even Cognex hits this wall.",
+      impact: "milliseconds vs. microseconds",
       color: "border-border bg-card/80"
     },
     {
       icon: <DollarSign className="w-12 h-12 text-accent" />,
-      title: "High Data Costs",
-      description: "Full-frame video creates heavy storage/egress and compute bills.",
-      impact: "",
+      title: "Data Bloat at Scale", 
+      description: "4K RGB + AI works for 2-4 lines. 8-10+ lines = storage/bandwidth explosion beyond economics.",
+      impact: "scaling beyond 8-10 lines cost-prohibitive",
       color: "border-border bg-card/80"
     },
     {
       icon: <TrendingDown className="w-12 h-12 text-warning" />,
-      title: "Limited Performance",
-      description: "Motion blur + glare miss micro-defects at line speed.",
-      impact: "",
+      title: "Energy & Infrastructure",
+      description: "GPU farms for real-time processing. 200-400W per line vs. 20-40W event-based edge.",
+      impact: "10× power consumption difference",
       color: "border-border bg-card/80"
     },
     {
       icon: <AlertTriangle className="w-12 h-12 text-destructive" />,
-      title: "Complex Integration",
-      description: "Fragmented tools → multi-month, cross-vendor projects.",
-      impact: "",
+      title: "Regulatory Gaps",
+      description: "Pharma pill counting, F&B recall prevention need 99.9%+ accuracy. Motion blur = compliance risk.",
+      impact: "$2B in food recalls 2024",
       color: "border-border bg-card/80"
     }
   ];

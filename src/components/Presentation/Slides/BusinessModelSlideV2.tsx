@@ -53,21 +53,21 @@ const BusinessModelSlideV2 = () => {
   const revenueStreams = [
     {
       stream: "Integration Fee",
-      description: "One-time setup & customization",
+      description: "One-time setup & customization (addresses capex preference)",
       amount: "€25K–€55K",
       icon: <Zap className="w-5 h-5" />
     },
     {
       stream: "Monthly SaaS",
-      description: "Per line subscription",
+      description: "Dashboard + analytics + compliance reporting",
       amount: "€2.8K–€4.2K/line",
       icon: <TrendingUp className="w-5 h-5" />
     },
     {
-      stream: "Maintenance & Support",
-      description: "20% of integration annually",
-      amount: "€5K–€11K/year",
-      icon: <DollarSign className="w-5 h-5" />
+      stream: "Expansion Revenue",
+      description: "80%+ expand to 4–8 lines within 12 months",
+      amount: "€150K–€300K/customer",
+      icon: <Users className="w-5 h-5" />
     }
   ];
 
@@ -128,7 +128,7 @@ const BusinessModelSlideV2 = () => {
           <span className="text-gradient text-glow-animate">Proven SaaS</span> Economics
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          Industrial SaaS: €50K ARPU with 7.8-month payback and 4:1 LTV:CAC ratio
+          Hybrid model: One-time integration + recurring SaaS + compliance reporting. 80%+ expand to 4–8 lines <12 months.
         </p>
       </div>
 
