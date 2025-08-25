@@ -29,9 +29,9 @@ Eventide Vision AI is pioneering the industrial automation revolution through br
 - **Scalable SaaS Model:** €2.8K-€4.2K per line monthly recurring revenue
 - **Clear Path to Scale:** 60-month roadmap to €1M+ ARR with conservative growth assumptions
 
-**Investment Ask:** €2,000,000 for 15% equity stake  
-**Use of Funds:** Product development (40%), sales & marketing (35%), operations (25%)  
-**Projected Returns:** 6x multiple for seed investors by month 60
+**Investment Ask:** €500,000 for 15% equity stake (€3M pre-money)  
+**Use of Funds:** Product development (40%), team building (35%), market entry (15%), operations (10%)  
+**Projected Returns:** 6-12x multiple for pre-seed investors by month 48-60
 
 ---
 
@@ -333,6 +333,30 @@ The €3M pre-money valuation represents:
 
 **This valuation creates a true partnership where investor success depends on company success, aligning incentives for optimal outcomes.**
 
+### **Investor Return Framework: Your Upside Scenarios**
+
+**At €3M pre-money (15% for €500K), here's what investors can expect:**
+
+#### **Conservative Scenario (0.25% TAM Capture)**
+- **Market Achievement:** €100M addressable instead of €200M
+- **Company Value at Exit:** €20M (conservative 8x revenue multiple)
+- **Your Return:** 6x cash-on-cash (€3M return on €500K)
+- **Probability:** High (75%+) - Market size risk is our biggest variable
+
+#### **Base Case Scenario (0.5% TAM Capture)**  
+- **Market Achievement:** €200M addressable as modeled
+- **Company Value at Exit:** €35M (10x revenue multiple)
+- **Your Return:** 10.5x cash-on-cash (€5.25M return on €500K)
+- **Probability:** Medium (40-50%) - Execution according to plan
+
+#### **Upside Scenario (1%+ TAM Capture)**
+- **Market Achievement:** €400M+ addressable (faster adoption)
+- **Company Value at Exit:** €60M+ (12x+ revenue multiple)
+- **Your Return:** 18x+ cash-on-cash (€9M+ return on €500K)
+- **Probability:** Lower (15-25%) - Category-defining success
+
+**Key Insight:** Even if we only capture 0.25% of the market (half our conservative target), you still achieve 6x returns. The risk-reward is asymmetric in your favor.
+
 ---
 
 ## **GO-TO-MARKET STRATEGY**
@@ -534,7 +558,7 @@ The €3M pre-money valuation represents:
 
 ## **INVESTMENT REQUIREMENTS & USE OF FUNDS**
 
-### **Funding Request: €2,000,000 Seed Round**
+### **Funding Request: €500,000 Pre-Seed Round**
 
 #### **Use of Funds Breakdown**
 
@@ -581,11 +605,11 @@ The €3M pre-money valuation represents:
 
 ### **Investor Return Analysis**
 
-#### **Seed Investment Terms**
-- **Investment Amount:** €2,000,000
+#### **Pre-Seed Investment Terms**
+- **Investment Amount:** €500,000
 - **Equity Stake:** 15%
-- **Pre-Money Valuation:** €11,300,000
-- **Post-Money Valuation:** €13,300,000
+- **Pre-Money Valuation:** €3,000,000
+- **Post-Money Valuation:** €3,500,000
 
 #### **Return Scenarios (60-Month Timeline)**
 
@@ -655,7 +679,7 @@ Eventide Vision AI represents a **transformational opportunity** in the €41.7B
 2. **Strong Unit Economics:** €50K ARPU, 7.8-month payback, 4:1 LTV:CAC ratio
 3. **Large Market:** 0.5% of quality inspection segment = €200M opportunity
 4. **Experienced Team:** Proven execution capability and industry expertise
-5. **Clear Path to Scale:** Conservative growth plan to €2M ARR and profitable exit
+5. **Clear Path to Scale:** Conservative growth plan to €1M+ ARR and profitable exit
 
 **Competitive Advantages:**
 - **Technology Moat:** Only event-based vision platform for industrial automation
