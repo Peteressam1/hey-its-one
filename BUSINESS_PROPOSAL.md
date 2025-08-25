@@ -17,7 +17,7 @@
 
 ## **EXECUTIVE SUMMARY**
 
-**Investment Opportunity:** €2M Seed Round for Revolutionary Event-Based Vision AI Platform
+**Investment Opportunity:** €500K Pre-Seed Round for Revolutionary Event-Based Vision AI Platform
 
 Eventide Vision AI is pioneering the industrial automation revolution through breakthrough event-based vision technology that delivers **€6–12k annual infrastructure savings per production line (75–90% reduction)** and **62% first-year ROI** for manufacturing enterprises. Our SaaS platform addresses critical limitations of traditional frame-based vision systems—motion blur, metallic surface reflections, and excessive data overhead—that cost the global manufacturing industry billions annually.
 
