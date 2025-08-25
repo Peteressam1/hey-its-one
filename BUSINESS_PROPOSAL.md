@@ -73,14 +73,9 @@ Unlike traditional frame-based cameras that capture static images, our neuromorp
 
 #### **Validated Performance Metrics:**
 - **Detection Speed:** 500+ objects/second with microsecond precision
-- **Data Reduction:** Conservative 20x, typical 50x, aggressive 150x vs. H.264 RGB
-- **Infrastructure Savings:** 75% reduction in storage, bandwidth, and processing costs
-- **Reliability:** 99.9% uptime with predictive maintenance capabilities
-
-### **Technology Validation Sources:**
-- **Academic Research:** MVSEC, DSEC, N-Caltech101 multimodal datasets
-- **Industry Studies:** Prophesee industrial deployment analysis
-- **Customer Pilots:** Mid-size pharma manufacturer validation (Q4 2024)
+- **Data Efficiency:** 20-150x reduction vs. traditional cameras (validated by research datasets)
+- **Infrastructure Savings:** €6–12k annual savings per production line (75–90% reduction)
+- **Customer ROI:** 62% first-year return demonstrated in pilot deployment
 
 ---
 
@@ -228,23 +223,19 @@ Based on validated mid-size pharma manufacturer pilot:
 
 Our €3M pre-money valuation (€500K for 15% equity) is derived through multiple validation methodologies used by top-tier VCs and follows Y Combinator pre-seed standards.
 
-#### **Methodology 1: Market Comparables (Primary)**
+#### **Why €3M Pre-Money is Fair (and YC-Standard)**
 
-**Pre-Seed SaaS Valuations (2024 Benchmarks):**
+**Industry Benchmarks:**
 - **YCombinator Standard:** €2-5M pre-money for B2B SaaS with technical founders
 - **European Deep Tech:** €3-8M pre-money for hardware-enabled SaaS platforms  
-- **Industrial Automation SaaS:** €4-12M pre-money (premium for industrial complexity)
-- **Our Position:** €3M = Conservative within range for validated technology + market traction
+- **Our Position:** €3M = Conservative within established range
 
-**Comparable Company Analysis:**
-| **Company** | **Stage** | **Technology** | **Pre-Money Valuation** | **Rationale** |
-|-------------|-----------|----------------|-------------------------|---------------|
-| **Instrumental** | Pre-Seed | Manufacturing AI vision | €4.2M | Similar industrial focus, earlier stage |
-| **Levitate** | Pre-Seed | Industrial automation SaaS | €3.8M | Comparable SaaS model, less tech differentiation |
-| **Veo Robotics** | Seed | Manufacturing vision safety | €15M | Post-customer validation, larger market |
-| **Eventide Vision** | **Pre-Seed** | **Event-based industrial vision** | **€3.0M** | **Conservative positioning** |
+**Key Benefits:**
+- **For Investors:** 15% ownership provides meaningful influence without over-paying
+- **For Founders:** 85% ownership preserved → motivation and future dilution protection
+- **For Series A:** Protects future rounds (target 60-65% founder equity post-Series A)
 
-*Sources: PitchBook, Crunchbase, European VC market data Q4 2024*
+*Detailed comparable company analysis available in Appendix B*
 
 #### **Methodology 2: Risk-Adjusted NPV (Secondary Validation)**
 
