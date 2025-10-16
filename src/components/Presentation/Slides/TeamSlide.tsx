@@ -45,13 +45,14 @@ const TeamSlide = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center px-8 py-12 bg-gradient-to-br from-background via-[hsl(220_34%_8%)] to-[hsl(142_69%_8%)]">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-accent/10"></div>
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+    <div className="w-full min-h-screen flex flex-col justify-center items-center px-8 py-12 bg-background relative">
+      {/* Unified Animated Background */}
+      <div className="animated-bg">
+        <div className="floating-orb orb-primary" />
+        <div className="floating-orb orb-accent" />
+        <div className="floating-orb orb-warning" />
       </div>
+      <div className="geometric-pattern" />
 
       {/* Header */}
       <div className="relative z-10 text-center space-y-4 mb-12">
@@ -75,7 +76,7 @@ const TeamSlide = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2, duration: 0.6 }}
           >
-            <Card className="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20 hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+            <Card className="p-6 bg-card/80 backdrop-blur-sm border-border hover:border-primary/40 hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
               {/* Photo */}
               <div className="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-primary-glow flex items-center justify-center ring-4 ring-primary/30 shadow-2xl overflow-hidden">
                 <img src={founder.photo} alt={founder.name} className="w-full h-full object-cover" />

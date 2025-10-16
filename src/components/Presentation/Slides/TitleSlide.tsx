@@ -59,15 +59,6 @@ const TitleSlide = () => {
             </span>
           </h1>
           
-          {/* Subtitle */}
-          <div className="text-xl md:text-2xl text-foreground/80 font-medium max-w-4xl mx-auto text-center leading-relaxed">
-            Event-Based Vision for Industrial Automation
-          </div>
-
-          {/* Website */}
-          <div className="text-lg text-primary/80 font-medium text-center">
-            www.lumina-tech.ai
-          </div>
         </motion.div>
 
         {/* Key Metrics */}
