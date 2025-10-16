@@ -1,5 +1,7 @@
 # Welcome to your Lovable project
 
+**Repository**: Eventide Vision AI - Pushed to hey-its-one repository
+
 ## Project info
 
 **URL**: https://lovable.dev/projects/0d0fb7dd-6f3f-41e0-9bca-f651b038b802
