@@ -151,231 +151,125 @@ const TeamSlide = () => {
       {/* Header */}
       <div className="relative z-10 text-center space-y-4 mb-8">
         <Badge variant="outline" className="text-sm px-4 py-2 border-primary text-primary bg-transparent">
-          TEAM & HIRING STRATEGY
+          ABOUT US
         </Badge>
         <h1 className="text-4xl md:text-5xl font-bold text-white tracking-[-0.01em]">
-          <span className="text-primary">World-Class Team:</span> German HQ + Egypt R&D Hub
+          <span className="text-primary">Meet the Founding Team</span>
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          PhD-level founders • Backed by TUM AI • Strategic dual-base advantage
+          Founded by experts from DLR, NASA, McKinsey, SAP, and TUM • Backed by TUM AI Incubator
         </p>
         <div className="text-sm text-muted-foreground">
           www.lumina-tech.ai
         </div>
       </div>
 
-      <div className="relative z-10 flex-1 grid grid-cols-2 gap-6">
-        {/* Left Column - Current Team & Hiring Plan */}
-        <div className="space-y-6">
-          {/* Founding Team */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Founding Team</h3>
-            <div className="space-y-4">
-              {foundingTeam.map((founder, index) => (
-                <Card key={index} className="p-6 bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
-                  <div className="flex items-start gap-4">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-r from-primary to-primary-glow flex items-center justify-center ring-2 ring-primary/30 shadow-lg overflow-hidden">
+      <div className="relative z-10 flex-1 grid grid-cols-1 gap-6">
+        {/* Founding Team */}
+        <div>
+          <h3 className="text-3xl font-bold mb-6 text-center">Our Founders</h3>
+          <div className="space-y-6 max-w-5xl mx-auto">
+            {foundingTeam.map((founder, index) => (
+              <Card key={index} className="p-8 bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20 hover:shadow-2xl transition-all duration-300">
+                <div className="flex items-start gap-6">
+                  <div className="w-32 h-32 rounded-full bg-gradient-to-r from-primary to-primary-glow flex items-center justify-center ring-4 ring-primary/30 shadow-2xl overflow-hidden flex-shrink-0">
+                    {founder.name === "Mohamed El Sherbini" && (
+                      <img src={mohamedPhoto} alt="Mohamed El Sherbini" className="w-full h-full object-cover" />
+                    )}
+                    {founder.name === "Aly Barakat" && (
+                      <img src={alyPhoto} alt="Aly Barakat" className="w-full h-full object-cover" />
+                    )}
+                    {founder.name === "Peter Essam" && (
+                      <img src={peterPhoto} alt="Peter Essam" className="w-full h-full object-cover" />
+                    )}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
+                      <div>
+                        <h4 className="text-2xl font-bold text-white mb-2">{`M.Sc, ${founder.name}`}</h4>
+                        <p className="text-base font-medium text-primary">{founder.role}</p>
+                      </div>
                       {founder.name === "Mohamed El Sherbini" && (
-                        <img src={mohamedPhoto} alt="Mohamed El Sherbini" className="w-full h-full object-cover" />
+                        <div className="rounded-lg bg-card/50 backdrop-blur-sm border border-border/40 px-4 py-2">
+                          <LogoStrip
+                            logos={[
+                              { alt: "DLR", src: "/logos/dlr.png", height: 36 },
+                              { alt: "NASA", src: "/logos/nasa.png", height: 34 },
+                              { alt: "DeepMind", src: "/logos/deepmind-small.webp", height: 32 },
+                              { alt: "Airbus Defence & Space", src: "/logos/airbus.jpeg", height: 32 },
+                            ]}
+                            maxHeight={38}
+                            size="md"
+                            grayscale={false}
+                            rowClassName="gap-x-4 gap-y-2"
+                          />
+                        </div>
                       )}
                       {founder.name === "Aly Barakat" && (
-                        <img src={alyPhoto} alt="Aly Barakat" className="w-full h-full object-cover" />
+                        <div className="rounded-lg bg-card/50 backdrop-blur-sm border border-border/40 px-4 py-2">
+                          <LogoStrip
+                            logos={[
+                              { alt: "TUM", src: "/logos/tum.svg" },
+                              { alt: "McKinsey & Company", src: "/logos/mckinsey.png" },
+                              { alt: "Rohde & Schwarz", src: "/logos/rohde-schwarz.jpeg" },
+                              { alt: "Mouser Electronics", src: "/logos/mouser.svg" },
+                            ]}
+                            maxHeight={32}
+                            size="md"
+                            grayscale={false}
+                            rowClassName="gap-x-4 gap-y-2"
+                          />
+                        </div>
                       )}
                       {founder.name === "Peter Essam" && (
-                        <img src={peterPhoto} alt="Peter Essam" className="w-full h-full object-cover" />
+                        <div className="rounded-lg bg-card/50 backdrop-blur-sm border border-border/40 px-4 py-2">
+                          <LogoStrip
+                            logos={[
+                              { alt: "SAP", src: "/logos/sap.png" },
+                              { alt: "BestSecret", src: "/logos/bestsecret.gif" },
+                            ]}
+                            maxHeight={28}
+                            size="md"
+                            grayscale={false}
+                            rowClassName="gap-x-4 gap-y-2"
+                          />
+                        </div>
                       )}
                     </div>
-                    <div className="flex-1">
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                        <div className="flex items-center gap-2">
-                          <h4 className="text-lg font-bold text-white">{`M.Sc, ${founder.name}`}</h4>
-                        </div>
-                        {founder.name === "Mohamed El Sherbini" && (
-                          <div className="rounded-md bg-card/50 backdrop-blur-sm border border-border/40 px-2 py-1">
-                            <LogoStrip
-                              logos={[
-                                { alt: "DLR", src: "/logos/dlr.png", height: 30 },
-                                { alt: "NASA", src: "/logos/nasa.png", height: 28 },
-                                { alt: "DeepMind", src: "/logos/deepmind-small.webp", height: 26 },
-                                { alt: "Airbus Defence & Space", src: "/logos/airbus.jpeg", height: 26 },
-                              ]}
-                              maxHeight={32}
-                              size="sm"
-                              grayscale={false}
-                              rowClassName="gap-x-3 gap-y-1"
-                            />
-                          </div>
-                        )}
-                        {founder.name === "Aly Barakat" && (
-                          <div className="rounded-md bg-card/50 backdrop-blur-sm border border-border/40 px-2 py-1">
-                            <LogoStrip
-                              logos={[
-                                { alt: "TUM", src: "/logos/tum.svg" },
-                                { alt: "McKinsey & Company", src: "/logos/mckinsey.png" },
-                                { alt: "Rohde & Schwarz", src: "/logos/rohde-schwarz.jpeg" },
-                                { alt: "Mouser Electronics", src: "/logos/mouser.svg" },
-                              ]}
-                              maxHeight={26}
-                              size="sm"
-                              grayscale={false}
-                              rowClassName="gap-x-3 gap-y-1"
-                            />
-                          </div>
-                        )}
-                        {founder.name === "Peter Essam" && (
-                          <div className="rounded-md bg-card/50 backdrop-blur-sm border border-border/40 px-2 py-1">
-                            <LogoStrip
-                              logos={[
-                                { alt: "SAP", src: "/logos/sap.png" },
-                                { alt: "BestSecret", src: "/logos/bestsecret.gif" },
-                              ]}
-                              maxHeight={22}
-                              size="sm"
-                              grayscale={false}
-                              rowClassName="gap-x-3 gap-y-1"
-                            />
-                          </div>
-                        )}
-                      </div>
-                      <p className="text-sm font-medium text-primary mt-1">{founder.role}</p>
-                      <p className="text-xs text-muted mb-2">{founder.background}</p>
-                      <div className="grid grid-cols-3 gap-2">
-                        {founder.skills.map((skill, idx) => (
-                          <Badge key={idx} variant="secondary" className="text-xs text-center">
-                            {skill}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
-
-          {/* Critical Hires Timeline */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Critical Hires (Next 12 Months)</h3>
-            <div className="space-y-4">
-              {keyHires.map((hire, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
-                >
-                  <Card className="p-4 hover:scale-102 transition-all duration-300">
-                    <div className="flex items-start justify-between mb-3">
-                      <div>
-                        <h4 className="font-bold text-sm">{hire.role}</h4>
-                        <p className="text-xs text-muted-foreground">📍 {hire.location} • {hire.timeline}</p>
-                      </div>
-                      <div className="text-right">
-                        <Badge 
-                          variant={hire.priority === 'Critical' ? 'default' : hire.priority === 'High' ? 'secondary' : 'outline'}
-                          className="text-xs mb-1"
-                        >
-                          {hire.priority}
+                    <p className="text-sm text-muted mb-4">{founder.background}</p>
+                    <div className="grid grid-cols-3 gap-3">
+                      {founder.skills.map((skill, idx) => (
+                        <Badge key={idx} variant="secondary" className="text-sm text-center py-2">
+                          {skill}
                         </Badge>
-                        <p className="text-xs text-primary font-medium">{hire.equity}</p>
-                      </div>
-                    </div>
-                    <div className="grid grid-cols-2 gap-2">
-                      {hire.requirements.map((req, idx) => (
-                        <div key={idx} className="flex items-center gap-1 text-xs">
-                          <Star className="w-3 h-3 text-primary flex-shrink-0" />
-                          <span className="text-muted-foreground">{req}</span>
-                        </div>
                       ))}
                     </div>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
+                  </div>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
 
-        {/* Right Column - Egypt Advantage & ESOP */}
-        <div className="space-y-6">
-          {/* Egypt Advantages */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Dual-Base Advantage</h3>
-            <div className="grid grid-cols-2 gap-4">
-              {egyptAdvantages.map((advantage, index) => (
+        {/* Strategic Locations */}
+        <div className="max-w-5xl mx-auto w-full">
+          <h3 className="text-3xl font-bold mb-6 text-center">Our Strategic Locations</h3>
+          <div className="grid grid-cols-2 gap-6">{egyptAdvantages.map((advantage, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
                 >
-                  <Card className="p-4 text-center hover:scale-105 transition-all duration-300 h-full">
-                    <div className="text-primary mb-3 flex justify-center">
+                  <Card className="p-6 text-center hover:scale-105 transition-all duration-300 h-full">
+                    <div className="text-primary mb-4 flex justify-center">
                       {advantage.icon}
                     </div>
-                    <h4 className="font-bold text-sm mb-2">{advantage.title}</h4>
-                    <p className="text-xs text-muted-foreground mb-2">{advantage.description}</p>
-                    <Badge variant="outline" className="text-xs">
+                    <h4 className="font-bold text-lg mb-3">{advantage.title}</h4>
+                    <p className="text-sm text-muted-foreground mb-3">{advantage.description}</p>
+                    <Badge variant="outline" className="text-sm">
                       {advantage.metric}
                     </Badge>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          {/* ESOP Details */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Employee Stock Option Plan</h3>
-            <Card className="p-6 bg-gradient-to-r from-accent/10 to-primary/10 border-accent/20">
-              <div className="space-y-4">
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <strong>Pool Size:</strong> {esopDetails.poolSize}<br/>
-                    <span className="text-muted-foreground">Of total company equity</span>
-                  </div>
-                  <div>
-                    <strong>Vesting:</strong> {esopDetails.vestingSchedule}<br/>
-                    <span className="text-muted-foreground">Standard tech schedule</span>
-                  </div>
-                  <div>
-                    <strong>Eligibility:</strong> {esopDetails.eligibility}<br/>
-                    <span className="text-muted-foreground">After probation period</span>
-                  </div>
-                  <div>
-                    <strong>Exercise:</strong> {esopDetails.strikes}<br/>
-                    <span className="text-muted-foreground">At time of grant</span>
-                  </div>
-                </div>
-                <div className="pt-2 border-t border-border/30">
-                  <p className="text-xs text-muted-foreground">
-                    <strong>Accelerated Vesting:</strong> {esopDetails.acceleration} - protects employees in M&A scenarios
-                  </p>
-                </div>
-              </div>
-            </Card>
-          </div>
-
-          {/* Advisory Board */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Strategic Advisory Board</h3>
-            <div className="space-y-3">
-              {advisoryBoard.map((advisor, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.8 + index * 0.1, duration: 0.5 }}
-                >
-                  <Card className="p-4">
-                    <div className="flex items-center justify-between">
-                      <div className="flex-1">
-                        <h4 className="font-semibold text-sm">{advisor.profile}</h4>
-                        <p className="text-xs text-muted-foreground">{advisor.value}</p>
-                      </div>
-                      <Badge variant="outline" className="text-xs">
-                        {advisor.equity}
-                      </Badge>
-                    </div>
                   </Card>
                 </motion.div>
               ))}
@@ -387,47 +281,23 @@ const TeamSlide = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.6 }}
+            className="max-w-5xl mx-auto w-full"
           >
-            <Card className="p-6 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
+            <Card className="p-8 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
               <div className="space-y-4">
                 <TUMAIBadge variant="prominent" />
                 <div className="text-sm text-muted-foreground space-y-2">
                   <p><strong className="text-foreground">Benefits:</strong></p>
                   <ul className="space-y-1 ml-4">
                     <li>• Workspace at TUM AI headquarters in Munich</li>
-                    <li>• Weekly operator sessions with experienced founders</li>
-                    <li>• Direct access to VC network and warm introductions</li>
+                    <li>• Weekly sessions with experienced founders</li>
+                    <li>• Direct access to investor network and introductions</li>
                     <li>• €100K+ in cloud credits and tools</li>
                     <li>• Access to Munich innovation ecosystem</li>
                   </ul>
                 </div>
                 <div className="text-xs text-muted-foreground pt-2 border-t border-border/30">
                   TUM AI is Germany's leading student-run AI incubator, backed by Technical University of Munich
-                </div>
-              </div>
-            </Card>
-          </motion.div>
-
-          {/* Hiring Timeline Summary */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.6 }}
-          >
-            <Card className="p-6 bg-gradient-to-r from-green-500/10 to-blue-500/10 border-green-500/20 text-center">
-              <h4 className="text-lg font-bold mb-3">Team Growth Target</h4>
-              <div className="grid grid-cols-3 gap-4 text-sm">
-              <div>
-                <div className="text-2xl font-bold gradient-text">4-7</div>
-                <div className="text-muted-foreground">Critical hires by Month 12</div>
-              </div>
-                <div>
-                  <div className="text-2xl font-bold gradient-text">€30K</div>
-                  <div className="text-muted-foreground">Avg senior engineer salary (Egypt)</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold gradient-text">12%</div>
-                  <div className="text-muted-foreground">ESOP pool allocation</div>
                 </div>
               </div>
             </Card>

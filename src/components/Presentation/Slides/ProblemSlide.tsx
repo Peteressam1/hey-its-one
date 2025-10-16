@@ -10,29 +10,29 @@ const ProblemSlide = () => {
   const problems = [
     {
       icon: <Clock className="w-12 h-12 text-primary" />,
-      title: "Latency Ceiling",
-      description: "RGB/AI: 20-100ms processing. High-speed QC needs <1ms response. Even Cognex hits this wall.",
+      title: "Too Slow",
+      description: "Traditional cameras take 20-100 milliseconds to process images. High-speed quality control needs under 1 millisecond response.",
       impact: "milliseconds vs. microseconds",
       color: "border-border bg-card/80"
     },
     {
       icon: <DollarSign className="w-12 h-12 text-accent" />,
-      title: "Data Bloat at Scale", 
-      description: "4K RGB + AI works for 2-4 lines. 8-10+ lines = storage/bandwidth explosion beyond economics.",
+      title: "Data Costs Explode", 
+      description: "Works for small factories, but large-scale operations (8-10+ production lines) generate too much data to handle economically.",
       impact: "scaling beyond 8-10 lines cost-prohibitive",
       color: "border-border bg-card/80"
     },
     {
       icon: <TrendingDown className="w-12 h-12 text-warning" />,
       title: "Energy & Infrastructure",
-      description: "GPU farms for real-time processing. 200-400W per line vs. 20-40W event-based edge.",
+      description: "Traditional systems need 10x more power. 200-400W per line vs. 20-40W for event-based systems.",
       impact: "10× power consumption difference",
       color: "border-border bg-card/80"
     },
     {
       icon: <AlertTriangle className="w-12 h-12 text-destructive" />,
       title: "Regulatory Gaps",
-      description: "Pharma pill counting, F&B recall prevention need 99.9%+ accuracy. Motion blur = compliance risk.",
+      description: "Pharmaceutical pill counting and food safety need 99.9%+ accuracy. Blurry images = failed inspections.",
       impact: "$2B in food recalls 2024",
       color: "border-border bg-card/80"
     }
@@ -153,12 +153,12 @@ const ProblemSlide = () => {
       >
         <Card className="p-8 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-2xl shadow-lg max-w-6xl mx-auto">
           <p className="text-xl font-bold text-destructive">
-            RGB frame vision = 10ms+ latency • 50x excess data • 10x higher power • Months-long integrations
+            Traditional cameras = Too slow • Too much data • 10x higher power • Months to install
           </p>
         </Card>
           <div className="text-center mt-4">
             <p className="text-xs text-muted-foreground">
-              Industrial edge computing requirements: millisecond response time for 1000+ fps production lines. Traditional RGB: 50-200ms; Events: &lt;1ms.
+              High-speed production lines need under 1 millisecond response. Traditional cameras: 50-200ms; Event-based: &lt;1ms.
             </p>
           </div>
       </motion.div>

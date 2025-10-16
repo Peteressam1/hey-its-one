@@ -40,18 +40,18 @@ const MarketSlide = () => {
   const expandableChips = [
     {
       id: "tam",
-      title: "SAM → $14.6B by 2030",
-      content: "Quality inspection is 35% of $41.7B machine vision market = $14.6B. Our target: 0.5% share = $73M TAM within high-speed applications."
+      title: "Our Target Market: $14.6B by 2030",
+      content: "Quality inspection is 35% of $41.7B machine vision market = $14.6B. Our target: 0.5% share = $73M within high-speed applications."
     },
     {
       id: "niche", 
-      title: "Event-based niche under-served",
-      content: "Most incumbents are frame-based; event sensors (Sony/Prophesee) create new performance curve for high-speed applications."
+      title: "Event-based cameras are under-served",
+      content: "Most companies use traditional cameras; event cameras (Sony/Prophesee) offer breakthrough performance for high-speed applications."
     },
     {
       id: "edge",
-      title: "Edge AI & cloud MLOps mature", 
-      content: "Jetson-class edge + modern CI/CD for models reduce integration time from months to weeks."
+      title: "Modern AI technology is ready", 
+      content: "New technology cuts setup time from months to weeks, making deployment much faster."
     },
     {
       id: "first-mover",
@@ -158,7 +158,7 @@ const MarketSlide = () => {
           <Card className="p-4 bg-card border border-primary/20 rounded-xl shadow-lg">
             <h4 className="text-lg font-bold mb-3 text-white flex items-center gap-2">
               <Target className="w-5 h-5 text-primary" />
-              SAM / SOM Calculation
+              Market Size Breakdown
             </h4>
             
             {/* SAM Calculation */}

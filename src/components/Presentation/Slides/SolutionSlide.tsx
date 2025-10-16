@@ -29,15 +29,15 @@ const SolutionSlide = () => {
       title: "Particle Size Monitoring",
       description: "Real-time distribution analysis for perfect recipe mix composition",
       industries: "Milled Products • Plastics • Powders",
-      metric: "Real-time closed-loop",
+      metric: "Instant feedback",
       color: "bg-card/80 border-border"
     },
     {
       icon: <Shield className="w-10 h-10 text-accent" />,
       title: "Predictive Maintenance",
-      description: "Real-time motion analysis with microsecond precision",
+      description: "Motion analysis with microsecond precision for equipment health monitoring",
       industries: "Equipment Health • Kinematic Monitoring",
-      metric: "Microsecond precision",
+      metric: "1000x faster response",
       color: "bg-card/80 border-border"
     }
   ];
@@ -58,10 +58,10 @@ const SolutionSlide = () => {
           PROVEN INDUSTRIAL APPLICATIONS
         </Badge>
         <h1 className="text-4xl md:text-5xl font-bold text-white tracking-[-0.01em]">
-          <span className="text-primary">Full-Stack Integration SaaS</span> with Event Sensors
+          <span className="text-primary">Complete Software Solution</span> with Event Cameras
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          We partner with Prophesee/Sony sensors, layer edge + cloud software, deliver turnkey SaaS with ROI tracking. KAUST-validated performance.
+          We combine specialized cameras with smart software to deliver a complete system with ROI tracking. Proven in real factories.
         </p>
       </div>
 
@@ -233,7 +233,7 @@ const SolutionSlide = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-white">Microsecond response</span>
+                    <span className="text-white">1000x faster response</span>
                   </div>
                 </div>
                 
