@@ -13,19 +13,16 @@ import AskSlideV2 from "@/components/Presentation/Slides/AskSlideV2";
 // Compact deck: omit Investor ROI slide for brevity
 
 const Index = () => {
-  // Compact 10-slide deck optimized for pre-seed investors
   const slides = [
-    { id: 'title', title: 'LuminarX AI', component: TitleSlide },
+    { id: 'title', title: 'Lumina Tech', component: TitleSlide },
     { id: 'problem', title: 'The Problem', component: ProblemSlide },
-    { id: 'solution', title: 'Industrial Proven', component: SolutionSlide },
     { id: 'cost-of-frame', title: 'Cost of Frame Vision', component: CostOfFrameVisionSlide },
+    { id: 'solution', title: 'Industrial Proven', component: SolutionSlide },
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
     { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
-    { id: 'go-to-market', title: 'Go-to-Market', component: GoToMarketSlide },
     { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
-    { id: 'roadmap', title: 'Roadmap', component: RoadmapSlideV2 },
     { id: 'team', title: 'Team', component: TeamSlide },
-    { id: 'ask', title: 'The Ask', component: AskSlideV2 }
+    // { id: 'ask', title: 'The Ask', component: AskSlideV2 } // Commented out for FAPS FAU pitch
   ];
 
   return (

@@ -15,17 +15,15 @@ import { CustomCursor } from "@/components/ui/custom-cursor";
 // Compact Pre-Seed Deck with Premium Design
 const CompactDeck = () => {
   const slides = [
-    { id: 'title', title: 'LuminarX AI', component: TitleSlide },
+    { id: 'title', title: 'Lumina Tech', component: TitleSlide },
     { id: 'problem', title: 'The Problem', component: ProblemSlide },
+    { id: 'cost-of-frame', title: 'Cost of Frame Vision', component: CostOfFrameVisionSlide },
     { id: 'solution', title: 'Our Solution', component: SolutionSlide },
-    { id: 'cost', title: 'Cost Reality Check', component: CostOfFrameVisionSlide },
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
     { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
-    { id: 'gtm', title: 'Go-To-Market', component: GoToMarketSlide },
     { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
-    { id: 'roadmap', title: 'Timeline & Milestones', component: RoadmapSlide },
     { id: 'team', title: 'Team', component: TeamSlide },
-    { id: 'ask', title: 'The Ask', component: AskSlideV2 }
+    // { id: 'ask', title: 'The Ask', component: AskSlideV2 } // Commented out for FAPS FAU pitch
   ];
 
   return (

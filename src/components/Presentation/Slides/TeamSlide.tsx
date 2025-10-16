@@ -3,6 +3,10 @@ import { Badge } from "@/components/ui/badge";
 import { Users, MapPin, GraduationCap, Briefcase, Target, Star } from "lucide-react";
 import LogoStrip from "@/components/ui/logo-strip";
 import { motion } from "framer-motion";
+import { TUMAIBadge } from "@/components/ui/tum-ai-badge";
+import alyPhoto from "@/assets/team/aly.png";
+import mohamedPhoto from "@/assets/team/mohamed.png";
+import peterPhoto from "@/assets/team/peter.png";
 
 const TeamSlide = () => {
   const foundingTeam = [
@@ -150,11 +154,14 @@ const TeamSlide = () => {
           TEAM & HIRING STRATEGY
         </Badge>
         <h1 className="text-4xl md:text-5xl font-bold text-white tracking-[-0.01em]">
-          <span className="text-primary">Dual-Base Strategy:</span> German GmbH HQ + Egypt R&D Hub
+          <span className="text-primary">World-Class Team:</span> German HQ + Egypt R&D Hub
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          German GmbH HQ (for trust, sales, IP) + Egypt R&D hub (for cost advantage, scale)
+          PhD-level founders • Backed by TUM AI • Strategic dual-base advantage
         </p>
+        <div className="text-sm text-muted-foreground">
+          www.lumina-tech.ai
+        </div>
       </div>
 
       <div className="relative z-10 flex-1 grid grid-cols-2 gap-6">
@@ -167,8 +174,16 @@ const TeamSlide = () => {
               {foundingTeam.map((founder, index) => (
                 <Card key={index} className="p-6 bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
                   <div className="flex items-start gap-4">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-primary to-primary-glow flex items-center justify-center ring-1 ring-primary/30 shadow-lg">
-                      <Users className="w-8 h-8 text-white" />
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-r from-primary to-primary-glow flex items-center justify-center ring-2 ring-primary/30 shadow-lg overflow-hidden">
+                      {founder.name === "Mohamed El Sherbini" && (
+                        <img src={mohamedPhoto} alt="Mohamed El Sherbini" className="w-full h-full object-cover" />
+                      )}
+                      {founder.name === "Aly Barakat" && (
+                        <img src={alyPhoto} alt="Aly Barakat" className="w-full h-full object-cover" />
+                      )}
+                      {founder.name === "Peter Essam" && (
+                        <img src={peterPhoto} alt="Peter Essam" className="w-full h-full object-cover" />
+                      )}
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
@@ -366,6 +381,32 @@ const TeamSlide = () => {
               ))}
             </div>
           </div>
+
+          {/* TUM AI Incubator Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.2, duration: 0.6 }}
+          >
+            <Card className="p-6 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
+              <div className="space-y-4">
+                <TUMAIBadge variant="prominent" />
+                <div className="text-sm text-muted-foreground space-y-2">
+                  <p><strong className="text-foreground">Benefits:</strong></p>
+                  <ul className="space-y-1 ml-4">
+                    <li>• Workspace at TUM AI headquarters in Munich</li>
+                    <li>• Weekly operator sessions with experienced founders</li>
+                    <li>• Direct access to VC network and warm introductions</li>
+                    <li>• €100K+ in cloud credits and tools</li>
+                    <li>• Access to Munich innovation ecosystem</li>
+                  </ul>
+                </div>
+                <div className="text-xs text-muted-foreground pt-2 border-t border-border/30">
+                  TUM AI is Germany's leading student-run AI incubator, backed by Technical University of Munich
+                </div>
+              </div>
+            </Card>
+          </motion.div>
 
           {/* Hiring Timeline Summary */}
           <motion.div

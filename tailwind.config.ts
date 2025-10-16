@@ -6,10 +6,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        // Professional pitch deck font pairing (following expert recommendations)
-        'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'], // Body text
-        'heading': ['Montserrat', 'Inter', '-apple-system', 'system-ui', 'sans-serif'], // Headlines & titles  
-        'display': ['Montserrat', 'Inter', '-apple-system', 'system-ui', 'sans-serif'], // Large display text
+        // Lumina Tech brand font pairing (Bai Jamjuree from brand guidelines)
+        'sans': ['Bai Jamjuree', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'], // Body text
+        'heading': ['Bai Jamjuree', 'Inter', '-apple-system', 'system-ui', 'sans-serif'], // Headlines & titles  
+        'display': ['Bai Jamjuree', 'Inter', '-apple-system', 'system-ui', 'sans-serif'], // Large display text
       },
       fontSize: {
         // Pitch deck typography hierarchy (following 32-44pt headlines, 18-28pt body rule)
