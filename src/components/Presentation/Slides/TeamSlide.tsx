@@ -254,55 +254,55 @@ const TeamSlide = () => {
         {/* Strategic Locations */}
         <div className="max-w-5xl mx-auto w-full">
           <h3 className="text-3xl font-bold mb-6 text-center">Our Strategic Locations</h3>
-          <div className="grid grid-cols-2 gap-6">{egyptAdvantages.map((advantage, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
-                >
-                  <Card className="p-6 text-center hover:scale-105 transition-all duration-300 h-full">
-                    <div className="text-primary mb-4 flex justify-center">
-                      {advantage.icon}
-                    </div>
-                    <h4 className="font-bold text-lg mb-3">{advantage.title}</h4>
-                    <p className="text-sm text-muted-foreground mb-3">{advantage.description}</p>
-                    <Badge variant="outline" className="text-sm">
-                      {advantage.metric}
-                    </Badge>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
+          <div className="grid grid-cols-2 gap-6">
+            {egyptAdvantages.map((advantage, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
+              >
+                <Card className="p-6 text-center hover:scale-105 transition-all duration-300 h-full">
+                  <div className="text-primary mb-4 flex justify-center">
+                    {advantage.icon}
+                  </div>
+                  <h4 className="font-bold text-lg mb-3">{advantage.title}</h4>
+                  <p className="text-sm text-muted-foreground mb-3">{advantage.description}</p>
+                  <Badge variant="outline" className="text-sm">
+                    {advantage.metric}
+                  </Badge>
+                </Card>
+              </motion.div>
+            ))}
           </div>
-
-          {/* TUM AI Incubator Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 0.6 }}
-            className="max-w-5xl mx-auto w-full"
-          >
-            <Card className="p-8 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
-              <div className="space-y-4">
-                <TUMAIBadge variant="prominent" />
-                <div className="text-sm text-muted-foreground space-y-2">
-                  <p><strong className="text-foreground">Benefits:</strong></p>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Workspace at TUM AI headquarters in Munich</li>
-                    <li>• Weekly sessions with experienced founders</li>
-                    <li>• Direct access to investor network and introductions</li>
-                    <li>• €100K+ in cloud credits and tools</li>
-                    <li>• Access to Munich innovation ecosystem</li>
-                  </ul>
-                </div>
-                <div className="text-xs text-muted-foreground pt-2 border-t border-border/30">
-                  TUM AI is Germany's leading student-run AI incubator, backed by Technical University of Munich
-                </div>
-              </div>
-            </Card>
-          </motion.div>
         </div>
+
+        {/* TUM AI Incubator Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2, duration: 0.6 }}
+          className="max-w-5xl mx-auto w-full"
+        >
+          <Card className="p-8 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
+            <div className="space-y-4">
+              <TUMAIBadge variant="prominent" />
+              <div className="text-sm text-muted-foreground space-y-2">
+                <p><strong className="text-foreground">Benefits:</strong></p>
+                <ul className="space-y-1 ml-4">
+                  <li>• Workspace at TUM AI headquarters in Munich</li>
+                  <li>• Weekly sessions with experienced founders</li>
+                  <li>• Direct access to investor network and introductions</li>
+                  <li>• €100K+ in cloud credits and tools</li>
+                  <li>• Access to Munich innovation ecosystem</li>
+                </ul>
+              </div>
+              <div className="text-xs text-muted-foreground pt-2 border-t border-border/30">
+                TUM AI is Germany's leading student-run AI incubator, backed by Technical University of Munich
+              </div>
+            </div>
+          </Card>
+        </motion.div>
       </div>
     </div>
   );
