@@ -55,19 +55,19 @@ const SolutionSlide = () => {
       {/* Header */}
       <div className="relative z-10 text-center space-y-4 mb-6 ml-24">
         <h1 className="text-4xl md:text-5xl font-bold text-white tracking-[-0.01em]">
-          <span className="text-primary">Complete Software Solution</span> with Event Cameras
+          <span className="text-primary">Proven Applications</span> in Industry
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          We combine specialized cameras with smart software to deliver a complete system with ROI tracking. Proven in real factories.
+          Real-world deployments showing the power of event-based vision technology
         </p>
       </div>
 
-      {/* Industrial Video Demos - 2x2 Grid */}
-      <div className="relative z-10 max-w-6xl mx-auto mb-8 mt-16 scale-125">
-        <div className="grid grid-cols-2 gap-12">
+      {/* Industrial Video Demos - 3 Videos in Row */}
+      <div className="relative z-10 max-w-7xl mx-auto mb-8 mt-16">
+        <div className="grid grid-cols-3 gap-8">
           {/* Event-Based Demo 1 */}
-          <Card className="p-3 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-xl shadow-lg">
-            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-2">
+          <Card className="p-4 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-xl shadow-lg">
+            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-3">
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/AuUijt8D2tU?autoplay=1&mute=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=AuUijt8D2tU"
@@ -77,18 +77,18 @@ const SolutionSlide = () => {
               />
             </div>
             <div className="text-center">
-              <h4 className="text-sm font-bold text-white mb-1">Cable Velocity and Slippage</h4>
-              <p className="text-xs text-muted mb-2">Real-time cable monitoring</p>
-              <div className="flex gap-1 justify-center">
-                <Badge variant="secondary" className="bg-primary text-white border-0 text-xs px-2 py-1">Real-time</Badge>
-                <Badge variant="secondary" className="bg-accent text-white border-0 text-xs px-2 py-1">High-speed</Badge>
+              <h4 className="text-base font-bold text-white mb-2">Cable Velocity and Slippage</h4>
+              <p className="text-sm text-muted mb-3">Real-time cable monitoring</p>
+              <div className="flex gap-2 justify-center">
+                <Badge variant="secondary" className="bg-primary text-white border-0 text-sm px-3 py-1">Real-time</Badge>
+                <Badge variant="secondary" className="bg-accent text-white border-0 text-sm px-3 py-1">High-speed</Badge>
               </div>
             </div>
           </Card>
 
           {/* Event-Based Demo 2 */}
-          <Card className="p-3 bg-card/80 backdrop-blur-sm border border-accent/20 rounded-xl shadow-lg">
-            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-2">
+          <Card className="p-4 bg-card/80 backdrop-blur-sm border border-accent/20 rounded-xl shadow-lg">
+            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-3">
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/5plQO__oeL4?start=25&autoplay=1&mute=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=5plQO__oeL4"
@@ -98,18 +98,18 @@ const SolutionSlide = () => {
               />
             </div>
             <div className="text-center">
-              <h4 className="text-sm font-bold text-white mb-1">HIGH-SPEED COUNTING</h4>
-              <p className="text-xs text-muted mb-2">1,000+ objects/second</p>
-              <div className="flex gap-1 justify-center">
-                <Badge variant="secondary" className="bg-accent text-white border-0 text-xs px-2 py-1">1K+ obj/s</Badge>
-                <Badge variant="secondary" className="bg-warning text-white border-0 text-xs px-2 py-1">Precision</Badge>
+              <h4 className="text-base font-bold text-white mb-2">HIGH-SPEED COUNTING</h4>
+              <p className="text-sm text-muted mb-3">1,000+ objects/second</p>
+              <div className="flex gap-2 justify-center">
+                <Badge variant="secondary" className="bg-accent text-white border-0 text-sm px-3 py-1">1K+ obj/s</Badge>
+                <Badge variant="secondary" className="bg-warning text-white border-0 text-sm px-3 py-1">Precision</Badge>
               </div>
             </div>
           </Card>
 
           {/* Event-Based Demo 3 */}
-          <Card className="p-3 bg-card/80 backdrop-blur-sm border border-warning/20 rounded-xl shadow-lg">
-            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-2">
+          <Card className="p-4 bg-card/80 backdrop-blur-sm border border-warning/20 rounded-xl shadow-lg">
+            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-3">
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/PbSVm4fix0c?start=5&autoplay=1&mute=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=PbSVm4fix0c"
@@ -119,32 +119,11 @@ const SolutionSlide = () => {
               />
             </div>
             <div className="text-center">
-              <h4 className="text-sm font-bold text-white mb-1">Particle Size Monitoring</h4>
-              <p className="text-xs text-muted mb-2">Real-time distribution analysis</p>
-              <div className="flex gap-1 justify-center">
-                <Badge variant="secondary" className="bg-warning text-white border-0 text-xs px-2 py-1">Real-time</Badge>
-                <Badge variant="secondary" className="bg-primary text-white border-0 text-xs px-2 py-1">μs latency</Badge>
-              </div>
-            </div>
-          </Card>
-
-          {/* Event-Based Demo 4 - New Video */}
-          <Card className="p-3 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-xl shadow-lg">
-            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-2">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/0wGBpgIrd9M?start=2442&autoplay=1&mute=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=0wGBpgIrd9M"
-                title="Event Camera Research"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-            <div className="text-center">
-              <h4 className="text-sm font-bold text-white mb-1">Event Vision Research</h4>
-              <p className="text-xs text-muted mb-2">Advanced applications</p>
-              <div className="flex gap-1 justify-center">
-                <Badge variant="secondary" className="bg-primary text-white border-0 text-xs px-2 py-1">Research</Badge>
-                <Badge variant="secondary" className="bg-accent text-white border-0 text-xs px-2 py-1">Innovation</Badge>
+              <h4 className="text-base font-bold text-white mb-2">Particle Size Monitoring</h4>
+              <p className="text-sm text-muted mb-3">Real-time distribution analysis</p>
+              <div className="flex gap-2 justify-center">
+                <Badge variant="secondary" className="bg-warning text-white border-0 text-sm px-3 py-1">Real-time</Badge>
+                <Badge variant="secondary" className="bg-primary text-white border-0 text-sm px-3 py-1">μs latency</Badge>
               </div>
             </div>
           </Card>
