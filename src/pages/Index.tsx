@@ -4,6 +4,7 @@ import AudienceEngagementSlide from "@/components/Presentation/Slides/AudienceEn
 import OpenChallengesSlide from "@/components/Presentation/Slides/OpenChallengesSlide";
 import EventCameraExplainerSlide from "@/components/Presentation/Slides/EventCameraExplainerSlide";
 import EventMathematicsSlide from "@/components/Presentation/Slides/EventMathematicsSlide";
+import EventVsRGBComparisonSlide from "@/components/Presentation/Slides/EventVsRGBComparisonSlide";
 import ProblemSlide from "@/components/Presentation/Slides/ProblemSlide";
 import CostOfFrameVisionSlide from "@/components/Presentation/Slides/CostOfFrameVisionSlide";
 import SolutionSlide from "@/components/Presentation/Slides/SolutionSlide";
@@ -22,6 +23,7 @@ const Index = () => {
     { id: 'open-challenges', title: 'Open Challenges', component: OpenChallengesSlide },
     { id: 'event-explainer', title: 'What Are Event Cameras', component: EventCameraExplainerSlide },
     { id: 'event-mathematics', title: 'Mathematical Model', component: EventMathematicsSlide },
+    { id: 'event-vs-rgb', title: 'Event vs RGB', component: EventVsRGBComparisonSlide },
     { id: 'problem', title: 'The Problem', component: ProblemSlide },
     // { id: 'cost-of-frame', title: 'Cost of Frame Vision', component: CostOfFrameVisionSlide },
     { id: 'solution', title: 'Industrial Proven', component: SolutionSlide },
