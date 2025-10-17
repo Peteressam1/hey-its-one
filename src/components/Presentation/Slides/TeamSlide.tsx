@@ -47,6 +47,7 @@ const TeamSlide = () => {
       ],
       photo: peterPhoto,
       logos: [
+        { alt: "Uni Bremen", src: "/logos/uni-bremen-white.png", size: "h-6" },
         { alt: "SAP", src: "/logos/sap-white.png", size: "h-5" },
         { alt: "BestSecret", src: "/logos/bestsecret.gif", size: "h-8" },
       ]
