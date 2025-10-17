@@ -70,9 +70,6 @@ const MarketSlide = () => {
       </div>
       {/* Header */}
       <div className="relative z-10 text-center space-y-3 mb-6">
-        <Badge variant="outline" className="text-sm px-4 py-2 border-primary text-primary bg-transparent">
-          BIG & GROWING MARKET
-        </Badge>
         <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
           <span className="text-primary">$41.7B Market</span> by 2030
         </h1>

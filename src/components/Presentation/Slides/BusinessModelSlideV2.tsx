@@ -121,9 +121,6 @@ const BusinessModelSlideV2 = () => {
       
       {/* Header */}
       <div className="relative z-10 text-center space-y-4 mb-8">
-        <Badge variant="outline" className="text-sm px-4 py-2 border-primary text-primary bg-transparent">
-          BUSINESS MODEL
-        </Badge>
         <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
           <span className="text-gradient text-glow-animate">Proven SaaS</span> Economics
         </h1>

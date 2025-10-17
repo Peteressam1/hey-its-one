@@ -119,9 +119,6 @@ const CompetitionSlide = () => {
       
       {/* Header */}
       <div className="relative z-10 text-center space-y-4 mb-8">
-        <Badge variant="outline" className="text-sm px-4 py-2 border-primary text-primary bg-transparent">
-          COMPETITIVE LANDSCAPE
-        </Badge>
         <h1 className="text-4xl md:text-5xl font-bold text-white tracking-[-0.01em]">
           <span className="text-primary">Partners, Not Competitors:</span> We Layer SaaS on Hardware
         </h1>

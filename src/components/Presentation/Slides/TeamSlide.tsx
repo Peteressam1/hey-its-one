@@ -56,9 +56,6 @@ const TeamSlide = () => {
 
       {/* Header */}
       <div className="relative z-10 text-center space-y-4 mb-12">
-        <Badge variant="outline" className="text-sm px-4 py-2 border-primary text-primary bg-transparent">
-          ABOUT US
-        </Badge>
         <h1 className="text-5xl md:text-6xl font-bold text-white tracking-[-0.01em]">
           <span className="text-primary">Meet the Founding Team</span>
         </h1>

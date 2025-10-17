@@ -44,18 +44,6 @@ const EventVsRGBComparisonSlide = () => {
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl">
-        {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mb-8"
-        >
-          <Badge variant="outline" className="text-sm px-4 py-2 bg-card/50 backdrop-blur-sm">
-            REAL-WORLD DEMONSTRATION
-          </Badge>
-        </motion.div>
-
         {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
