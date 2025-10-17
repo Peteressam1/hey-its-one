@@ -18,7 +18,8 @@ const TeamSlide = () => {
       photo: mohamedPhoto,
       logos: [
         { alt: "FAU", src: "/logos/fau-white.png", size: "h-6" },
-        { alt: "DLR", src: "/logos/dlr.png", size: "h-10" },
+        { alt: "DLR", src: "/logos/dlr.png", size: "h-8" },
+        { alt: "BMW", src: "/logos/bmw-white-new.png", size: "h-7" },
         { alt: "NASA", src: "/logos/nasa-white.png", size: "h-8" },
       ]
     },
@@ -113,7 +114,6 @@ const TeamSlide = () => {
                       src={logo.src}
                       alt={logo.alt}
                       className={`${logo.size || 'h-6'} w-auto object-contain`}
-                      style={{ filter: 'brightness(0) invert(1)' }}
                     />
                   ))}
                 </div>
