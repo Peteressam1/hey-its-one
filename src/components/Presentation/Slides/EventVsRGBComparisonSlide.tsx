@@ -90,17 +90,13 @@ const EventVsRGBComparisonSlide = () => {
             
             {/* Video Container */}
             <div className="relative aspect-video rounded-3xl overflow-hidden bg-black">
-              <video
-                className="w-full h-full object-contain"
-                controls
-                autoPlay
-                loop
-                muted
-                playsInline
-              >
-                <source src="/lovable-uploads/8b333b2b-5ac1-4248-8c5d-43dfce05c0f7.png" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/0wGBpgIrd9M?start=2440&mute=1&autoplay=1&loop=1&playlist=0wGBpgIrd9M"
+                title="Boeing Manufacturing - Event Camera vs RGB Comparison"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
 
             <div className="mt-4 p-4 bg-primary/10 rounded-lg border border-primary/20">
