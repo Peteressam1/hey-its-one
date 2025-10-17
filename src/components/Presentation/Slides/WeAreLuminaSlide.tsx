@@ -46,7 +46,7 @@ const WeAreLuminaSlide = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-2xl text-muted-foreground text-center max-w-3xl"
         >
-          Making vision systems faster, adaptive, and explainable
+          Making vision systems faster, adaptive, and explainable in industrial automation
         </motion.p>
       </div>
     </div>
