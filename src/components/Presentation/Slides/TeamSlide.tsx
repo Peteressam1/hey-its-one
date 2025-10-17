@@ -17,9 +17,9 @@ const TeamSlide = () => {
       ],
       photo: mohamedPhoto,
       logos: [
-        { alt: "DLR", src: "/logos/dlr.png" },
-        { alt: "NASA", src: "/logos/nasa.png" },
-        { alt: "BMW", src: "/logos/bmw.webp" },
+        { alt: "DLR", src: "/logos/dlr.png", size: "h-10" },
+        { alt: "NASA", src: "/logos/nasa.png", size: "h-6" },
+        { alt: "BMW", src: "/logos/bmw-white.png", size: "h-6" },
       ]
     },
     {
@@ -31,9 +31,9 @@ const TeamSlide = () => {
       ],
       photo: alyPhoto,
       logos: [
-        { alt: "TUM", src: "/logos/tum.svg" },
-        { alt: "Rohde & Schwarz", src: "/logos/rohde-schwarz.jpeg" },
-        { alt: "Mouser", src: "/logos/mouser.svg" },
+        { alt: "TUM", src: "/logos/tum.svg", size: "h-6" },
+        { alt: "Rohde & Schwarz", src: "/logos/rohde-schwarz.jpeg", size: "h-5" },
+        { alt: "Mouser", src: "/logos/mouser.svg", size: "h-5" },
       ]
     },
     {
@@ -45,8 +45,8 @@ const TeamSlide = () => {
       ],
       photo: peterPhoto,
       logos: [
-        { alt: "SAP", src: "/logos/sap.png" },
-        { alt: "BestSecret", src: "/logos/bestsecret.gif" },
+        { alt: "SAP", src: "/logos/sap.png", size: "h-5" },
+        { alt: "BestSecret", src: "/logos/bestsecret.gif", size: "h-8" },
       ]
     }
   ];
@@ -104,13 +104,17 @@ const TeamSlide = () => {
 
               {/* Company Logos */}
               <div className="mt-auto pt-6 border-t border-border/30">
-                <LogoStrip
-                  logos={founder.logos}
-                  maxHeight={32}
-                  size="sm"
-                  grayscale={false}
-                  rowClassName="gap-3 justify-center"
-                />
+                <div className="flex items-center justify-center gap-4 flex-wrap">
+                  {founder.logos.map((logo, idx) => (
+                    <img
+                      key={idx}
+                      src={logo.src}
+                      alt={logo.alt}
+                      className={`${logo.size || 'h-6'} w-auto object-contain`}
+                      style={{ filter: 'brightness(0) invert(1)' }}
+                    />
+                  ))}
+                </div>
               </div>
             </Card>
           </motion.div>
