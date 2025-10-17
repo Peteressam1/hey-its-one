@@ -60,10 +60,10 @@ const SolutionSlide = () => {
       </div>
 
       {/* Industrial Video Demos - 3 Videos in Row */}
-      <div className="relative z-10 max-w-7xl mx-auto mb-8 mt-16">
+      <div className="relative z-10 max-w-7xl mx-auto mb-8 mt-16 scale-110">
         <div className="grid grid-cols-3 gap-8">
           {/* Event-Based Demo 1 */}
-          <Card className="p-4 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-xl shadow-lg">
+          <Card className="p-5 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-xl shadow-lg">
             <div className="aspect-[16/9] rounded-lg overflow-hidden mb-3">
               <iframe
                 className="w-full h-full"
@@ -84,7 +84,7 @@ const SolutionSlide = () => {
           </Card>
 
           {/* Event-Based Demo 2 */}
-          <Card className="p-4 bg-card/80 backdrop-blur-sm border border-accent/20 rounded-xl shadow-lg">
+          <Card className="p-5 bg-card/80 backdrop-blur-sm border border-accent/20 rounded-xl shadow-lg">
             <div className="aspect-[16/9] rounded-lg overflow-hidden mb-3">
               <iframe
                 className="w-full h-full"
@@ -105,7 +105,7 @@ const SolutionSlide = () => {
           </Card>
 
           {/* Event-Based Demo 3 */}
-          <Card className="p-4 bg-card/80 backdrop-blur-sm border border-warning/20 rounded-xl shadow-lg">
+          <Card className="p-5 bg-card/80 backdrop-blur-sm border border-warning/20 rounded-xl shadow-lg">
             <div className="aspect-[16/9] rounded-lg overflow-hidden mb-3">
               <iframe
                 className="w-full h-full"
