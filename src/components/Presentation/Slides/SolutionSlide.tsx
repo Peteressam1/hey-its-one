@@ -65,11 +65,11 @@ const SolutionSlide = () => {
         </p>
       </div>
 
-      {/* Industrial Video Demos */}
-      <div className="relative z-10 max-w-full mx-auto mb-8 px-16 mt-8">
-        <div className="flex justify-between items-start gap-16">
+      {/* Industrial Video Demos - 2x2 Grid */}
+      <div className="relative z-10 max-w-6xl mx-auto mb-8 mt-8">
+        <div className="grid grid-cols-2 gap-8">
           {/* Event-Based Demo 1 */}
-          <Card className="p-3 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-xl shadow-lg scale-125 mx-4">
+          <Card className="p-3 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-xl shadow-lg">
             <div className="aspect-[16/9] rounded-lg overflow-hidden mb-2">
               <iframe
                 className="w-full h-full"
@@ -90,7 +90,7 @@ const SolutionSlide = () => {
           </Card>
 
           {/* Event-Based Demo 2 */}
-          <Card className="p-3 bg-card/80 backdrop-blur-sm border border-accent/20 rounded-xl shadow-lg scale-125 mx-4">
+          <Card className="p-3 bg-card/80 backdrop-blur-sm border border-accent/20 rounded-xl shadow-lg">
             <div className="aspect-[16/9] rounded-lg overflow-hidden mb-2">
               <iframe
                 className="w-full h-full"
@@ -111,7 +111,7 @@ const SolutionSlide = () => {
           </Card>
 
           {/* Event-Based Demo 3 */}
-          <Card className="p-3 bg-card/80 backdrop-blur-sm border border-warning/20 rounded-xl shadow-lg scale-125 mx-4">
+          <Card className="p-3 bg-card/80 backdrop-blur-sm border border-warning/20 rounded-xl shadow-lg">
             <div className="aspect-[16/9] rounded-lg overflow-hidden mb-2">
               <iframe
                 className="w-full h-full"
@@ -127,6 +127,27 @@ const SolutionSlide = () => {
               <div className="flex gap-1 justify-center">
                 <Badge variant="secondary" className="bg-warning text-white border-0 text-xs px-2 py-1">Real-time</Badge>
                 <Badge variant="secondary" className="bg-primary text-white border-0 text-xs px-2 py-1">μs latency</Badge>
+              </div>
+            </div>
+          </Card>
+
+          {/* Event-Based Demo 4 - New Video */}
+          <Card className="p-3 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-xl shadow-lg">
+            <div className="aspect-[16/9] rounded-lg overflow-hidden mb-2">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/0wGBpgIrd9M?start=2442&autoplay=1&mute=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=0wGBpgIrd9M"
+                title="Event Camera Research"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="text-center">
+              <h4 className="text-sm font-bold text-white mb-1">Event Vision Research</h4>
+              <p className="text-xs text-muted mb-2">Advanced applications</p>
+              <div className="flex gap-1 justify-center">
+                <Badge variant="secondary" className="bg-primary text-white border-0 text-xs px-2 py-1">Research</Badge>
+                <Badge variant="secondary" className="bg-accent text-white border-0 text-xs px-2 py-1">Innovation</Badge>
               </div>
             </div>
           </Card>
@@ -156,11 +177,11 @@ const SolutionSlide = () => {
         </Dialog>
       </div>
 
-      {/* Bottom Section: Other Applications + Comparison */}
-      <div className="relative z-10 flex-1 grid grid-cols-2 gap-6 min-h-0">
-        {/* Left: Other Market Applications */}
+      {/* Bottom Section: Other Applications */}
+      <div className="relative z-10 flex-1 max-w-4xl mx-auto">
+        {/* Other Market Applications */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-white">Beyond Manufacturing</h2>
+          <h2 className="text-2xl font-bold text-white text-center">Beyond Manufacturing</h2>
           
           {/* Other Industries */}
           <Card className="p-4 bg-card/80 backdrop-blur-sm border border-accent/20 rounded-xl shadow-lg">
@@ -181,83 +202,6 @@ const SolutionSlide = () => {
               <div className="p-3 bg-accent/10 rounded-lg text-accent font-medium">
                 <div className="text-base mb-1">🚗 Automotive</div>
                 <div className="text-xs text-muted">ADAS & Robotics</div>
-              </div>
-            </div>
-          </Card>
-
-        </div>
-
-        {/* Right: Simple Business Comparison */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-white">RGB vs Event Vision</h2>
-          
-          {/* Simple Comparison */}
-          <Card className="p-4 bg-card/80 backdrop-blur-sm border border-border rounded-xl shadow-lg">
-            <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div className="text-center">
-                  <h4 className="font-bold text-white mb-3">Traditional RGB</h4>
-                </div>
-                <div className="text-center">
-                  <h4 className="font-bold text-primary mb-3">Event Vision</h4>
-                </div>
-              </div>
-              
-              <div className="space-y-3 text-sm">
-                <div className="grid grid-cols-2 gap-4 py-2 border-b border-border/30">
-                  <div className="flex items-center gap-2">
-                    <X className="w-4 h-4 text-destructive" />
-                    <span className="text-muted">High cloud costs</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-white">Pilot validated: Mid-size pharma 62% ROI</span>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4 py-2 border-b border-border/30">
-                  <div className="flex items-center gap-2">
-                    <X className="w-4 h-4 text-destructive" />
-                    <span className="text-muted">Motion blur issues</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-white">No motion blur</span>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4 py-2 border-b border-border/30">
-                  <div className="flex items-center gap-2">
-                    <X className="w-4 h-4 text-destructive" />
-                    <span className="text-muted">10ms+ latency</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-white">1000x faster response</span>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4 py-2 border-b border-border/30">
-                  <div className="flex items-center gap-2">
-                    <X className="w-4 h-4 text-destructive" />
-                    <span className="text-muted">Complex lighting</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-white">Works in any light</span>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4 py-2">
-                  <div className="flex items-center gap-2">
-                    <X className="w-4 h-4 text-destructive" />
-                    <span className="text-muted">High power usage</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-white">10x lower power</span>
-                  </div>
-                </div>
               </div>
             </div>
           </Card>

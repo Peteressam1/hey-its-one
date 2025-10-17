@@ -19,7 +19,7 @@ const Index = () => {
     { id: 'engagement', title: 'Audience Check', component: AudienceEngagementSlide },
     { id: 'event-explainer', title: 'What Are Event Cameras', component: EventCameraExplainerSlide },
     { id: 'problem', title: 'The Problem', component: ProblemSlide },
-    { id: 'cost-of-frame', title: 'Cost of Frame Vision', component: CostOfFrameVisionSlide },
+    // { id: 'cost-of-frame', title: 'Cost of Frame Vision', component: CostOfFrameVisionSlide },
     { id: 'solution', title: 'Industrial Proven', component: SolutionSlide },
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
     { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
