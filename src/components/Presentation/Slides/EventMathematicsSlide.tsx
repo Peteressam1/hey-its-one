@@ -26,7 +26,7 @@ const EventMathematicsSlide = () => {
           className="mb-8"
         >
           <Badge variant="outline" className="text-sm px-4 py-2 bg-card/50 backdrop-blur-sm">
-            THE MATHEMATICS
+            MATHEMATICAL FOUNDATION
           </Badge>
         </motion.div>
 
@@ -37,7 +37,7 @@ const EventMathematicsSlide = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent"
         >
-          Event-Based Vision
+          Mathematical Model
         </motion.h1>
 
         {/* Subtitle */}
@@ -47,7 +47,7 @@ const EventMathematicsSlide = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-2xl text-muted-foreground mb-12 max-w-4xl"
         >
-          Asynchronous pixel-level change detection
+          Event generation through logarithmic intensity change detection
         </motion.p>
 
         {/* Content Grid */}

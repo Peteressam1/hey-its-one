@@ -1,18 +1,40 @@
 import { motion } from "framer-motion";
-import { Zap, Database, Camera, Sun } from "lucide-react";
-import eventCameraDiagram from "@/assets/event-camera-diagram.jpg";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import { Clock, Zap, Eye, TrendingUp } from "lucide-react";
+import eventDiagram from "@/assets/event-camera-diagram.jpg";
 
 const EventCameraExplainerSlide = () => {
   const advantages = [
-    { icon: Zap, title: "Low Latency", value: "~1 μs", description: "1000× faster than standard cameras" },
-    { icon: Database, title: "Low Bandwidth", value: "100× less", description: "Sparse events vs full frames" },
-    { icon: Camera, title: "No Motion Blur", value: "Async", description: "Each pixel independent" },
-    { icon: Sun, title: "High Dynamic Range", value: ">120 dB", description: "Works in any lighting" },
+    {
+      icon: Clock,
+      title: "Ultra Low Latency",
+      value: "~1 μs",
+      description: "Microsecond response time"
+    },
+    {
+      icon: Zap,
+      title: "Low Bandwidth",
+      value: "90% less",
+      description: "Only motion data transmitted"
+    },
+    {
+      icon: Eye,
+      title: "No Motion Blur",
+      value: "Perfect clarity",
+      description: "Independent pixel triggering"
+    },
+    {
+      icon: TrendingUp,
+      title: "High Dynamic Range",
+      value: "120 dB",
+      description: "Superior light sensitivity"
+    }
   ];
 
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center px-8 py-12 bg-background relative">
-      {/* Unified Animated Background */}
+    <div className="w-full min-h-screen flex flex-col justify-center items-center px-8 py-12 bg-background relative overflow-hidden">
+      {/* Animated Background */}
       <div className="animated-bg">
         <div className="floating-orb orb-primary" />
         <div className="floating-orb orb-accent" />
@@ -21,81 +43,140 @@ const EventCameraExplainerSlide = () => {
       <div className="geometric-pattern" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto">
-        {/* Header */}
+      <div className="relative z-10 w-full max-w-7xl">
+        {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="mb-8"
         >
-          <div className="inline-block px-4 py-2 border border-primary/30 rounded-full text-sm text-primary mb-4">
-            WHAT ARE EVENT CAMERAS?
-          </div>
-          <h1 className="text-5xl font-bold text-gradient mb-4">
-            A camera that measures only motion in the scene
-          </h1>
-          <p className="text-xl text-muted-foreground">
-            Unlike standard cameras that capture frames, event cameras capture <span className="text-primary">changes</span>
-          </p>
+          <Badge variant="outline" className="text-sm px-4 py-2 bg-card/50 backdrop-blur-sm">
+            TECHNOLOGY FOUNDATION
+          </Badge>
         </motion.div>
 
-        {/* Visual Comparison */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-          className="mb-12 p-6 bg-card/80 backdrop-blur-sm border border-border rounded-lg"
+        {/* Title */}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent"
         >
-          <img 
-            src={eventCameraDiagram} 
-            alt="Event Camera Diagram" 
-            className="w-full h-auto rounded-lg"
-          />
-          <div className="mt-4 text-center">
-            <code className="text-sm text-muted-foreground">
-              log I(x,y,t+Δt) - log I(x,y,t) = ±C
-            </code>
-            <p className="text-xs text-muted-foreground mt-2">
-              When brightness change exceeds threshold C, pixel sends an event with (x, y, timestamp, polarity)
-            </p>
-          </div>
-        </motion.div>
+          What Are Event Cameras?
+        </motion.h1>
 
-        {/* Key Advantages Grid */}
+        {/* Subtitle */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-2xl text-muted-foreground mb-12 max-w-4xl"
+        >
+          Bio-inspired sensors that measure only motion in the scene
+        </motion.p>
+
+        {/* Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          {/* Key Advantages */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 h-full">
+              <h3 className="text-2xl font-bold text-foreground mb-6">
+                Key Advantages
+              </h3>
+              
+              <div className="space-y-6">
+                {advantages.map((advantage, index) => {
+                  const Icon = advantage.icon;
+                  return (
+                    <motion.div
+                      key={advantage.title}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
+                      className="flex items-start gap-4 p-4 rounded-lg bg-background/50 hover:bg-background/80 transition-all"
+                    >
+                      <div className="p-3 rounded-lg bg-primary/10 border border-primary/20">
+                        <Icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-baseline justify-between mb-1">
+                          <h4 className="font-bold text-foreground">{advantage.title}</h4>
+                          <span className="text-primary font-mono font-bold text-sm">{advantage.value}</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{advantage.description}</p>
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </Card>
+          </motion.div>
+
+          {/* Visual Comparison */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 h-full">
+              <h3 className="text-2xl font-bold text-foreground mb-6">
+                How It Works
+              </h3>
+              
+              {/* Event Camera Diagram */}
+              <div className="rounded-lg overflow-hidden bg-background/80 p-4 mb-6">
+                <img
+                  src={eventDiagram}
+                  alt="Event camera operation diagram"
+                  className="w-full h-auto rounded"
+                />
+              </div>
+
+              {/* Key Insight */}
+              <div className="space-y-3">
+                <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
+                  <p className="text-foreground font-medium">
+                    💡 Each pixel operates independently and asynchronously
+                  </p>
+                </div>
+                <div className="p-4 bg-accent/10 rounded-lg border border-accent/20">
+                  <p className="text-foreground font-medium">
+                    ⚡ Only changes are transmitted, not full frames
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+        </div>
+
+        {/* References */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.6 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8"
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-8"
         >
-          {advantages.map((adv, index) => (
-            <motion.div
-              key={adv.title}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 + index * 0.1, duration: 0.5 }}
-              className="p-6 bg-card/80 backdrop-blur-sm border border-border rounded-lg hover:border-primary/40 transition-all duration-300 text-center"
-            >
-              <adv.icon className="w-8 h-8 text-primary mx-auto mb-3" />
-              <h3 className="text-lg font-semibold text-foreground mb-1">{adv.title}</h3>
-              <p className="text-2xl font-bold text-gradient mb-2">{adv.value}</p>
-              <p className="text-xs text-muted-foreground">{adv.description}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Footer Citation */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.5 }}
-          className="text-center text-xs text-muted-foreground"
-        >
-          <p>
-            [1] Lichtsteiner et al., IEEE Journal of Solid-State Circuits, 2008 • 
-            [2] Gallego et al., Event-based Vision: A Survey, T-PAMI, 2020
-          </p>
+          <Card className="p-6 bg-card/30 backdrop-blur-sm border-border/30">
+            <h4 className="text-sm font-bold text-muted-foreground mb-3 uppercase tracking-wider">
+              References
+            </h4>
+            <div className="space-y-2 text-sm text-muted-foreground">
+              <p>
+                [1] Lichtsteiner, Posch, Delbruck, <em>"A 128x128 120 dB 15μs Latency Asynchronous Temporal Contrast Vision Sensor"</em>, IEEE Journal of Solid-State Circuits, 2008
+              </p>
+              <p>
+                [2] Gallego et al., <em>"Event-based Vision: A Survey"</em>, T-PAMI, 2020
+              </p>
+              <p>
+                [3] Scaramuzza, <em>"Event Cameras: a New Way of Sensing"</em>, CVPR Workshop, 2025
+              </p>
+            </div>
+          </Card>
         </motion.div>
       </div>
     </div>
