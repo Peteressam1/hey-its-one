@@ -21,7 +21,7 @@ const MultimodalApproachSlide = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             <span className="text-primary">Multimodal Approach</span> Viability
           </h1>
         </motion.div>
@@ -31,9 +31,9 @@ const MultimodalApproachSlide = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="relative"
+          className="relative max-w-4xl mx-auto"
         >
-          <div className="bg-white p-8 rounded-2xl shadow-2xl">
+          <div className="bg-white p-4 rounded-xl shadow-2xl">
             <img
               src={multimodalImage}
               alt="Hybrid Asynchronous Object Detection showing events and images processing through async GNN and CNN"
@@ -47,9 +47,9 @@ const MultimodalApproachSlide = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="bg-card/80 backdrop-blur-sm p-8 rounded-2xl border border-primary/20 shadow-xl"
+          className="bg-card/80 backdrop-blur-sm p-6 rounded-xl border border-primary/20 shadow-xl max-w-5xl mx-auto"
         >
-          <p className="text-2xl md:text-3xl text-foreground leading-relaxed text-center">
+          <p className="text-xl md:text-2xl text-foreground leading-relaxed text-center">
             Results of the paper shows that using a{" "}
             <span className="text-primary font-bold">20 fps camera</span> plus an{" "}
             <span className="text-accent font-bold">event camera</span> can achieve the same latency as a{" "}
