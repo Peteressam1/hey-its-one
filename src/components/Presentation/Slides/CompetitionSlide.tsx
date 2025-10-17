@@ -99,14 +99,6 @@ const CompetitionSlide = () => {
 
   const categories = ["Hardware", "SDK", "Integrator", "Full-Stack PaaS", "Event Expertise", "MES/ERP"];
 
-  const scatterPlotData = [
-    { name: "Generalist frame-only", x: 25, y: 20, color: "text-muted" },
-    { name: "Basler/IDS", x: 45, y: 35, color: "text-muted" }, 
-    { name: "Cognex/Keyence", x: 70, y: 30, color: "text-muted" },
-    { name: "Instrumental/Landing AI", x: 60, y: 40, color: "text-muted" },
-    { name: "Lumina Tech", x: 85, y: 85, color: "text-primary" }
-  ];
-
   return (
     <div className="w-full min-h-screen flex flex-col px-8 py-6 bg-gradient-to-br from-background via-[hsl(220_34%_8%)] to-[hsl(287_77%_8%)]">
       {/* Dynamic Chromatic Background */}
@@ -127,8 +119,8 @@ const CompetitionSlide = () => {
         </p>
       </div>
 
-      <div className="relative z-10 flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Left Column - Competitive Matrix */}
+      <div className="relative z-10 flex-1 max-w-6xl mx-auto">
+        {/* Competitive Matrix - Full Width */}
         <div>
           <h3 className="text-2xl font-bold mb-6 text-white">Competitive Matrix</h3>
           <Card className="p-8 bg-card/80 backdrop-blur-sm border border-border rounded-2xl shadow-lg">
@@ -220,95 +212,6 @@ const CompetitionSlide = () => {
             </div>
           </Card>
         </div>
-
-        {/* Right Column - Positioning Scatter Plot */}
-        <div>
-          <h3 className="text-2xl font-bold mb-6 text-white">Market Positioning</h3>
-          <Card className="p-8 bg-card/80 backdrop-blur-sm border border-border rounded-2xl shadow-lg">
-            <div className="relative w-full h-80">
-              {/* Chart Background with Grid */}
-              <div className="absolute inset-0 border-2 border-border/40 rounded-lg bg-gradient-to-tr from-background/20 to-background/5">
-                {/* Grid Lines */}
-                <div className="absolute inset-0">
-                  {/* Vertical Grid Lines */}
-                  {[25, 50, 75].map((x) => (
-                    <div key={x} className="absolute h-full border-l border-border/20" style={{ left: `${x}%` }}></div>
-                  ))}
-                  {/* Horizontal Grid Lines */}
-                  {[25, 50, 75].map((y) => (
-                    <div key={y} className="absolute w-full border-t border-border/20" style={{ top: `${y}%` }}></div>
-                  ))}
-                </div>
-              </div>
-              
-              {/* Axis Lines */}
-              <div className="absolute bottom-0 left-0 w-full h-0.5 bg-border"></div>
-              <div className="absolute bottom-0 left-0 w-0.5 h-full bg-border"></div>
-              
-              {/* X-Axis Labels */}
-              <div className="absolute -bottom-8 left-0 text-xs text-muted/70">Low</div>
-              <div className="absolute -bottom-8 right-0 text-xs text-muted/70">High</div>
-              <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-sm font-medium text-white">
-                Real-Time Line Speed (objects/min)
-              </div>
-              
-              {/* Y-Axis Labels */}
-              <div className="absolute -left-8 bottom-0 text-xs text-muted/70">Low</div>
-              <div className="absolute -left-8 top-0 text-xs text-muted/70">High</div>
-              <div className="absolute -left-16 top-1/2 transform -translate-y-1/2 -rotate-90 text-sm font-medium text-white origin-center">
-                Data Efficiency (GB/hour)
-              </div>
-              
-              {/* Data Points */}
-              {scatterPlotData.map((point, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ scale: 0, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{ delay: 0.5 + index * 0.2, duration: 0.5 }}
-                  className="absolute group cursor-pointer"
-                  style={{ 
-                    left: `${point.x}%`, 
-                    top: `${100 - point.y}%`,
-                    transform: 'translate(-50%, -50%)'
-                  }}
-                >
-                  {/* Data Point */}
-                  <div className={`w-4 h-4 rounded-full border-2 transition-all duration-300 group-hover:scale-125 ${
-                    point.name === "Lumina Tech"
-                      ? 'bg-primary border-primary/50 shadow-lg shadow-primary/30' 
-                      : 'bg-muted/60 border-muted/40 group-hover:bg-muted/80'
-                  }`}>
-                    {point.name === "Lumina Tech" && (
-                      <Target className="w-2 h-2 text-background absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
-                    )}
-                  </div>
-                  
-                  {/* Label */}
-                  <div className={`text-xs mt-2 text-center whitespace-nowrap font-medium transition-colors duration-300 ${
-                    point.name === "Lumina Tech" ? 'text-primary' : 'text-muted group-hover:text-white'
-                  }`}>
-                    {point.name}
-                  </div>
-                  
-                  {/* Hover Tooltip */}
-                  <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                    <div className="bg-background/90 backdrop-blur-sm border border-border rounded-lg px-3 py-2 text-xs text-white shadow-lg">
-                      <div className="font-medium">{point.name}</div>
-                      <div className="text-muted text-xs">
-                        Speed: {point.x}% | Efficiency: {point.y}%
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-            
-            <div className="mt-4 text-xs text-muted text-center">
-              Illustrative positioning based on real-time capability vs. data efficiency
-            </div>
-          </Card>
-        </div>
       </div>
 
       {/* Bottom CTA */}
@@ -318,14 +221,10 @@ const CompetitionSlide = () => {
         transition={{ delay: 1, duration: 0.6 }}
         className="relative z-10 mt-8"
       >
-        <Card className="p-8 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-2xl shadow-lg text-center">
-          <h4 className="text-xl font-bold mb-3 text-white">What We Do That They Don't</h4>
-          <p className="text-base text-muted mb-4">
-            Event-first SDK + edge orchestrator + MES/ERP connectors + ROI calculator
+        <Card className="p-6 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-2xl shadow-lg text-center">
+          <p className="text-lg text-white font-medium">
+            <span className="text-primary font-bold">What We Do That They Don't:</span> Event-first SDK that integrates QC data into MES/ERP workflows.
           </p>
-          <div className="text-sm text-primary">
-            <strong>Lock-in moat:</strong> Our SaaS integrates QC + compliance into ERP/MES for deep stickiness.
-          </div>
         </Card>
       </motion.div>
     </div>
