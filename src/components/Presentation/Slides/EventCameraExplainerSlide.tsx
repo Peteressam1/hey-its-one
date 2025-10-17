@@ -59,7 +59,7 @@ const EventCameraExplainerSlide = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-2xl text-muted-foreground mb-12 max-w-4xl"
+          className="text-2xl text-muted-foreground mb-12 max-w-4xl ml-24"
         >
           Bio-inspired sensors that measure only motion in the scene
         </motion.p>

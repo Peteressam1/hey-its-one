@@ -52,7 +52,7 @@ const OpenChallengesSlide = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-2xl text-muted-foreground mb-16 max-w-4xl"
+          className="text-2xl text-muted-foreground mb-16 max-w-4xl ml-24"
         >
           The past 60 years of research have been devoted to frame-based cameras but they are not good enough
         </motion.p>
