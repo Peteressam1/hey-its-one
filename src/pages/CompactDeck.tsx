@@ -40,8 +40,8 @@ const CompactDeck = () => {
     { id: 'multimodal', title: 'Multimodal Approach', component: MultimodalApproachSlide },
     { id: 'demo', title: 'Demo', component: DemoSlide },
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
-    { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
     { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
+    { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
     { id: 'final', title: 'See the Invisible', component: FinalSlide },
     // { id: 'ask', title: 'The Ask', component: AskSlideV2 } // Commented out for FAPS FAU pitch
   ];
