@@ -17,6 +17,7 @@ const TeamSlide = () => {
       ],
       photo: mohamedPhoto,
       logos: [
+        { alt: "FAU", src: "/logos/fau.png", size: "h-6" },
         { alt: "DLR", src: "/logos/dlr.png", size: "h-10" },
         { alt: "NASA", src: "/logos/nasa.png", size: "h-6" },
         { alt: "BMW", src: "/logos/bmw-white.png", size: "h-6" },
