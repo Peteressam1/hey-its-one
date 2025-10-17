@@ -13,9 +13,7 @@ const TeamSlide = () => {
       role: "Co-Founder & CEO", 
       bullets: [
         "M.Sc. Electrical Engineering & Robotics, FAU",
-        "Space Robotics Engineer at DLR (German Space Agency)",
-        "Projects: NASA, BMW, Mercedes Benz",
-        "Expertise: Sensor fusion & AI perception"
+        "Space Robotics Engineer, DLR"
       ],
       photo: mohamedPhoto,
       logos: [
@@ -29,8 +27,7 @@ const TeamSlide = () => {
       role: "Co-Founder & CTO/COO",
       bullets: [
         "M.Sc. Electrical Engineering & Robotics, TUM",
-        "Experience: OnSemi, Mouser, Rohde & Schwarz",
-        "Focus: Industrial automation & edge AI"
+        "Industrial Automation & Edge AI"
       ],
       photo: alyPhoto,
       logos: [
@@ -44,8 +41,7 @@ const TeamSlide = () => {
       role: "Co-Founder & CIO",
       bullets: [
         "M.Sc. Information Systems, Uni Bremen",
-        "Experience: SAP consulting, BestSecret GmbH",
-        "Focus: ERP/MES integration & enterprise analytics"
+        "SAP Systems Specialist, BestSecret GmbH"
       ],
       photo: peterPhoto,
       logos: [
