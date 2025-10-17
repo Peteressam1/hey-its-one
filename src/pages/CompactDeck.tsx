@@ -6,6 +6,7 @@ import EventCameraExplainerSlide from "@/components/Presentation/Slides/EventCam
 import EventMathematicsSlide from "@/components/Presentation/Slides/EventMathematicsSlide";
 import EventVsRGBComparisonSlide from "@/components/Presentation/Slides/EventVsRGBComparisonSlide";
 import IndustryPainPointsSlide from "@/components/Presentation/Slides/IndustryPainPointsSlide";
+import IcebergSlide from "@/components/Presentation/Slides/IcebergSlide";
 import TeamSlide from "@/components/Presentation/Slides/TeamSlide";
 import SolutionSlide from "@/components/Presentation/Slides/SolutionSlide";
 import MarketSlide from "@/components/Presentation/Slides/MarketSlide";
@@ -26,6 +27,7 @@ const CompactDeck = () => {
     { id: 'event-mathematics', title: 'Mathematical Model', component: EventMathematicsSlide },
     { id: 'event-vs-rgb', title: 'Event vs RGB', component: EventVsRGBComparisonSlide },
     { id: 'industry-pain', title: 'Industry Challenges', component: IndustryPainPointsSlide },
+    { id: 'iceberg', title: 'Hidden Complexity', component: IcebergSlide },
     { id: 'team', title: 'Team', component: TeamSlide },
     { id: 'solution', title: 'Our Solution', component: SolutionSlide },
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },

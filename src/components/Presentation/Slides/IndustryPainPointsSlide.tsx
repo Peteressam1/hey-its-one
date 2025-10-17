@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Clock, RefreshCw, Lightbulb, BarChart3, DollarSign } from "lucide-react";
-import icebergImage from "@/assets/quality-control-iceberg.webp";
 
 const IndustryPainPointsSlide = () => {
   const quotes = [
@@ -101,33 +100,12 @@ const IndustryPainPointsSlide = () => {
           })}
         </motion.div>
 
-        {/* Iceberg Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-16"
-        >
-          <h2 className="text-3xl font-bold mb-6 text-center text-foreground">
-            The Hidden Complexity
-          </h2>
-          <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50">
-            <div className="flex justify-center">
-              <img
-                src={icebergImage}
-                alt="Quality control challenges iceberg - what people see vs what they don't see"
-                className="w-full max-w-4xl h-auto rounded-2xl"
-              />
-            </div>
-          </Card>
-        </motion.div>
-
         {/* Closing Statement */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.2 }}
-          className="text-center mt-12"
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="text-center mt-8"
         >
           <Card className="p-6 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border-primary/20">
             <p className="text-xl text-foreground font-medium">
