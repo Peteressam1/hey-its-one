@@ -129,11 +129,11 @@ const EventCameraExplainerSlide = () => {
               </h3>
               
               {/* Event Camera Diagram */}
-              <div className="rounded-lg overflow-hidden bg-background/80 p-4 mb-6">
+              <div className="rounded-lg overflow-hidden bg-white p-6 mb-6">
                 <img
                   src={eventDiagram}
-                  alt="Event camera operation diagram"
-                  className="w-full h-auto rounded"
+                  alt="Event camera vs standard camera operation comparison"
+                  className="w-full h-auto"
                 />
               </div>
 
