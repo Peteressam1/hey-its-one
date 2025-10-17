@@ -27,7 +27,7 @@ const TeamSlide = () => {
       role: "Co-Founder & CTO/COO",
       bullets: [
         "M.Sc. Electrical Engineering & Robotics, TUM",
-        "Industrial Automation & Edge AI"
+        "Electrical Engineer at OnSemi"
       ],
       photo: alyPhoto,
       logos: [
@@ -41,11 +41,11 @@ const TeamSlide = () => {
       role: "Co-Founder & CIO",
       bullets: [
         "M.Sc. Information Systems, Uni Bremen",
-        "SAP Systems Specialist, BestSecret GmbH"
+        "Ex SAP Consultant at SAP, BestSecret GmbH"
       ],
       photo: peterPhoto,
       logos: [
-        { alt: "SAP", src: "/logos/sap.png", size: "h-5" },
+        { alt: "SAP", src: "/logos/sap-white.png", size: "h-5" },
         { alt: "BestSecret", src: "/logos/bestsecret.gif", size: "h-8" },
       ]
     }
