@@ -20,7 +20,7 @@ const MarketSlide = () => {
           <span className="text-primary">$41.7B Market</span> by 2030
         </h1>
         <p className="text-xl text-muted max-w-4xl mx-auto">
-          Machine Vision Market Growing at 8.1% CAGR
+          Machine Vision Market Growing at 13% CAGR
         </p>
       </div>
 
