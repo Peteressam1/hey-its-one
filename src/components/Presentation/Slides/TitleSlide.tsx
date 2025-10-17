@@ -38,7 +38,7 @@ const TitleSlide = () => {
           className="space-y-6 mb-12"
         >
           {/* Tagline */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading text-center tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading text-center tracking-tight">
             <span className="block text-gradient text-glow-animate">
               See the Invisible.
             </span>
@@ -51,7 +51,7 @@ const TitleSlide = () => {
 
         {/* Institutional Logos */}
         <motion.div 
-          className="flex items-center justify-center gap-8 max-w-3xl mx-auto"
+          className="flex items-center justify-center gap-8 max-w-3xl mx-auto mt-8"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
@@ -62,7 +62,7 @@ const TitleSlide = () => {
             transition={{ delay: 0.7, duration: 0.5 }}
             whileHover={{ scale: 1.1, filter: "brightness(1.2)" }}
           >
-            <img src={fauLogo} alt="FAU" className="h-12 opacity-80" />
+            <img src={fauLogo} alt="FAU" className="h-16 opacity-80" />
           </motion.div>
           
           <motion.div
@@ -71,7 +71,7 @@ const TitleSlide = () => {
             transition={{ delay: 0.85, duration: 0.5 }}
             whileHover={{ scale: 1.1, filter: "brightness(1.2)" }}
           >
-            <img src={fapsLogo} alt="FAPS" className="h-12 opacity-80" />
+            <img src={fapsLogo} alt="FAPS" className="h-16 opacity-80" />
           </motion.div>
           
           <motion.div
@@ -80,7 +80,7 @@ const TitleSlide = () => {
             transition={{ delay: 1.0, duration: 0.5 }}
             whileHover={{ scale: 1.1, filter: "brightness(1.2)" }}
           >
-            <img src={tumAiLogo} alt="TUM AI" className="h-12 opacity-80" />
+            <img src={tumAiLogo} alt="TUM AI" className="h-16 opacity-80" />
           </motion.div>
           
           <motion.div
@@ -89,7 +89,7 @@ const TitleSlide = () => {
             transition={{ delay: 1.15, duration: 0.5 }}
             whileHover={{ scale: 1.1, filter: "brightness(1.2)" }}
           >
-            <img src={tumLogo} alt="TUM" className="h-16 opacity-80" />
+            <img src={tumLogo} alt="TUM" className="h-20 opacity-80" />
           </motion.div>
         </motion.div>
       </div>
