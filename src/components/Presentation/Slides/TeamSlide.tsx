@@ -13,15 +13,14 @@ const TeamSlide = () => {
       role: "Co-Founder & CEO", 
       bullets: [
         "M.Sc. Electrical Engineering & Robotics, FAU",
-        "Space Robotics Engineer, DLR"
+        "Space Robotics Engineer, German Space Agency"
       ],
       photo: mohamedPhoto,
       logos: [
         { alt: "FAU", src: "/logos/fau-white.png", size: "h-8" },
-        { alt: "Airbus", src: "/logos/airbus-white.png", size: "h-10" },
         { alt: "DLR", src: "/logos/dlr-white.png", size: "h-12" },
+        { alt: "Airbus", src: "/logos/airbus-white.png", size: "h-10" },
         { alt: "BMW", src: "/logos/bmw-white-new.png", size: "h-10" },
-        { alt: "NASA", src: "/logos/nasa-white.png", size: "h-12" },
       ]
     },
     {
