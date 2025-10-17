@@ -7,6 +7,7 @@ import EventMathematicsSlide from "@/components/Presentation/Slides/EventMathema
 import EventVsRGBComparisonSlide from "@/components/Presentation/Slides/EventVsRGBComparisonSlide";
 import IndustryPainPointsSlide from "@/components/Presentation/Slides/IndustryPainPointsSlide";
 import IcebergSlide from "@/components/Presentation/Slides/IcebergSlide";
+import FactoryApplicationsSlide from "@/components/Presentation/Slides/FactoryApplicationsSlide";
 import WeAreLuminaSlide from "@/components/Presentation/Slides/WeAreLuminaSlide";
 import TeamSlide from "@/components/Presentation/Slides/TeamSlide";
 import SolutionSlide from "@/components/Presentation/Slides/SolutionSlide";
@@ -31,6 +32,7 @@ const CompactDeck = () => {
     { id: 'event-vs-rgb', title: 'Event vs RGB', component: EventVsRGBComparisonSlide },
     { id: 'industry-pain', title: 'Industry Challenges', component: IndustryPainPointsSlide },
     { id: 'iceberg', title: 'Hidden Complexity', component: IcebergSlide },
+    { id: 'factory-applications', title: 'Factory Applications', component: FactoryApplicationsSlide },
     { id: 'we-are-lumina', title: 'We Are Lumina', component: WeAreLuminaSlide },
     { id: 'team', title: 'Team', component: TeamSlide },
     { id: 'solution', title: 'Our Solution', component: SolutionSlide },
