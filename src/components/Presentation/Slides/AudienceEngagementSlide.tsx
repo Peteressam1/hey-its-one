@@ -49,8 +49,8 @@ const AudienceEngagementSlide = () => {
           delay: 0.3 + index * 0.2,
           duration: 0.6
         }} className="flex items-center justify-center gap-4">
-              <term.icon className="w-8 h-8 text-primary" />
-              <span className="text-2xl font-medium text-foreground">
+              <term.icon className="w-12 h-12 text-primary" />
+              <span className="text-5xl font-medium text-foreground">
                 {term.text}
               </span>
             </motion.div>)}
