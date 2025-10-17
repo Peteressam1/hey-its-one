@@ -53,7 +53,7 @@ const SolutionSlide = () => {
       <div className="geometric-pattern" />
       
       {/* Header */}
-      <div className="relative z-10 text-center space-y-4 mb-6">
+      <div className="relative z-10 text-center space-y-4 mb-6 ml-24">
         <h1 className="text-4xl md:text-5xl font-bold text-white tracking-[-0.01em]">
           <span className="text-primary">Complete Software Solution</span> with Event Cameras
         </h1>

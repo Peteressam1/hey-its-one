@@ -69,7 +69,7 @@ const MarketSlide = () => {
         <div className="absolute bottom-20 left-20 w-64 h-64 bg-accent/8 rounded-full blur-3xl"></div>
       </div>
       {/* Header */}
-      <div className="relative z-10 text-center space-y-3 mb-6">
+      <div className="relative z-10 text-center space-y-3 mb-6 ml-24">
         <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
           <span className="text-primary">$41.7B Market</span> by 2030
         </h1>

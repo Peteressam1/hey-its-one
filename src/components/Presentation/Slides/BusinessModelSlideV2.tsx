@@ -120,7 +120,7 @@ const BusinessModelSlideV2 = () => {
       <div className="geometric-pattern" />
       
       {/* Header */}
-      <div className="relative z-10 text-center space-y-4 mb-8">
+      <div className="relative z-10 text-center space-y-4 mb-8 ml-24">
         <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
           <span className="text-gradient text-glow-animate">Proven SaaS</span> Economics
         </h1>

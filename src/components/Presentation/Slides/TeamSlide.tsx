@@ -55,7 +55,7 @@ const TeamSlide = () => {
       <div className="geometric-pattern" />
 
       {/* Header */}
-      <div className="relative z-10 text-center space-y-4 mb-12">
+      <div className="relative z-10 text-center space-y-4 mb-12 ml-24">
         <h1 className="text-5xl md:text-6xl font-bold text-white tracking-[-0.01em]">
           <span className="text-primary">Meet the Founding Team</span>
         </h1>
