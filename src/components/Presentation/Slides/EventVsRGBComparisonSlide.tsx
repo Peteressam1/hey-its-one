@@ -89,7 +89,7 @@ const EventVsRGBComparisonSlide = () => {
             </h3>
             
             {/* Video Container */}
-            <div className="relative aspect-video rounded-lg overflow-hidden bg-black">
+            <div className="relative aspect-video rounded-3xl overflow-hidden bg-black">
               <video
                 className="w-full h-full object-contain"
                 controls
