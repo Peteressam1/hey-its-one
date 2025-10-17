@@ -35,7 +35,7 @@ const Index = () => {
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
     { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
     { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
-    { id: 'closing-final', title: 'See the Invisible', component: ClosingSlide },
+    { id: 'we-are-lumina-final', title: 'We Are Lumina', component: WeAreLuminaSlide },
   ];
 
   return (
