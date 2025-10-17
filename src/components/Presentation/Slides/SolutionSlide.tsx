@@ -1,10 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Pipeline } from "@/components/ui/pipeline";
-import { Zap, Database, Cpu, Shield, CheckCircle, Play, Maximize2, X } from "lucide-react";
+import { Zap, Database, Cpu, Shield } from "lucide-react";
 import { motion } from "framer-motion";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const SolutionSlide = () => {
   const realWorldApplications = [
@@ -130,28 +127,6 @@ const SolutionSlide = () => {
         </div>
       </div>
 
-      {/* Factory Applications Map (button only) */}
-      <div className="relative z-10 text-center mb-6 mt-4">
-        <Dialog>
-          <DialogTrigger asChild>
-            <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-white">
-              <Maximize2 className="w-4 h-4 mr-2" />
-              View Factory Applications Map
-            </Button>
-          </DialogTrigger>
-          <DialogContent className="max-w-6xl p-0 overflow-hidden">
-            <div className="bg-card">
-              <div className="aspect-[16/9]">
-                <img
-                  src="/lovable-uploads/8b333b2b-5ac1-4248-8c5d-43dfce05c0f7.png"
-                  alt="Factory-wide event-based vision applications map"
-                  className="w-full h-full object-contain bg-background"
-                />
-              </div>
-            </div>
-          </DialogContent>
-        </Dialog>
-      </div>
 
       {/* Bottom Section: Other Applications */}
       <div className="relative z-10 flex-1 max-w-4xl mx-auto">
