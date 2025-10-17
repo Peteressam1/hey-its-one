@@ -1,111 +1,71 @@
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { CheckCircle, TrendingUp, DollarSign, Users, Zap } from "lucide-react";
+import { DollarSign, Users, Target, Zap, TrendingUp, Repeat } from "lucide-react";
 import { motion } from "framer-motion";
 
 const BusinessModelSlideV2 = () => {
-  const pricingTiers = [
-    {
-      name: "Pilot",
-      price: "€2,800",
-      period: "per line/month",
-      description: "1-2 lines • validation phase",
-      features: [
-        "Core detection (counting/quality)",
-        "KPI dashboard & alerts",
-        "Standard monitoring",
-        "Email support"
-      ],
-      target: "Small manufacturers",
-      color: "border-primary/20"
-    },
-    {
-      name: "Growth", 
-      price: "€4,200",
-      period: "per line/month",
-      description: "3-8 lines • production scale",
-      features: [
-        "Anomaly detection models",
-        "Audit trails and compliance",
-        "MES/ERP API integration",
-        "Priority support"
-      ],
-      target: "Mid-size manufacturers",
-      color: "border-accent/20",
-      popular: true
-    },
-    {
-      name: "Enterprise",
-      price: "€3,500",
-      period: "per line/month",
-      description: "Full facility • multi-site",
-      features: [
-        "Custom AI development",
-        "Multi-site admin console",
-        "24/7 dedicated support",
-        "On-prem options"
-      ],
-      target: "Large corporations",
-      color: "border-warning/20"
-    }
-  ];
-
   const revenueStreams = [
     {
-      stream: "Integration Fee",
-      description: "One-time setup & customization (addresses capex preference)",
-      amount: "€25K–€55K",
-      icon: <Zap className="w-5 h-5" />
+      icon: Zap,
+      title: "Integration Fees",
+      description: "One-time setup and customization for production lines",
+      model: "Per-line deployment"
     },
     {
-      stream: "Monthly SaaS",
-      description: "Dashboard + analytics + compliance reporting",
-      amount: "€2.8K–€4.2K/line",
-      icon: <TrendingUp className="w-5 h-5" />
+      icon: Repeat,
+      title: "Recurring SaaS",
+      description: "Monthly subscription for software, analytics, and support",
+      model: "Per-line subscription"
     },
     {
-      stream: "Expansion Revenue",
-      description: "80%+ expand to 4–8 lines within 12 months",
-      amount: "€150K–€300K/customer",
-      icon: <Users className="w-5 h-5" />
+      icon: TrendingUp,
+      title: "Expansion Revenue",
+      description: "Cross-selling to additional production lines and facilities",
+      model: "Land-and-expand strategy"
     }
   ];
 
-  const unitEconomics = {
-    cac: "€25,000",
-    ltv: "€100,000",
-    payback: "7.8 months",
-    grossMargin: "75%",
-    nrr: "115%"
-  };
+  const targetMarkets = [
+    {
+      icon: Target,
+      industry: "Pharmaceutical Manufacturing",
+      useCase: "High-speed counting, quality control, compliance validation"
+    },
+    {
+      icon: Target,
+      industry: "Food & Beverage",
+      useCase: "Packaging validation, closure inspection, contamination detection"
+    },
+    {
+      icon: Target,
+      industry: "Automotive & Electronics",
+      useCase: "Component inspection, assembly verification, defect detection"
+    },
+    {
+      icon: Target,
+      industry: "Wire & Cable Production",
+      useCase: "Velocity monitoring, dimensional inspection, surface quality"
+    }
+  ];
 
-  const marketComparison = [
+  const pricingStrategy = [
     {
-      solution: "Traditional Integrators",
-      setup: "€50K-€200K",
-      monthly: "Varies", 
-      timeToValue: "6–12 months",
-      accuracy: "85–95%",
-      dataEfficiency: "Low",
-      highlight: false
+      tier: "Pilot Program",
+      target: "Small Manufacturers",
+      approach: "Entry-level pricing to validate ROI",
+      features: ["Core detection capabilities", "Standard dashboard", "Email support"]
     },
     {
-      solution: "Cloud Vision APIs",
-      setup: "Low",
-      monthly: "Per-use",
-      timeToValue: "Weeks",
-      accuracy: "General",
-      dataEfficiency: "Low",
-      highlight: false
-    },
-    {
-      solution: "Our Event-Based SaaS",
-      setup: "€25K–€55K",
-      monthly: "€2.8K–€4.2K",
-      timeToValue: "4–8 weeks",
-      accuracy: ">95% validated",
-      dataEfficiency: "75% reduction",
+      tier: "Growth Plan",
+      target: "Mid-Size Operations",
+      approach: "Scalable pricing for multiple production lines",
+      features: ["Advanced analytics", "MES/ERP integration", "Priority support"],
       highlight: true
+    },
+    {
+      tier: "Enterprise Solution",
+      target: "Large Corporations",
+      approach: "Custom pricing for multi-site deployments",
+      features: ["Custom AI models", "Multi-site management", "24/7 dedicated support"]
     }
   ];
 
@@ -121,157 +81,143 @@ const BusinessModelSlideV2 = () => {
       
       {/* Header */}
       <div className="relative z-10 text-center space-y-4 mb-8 ml-24">
-        <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
-          <span className="text-gradient text-glow-animate">Proven SaaS</span> Economics
+        <h1 className="text-5xl md:text-6xl font-bold text-foreground tracking-tight">
+          <span className="text-gradient text-glow-animate">Business Model</span>
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          Hybrid model: One-time integration + recurring SaaS + compliance reporting. 80%+ expand to 4–8 lines &lt;12 months.
+          Hybrid SaaS model combining integration fees with recurring revenue
         </p>
       </div>
 
-      <div className="relative z-10 flex-1 grid grid-cols-2 gap-8">
-        {/* Left Column - Pricing Strategy */}
-        <div className="space-y-6">
-          {/* Pricing Tiers */}
-          <div>
-            <h3 className="text-3xl font-bold mb-4 text-white">Pricing Strategy</h3>
-            <div className="text-sm text-muted mb-4">
-              Pilot: €25–55k one-off + <strong className="text-primary">SaaS €2.8K–€4.2K/line/month</strong> (benchmarks: industrial automation €3K–€8K/line).
-            </div>
-            <div className="space-y-4">
-              {pricingTiers.map((tier, index) => (
+      <div className="relative z-10 flex-1 space-y-8">
+        
+        {/* Revenue Streams Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+        >
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Revenue Streams</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {revenueStreams.map((stream, index) => {
+              const Icon = stream.icon;
+              return (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
-                >
-                  <Card className={`p-6 relative bg-card border ${tier.color} ${tier.popular ? 'scale-105 shadow-xl border-2 border-primary' : 'border-border'} hover:scale-105 transition-all duration-300`}>
-                    {tier.popular && (
-                      <Badge className="absolute -top-2 left-4 bg-primary text-white border-0">
-                        Most Popular
-                      </Badge>
-                    )}
-                    <div className="flex items-center justify-between">
-                      <div className="flex-1">
-                        <h4 className="text-xl font-bold text-white">{tier.name}</h4>
-                        <div className="text-2xl font-bold text-primary">{tier.price}</div>
-                        <p className="text-sm text-muted mb-2">{tier.period}</p>
-                        <p className="text-sm text-muted mb-3">{tier.description}</p>
-                        <div className="flex flex-wrap gap-1">
-                          {tier.features.slice(0, 3).map((feature, fIndex) => (
-                            <Badge key={fIndex} variant="secondary" className="text-xs">
-                              {feature}
-                            </Badge>
-                          ))}
-                          {tier.features.length > 3 && (
-                            <Badge variant="outline" className="text-xs">
-                              +{tier.features.length - 3} more
-                            </Badge>
-                          )}
-                        </div>
-                      </div>
-                      <div className="text-right">
-                        <Badge variant="outline" className="mb-2">
-                          {tier.target}
-                        </Badge>
-                      </div>
-                    </div>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
-            <div className="mt-4 text-xs text-muted">
-              Hardware integration: €25k–€55k one-time (partner-delivered when possible)
-            </div>
-          </div>
-        </div>
-
-        {/* Right Column - Revenue Model & Metrics */}
-        <div className="space-y-6">
-          {/* Revenue Streams */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4 text-white">Revenue Streams</h3>
-            <div className="space-y-3">
-              {revenueStreams.map((stream, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 + index * 0.1 }}
                 >
-                  <Card className="p-4 hover:shadow-md transition-all">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className="text-primary">{stream.icon}</div>
-                        <div>
-                          <h5 className="font-semibold text-foreground">{stream.stream}</h5>
-                          <p className="text-xs text-muted-foreground">{stream.description}</p>
-                        </div>
+                  <Card className="p-6 h-full hover:shadow-lg transition-all hover:scale-105 bg-card/80 backdrop-blur-sm border-border/50">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 rounded-lg bg-primary/10 border border-primary/20">
+                        <Icon className="w-6 h-6 text-primary" />
                       </div>
-                      <Badge variant="secondary" className="text-sm">
-                        {stream.amount}
-                      </Badge>
+                      <div className="flex-1">
+                        <h3 className="font-bold text-lg text-foreground mb-2">{stream.title}</h3>
+                        <p className="text-sm text-muted-foreground mb-3">{stream.description}</p>
+                        <div className="text-xs text-primary font-medium">{stream.model}</div>
+                      </div>
                     </div>
                   </Card>
                 </motion.div>
-              ))}
+              );
+            })}
+          </div>
+        </motion.div>
+
+        {/* Target Markets Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+        >
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Target Markets</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {targetMarkets.map((market, index) => {
+              const Icon = market.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.6 + index * 0.1 }}
+                >
+                  <Card className="p-5 hover:shadow-md transition-all bg-card/80 backdrop-blur-sm border-border/50">
+                    <div className="flex items-start gap-3">
+                      <div className="p-2 rounded-lg bg-accent/10 border border-accent/20">
+                        <Icon className="w-5 h-5 text-accent" />
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-bold text-foreground mb-1">{market.industry}</h4>
+                        <p className="text-sm text-muted-foreground">{market.useCase}</p>
+                      </div>
+                    </div>
+                  </Card>
+                </motion.div>
+              );
+            })}
+          </div>
+        </motion.div>
+
+        {/* Pricing Strategy Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8 }}
+        >
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Pricing Strategy</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {pricingStrategy.map((plan, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.9 + index * 0.1 }}
+              >
+                <Card className={`p-6 h-full transition-all ${
+                  plan.highlight 
+                    ? 'bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30 shadow-lg scale-105' 
+                    : 'bg-card/80 border-border/50'
+                } hover:scale-105`}>
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground mb-1">{plan.tier}</h3>
+                      <p className="text-sm text-muted-foreground font-medium">{plan.target}</p>
+                    </div>
+                    <p className="text-sm text-foreground">{plan.approach}</p>
+                    <div className="space-y-2">
+                      {plan.features.map((feature, fIndex) => (
+                        <div key={fIndex} className="flex items-start gap-2">
+                          <div className="mt-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                          <span className="text-xs text-muted-foreground">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Key Insight */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2 }}
+          className="mt-6"
+        >
+          <Card className="p-6 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border-primary/20">
+            <div className="flex items-center gap-4">
+              <DollarSign className="w-8 h-8 text-primary shrink-0" />
+              <p className="text-foreground font-medium">
+                Land-and-expand strategy: Start with pilot deployment on 1-2 lines, then expand to full facility coverage
+              </p>
             </div>
-          </div>
+          </Card>
+        </motion.div>
 
-          {/* Unit Economics */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4 text-white">Unit Economics</h3>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-            >
-              <Card className="p-6 bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20">
-                <div className="grid grid-cols-2 gap-4 mb-4">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">{unitEconomics.ltv}</div>
-                    <div className="text-xs text-muted-foreground">Lifetime Value</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-accent">{unitEconomics.cac}</div>
-                    <div className="text-xs text-muted-foreground">Customer Acquisition</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-primary">{unitEconomics.grossMargin}</div>
-                    <div className="text-xs text-muted-foreground">Gross Margin</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-accent">{unitEconomics.nrr}</div>
-                    <div className="text-xs text-muted-foreground">Net Revenue Retention</div>
-                  </div>
-                </div>
-                <div className="pt-4 border-t border-border/50 text-center">
-                  <span className="text-sm text-muted-foreground">Payback Period: </span>
-                  <span className="text-sm font-bold text-primary">{unitEconomics.payback}</span>
-                </div>
-              </Card>
-            </motion.div>
-          </div>
-
-          {/* Target Industries */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4 text-white">Target Markets</h3>
-            <Card className="p-4 bg-card/80">
-              <div className="space-y-1 text-sm text-muted-foreground">
-                <div>• <strong>Pharma:</strong> High-speed counting, quality control</div>
-                <div>• <strong>F&B:</strong> Packaging validation, closure inspection</div>
-                <div>• <strong>Wire & cable:</strong> Velocity monitoring, defect detection</div>
-                <div>• <strong>Avg. customer ROI:</strong> 62% first year, €50K ARPU</div>
-                <div className="border-t border-border/30 pt-2 mt-2">
-                  <div>• <strong>Small mfg:</strong> €50K = 0.2% of €25M revenue</div>
-                  <div>• <strong>Mid mfg:</strong> €50K = 0.05% of €100M revenue</div>
-                  <div>• <strong>Large mfg:</strong> €50K = 0.01% of €500M+ revenue</div>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
       </div>
     </div>
   );
