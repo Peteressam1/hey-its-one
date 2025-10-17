@@ -18,7 +18,8 @@ const TeamSlide = () => {
       photo: mohamedPhoto,
       logos: [
         { alt: "FAU", src: "/logos/fau-white.png", size: "h-8" },
-        { alt: "DLR", src: "/logos/dlr.png", size: "h-12" },
+        { alt: "Airbus", src: "/logos/airbus-white.png", size: "h-10" },
+        { alt: "DLR", src: "/logos/dlr-white.png", size: "h-12" },
         { alt: "BMW", src: "/logos/bmw-white-new.png", size: "h-10" },
         { alt: "NASA", src: "/logos/nasa-white.png", size: "h-12" },
       ]
@@ -32,8 +33,8 @@ const TeamSlide = () => {
       ],
       photo: alyPhoto,
       logos: [
+        { alt: "TUM", src: "/logos/tum-white.png", size: "h-6" },
         { alt: "OnSemi", src: "/logos/onsemi-white.png", size: "h-4" },
-        { alt: "TUM", src: "/logos/tum.svg", size: "h-6" },
         { alt: "Rohde & Schwarz", src: "/logos/rs-white.png", size: "h-6" },
         { alt: "Mouser", src: "/logos/mouser-white.png", size: "h-5" },
       ]
@@ -113,7 +114,8 @@ const TeamSlide = () => {
                       key={idx}
                       src={logo.src}
                       alt={logo.alt}
-                      className={`${logo.size || 'h-6'} w-auto object-contain`}
+                      className={`${logo.size || 'h-6'} w-auto object-contain mix-blend-normal`}
+                      style={{ background: 'transparent' }}
                     />
                   ))}
                 </div>
