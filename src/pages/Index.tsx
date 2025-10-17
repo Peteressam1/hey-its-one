@@ -17,6 +17,7 @@ import CompetitionSlide from "@/components/Presentation/Slides/CompetitionSlide"
 import RoadmapSlideV2 from "@/components/Presentation/Slides/RoadmapSlideV2";
 import AskSlideV2 from "@/components/Presentation/Slides/AskSlideV2";
 import ClosingSlide from "@/components/Presentation/Slides/ClosingSlide";
+import FinalSlide from "@/components/Presentation/Slides/FinalSlide";
 
 const Index = () => {
   const slides = [
@@ -36,6 +37,7 @@ const Index = () => {
     { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
     { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
     { id: 'we-are-lumina-final', title: 'We Are Lumina', component: WeAreLuminaSlide },
+    { id: 'final', title: 'See the Invisible', component: FinalSlide },
   ];
 
   return (
