@@ -93,7 +93,7 @@ const EventCameraExplainerSlide = () => {
               <img
                 src={eventDiagram}
                 alt="Event camera vs standard camera operation comparison"
-                className="w-full h-auto"
+                className="w-full h-auto rounded-2xl"
               />
             </div>
 
