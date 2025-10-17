@@ -11,31 +11,42 @@ const TeamSlide = () => {
     {
       name: "Mohamed El Sherbini",
       role: "Co-Founder & CEO", 
-      background: "PhD-level Researcher in Space Robotics (DLR)",
+      bullets: [
+        "M.Sc. Electrical Engineering & Robotics, FAU",
+        "Space Robotics Engineer at DLR (German Space Agency)",
+        "Projects: NASA, BMW, Mercedes Benz",
+        "Expertise: Sensor fusion & AI perception"
+      ],
       photo: mohamedPhoto,
       logos: [
         { alt: "DLR", src: "/logos/dlr.png" },
         { alt: "NASA", src: "/logos/nasa.png" },
-        { alt: "DeepMind", src: "/logos/deepmind-small.webp" },
-        { alt: "Airbus Defence & Space", src: "/logos/airbus.jpeg" },
+        { alt: "BMW", src: "/logos/bmw.webp" },
       ]
     },
     {
       name: "Aly Barakat",
-      role: "Co-Founder & COO/CTO",
-      background: "Operations & technology leadership; joint work with top-tier industrial automation leaders",
+      role: "Co-Founder & CTO/COO",
+      bullets: [
+        "M.Sc. Electrical Engineering & Robotics, TUM",
+        "Experience: OnSemi, Mouser, Rohde & Schwarz",
+        "Focus: Industrial automation & edge AI"
+      ],
       photo: alyPhoto,
       logos: [
         { alt: "TUM", src: "/logos/tum.svg" },
-        { alt: "McKinsey", src: "/logos/mckinsey.png" },
         { alt: "Rohde & Schwarz", src: "/logos/rohde-schwarz.jpeg" },
         { alt: "Mouser", src: "/logos/mouser.svg" },
       ]
     },
     {
-      name: "Peter Essam", 
+      name: "Peter Khalil", 
       role: "Co-Founder & CIO",
-      background: "Information systems and technology infrastructure",
+      bullets: [
+        "M.Sc. Information Systems, Uni Bremen",
+        "Experience: SAP consulting, BestSecret GmbH",
+        "Focus: ERP/MES integration & enterprise analytics"
+      ],
       photo: peterPhoto,
       logos: [
         { alt: "SAP", src: "/logos/sap.png" },
@@ -81,9 +92,18 @@ const TeamSlide = () => {
 
               {/* Name & Role */}
               <div className="text-center mb-4">
-                <h3 className="text-2xl font-bold text-white mb-2">M.Sc. {founder.name}</h3>
-                <p className="text-lg font-medium text-primary mb-3">{founder.role}</p>
-                <p className="text-sm text-muted">{founder.background}</p>
+                <h3 className="text-2xl font-bold text-white mb-2">{founder.name}</h3>
+                <p className="text-lg font-medium text-primary mb-4">{founder.role}</p>
+                
+                {/* Bullet Points */}
+                <ul className="text-sm text-muted-foreground space-y-2 text-left max-w-xs mx-auto">
+                  {founder.bullets.map((bullet, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-primary mt-1.5 shrink-0">•</span>
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* Company Logos */}
