@@ -33,9 +33,10 @@ const TeamSlide = () => {
       ],
       photo: alyPhoto,
       logos: [
+        { alt: "OnSemi", src: "/logos/onsemi-white.png", size: "h-5" },
         { alt: "TUM", src: "/logos/tum.svg", size: "h-6" },
-        { alt: "Rohde & Schwarz", src: "/logos/rohde-schwarz.jpeg", size: "h-5" },
-        { alt: "Mouser", src: "/logos/mouser.svg", size: "h-5" },
+        { alt: "Rohde & Schwarz", src: "/logos/rs-white.png", size: "h-5" },
+        { alt: "Mouser", src: "/logos/mouser-white.png", size: "h-5" },
       ]
     },
     {
@@ -49,7 +50,7 @@ const TeamSlide = () => {
       logos: [
         { alt: "Uni Bremen", src: "/logos/uni-bremen-white.png", size: "h-6" },
         { alt: "SAP", src: "/logos/sap-white.png", size: "h-5" },
-        { alt: "BestSecret", src: "/logos/bestsecret.gif", size: "h-8" },
+        { alt: "BestSecret", src: "/logos/bestsecret-white.png", size: "h-8" },
       ]
     }
   ];
