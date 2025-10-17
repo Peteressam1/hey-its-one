@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import eventEquation from "@/assets/event-camera/event-equation.png";
+import { InlineMath, BlockMath } from "react-katex";
+import "katex/dist/katex.min.css";
 import sensingComparison from "@/assets/event-camera/sensing-comparison.jpg";
 
 const EventMathematicsSlide = () => {
@@ -62,13 +63,23 @@ const EventMathematicsSlide = () => {
                 Event Generation Formula
               </h3>
               
-              {/* Equation Image */}
-              <div className="flex justify-center items-center bg-background/80 rounded-lg p-8 mb-6">
-                <img
-                  src={eventEquation}
-                  alt="Event generation equation"
-                  className="max-w-full h-auto"
-                />
+              {/* LaTeX Equations */}
+              <div className="space-y-6 bg-background/80 rounded-lg p-8 mb-6">
+                <div className="text-foreground text-lg">
+                  <BlockMath math="\Delta L(x,y,t) = \log I(x,y,t) - \log I(x,y,t_{\text{last}})" />
+                  <div className="text-center my-3 text-muted-foreground">
+                    and an event fires if
+                  </div>
+                  <BlockMath math="|\Delta L(x,y,t)| \ge C" />
+                </div>
+                
+                <div className="border-t border-border/50 pt-6 text-foreground text-lg">
+                  <BlockMath math="p = \operatorname{sign}(\Delta L) \in \{+1,-1\}" />
+                  <div className="text-center my-3 text-muted-foreground">
+                    emit
+                  </div>
+                  <BlockMath math="(x,y,t,p)" />
+                </div>
               </div>
 
               {/* Explanation */}
