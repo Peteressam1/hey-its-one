@@ -115,7 +115,7 @@ const CompetitionSlide = () => {
           <span className="text-primary">Partners, Not Competitors:</span> We Layer SaaS on Hardware
         </h1>
         <p className="text-lg text-muted max-w-4xl mx-auto">
-          Prophesee sells sensors; they don't integrate into plant MES/QA workflows. We're the SaaS layer + integrator.
+          Prophesee makes sensors; we integrate them into factory MES/QA workflows.
         </p>
       </div>
 
