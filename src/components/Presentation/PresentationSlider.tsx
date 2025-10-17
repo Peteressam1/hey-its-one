@@ -269,10 +269,17 @@ const PresentationSlider = ({
 
       {/* Lumina Emblem - appears on all slides */}
       <div className="fixed top-6 left-6 z-50">
-        <img 
+        <motion.img 
+          key={currentSlide}
           src={luminaEmblem} 
           alt="Lumina" 
           className="w-12 h-12 object-contain opacity-90"
+          initial={{ rotate: 0 }}
+          animate={{ rotate: 360 }}
+          transition={{ 
+            duration: 0.6,
+            ease: "easeInOut"
+          }}
         />
       </div>
 
