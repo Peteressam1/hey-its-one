@@ -219,7 +219,7 @@ const CompetitionSlide = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 0.6 }}
-        className="sticky bottom-0 z-10 mt-8"
+        className="relative z-10 mt-8"
       >
         <Card className="p-6 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-2xl shadow-lg text-center">
           <p className="text-lg text-white font-medium">
