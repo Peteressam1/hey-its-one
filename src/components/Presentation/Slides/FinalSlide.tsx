@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import luminaLogoText from "@/assets/lumina-logo-text-2.png";
+import qrCode from "@/assets/qr-lumina.png";
 
 const FinalSlide = () => {
   return (
@@ -43,6 +44,25 @@ const FinalSlide = () => {
             Know the Why.
           </span>
         </motion.h1>
+
+        {/* Connect with Us */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col items-center gap-6"
+        >
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
+            Connect with Us
+          </h2>
+          <div className="bg-white p-4 rounded-2xl shadow-2xl">
+            <img
+              src={qrCode}
+              alt="Lumina QR Code"
+              className="w-48 h-48 md:w-56 md:h-56"
+            />
+          </div>
+        </motion.div>
       </div>
     </div>
   );
