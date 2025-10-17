@@ -5,8 +5,6 @@ import OpenChallengesSlide from "@/components/Presentation/Slides/OpenChallenges
 import EventCameraExplainerSlide from "@/components/Presentation/Slides/EventCameraExplainerSlide";
 import EventMathematicsSlide from "@/components/Presentation/Slides/EventMathematicsSlide";
 import EventVsRGBComparisonSlide from "@/components/Presentation/Slides/EventVsRGBComparisonSlide";
-import ProblemSlide from "@/components/Presentation/Slides/ProblemSlide";
-import CostOfFrameVisionSlide from "@/components/Presentation/Slides/CostOfFrameVisionSlide";
 import SolutionSlide from "@/components/Presentation/Slides/SolutionSlide";
 import MarketSlide from "@/components/Presentation/Slides/MarketSlide";
 import GoToMarketSlide from "@/components/Presentation/Slides/GoToMarketSlide";
@@ -24,8 +22,6 @@ const Index = () => {
     { id: 'event-explainer', title: 'What Are Event Cameras', component: EventCameraExplainerSlide },
     { id: 'event-mathematics', title: 'Mathematical Model', component: EventMathematicsSlide },
     { id: 'event-vs-rgb', title: 'Event vs RGB', component: EventVsRGBComparisonSlide },
-    { id: 'problem', title: 'The Problem', component: ProblemSlide },
-    // { id: 'cost-of-frame', title: 'Cost of Frame Vision', component: CostOfFrameVisionSlide },
     { id: 'solution', title: 'Industrial Proven', component: SolutionSlide },
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
     { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
