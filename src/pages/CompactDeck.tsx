@@ -17,6 +17,7 @@ import CompetitionSlide from "@/components/Presentation/Slides/CompetitionSlide"
 import RoadmapSlide from "@/components/Presentation/Slides/RoadmapSlide";
 import AskSlideV2 from "@/components/Presentation/Slides/AskSlideV2";
 import { CustomCursor } from "@/components/ui/custom-cursor";
+import FinalSlide from "@/components/Presentation/Slides/FinalSlide";
 
 // Compact Pre-Seed Deck with Premium Design
 const CompactDeck = () => {
@@ -35,6 +36,7 @@ const CompactDeck = () => {
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
     { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
     { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
+    { id: 'final', title: 'See the Invisible', component: FinalSlide },
     // { id: 'ask', title: 'The Ask', component: AskSlideV2 } // Commented out for FAPS FAU pitch
   ];
 
