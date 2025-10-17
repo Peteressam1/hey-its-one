@@ -273,12 +273,6 @@ const PresentationSlider = ({
         </Badge>
       </div>
 
-      {/* Current Slide Title */}
-      <div className="fixed top-6 left-6 z-50">
-        <Badge variant="outline" className="bg-card/90 backdrop-blur-sm">
-          {slides[currentSlide]?.title}
-        </Badge>
-      </div>
 
       {/* Progress Bar */}
       <div className="fixed top-0 left-0 right-0 h-1 bg-muted/30 z-50">
