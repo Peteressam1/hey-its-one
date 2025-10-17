@@ -66,8 +66,8 @@ const SolutionSlide = () => {
       </div>
 
       {/* Industrial Video Demos - 2x2 Grid */}
-      <div className="relative z-10 max-w-6xl mx-auto mb-8 mt-8 scale-125">
-        <div className="grid grid-cols-2 gap-8">
+      <div className="relative z-10 max-w-6xl mx-auto mb-8 mt-16 scale-125">
+        <div className="grid grid-cols-2 gap-12">
           {/* Event-Based Demo 1 */}
           <Card className="p-3 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-xl shadow-lg">
             <div className="aspect-[16/9] rounded-lg overflow-hidden mb-2">
