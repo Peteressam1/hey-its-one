@@ -2,6 +2,7 @@ import PresentationSlider from "@/components/Presentation/PresentationSlider";
 import TitleSlide from "@/components/Presentation/Slides/TitleSlide";
 import AudienceEngagementSlide from "@/components/Presentation/Slides/AudienceEngagementSlide";
 import OpenChallengesSlide from "@/components/Presentation/Slides/OpenChallengesSlide";
+import EventMathematicsSlide from "@/components/Presentation/Slides/EventMathematicsSlide";
 import EventCameraExplainerSlide from "@/components/Presentation/Slides/EventCameraExplainerSlide";
 import ProblemSlide from "@/components/Presentation/Slides/ProblemSlide";
 import CostOfFrameVisionSlide from "@/components/Presentation/Slides/CostOfFrameVisionSlide";
@@ -19,6 +20,7 @@ const Index = () => {
     { id: 'title', title: 'Lumina Tech', component: TitleSlide },
     { id: 'engagement', title: 'Audience Check', component: AudienceEngagementSlide },
     { id: 'open-challenges', title: 'Open Challenges', component: OpenChallengesSlide },
+    { id: 'event-mathematics', title: 'Event Mathematics', component: EventMathematicsSlide },
     { id: 'event-explainer', title: 'What Are Event Cameras', component: EventCameraExplainerSlide },
     { id: 'problem', title: 'The Problem', component: ProblemSlide },
     // { id: 'cost-of-frame', title: 'Cost of Frame Vision', component: CostOfFrameVisionSlide },

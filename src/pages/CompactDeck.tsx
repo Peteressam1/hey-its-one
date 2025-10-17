@@ -2,6 +2,7 @@ import PresentationSlider from "@/components/Presentation/PresentationSlider";
 import TitleSlide from "@/components/Presentation/Slides/TitleSlide";
 import AudienceEngagementSlide from "@/components/Presentation/Slides/AudienceEngagementSlide";
 import OpenChallengesSlide from "@/components/Presentation/Slides/OpenChallengesSlide";
+import EventMathematicsSlide from "@/components/Presentation/Slides/EventMathematicsSlide";
 import ProblemSlide from "@/components/Presentation/Slides/ProblemSlide";
 // import CostOfFrameVisionSlide from "@/components/Presentation/Slides/CostOfFrameVisionSlide";
 import SolutionSlide from "@/components/Presentation/Slides/SolutionSlide";
@@ -20,6 +21,7 @@ const CompactDeck = () => {
     { id: 'title', title: 'Lumina Tech', component: TitleSlide },
     { id: 'engagement', title: 'Audience Engagement', component: AudienceEngagementSlide },
     { id: 'open-challenges', title: 'Open Challenges', component: OpenChallengesSlide },
+    { id: 'event-mathematics', title: 'Event Mathematics', component: EventMathematicsSlide },
     { id: 'problem', title: 'The Problem', component: ProblemSlide },
     // { id: 'cost-of-frame', title: 'Cost of Frame Vision', component: CostOfFrameVisionSlide },
     { id: 'solution', title: 'Our Solution', component: SolutionSlide },
