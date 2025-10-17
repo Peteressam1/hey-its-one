@@ -24,6 +24,7 @@ const Index = () => {
     { id: 'engagement', title: 'Audience Check', component: AudienceEngagementSlide },
     { id: 'open-challenges', title: 'Open Challenges', component: OpenChallengesSlide },
     { id: 'event-explainer', title: 'What Are Event Cameras', component: EventCameraExplainerSlide },
+    { id: 'closing', title: 'See the Invisible', component: ClosingSlide },
     { id: 'event-mathematics', title: 'Mathematical Model', component: EventMathematicsSlide },
     { id: 'event-vs-rgb', title: 'Event vs RGB', component: EventVsRGBComparisonSlide },
     { id: 'industry-pain', title: 'Industry Challenges', component: IndustryPainPointsSlide },
@@ -34,7 +35,6 @@ const Index = () => {
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
     { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
     { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
-    { id: 'closing', title: 'Closing', component: ClosingSlide },
     // { id: 'ask', title: 'The Ask', component: AskSlideV2 } // Commented out for FAPS FAU pitch
   ];
 
