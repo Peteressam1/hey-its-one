@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ChevronLeft, ChevronRight, Play, Pause, RotateCcw, Maximize, Minimize2, ChevronUp } from 'lucide-react';
+import luminaEmblem from '@/assets/lumina-emblem.png';
 
 interface Slide {
   id: string;
@@ -265,6 +266,15 @@ const PresentationSlider = ({
           )}
         </AnimatePresence>
       </motion.div>
+
+      {/* Lumina Emblem - appears on all slides */}
+      <div className="fixed top-6 left-6 z-50">
+        <img 
+          src={luminaEmblem} 
+          alt="Lumina" 
+          className="w-12 h-12 object-contain opacity-90"
+        />
+      </div>
 
       {/* Slide Counter */}
       <div className="fixed top-6 right-6 z-50">
