@@ -24,11 +24,11 @@ const CompactDeck = () => {
     { id: 'event-explainer', title: 'What Are Event Cameras', component: EventCameraExplainerSlide },
     { id: 'event-mathematics', title: 'Mathematical Model', component: EventMathematicsSlide },
     { id: 'event-vs-rgb', title: 'Event vs RGB', component: EventVsRGBComparisonSlide },
+    { id: 'team', title: 'Team', component: TeamSlide },
     { id: 'solution', title: 'Our Solution', component: SolutionSlide },
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
     { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
     { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
-    { id: 'team', title: 'Team', component: TeamSlide },
     // { id: 'ask', title: 'The Ask', component: AskSlideV2 } // Commented out for FAPS FAU pitch
   ];
 
