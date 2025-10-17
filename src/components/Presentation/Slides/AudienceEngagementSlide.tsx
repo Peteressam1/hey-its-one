@@ -3,13 +3,13 @@ import { Brain, Eye, Zap } from "lucide-react";
 const AudienceEngagementSlide = () => {
   const terms = [{
     icon: Eye,
-    text: "Event Based Cameras"
+    text: "Event Based Cameras?"
   }, {
     icon: Brain,
-    text: "Neuromorphic Vision"
+    text: "Neuromorphic Vision?"
   }, {
     icon: Zap,
-    text: "Dynamic Vision Sensors"
+    text: "Dynamic Vision Sensors?"
   }];
   return <div className="w-full min-h-screen flex flex-col justify-center items-center px-8 py-12 bg-background relative">
       {/* Unified Animated Background */}
