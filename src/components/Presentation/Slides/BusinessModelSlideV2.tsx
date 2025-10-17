@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { DollarSign, Users, Target, Zap, TrendingUp, Repeat } from "lucide-react";
+import { DollarSign, Users, Target, Zap, Repeat } from "lucide-react";
 import { motion } from "framer-motion";
 
 const BusinessModelSlideV2 = () => {
@@ -17,10 +17,10 @@ const BusinessModelSlideV2 = () => {
       model: "Per-line subscription"
     },
     {
-      icon: TrendingUp,
-      title: "Expansion Revenue",
-      description: "Cross-selling to additional production lines and facilities",
-      model: "Land-and-expand strategy"
+      icon: Users,
+      title: "Support & Services",
+      description: "On-site system inspection, maintenance, and technical support",
+      model: "Professional services"
     }
   ];
 
