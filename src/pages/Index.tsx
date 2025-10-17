@@ -16,6 +16,7 @@ import BusinessModelSlideV2 from "@/components/Presentation/Slides/BusinessModel
 import CompetitionSlide from "@/components/Presentation/Slides/CompetitionSlide";
 import RoadmapSlideV2 from "@/components/Presentation/Slides/RoadmapSlideV2";
 import AskSlideV2 from "@/components/Presentation/Slides/AskSlideV2";
+import ClosingSlide from "@/components/Presentation/Slides/ClosingSlide";
 
 const Index = () => {
   const slides = [
@@ -33,6 +34,7 @@ const Index = () => {
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
     { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
     { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
+    { id: 'closing', title: 'Closing', component: ClosingSlide },
     // { id: 'ask', title: 'The Ask', component: AskSlideV2 } // Commented out for FAPS FAU pitch
   ];
 
