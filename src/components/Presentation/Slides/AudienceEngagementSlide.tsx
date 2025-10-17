@@ -48,7 +48,7 @@ const AudienceEngagementSlide = () => {
         }} transition={{
           delay: 0.3 + index * 0.2,
           duration: 0.6
-        }} className="flex items-center justify-center gap-4 p-6 bg-card/80 backdrop-blur-sm border border-border rounded-lg hover:border-primary/40 transition-all duration-300">
+        }} className="flex items-center justify-center gap-4">
               <term.icon className="w-8 h-8 text-primary" />
               <span className="text-2xl font-medium text-foreground">
                 {term.text}
