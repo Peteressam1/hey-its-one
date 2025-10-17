@@ -6,6 +6,16 @@ import { motion } from "framer-motion";
 const CompetitionSlide = () => {
   const competitors = [
     {
+      name: "Lumina Tech",
+      hardware: false,
+      sdk: true,
+      integrator: true,
+      fullStackPaaS: true,
+      eventExpertise: true,
+      mesErp: true,
+      position: "Full-stack event-based PaaS"
+    },
+    {
       name: "Cognex",
       hardware: true,
       sdk: true,
@@ -84,16 +94,6 @@ const CompetitionSlide = () => {
       eventExpertise: true,
       mesErp: false,
       position: "Event sensors + SDK (Partner)"
-    },
-    {
-      name: "Lumina Tech",
-      hardware: false,
-      sdk: true,
-      integrator: true,
-      fullStackPaaS: true,
-      eventExpertise: true,
-      mesErp: true,
-      position: "Full-stack event-based PaaS"
     }
   ];
 
@@ -144,61 +144,76 @@ const CompetitionSlide = () => {
               </div>
               
               {/* Rows */}
-              {competitors.map((competitor, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className={`grid grid-cols-7 gap-2 py-2 rounded-lg ${
-                    competitor.name === "Lumina Tech"
-                      ? 'bg-primary/10 border border-primary/20' 
-                      : ''
-                  }`}
-                >
-                  <div className={`text-sm font-semibold ${
-                    competitor.name === "Lumina Tech" ? 'text-primary' : 'text-white'
-                  }`}>
-                    {competitor.name}
-                  </div>
-                  <div className="flex justify-center">
-                    {competitor.hardware ? 
-                      <CheckCircle className="w-4 h-4 text-primary" /> : 
-                      <Circle className="w-4 h-4 text-muted/50" />
-                    }
-                  </div>
-                  <div className="flex justify-center">
-                    {competitor.sdk ? 
-                      <CheckCircle className="w-4 h-4 text-primary" /> : 
-                      <Circle className="w-4 h-4 text-muted/50" />
-                    }
-                  </div>
-                  <div className="flex justify-center">
-                    {competitor.integrator ? 
-                      <CheckCircle className="w-4 h-4 text-primary" /> : 
-                      <Circle className="w-4 h-4 text-muted/50" />
-                    }
-                  </div>
-                  <div className="flex justify-center">
-                    {competitor.fullStackPaaS ? 
-                      <CheckCircle className="w-4 h-4 text-primary" /> : 
-                      <Circle className="w-4 h-4 text-muted/50" />
-                    }
-                  </div>
-                  <div className="flex justify-center">
-                    {competitor.eventExpertise ? 
-                      <CheckCircle className="w-4 h-4 text-primary" /> : 
-                      <Circle className="w-4 h-4 text-muted/50" />
-                    }
-                  </div>
-                  <div className="flex justify-center">
-                    {competitor.mesErp ? 
-                      <CheckCircle className="w-4 h-4 text-primary" /> : 
-                      <Circle className="w-4 h-4 text-muted/50" />
-                    }
-                  </div>
-                </motion.div>
-              ))}
+              {competitors.map((competitor, index) => {
+                const isLumina = competitor.name === "Lumina Tech";
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1, duration: 0.5 }}
+                    className={`grid grid-cols-7 gap-2 py-3 rounded-lg relative ${
+                      isLumina
+                        ? 'bg-gradient-to-r from-primary/20 via-primary/10 to-primary/5 border-2 border-primary/40 shadow-lg shadow-primary/20' 
+                        : 'py-2'
+                    }`}
+                  >
+                    {/* Dynamic light rays for Lumina */}
+                    {isLumina && (
+                      <>
+                        <div className="absolute inset-0 overflow-hidden rounded-lg pointer-events-none">
+                          <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-primary/60 via-primary/20 to-transparent animate-pulse"></div>
+                          <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-primary/80 via-primary/30 to-transparent animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                          <div className="absolute top-0 left-3/4 w-px h-full bg-gradient-to-b from-primary/60 via-primary/20 to-transparent animate-pulse" style={{ animationDelay: '1s' }}></div>
+                        </div>
+                        <div className="absolute -inset-1 bg-gradient-to-r from-primary/0 via-primary/10 to-primary/0 blur-sm rounded-lg animate-pulse"></div>
+                      </>
+                    )}
+                    
+                    <div className={`text-sm font-semibold relative z-10 ${
+                      isLumina ? 'text-primary text-base' : 'text-white text-sm'
+                    }`}>
+                      {competitor.name}
+                    </div>
+                    <div className="flex justify-center relative z-10">
+                      {competitor.hardware ? 
+                        <CheckCircle className={`w-4 h-4 ${isLumina ? 'text-primary' : 'text-primary'}`} /> : 
+                        <Circle className="w-4 h-4 text-muted/50" />
+                      }
+                    </div>
+                    <div className="flex justify-center relative z-10">
+                      {competitor.sdk ? 
+                        <CheckCircle className={`w-4 h-4 ${isLumina ? 'text-primary' : 'text-primary'}`} /> : 
+                        <Circle className="w-4 h-4 text-muted/50" />
+                      }
+                    </div>
+                    <div className="flex justify-center relative z-10">
+                      {competitor.integrator ? 
+                        <CheckCircle className={`w-4 h-4 ${isLumina ? 'text-primary' : 'text-primary'}`} /> : 
+                        <Circle className="w-4 h-4 text-muted/50" />
+                      }
+                    </div>
+                    <div className="flex justify-center relative z-10">
+                      {competitor.fullStackPaaS ? 
+                        <CheckCircle className={`w-4 h-4 ${isLumina ? 'text-primary' : 'text-primary'}`} /> : 
+                        <Circle className="w-4 h-4 text-muted/50" />
+                      }
+                    </div>
+                    <div className="flex justify-center relative z-10">
+                      {competitor.eventExpertise ? 
+                        <CheckCircle className={`w-4 h-4 ${isLumina ? 'text-primary' : 'text-primary'}`} /> : 
+                        <Circle className="w-4 h-4 text-muted/50" />
+                      }
+                    </div>
+                    <div className="flex justify-center relative z-10">
+                      {competitor.mesErp ? 
+                        <CheckCircle className={`w-4 h-4 ${isLumina ? 'text-primary' : 'text-primary'}`} /> : 
+                        <Circle className="w-4 h-4 text-muted/50" />
+                      }
+                    </div>
+                  </motion.div>
+                );
+              })}
             </div>
             <div className="mt-4 text-xs text-muted text-center">
               Based on public docs as of 2025; scope = industrial QA deployments
@@ -306,10 +321,10 @@ const CompetitionSlide = () => {
         <Card className="p-8 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-2xl shadow-lg text-center">
           <h4 className="text-xl font-bold mb-3 text-white">What We Do That They Don't</h4>
           <p className="text-base text-muted mb-4">
-            Event-first SDK + on-prem edge orchestrator + one-click MES/ERP connectors + ROI calculator + SLA
+            Event-first SDK + edge orchestrator + MES/ERP connectors + ROI calculator
           </p>
           <div className="text-sm text-primary">
-            <strong>Lock-in moat:</strong> Once our SaaS integrates QC data + compliance reports into ERP/MES, we are sticky. Hardware partners enable us, competitors can't replicate integration depth.
+            <strong>Lock-in moat:</strong> Our SaaS integrates QC + compliance into ERP/MES for deep stickiness.
           </div>
         </Card>
       </motion.div>
