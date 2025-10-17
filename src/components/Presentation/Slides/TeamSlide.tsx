@@ -71,7 +71,7 @@ const TeamSlide = () => {
           <span className="text-primary">Meet the Founding Team</span>
         </h1>
         <p className="text-xl text-muted max-w-4xl mx-auto">
-          Founded by experts from DLR, NASA, McKinsey, SAP, and TUM
+          Founded by experts from DLR, NASA, OnSemi, SAP, and TUM
         </p>
       </div>
 
