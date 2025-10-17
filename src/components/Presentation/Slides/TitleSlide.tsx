@@ -2,8 +2,10 @@ import { StatTile } from "@/components/ui/stat-tile";
 import { motion } from "framer-motion";
 import { Expand } from "lucide-react";
 import luminaEmblem from "@/assets/lumina-emblem.png";
-import luminaLogo from "@/assets/lumina-logo-text.png";
-import { TUMAIBadge } from "@/components/ui/tum-ai-badge";
+import fauLogo from "@/assets/logos/FAU_white.png";
+import fapsLogo from "@/assets/logos/FAPS_white.png";
+import tumAiLogo from "@/assets/logos/TUM_AI_White.png";
+import tumLogo from "@/assets/logos/TUM_Logo_white.png";
 
 const TitleSlide = () => {
   return (
@@ -25,15 +27,6 @@ const TitleSlide = () => {
         <img src={luminaEmblem} alt="Lumina Tech" className="h-12 opacity-90" />
       </motion.div>
 
-      {/* TUM AI Badge - Top Right */}
-      <motion.div 
-        className="absolute top-6 right-6 z-20"
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.7, duration: 0.6 }}
-      >
-        <TUMAIBadge variant="subtle" />
-      </motion.div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-8 py-16">
@@ -44,11 +37,6 @@ const TitleSlide = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="space-y-6 mb-12"
         >
-          {/* Lumina Tech Logo */}
-          <div className="flex justify-center mb-6">
-            <img src={luminaLogo} alt="Lumina Tech" className="h-16 opacity-95" />
-          </div>
-
           {/* Tagline */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading text-center tracking-tight">
             <span className="block text-gradient text-glow-animate">
@@ -61,33 +49,48 @@ const TitleSlide = () => {
           
         </motion.div>
 
-        {/* Key Metrics */}
+        {/* Institutional Logos */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8"
+          className="flex items-center justify-center gap-8 max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
         >
-          <motion.div whileHover={{ scale: 1.05 }} className="glass-card card-hover-3d">
-            <StatTile value="$20.38B" label="2024 Market Size" />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.7, duration: 0.5 }}
+            whileHover={{ scale: 1.1, filter: "brightness(1.2)" }}
+          >
+            <img src={fauLogo} alt="FAU" className="h-12 opacity-80" />
           </motion.div>
-          <motion.div whileHover={{ scale: 1.05 }} className="glass-card card-hover-3d">
-            <StatTile value="$41.74B" label="2030 Market Size" />
+          
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.85, duration: 0.5 }}
+            whileHover={{ scale: 1.1, filter: "brightness(1.2)" }}
+          >
+            <img src={fapsLogo} alt="FAPS" className="h-12 opacity-80" />
           </motion.div>
-          <motion.div whileHover={{ scale: 1.05 }} className="glass-card card-hover-3d">
-            <StatTile value="13.0%" label="CAGR Growth" />
+          
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 1.0, duration: 0.5 }}
+            whileHover={{ scale: 1.1, filter: "brightness(1.2)" }}
+          >
+            <img src={tumAiLogo} alt="TUM AI" className="h-12 opacity-80" />
           </motion.div>
-        </motion.div>
-        
-        {/* Source Attribution */}
-        <motion.div
-          className="text-xs text-muted-foreground text-center cursor-pointer hover:text-foreground"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.4 }}
-           title="Click to expand: Machine Vision Market data from Grand View Research 2025"
-        >
-          Source: Grand View Research, Machine Vision Market, 2025. <span className="text-primary">ⓘ</span>
+          
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 1.15, duration: 0.5 }}
+            whileHover={{ scale: 1.1, filter: "brightness(1.2)" }}
+          >
+            <img src={tumLogo} alt="TUM" className="h-16 opacity-80" />
+          </motion.div>
         </motion.div>
       </div>
     </div>

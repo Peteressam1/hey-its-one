@@ -1,5 +1,7 @@
 import PresentationSlider from "@/components/Presentation/PresentationSlider";
 import TitleSlide from "@/components/Presentation/Slides/TitleSlide";
+import AudienceEngagementSlide from "@/components/Presentation/Slides/AudienceEngagementSlide";
+import EventCameraExplainerSlide from "@/components/Presentation/Slides/EventCameraExplainerSlide";
 import ProblemSlide from "@/components/Presentation/Slides/ProblemSlide";
 import CostOfFrameVisionSlide from "@/components/Presentation/Slides/CostOfFrameVisionSlide";
 import SolutionSlide from "@/components/Presentation/Slides/SolutionSlide";
@@ -10,11 +12,12 @@ import CompetitionSlide from "@/components/Presentation/Slides/CompetitionSlide"
 import RoadmapSlideV2 from "@/components/Presentation/Slides/RoadmapSlideV2";
 import TeamSlide from "@/components/Presentation/Slides/TeamSlide";
 import AskSlideV2 from "@/components/Presentation/Slides/AskSlideV2";
-// Compact deck: omit Investor ROI slide for brevity
 
 const Index = () => {
   const slides = [
     { id: 'title', title: 'Lumina Tech', component: TitleSlide },
+    { id: 'engagement', title: 'Audience Check', component: AudienceEngagementSlide },
+    { id: 'event-explainer', title: 'What Are Event Cameras', component: EventCameraExplainerSlide },
     { id: 'problem', title: 'The Problem', component: ProblemSlide },
     { id: 'cost-of-frame', title: 'Cost of Frame Vision', component: CostOfFrameVisionSlide },
     { id: 'solution', title: 'Industrial Proven', component: SolutionSlide },
