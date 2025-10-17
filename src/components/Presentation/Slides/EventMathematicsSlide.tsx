@@ -120,7 +120,7 @@ const EventMathematicsSlide = () => {
                 <img
                   src={sensingComparison}
                   alt="Comparison between conventional and event-based sensing"
-                  className="w-full h-auto"
+                  className="w-full h-auto rounded-2xl"
                 />
               </div>
 
