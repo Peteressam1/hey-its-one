@@ -10,6 +10,7 @@ import IcebergSlide from "@/components/Presentation/Slides/IcebergSlide";
 import WeAreLuminaSlide from "@/components/Presentation/Slides/WeAreLuminaSlide";
 import TeamSlide from "@/components/Presentation/Slides/TeamSlide";
 import SolutionSlide from "@/components/Presentation/Slides/SolutionSlide";
+import DemoSlide from "@/components/Presentation/Slides/DemoSlide";
 import MarketSlide from "@/components/Presentation/Slides/MarketSlide";
 import GoToMarketSlide from "@/components/Presentation/Slides/GoToMarketSlide";
 import BusinessModelSlideV2 from "@/components/Presentation/Slides/BusinessModelSlideV2";
@@ -33,6 +34,7 @@ const CompactDeck = () => {
     { id: 'we-are-lumina', title: 'We Are Lumina', component: WeAreLuminaSlide },
     { id: 'team', title: 'Team', component: TeamSlide },
     { id: 'solution', title: 'Our Solution', component: SolutionSlide },
+    { id: 'demo', title: 'Demo', component: DemoSlide },
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
     { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
     { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
