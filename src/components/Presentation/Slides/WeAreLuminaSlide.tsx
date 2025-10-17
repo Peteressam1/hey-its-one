@@ -44,7 +44,7 @@ const WeAreLuminaSlide = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-2xl text-muted-foreground text-center max-w-3xl whitespace-nowrap"
+          className="text-2xl text-muted-foreground whitespace-nowrap mx-auto"
         >
           Making vision systems faster, adaptive, and explainable in industrial automation
         </motion.p>
