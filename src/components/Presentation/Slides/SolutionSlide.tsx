@@ -137,7 +137,7 @@ const SolutionSlide = () => {
           {/* Other Industries */}
           <Card className="p-4 bg-card/80 backdrop-blur-sm border border-accent/20 rounded-xl shadow-lg">
             <h4 className="text-lg font-bold mb-3 text-white text-center">Market Expansion</h4>
-            <div className="grid grid-cols-2 gap-3 text-sm text-center">
+            <div className="grid grid-cols-4 gap-3 text-sm text-center">
               <div className="p-3 bg-accent/10 rounded-lg text-accent font-medium">
                 <div className="text-base mb-1">🛡️ Defense</div>
                 <div className="text-xs text-muted">Surveillance & Tracking</div>
