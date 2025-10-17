@@ -1,5 +1,6 @@
 import PresentationSlider from "@/components/Presentation/PresentationSlider";
 import TitleSlide from "@/components/Presentation/Slides/TitleSlide";
+import AudienceEngagementSlide from "@/components/Presentation/Slides/AudienceEngagementSlide";
 import ProblemSlide from "@/components/Presentation/Slides/ProblemSlide";
 // import CostOfFrameVisionSlide from "@/components/Presentation/Slides/CostOfFrameVisionSlide";
 import SolutionSlide from "@/components/Presentation/Slides/SolutionSlide";
@@ -16,6 +17,7 @@ import { CustomCursor } from "@/components/ui/custom-cursor";
 const CompactDeck = () => {
   const slides = [
     { id: 'title', title: 'Lumina Tech', component: TitleSlide },
+    { id: 'engagement', title: 'Audience Engagement', component: AudienceEngagementSlide },
     { id: 'problem', title: 'The Problem', component: ProblemSlide },
     // { id: 'cost-of-frame', title: 'Cost of Frame Vision', component: CostOfFrameVisionSlide },
     { id: 'solution', title: 'Our Solution', component: SolutionSlide },

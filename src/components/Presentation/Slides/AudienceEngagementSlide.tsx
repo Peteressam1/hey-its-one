@@ -3,9 +3,9 @@ import { Brain, Eye, Zap } from "lucide-react";
 
 const AudienceEngagementSlide = () => {
   const terms = [
-    { icon: Eye, text: "Event-based cameras" },
-    { icon: Brain, text: "Neuromorphic vision sensors" },
-    { icon: Zap, text: "Dynamic Vision Sensors (DVS)" },
+    { icon: Eye, text: "Event Based Cameras" },
+    { icon: Brain, text: "Neuromorphic Vision" },
+    { icon: Zap, text: "Dynamic Vision Sensors" },
   ];
 
   return (
