@@ -6,29 +6,33 @@ const ProblemSlideV2 = () => {
   const painPoints = [
     {
       icon: AlertCircle,
-      title: "Defects Cost Big",
-      description: "Scrap, rework, delays, and customer complaints drain resources",
+      title: "Defects Cost Billions",
+      description: "Manufacturing quality issues cost 5-15% of annual revenue",
+      stat: "€50K-500K per line/year in scrap, rework & delays",
       color: "text-destructive",
       borderColor: "border-destructive/30"
     },
     {
       icon: Clock,
-      title: "Root Cause is Slow",
-      description: "Manual diagnosis takes hours or days, delaying fixes",
+      title: "Root Cause Takes Days",
+      description: "Manual diagnosis takes 2-5 days per incident",
+      stat: "€10K-50K in downtime costs while teams investigate",
       color: "text-warning",
       borderColor: "border-warning/30"
     },
     {
       icon: Users,
-      title: "Quality Teams Overloaded",
-      description: "Too many alerts, can't keep up with the volume",
+      title: "Teams Drowning in Alerts",
+      description: "90% of alerts are false positives",
+      stat: "Quality engineers spend 60% of time firefighting",
       color: "text-accent",
       borderColor: "border-accent/30"
     },
     {
       icon: RefreshCw,
-      title: "Issues Repeat",
-      description: "No systematic learning means the same defects keep happening",
+      title: "Same Issues Keep Repeating",
+      description: "70% of defects are recurring problems",
+      stat: "No systematic learning = endless quality loops",
       color: "text-destructive",
       borderColor: "border-destructive/30"
     }
@@ -81,9 +85,14 @@ const ProblemSlideV2 = () => {
                     <h3 className="text-2xl font-bold text-foreground">
                       {point.title}
                     </h3>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       {point.description}
                     </p>
+                    <div className="mt-auto pt-4 border-t border-border/30 w-full">
+                      <p className="text-lg font-semibold text-primary">
+                        {point.stat}
+                      </p>
+                    </div>
                   </div>
                 </Card>
               </motion.div>
