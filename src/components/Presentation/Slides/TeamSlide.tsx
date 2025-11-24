@@ -9,21 +9,6 @@ import peterPhoto from "@/assets/team/peter.png";
 const TeamSlide = () => {
   const foundingTeam = [
     {
-      name: "Mohamed El Sherbini",
-      role: "Co-Founder & CEO", 
-      bullets: [
-        "M.Sc. Electrical Engineering & Robotics, FAU",
-        "Space Robotics Engineer, German Space Agency"
-      ],
-      photo: mohamedPhoto,
-      logos: [
-        { alt: "FAU", src: "/logos/fau-white.png", size: "h-8" },
-        { alt: "DLR", src: "/logos/dlr-white.png", size: "h-12" },
-        { alt: "Airbus", src: "/logos/airbus-white.png", size: "h-10" },
-        { alt: "BMW", src: "/logos/bmw-white-new.png", size: "h-10" },
-      ]
-    },
-    {
       name: "Aly Barakat",
       role: "Co-Founder & CTO/COO",
       bullets: [
@@ -36,6 +21,21 @@ const TeamSlide = () => {
         { alt: "OnSemi", src: "/logos/onsemi-white.png", size: "h-4" },
         { alt: "Rohde & Schwarz", src: "/logos/rs-white.png", size: "h-6" },
         { alt: "Mouser", src: "/logos/mouser-white.png", size: "h-5" },
+      ]
+    },
+    {
+      name: "Mohamed El Sherbini",
+      role: "Co-Founder & CEO", 
+      bullets: [
+        "M.Sc. Electrical Engineering & Robotics, FAU",
+        "Space Robotics Engineer, German Space Agency"
+      ],
+      photo: mohamedPhoto,
+      logos: [
+        { alt: "FAU", src: "/logos/fau-white.png", size: "h-8" },
+        { alt: "DLR", src: "/logos/dlr-white.png", size: "h-12" },
+        { alt: "Airbus", src: "/logos/airbus-white.png", size: "h-10" },
+        { alt: "BMW", src: "/logos/bmw-white-new.png", size: "h-10" },
       ]
     },
     {
