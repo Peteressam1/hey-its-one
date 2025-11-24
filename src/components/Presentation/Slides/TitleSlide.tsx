@@ -38,14 +38,16 @@ const TitleSlide = () => {
           className="space-y-6 mb-12"
         >
           {/* Tagline */}
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading text-center tracking-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading text-center tracking-tight mb-4">
             <span className="block text-gradient text-glow-animate">
-              See the Invisible.
-            </span>
-            <span className="block text-gradient text-glow-animate mt-2">
-              Know the Why.
+              Full-Stack Agentic AI for Production Quality
             </span>
           </h1>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading text-center tracking-tight">
+            <span className="block text-gradient text-glow-animate">
+              See the Invisible. Know the Why.
+            </span>
+          </h2>
           
         </motion.div>
 

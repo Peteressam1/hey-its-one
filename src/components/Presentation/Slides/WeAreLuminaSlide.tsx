@@ -44,9 +44,9 @@ const WeAreLuminaSlide = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-2xl text-muted-foreground whitespace-nowrap mx-auto"
+          className="text-2xl text-muted-foreground text-center mx-auto max-w-4xl"
         >
-          Making vision systems faster, adaptive, and explainable for quality control in industrial automation
+          Full-Stack Agentic AI for Production Quality
         </motion.p>
       </div>
     </div>

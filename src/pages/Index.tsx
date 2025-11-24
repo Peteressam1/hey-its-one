@@ -1,43 +1,25 @@
 import PresentationSlider from "@/components/Presentation/PresentationSlider";
 import TitleSlide from "@/components/Presentation/Slides/TitleSlide";
-import AudienceEngagementSlide from "@/components/Presentation/Slides/AudienceEngagementSlide";
-import OpenChallengesSlide from "@/components/Presentation/Slides/OpenChallengesSlide";
-import EventCameraExplainerSlide from "@/components/Presentation/Slides/EventCameraExplainerSlide";
-import EventMathematicsSlide from "@/components/Presentation/Slides/EventMathematicsSlide";
-import EventVsRGBComparisonSlide from "@/components/Presentation/Slides/EventVsRGBComparisonSlide";
-import IndustryPainPointsSlide from "@/components/Presentation/Slides/IndustryPainPointsSlide";
-import IcebergSlide from "@/components/Presentation/Slides/IcebergSlide";
+import ProblemSlideV2 from "@/components/Presentation/Slides/ProblemSlideV2";
+import CurrentSolutionsSlide from "@/components/Presentation/Slides/CurrentSolutionsSlide";
 import WeAreLuminaSlide from "@/components/Presentation/Slides/WeAreLuminaSlide";
 import TeamSlide from "@/components/Presentation/Slides/TeamSlide";
-import SolutionSlide from "@/components/Presentation/Slides/SolutionSlide";
-import MarketSlide from "@/components/Presentation/Slides/MarketSlide";
-import GoToMarketSlide from "@/components/Presentation/Slides/GoToMarketSlide";
-import BusinessModelSlideV2 from "@/components/Presentation/Slides/BusinessModelSlideV2";
-import CompetitionSlide from "@/components/Presentation/Slides/CompetitionSlide";
-import RoadmapSlideV2 from "@/components/Presentation/Slides/RoadmapSlideV2";
-import AskSlideV2 from "@/components/Presentation/Slides/AskSlideV2";
+import OurSolutionSlide from "@/components/Presentation/Slides/OurSolutionSlide";
+import DemoSlide from "@/components/Presentation/Slides/DemoSlide";
+import ComprehensiveMarketSlide from "@/components/Presentation/Slides/ComprehensiveMarketSlide";
 import ClosingSlide from "@/components/Presentation/Slides/ClosingSlide";
-import FinalSlide from "@/components/Presentation/Slides/FinalSlide";
 
 const Index = () => {
   const slides = [
     { id: 'title', title: 'Lumina Tech', component: TitleSlide },
-    { id: 'engagement', title: 'Audience Check', component: AudienceEngagementSlide },
-    { id: 'open-challenges', title: 'Open Challenges', component: OpenChallengesSlide },
-    { id: 'event-explainer', title: 'What Are Event Cameras', component: EventCameraExplainerSlide },
-    { id: 'closing', title: 'See the Invisible', component: ClosingSlide },
-    { id: 'event-mathematics', title: 'Mathematical Model', component: EventMathematicsSlide },
-    { id: 'event-vs-rgb', title: 'Event vs RGB', component: EventVsRGBComparisonSlide },
-    { id: 'industry-pain', title: 'Industry Challenges', component: IndustryPainPointsSlide },
-    { id: 'iceberg', title: 'Hidden Complexity', component: IcebergSlide },
+    { id: 'problem', title: 'The Problem', component: ProblemSlideV2 },
+    { id: 'current-solutions', title: 'Current Solutions', component: CurrentSolutionsSlide },
     { id: 'we-are-lumina', title: 'We Are Lumina', component: WeAreLuminaSlide },
     { id: 'team', title: 'Team', component: TeamSlide },
-    { id: 'solution', title: 'Industrial Proven', component: SolutionSlide },
-    { id: 'market', title: 'Market Opportunity', component: MarketSlide },
-    { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
-    { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
-    { id: 'we-are-lumina-final', title: 'We Are Lumina', component: WeAreLuminaSlide },
-    { id: 'final', title: 'See the Invisible', component: FinalSlide },
+    { id: 'our-solution', title: 'Our Solution', component: OurSolutionSlide },
+    { id: 'demo', title: 'Demo', component: DemoSlide },
+    { id: 'market', title: 'Market Analysis', component: ComprehensiveMarketSlide },
+    { id: 'closing', title: 'Thank You', component: ClosingSlide },
   ];
 
   return (
