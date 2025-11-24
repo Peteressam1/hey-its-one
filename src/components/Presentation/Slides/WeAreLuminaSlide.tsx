@@ -56,92 +56,15 @@ const WeAreLuminaSlide = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-6xl flex flex-col items-center justify-center space-y-12">
+      <div className="relative z-10 w-full max-w-6xl flex flex-col items-center justify-center space-y-16">
         
-        {/* Opening Statement - with glitch effect */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="text-center space-y-2"
-        >
-          <motion.h2
-            className="text-4xl md:text-5xl font-heading tracking-tight"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <motion.span 
-              className="block text-gradient text-glow-animate"
-              animate={{ 
-                textShadow: [
-                  "0 0 10px rgba(147, 51, 234, 0.3)",
-                  "0 0 30px rgba(147, 51, 234, 0.6)",
-                  "0 0 10px rgba(147, 51, 234, 0.3)"
-                ]
-              }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            >
-              See the Invisible.
-            </motion.span>
-          </motion.h2>
-          <motion.h2
-            className="text-4xl md:text-5xl font-heading tracking-tight"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <motion.span 
-              className="block text-gradient text-glow-animate"
-              animate={{ 
-                textShadow: [
-                  "0 0 10px rgba(147, 51, 234, 0.3)",
-                  "0 0 30px rgba(147, 51, 234, 0.6)",
-                  "0 0 10px rgba(147, 51, 234, 0.3)"
-                ]
-              }}
-              transition={{ duration: 2, delay: 0.5, repeat: Infinity, ease: "easeInOut" }}
-            >
-              Know the Why.
-            </motion.span>
-          </motion.h2>
-        </motion.div>
-
-        {/* Dramatic Pause with Particle Effect */}
-        <motion.div
-          className="h-12"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0, 1, 0] }}
-          transition={{ duration: 1.5, delay: 0.8 }}
-        >
-          <motion.div 
-            className="flex items-center justify-center space-x-2"
-            animate={{ scale: [1, 1.2, 1] }}
-            transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
-          >
-            {[...Array(3)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="w-2 h-2 rounded-full bg-primary"
-                animate={{ opacity: [0.3, 1, 0.3] }}
-                transition={{ 
-                  duration: 1.5,
-                  delay: i * 0.2,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
-            ))}
-          </motion.div>
-        </motion.div>
-
         {/* "We Are" Title with dramatic reveal */}
         <motion.h1
           initial={{ opacity: 0, scale: 0.5, rotateX: -90 }}
           animate={{ opacity: 1, scale: 1, rotateX: 0 }}
           transition={{ 
             duration: 1, 
-            delay: 1.2, 
+            delay: 0.5, 
             ease: [0.22, 1, 0.36, 1],
             type: "spring",
             stiffness: 100
@@ -161,7 +84,7 @@ const WeAreLuminaSlide = () => {
           }}
           transition={{ 
             duration: 1.2, 
-            delay: 1.8, 
+            delay: 1.2, 
             ease: [0.22, 1, 0.36, 1] 
           }}
           className="w-full max-w-3xl relative"
@@ -185,20 +108,32 @@ const WeAreLuminaSlide = () => {
           </motion.div>
         </motion.div>
 
-        {/* Tagline with typewriter effect */}
+        {/* Tagline with reveal effect */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.5 }}
-          className="text-center space-y-2"
+          transition={{ duration: 0.8, delay: 2 }}
+          className="text-center"
         >
           <motion.p
-            className="text-2xl md:text-3xl text-muted-foreground font-medium"
+            className="text-3xl md:text-4xl text-foreground font-semibold"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 2.8 }}
+            transition={{ duration: 1, delay: 2.3 }}
           >
-            Full-Stack Agentic AI for Production Quality
+            <motion.span
+              className="text-gradient"
+              animate={{ 
+                textShadow: [
+                  "0 0 10px rgba(147, 51, 234, 0.2)",
+                  "0 0 20px rgba(147, 51, 234, 0.4)",
+                  "0 0 10px rgba(147, 51, 234, 0.2)"
+                ]
+              }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            >
+              Full-Stack Agentic AI for Quality Control
+            </motion.span>
           </motion.p>
         </motion.div>
       </div>
