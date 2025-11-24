@@ -6,33 +6,37 @@ const ProblemSlideV2 = () => {
   const painPoints = [
     {
       icon: AlertCircle,
-      title: "Defects Cost Billions",
-      description: "Manufacturing quality issues cost 5-15% of annual revenue",
-      stat: "€50K-500K per line/year in scrap, rework & delays",
+      title: "Missed Defects Cost Billions",
+      description: "Factories lose €300K–€3M per site per year from scrap, rework, downtime, and customer returns",
+      stat: "COPQ = 15–20% of revenue",
+      source: "ASQ, Modus Advanced, Katana Manufacturing",
       color: "text-destructive",
       borderColor: "border-destructive/30"
     },
     {
       icon: Clock,
-      title: "Root Cause Takes Days",
-      description: "Manual diagnosis takes 2-5 days per incident",
-      stat: "€10K-50K in downtime costs while teams investigate",
+      title: "Root Cause Takes Too Long",
+      description: "Finding why a defect happens takes 2–5 days of manual investigations—data gathering, cross-team coordination, trial-and-error",
+      stat: "Delays fixes, multiplies losses exponentially",
+      source: "IEEE & Lean Six Sigma studies",
       color: "text-warning",
       borderColor: "border-warning/30"
     },
     {
       icon: Users,
-      title: "Teams Drowning in Alerts",
-      description: "90% of alerts are false positives",
-      stat: "Quality engineers spend 60% of time firefighting",
+      title: "Teams Overwhelmed by Alerts",
+      description: "Factories receive hundreds of alerts daily, but 52–83% are false positives",
+      stat: "Operators get desensitized, miss real defects, stay reactive",
+      source: "Atlassian, Strangebee 2023, Intelgic AI",
       color: "text-accent",
       borderColor: "border-accent/30"
     },
     {
       icon: RefreshCw,
-      title: "Same Issues Keep Repeating",
-      description: "70% of defects are recurring problems",
-      stat: "No systematic learning = endless quality loops",
+      title: "Same Issues Keep Coming Back",
+      description: "Most systems detect BUT don't diagnose. They can't tell which station caused it, which sensor drifted, or which setting shifted",
+      stat: "So failures repeat every week, causing chronic losses",
+      source: "Reddit r/manufacturing + IEEE RCA studies",
       color: "text-destructive",
       borderColor: "border-destructive/30"
     }
@@ -58,7 +62,7 @@ const ProblemSlideV2 = () => {
           className="text-center mb-16"
         >
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-            The Problem
+            Quality Losses Quietly Drain Millions
           </h1>
         </motion.div>
 
@@ -88,9 +92,12 @@ const ProblemSlideV2 = () => {
                     <p className="text-base text-muted-foreground leading-relaxed">
                       {point.description}
                     </p>
-                    <div className="mt-auto pt-4 border-t border-border/30 w-full">
+                    <div className="mt-auto pt-4 border-t border-border/30 w-full space-y-2">
                       <p className="text-lg font-semibold text-primary">
                         {point.stat}
+                      </p>
+                      <p className="text-xs text-muted-foreground/60 italic">
+                        {point.source}
                       </p>
                     </div>
                   </div>
@@ -99,6 +106,18 @@ const ProblemSlideV2 = () => {
             );
           })}
         </div>
+
+        {/* Footer Statement */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1, ease: [0.22, 1, 0.36, 1] }}
+          className="text-center mt-12"
+        >
+          <p className="text-xl text-muted-foreground italic">
+            Factories don't struggle to <span className="text-foreground font-semibold">see</span> defects—they struggle to understand <span className="text-primary font-semibold">why</span> they happen.
+          </p>
+        </motion.div>
       </div>
     </div>
   );
