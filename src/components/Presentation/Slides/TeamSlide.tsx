@@ -42,8 +42,8 @@ const TeamSlide = () => {
       name: "Peter Khalil", 
       role: "Co-Founder & CIO",
       bullets: [
-        "Ex SAP Consultant at SAP",
-        "Ex-SAP Specialist @ BestSecret GmbH"
+        "M.Sc Information Systems, Uni Bremen",
+        "Ex-SAP Consultant at SAP"
       ],
       photo: peterPhoto,
       logos: [
