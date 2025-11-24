@@ -4,10 +4,9 @@ import ProblemSlideV2 from "@/components/Presentation/Slides/ProblemSlideV2";
 import CurrentSolutionsSlide from "@/components/Presentation/Slides/CurrentSolutionsSlide";
 import WeAreLuminaSlide from "@/components/Presentation/Slides/WeAreLuminaSlide";
 import TeamSlide from "@/components/Presentation/Slides/TeamSlide";
-import OurSolutionSlide from "@/components/Presentation/Slides/OurSolutionSlide";
+import SolutionAndCompetitiveEdgeSlide from "@/components/Presentation/Slides/SolutionAndCompetitiveEdgeSlide";
 import DemoSlide from "@/components/Presentation/Slides/DemoSlide";
 import ComprehensiveMarketSlide from "@/components/Presentation/Slides/ComprehensiveMarketSlide";
-import CompetitivePositioningSlide from "@/components/Presentation/Slides/CompetitivePositioningSlide";
 import FinalSlide from "@/components/Presentation/Slides/FinalSlide";
 
 const Index = () => {
@@ -17,10 +16,9 @@ const Index = () => {
     { id: 'current-solutions', title: 'Current Solutions', component: CurrentSolutionsSlide },
     { id: 'we-are-lumina', title: 'We Are Lumina', component: WeAreLuminaSlide },
     { id: 'team', title: 'Team', component: TeamSlide },
-    { id: 'our-solution', title: 'Our Solution', component: OurSolutionSlide },
+    { id: 'solution-edge', title: 'Solution & Why We Win', component: SolutionAndCompetitiveEdgeSlide },
     { id: 'demo', title: 'Demo', component: DemoSlide },
     { id: 'market', title: 'Market Analysis', component: ComprehensiveMarketSlide },
-    { id: 'competition', title: 'Why We Win', component: CompetitivePositioningSlide },
     { id: 'final', title: 'Connect With Us', component: FinalSlide },
   ];
 

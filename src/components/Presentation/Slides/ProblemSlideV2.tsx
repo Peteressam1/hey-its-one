@@ -6,39 +6,21 @@ const ProblemSlideV2 = () => {
   const painPoints = [
     {
       icon: AlertCircle,
-      title: "Missed Defects Cost Billions",
-      description: "Factories lose €300K–€3M per site per year from scrap, rework, downtime, and customer returns",
-      stat: "COPQ = 15–20% of revenue",
-      source: "ASQ, Modus Advanced, Katana Manufacturing",
+      title: "Quality Failures Drain Millions & Keep Repeating",
+      description: "Factories lose €300K–€3M per site per year from scrap, rework, downtime, and returns. Systems can detect defects but can't diagnose root causes—so the same issues come back every week, causing chronic losses.",
+      stat: "COPQ = 15–20% of revenue • Same problems repeat weekly",
+      source: "ASQ, IEEE RCA studies, Reddit r/manufacturing",
       color: "text-destructive",
       borderColor: "border-destructive/30"
     },
     {
       icon: Clock,
-      title: "Root Cause Takes Too Long",
-      description: "Finding why a defect happens takes 2–5 days of manual investigations—data gathering, cross-team coordination, trial-and-error",
-      stat: "Delays fixes, multiplies losses exponentially",
-      source: "IEEE & Lean Six Sigma studies",
+      title: "Teams Can't Find Why Fast Enough",
+      description: "Root cause takes 2–5 days of manual investigation. Meanwhile, hundreds of daily alerts overwhelm operators—52–83% are false positives. Teams stay reactive, miss real defects, and can't fix issues at the source.",
+      stat: "2–5 days per RCA • 52–83% false positive alerts",
+      source: "IEEE, Lean Six Sigma, Atlassian, Strangebee 2023",
       color: "text-warning",
       borderColor: "border-warning/30"
-    },
-    {
-      icon: Users,
-      title: "Teams Overwhelmed by Alerts",
-      description: "Factories receive hundreds of alerts daily, but 52–83% are false positives",
-      stat: "Operators get desensitized, miss real defects, stay reactive",
-      source: "Atlassian, Strangebee 2023, Intelgic AI",
-      color: "text-accent",
-      borderColor: "border-accent/30"
-    },
-    {
-      icon: RefreshCw,
-      title: "Same Issues Keep Coming Back",
-      description: "Most systems detect BUT don't diagnose. They can't tell which station caused it, which sensor drifted, or which setting shifted",
-      stat: "So failures repeat every week, causing chronic losses",
-      source: "Reddit r/manufacturing + IEEE RCA studies",
-      color: "text-destructive",
-      borderColor: "border-destructive/30"
     }
   ];
 
@@ -67,7 +49,7 @@ const ProblemSlideV2 = () => {
         </motion.div>
 
         {/* Pain Points Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {painPoints.map((point, index) => {
             const Icon = point.icon;
             return (
