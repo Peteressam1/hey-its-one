@@ -63,11 +63,11 @@ const WeAreLuminaSlide = () => {
           initial={{ opacity: 0, scale: 0.5, rotateX: -90 }}
           animate={{ opacity: 1, scale: 1, rotateX: 0 }}
           transition={{ 
-            duration: 1, 
-            delay: 0.5, 
+            duration: 0.6, 
+            delay: 0.2, 
             ease: [0.22, 1, 0.36, 1],
             type: "spring",
-            stiffness: 100
+            stiffness: 120
           }}
           className="text-6xl md:text-7xl font-bold text-center"
         >
@@ -83,8 +83,8 @@ const WeAreLuminaSlide = () => {
             filter: "brightness(1)"
           }}
           transition={{ 
-            duration: 1.2, 
-            delay: 1.2, 
+            duration: 0.8, 
+            delay: 0.6, 
             ease: [0.22, 1, 0.36, 1] 
           }}
           className="w-full max-w-3xl relative"
@@ -108,31 +108,31 @@ const WeAreLuminaSlide = () => {
           </motion.div>
         </motion.div>
 
-        {/* Tagline with reveal effect */}
+        {/* Tagline with reveal effect and glow */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
           className="text-center"
         >
           <motion.p
-            className="text-3xl md:text-4xl text-foreground font-semibold"
+            className="text-3xl md:text-4xl font-heading tracking-tight"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 2.3 }}
+            transition={{ duration: 0.6, delay: 1.4 }}
           >
             <motion.span
-              className="text-gradient"
+              className="text-gradient text-glow-animate"
               animate={{ 
                 textShadow: [
-                  "0 0 10px rgba(147, 51, 234, 0.2)",
-                  "0 0 20px rgba(147, 51, 234, 0.4)",
-                  "0 0 10px rgba(147, 51, 234, 0.2)"
+                  "0 0 10px rgba(147, 51, 234, 0.3)",
+                  "0 0 30px rgba(147, 51, 234, 0.6)",
+                  "0 0 10px rgba(147, 51, 234, 0.3)"
                 ]
               }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             >
-              Full-Stack Agentic AI for Quality Control
+              a Full-Stack Agentic AI for Quality Control
             </motion.span>
           </motion.p>
         </motion.div>
