@@ -7,7 +7,8 @@ import TeamSlide from "@/components/Presentation/Slides/TeamSlide";
 import OurSolutionSlide from "@/components/Presentation/Slides/OurSolutionSlide";
 import DemoSlide from "@/components/Presentation/Slides/DemoSlide";
 import ComprehensiveMarketSlide from "@/components/Presentation/Slides/ComprehensiveMarketSlide";
-import ClosingSlide from "@/components/Presentation/Slides/ClosingSlide";
+import CompetitivePositioningSlide from "@/components/Presentation/Slides/CompetitivePositioningSlide";
+import FinalSlide from "@/components/Presentation/Slides/FinalSlide";
 
 const Index = () => {
   const slides = [
@@ -19,7 +20,8 @@ const Index = () => {
     { id: 'our-solution', title: 'Our Solution', component: OurSolutionSlide },
     { id: 'demo', title: 'Demo', component: DemoSlide },
     { id: 'market', title: 'Market Analysis', component: ComprehensiveMarketSlide },
-    { id: 'closing', title: 'Thank You', component: ClosingSlide },
+    { id: 'competition', title: 'Why We Win', component: CompetitivePositioningSlide },
+    { id: 'final', title: 'Connect With Us', component: FinalSlide },
   ];
 
   return (
