@@ -7,18 +7,18 @@ const ProblemSlideV2 = () => {
     {
       icon: AlertCircle,
       title: "Quality Failures Drain Millions & Keep Repeating",
-      description: "Factories lose €300K–€3M per site per year from scrap, rework, downtime, and returns. Systems can detect defects but can't diagnose root causes—so the same issues come back every week, causing chronic losses.",
-      stat: "COPQ = 15–20% of revenue • Same problems repeat weekly",
-      source: "ASQ, IEEE RCA studies, Reddit r/manufacturing",
+      description: "Factories lose €300K–€3M per site annually from defects. Systems detect issues but can't diagnose root causes—so problems repeat weekly.",
+      stat: "COPQ = 15–20% of revenue • Chronic recurring failures",
+      source: "ASQ, IEEE Quality Studies",
       color: "text-destructive",
       borderColor: "border-destructive/30"
     },
     {
       icon: Clock,
       title: "Teams Can't Find Why Fast Enough",
-      description: "Root cause takes 2–5 days of manual investigation. Meanwhile, hundreds of daily alerts overwhelm operators—52–83% are false positives. Teams stay reactive, miss real defects, and can't fix issues at the source.",
-      stat: "2–5 days per RCA • 52–83% false positive alerts",
-      source: "IEEE, Lean Six Sigma, Atlassian, Strangebee 2023",
+      description: "Root cause analysis takes 2–5 days. Daily alerts overwhelm operators—52–83% are false positives. Teams stay reactive and can't fix issues at the source.",
+      stat: "2–5 days per RCA • 52–83% false alerts",
+      source: "IEEE, Lean Six Sigma, Atlassian",
       color: "text-warning",
       borderColor: "border-warning/30"
     }
