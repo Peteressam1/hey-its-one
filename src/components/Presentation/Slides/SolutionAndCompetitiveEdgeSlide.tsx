@@ -144,26 +144,53 @@ const SolutionAndCompetitiveEdgeSlide = () => {
         </div>
 
         {/* Competitive Edge */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Left: What Others Can't Do */}
+        <div className="space-y-8">
+          {/* Why Lumina Wins - Full Width Rectangle */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <h2 className="text-2xl font-bold text-foreground mb-6">
+            <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
+              Why Lumina Wins
+            </h2>
+            <Card className="p-8 bg-primary/10 backdrop-blur-sm border-2 border-primary/40">
+              <div className="flex flex-wrap justify-center gap-8">
+                {luminaEdge.map((advantage, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 + index * 0.1 }}
+                    className="flex items-center space-x-3"
+                  >
+                    <Check className="w-6 h-6 text-primary flex-shrink-0" />
+                    <span className="text-lg text-foreground font-medium">{advantage}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </Card>
+          </motion.div>
+
+          {/* What Others Can't Do - 3 Horizontal Blocks */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+          >
+            <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
               What Others Can't Do
             </h2>
-            <div className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {competitors.map((comp, index) => (
-                <Card key={comp.name} className="p-4 bg-card/60 backdrop-blur-sm border border-border/30">
-                  <h3 className="text-lg font-semibold text-foreground mb-3">
+                <Card key={comp.name} className="p-6 bg-card/60 backdrop-blur-sm border border-border/30 hover:border-destructive/40 transition-all duration-300">
+                  <h3 className="text-xl font-semibold text-foreground mb-4 text-center">
                     {comp.name}
                   </h3>
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     {comp.weaknesses.map((weakness, wIndex) => (
                       <div key={wIndex} className="flex items-start space-x-2">
-                        <X className="w-4 h-4 text-destructive mt-0.5 flex-shrink-0" />
+                        <X className="w-4 h-4 text-destructive mt-1 flex-shrink-0" />
                         <span className="text-sm text-muted-foreground">{weakness}</span>
                       </div>
                     ))}
@@ -171,33 +198,6 @@ const SolutionAndCompetitiveEdgeSlide = () => {
                 </Card>
               ))}
             </div>
-          </motion.div>
-
-          {/* Right: Why Lumina Wins */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-          >
-            <h2 className="text-2xl font-bold text-foreground mb-6">
-              Why Lumina Wins
-            </h2>
-            <Card className="p-6 bg-primary/10 backdrop-blur-sm border-2 border-primary/40 h-full">
-              <div className="space-y-4">
-                {luminaEdge.map((advantage, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 1 + index * 0.1 }}
-                    className="flex items-start space-x-3"
-                  >
-                    <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-base text-foreground font-medium">{advantage}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </Card>
           </motion.div>
         </div>
       </div>
