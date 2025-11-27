@@ -28,9 +28,9 @@ const ComprehensiveMarketSlide = () => {
   ];
 
   const projections = [
-    { year: "By Year 1", amount: "€300K", label: "Validation", heightPercent: 15, color: "bg-accent", gradient: "from-accent/80 to-accent" },
-    { year: "By Year 2", amount: "€3M", label: "Expansion", heightPercent: 45, color: "bg-warning", gradient: "from-warning/80 to-warning" },
-    { year: "By Year 3", amount: "€10M", label: "Scale", heightPercent: 90, color: "bg-primary", gradient: "from-primary/80 to-primary" }
+    { year: "By Year 1", amount: "~€300K", label: "Validation", heightPercent: 15, color: "bg-accent", gradient: "from-accent/80 to-accent" },
+    { year: "By Year 2", amount: "~€3M", label: "Expansion", heightPercent: 45, color: "bg-warning", gradient: "from-warning/80 to-warning" },
+    { year: "By Year 3", amount: "~€10M", label: "Scale", heightPercent: 90, color: "bg-primary", gradient: "from-primary/80 to-primary" }
   ];
 
   return (
@@ -54,7 +54,7 @@ const ComprehensiveMarketSlide = () => {
           className="text-center"
         >
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-            Capitalize on a $48B AI Manufacturing Shift
+            Capitalize on a $90B Combined Market Opportunity
           </h1>
           <div className="flex flex-wrap justify-center gap-3 mb-3">
             <span className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-sm font-medium text-foreground">
@@ -88,7 +88,7 @@ const ComprehensiveMarketSlide = () => {
                 <div className="text-base text-muted-foreground mt-1">Factories in EU + DACH</div>
               </div>
               <div className="text-right">
-                 <div className="text-2xl font-semibold text-foreground">€18B</div>
+                 <div className="text-2xl font-semibold text-foreground">~€18B</div>
                  <div className="text-sm text-muted-foreground">Revenue Potential</div>
               </div>
             </div>
@@ -106,8 +106,8 @@ const ComprehensiveMarketSlide = () => {
                 <div className="text-base text-muted-foreground mt-1">Electronics & Automotive</div>
               </div>
               <div className="text-right">
-                <div className="text-2xl font-semibold text-accent">€1.44B</div>
-                <div className="text-sm text-muted-foreground">Growth Plan</div>
+                <div className="text-2xl font-semibold text-accent">~€1.44B</div>
+                <div className="text-sm text-muted-foreground">Addressable Revenue</div>
               </div>
             </div>
           </Card>
@@ -124,7 +124,7 @@ const ComprehensiveMarketSlide = () => {
                 <div className="text-base text-foreground font-medium mt-1">Factories Secured</div>
               </div>
               <div className="text-right">
-                <div className="text-3xl font-bold text-primary">€10M</div>
+                <div className="text-3xl font-bold text-primary">~€10M</div>
                 <div className="text-sm text-muted-foreground">ARR Target</div>
               </div>
             </div>
