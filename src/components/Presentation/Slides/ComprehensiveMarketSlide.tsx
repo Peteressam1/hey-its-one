@@ -28,9 +28,9 @@ const ComprehensiveMarketSlide = () => {
   ];
 
   const projections = [
-    { year: "Year 1", amount: "€300K", label: "Validation", heightPercent: 15, color: "bg-accent", gradient: "from-accent/80 to-accent" },
-    { year: "Year 2", amount: "€3M", label: "Expansion", heightPercent: 45, color: "bg-warning", gradient: "from-warning/80 to-warning" },
-    { year: "Year 3", amount: "€10M", label: "Scale", heightPercent: 90, color: "bg-primary", gradient: "from-primary/80 to-primary" }
+    { year: "By Year 1", amount: "€300K", label: "Validation", heightPercent: 15, color: "bg-accent", gradient: "from-accent/80 to-accent" },
+    { year: "By Year 2", amount: "€3M", label: "Expansion", heightPercent: 45, color: "bg-warning", gradient: "from-warning/80 to-warning" },
+    { year: "By Year 3", amount: "€10M", label: "Scale", heightPercent: 90, color: "bg-primary", gradient: "from-primary/80 to-primary" }
   ];
 
   return (
@@ -53,10 +53,18 @@ const ComprehensiveMarketSlide = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-3">
+          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
             Capitalize on a $48B AI Manufacturing Shift
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-3 mb-3">
+            <span className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-sm font-medium text-foreground">
+              Machine Vision: $21B → $41B by 2030 | 13% CAGR
+            </span>
+            <span className="px-4 py-1.5 rounded-full bg-accent/10 border border-accent/30 text-sm font-medium text-foreground">
+              AI in Manufacturing: $6B → $48B | 46% CAGR
+            </span>
+          </div>
+          <p className="text-lg text-muted-foreground">
             <span className="text-primary font-semibold">Vertical:</span> Electronics → Automotive → Medical | <span className="text-accent font-semibold">Horizontal:</span> EU → US → MENA
           </p>
         </motion.div>
@@ -110,13 +118,13 @@ const ComprehensiveMarketSlide = () => {
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <Target className="w-7 h-7 text-primary" />
-                  <span className="text-base font-bold text-primary tracking-wider">SOM (Year 3)</span>
+                  <span className="text-base font-bold text-primary tracking-wider">SOM (By Year 3)</span>
                 </div>
                 <div className="text-6xl font-bold text-primary">100</div>
                 <div className="text-base text-foreground font-medium mt-1">Factories Secured</div>
               </div>
               <div className="text-right">
-                <div className="text-3xl font-bold text-primary">€7.2M</div>
+                <div className="text-3xl font-bold text-primary">€10M</div>
                 <div className="text-sm text-muted-foreground">ARR Target</div>
               </div>
             </div>
@@ -170,7 +178,7 @@ const ComprehensiveMarketSlide = () => {
             className="flex flex-col h-full"
           >
             <h3 className="text-2xl font-bold flex items-center gap-2 text-foreground mb-5">
-              <TrendingUp className="w-7 h-7 text-accent" /> Financial Projections
+              <TrendingUp className="w-7 h-7 text-accent" /> ARR Projections
             </h3>
             <Card className="bg-card/80 backdrop-blur-sm border-border/50 relative overflow-hidden p-8 flex-1 min-h-[300px]">
               {/* Grid Lines */}
