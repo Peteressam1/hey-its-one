@@ -57,7 +57,7 @@ const ComprehensiveMarketSlide = () => {
             Capitalize on a $48B AI Manufacturing Shift
           </h1>
           <p className="text-lg text-muted-foreground">
-            Bottom-Up Strategy: From <span className="text-primary font-bold">€10T Global Output</span> to <span className="text-accent font-bold">€10M ARR</span>
+            <span className="text-primary font-semibold">Vertical:</span> Electronics → Automotive → Medical | <span className="text-accent font-semibold">Horizontal:</span> EU → US → MENA
           </p>
         </motion.div>
 
@@ -76,8 +76,8 @@ const ComprehensiveMarketSlide = () => {
                   <Globe className="w-4 h-4 text-muted-foreground" />
                   <span className="text-xs font-bold text-muted-foreground tracking-wider">TAM (Serviceable Regions)</span>
                 </div>
-                <div className="text-3xl font-bold text-foreground">250,000</div>
-                <div className="text-xs text-muted-foreground">Factories in EU, US & MENA</div>
+                <div className="text-3xl font-bold text-foreground">200,000</div>
+                <div className="text-xs text-muted-foreground">Factories in EU + DACH</div>
               </div>
               <div className="text-right">
                  <div className="text-lg font-semibold text-foreground">€18 Billion</div>
@@ -94,7 +94,7 @@ const ComprehensiveMarketSlide = () => {
                   <Factory className="w-4 h-4 text-accent" />
                   <span className="text-xs font-bold text-accent tracking-wider">SAM (Target Sectors)</span>
                 </div>
-                <div className="text-3xl font-bold text-accent">20,000</div>
+                <div className="text-3xl font-bold text-accent">~20,000</div>
                 <div className="text-xs text-muted-foreground">High-Value Electronics & Auto</div>
               </div>
               <div className="text-right">
