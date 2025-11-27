@@ -15,7 +15,6 @@ import MultimodalApproachSlide from "@/components/Presentation/Slides/Multimodal
 import DemoSlide from "@/components/Presentation/Slides/DemoSlide";
 import MarketSlide from "@/components/Presentation/Slides/MarketSlide";
 import GoToMarketSlide from "@/components/Presentation/Slides/GoToMarketSlide";
-import BusinessModelSlideV2 from "@/components/Presentation/Slides/BusinessModelSlideV2";
 import CompetitionSlide from "@/components/Presentation/Slides/CompetitionSlide";
 import RoadmapSlide from "@/components/Presentation/Slides/RoadmapSlide";
 import AskSlideV2 from "@/components/Presentation/Slides/AskSlideV2";
@@ -41,7 +40,6 @@ const CompactDeck = () => {
     { id: 'demo', title: 'Demo', component: DemoSlide },
     { id: 'market', title: 'Market Opportunity', component: MarketSlide },
     { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
-    { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
     { id: 'final', title: 'See the Invisible', component: FinalSlide },
     // { id: 'ask', title: 'The Ask', component: AskSlideV2 } // Commented out for FAPS FAU pitch
   ];
