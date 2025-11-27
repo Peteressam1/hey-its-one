@@ -1,43 +1,54 @@
 import { motion } from "framer-motion";
-import { UserSearch, Camera, Code } from "lucide-react";
+import { User, Camera, Code, XCircle, AlertTriangle, Ban, DollarSign } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
 
 const CurrentSolutionsSlide = () => {
   const solutions = [
     {
-      icon: UserSearch,
+      icon: User,
       title: "Manual Inspection",
+      subtitle: "Human Operators",
       bullets: [
-        "Slow and inconsistent",
-        "Hard to scale",
-        "Depends on expert availability"
+        "Slow & inconsistent performance",
+        "Hard to scale across shifts",
+        "Dependent on expert availability"
       ],
-      badge: "High Cost",
-      badgeColor: "destructive"
+      verdict: "High Cost",
+      verdictColor: "text-destructive",
+      borderColor: "hover:border-destructive/50",
+      iconBg: "bg-destructive/10",
+      iconColor: "text-destructive"
     },
     {
       icon: Camera,
-      title: "Traditional Machine Vision",
-      subtitle: "(Keyence, Cognex)",
+      title: "Traditional Vision",
+      subtitle: "Keyence, Cognex",
       bullets: [
-        "Works for stable processes",
-        "Struggles with variability",
+        "Only works for stable processes",
+        "Struggles with variability & light",
         "Long tuning cycles per change"
       ],
-      badge: "Inflexible",
-      badgeColor: "warning"
+      verdict: "Inflexible",
+      verdictColor: "text-warning",
+      borderColor: "hover:border-warning/50",
+      iconBg: "bg-warning/10",
+      iconColor: "text-warning"
     },
     {
       icon: Code,
-      title: "Build In-House AI",
+      title: "In-House AI",
+      subtitle: "Custom Development",
       bullets: [
-        "Expensive talent",
-        "Constant maintenance",
+        "Expensive, scarce AI talent",
+        "Constant model maintenance",
         "Distracts from core business"
       ],
-      badge: "Resource Drain",
-      badgeColor: "destructive"
+      verdict: "Resource Drain",
+      verdictColor: "text-orange-500",
+      borderColor: "hover:border-orange-500/50",
+      iconBg: "bg-orange-500/10",
+      iconColor: "text-orange-500"
     }
   ];
 
@@ -58,15 +69,18 @@ const CurrentSolutionsSlide = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground">
+          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
             Eliminate the Bottlenecks of Traditional Inspection
           </h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Existing solutions force you to choose between quality, speed, and cost.
+          </p>
         </motion.div>
 
         {/* Solutions Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
           {solutions.map((solution, index) => {
             const Icon = solution.icon;
             return (
@@ -79,41 +93,49 @@ const CurrentSolutionsSlide = () => {
                   delay: 0.2 + index * 0.2,
                   ease: [0.22, 1, 0.36, 1]
                 }}
+                className="h-full"
               >
-                <Card className="p-8 bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-300 h-full flex flex-col">
-                  <div className="flex flex-col items-center space-y-6 flex-1">
-                    <div className="p-5 rounded-2xl bg-primary/10">
-                      <Icon className="w-14 h-14 text-primary" />
-                    </div>
+                <Card className={`h-full relative overflow-hidden border border-border/40 bg-card/60 backdrop-blur-xl transition-all duration-500 group ${solution.borderColor} hover:shadow-2xl hover:-translate-y-2`}>
+                  
+                  {/* Top Gradient Bar */}
+                  <div className={`absolute top-0 left-0 w-full h-1 ${solution.iconBg.replace('bg-', 'bg-gradient-to-r from-transparent via-').replace('/10', '')} to-transparent opacity-50`} />
+
+                  <div className="p-8 flex flex-col h-full">
                     
-                    <div className="text-center space-y-2">
-                      <h3 className="text-2xl font-bold text-foreground">
+                    {/* Icon Header */}
+                    <div className="flex flex-col items-center text-center mb-8">
+                      <div className={`p-4 rounded-2xl ${solution.iconBg} mb-6 ring-1 ring-inset ring-white/10 group-hover:scale-110 transition-transform duration-500`}>
+                        <Icon className={`w-10 h-10 ${solution.iconColor}`} />
+                      </div>
+                      <h3 className="text-2xl font-bold text-foreground mb-2">
                         {solution.title}
                       </h3>
-                      {solution.subtitle && (
-                        <p className="text-sm text-muted-foreground">
-                          {solution.subtitle}
-                        </p>
-                      )}
+                      <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">
+                        {solution.subtitle}
+                      </p>
                     </div>
 
-                    <ul className="space-y-3 flex-1 w-full">
+                    <Separator className="mb-8 bg-border/50" />
+
+                    {/* Bullets */}
+                    <ul className="space-y-4 flex-1 mb-8">
                       {solution.bullets.map((bullet, i) => (
-                        <li key={i} className="flex items-start space-x-2">
-                          <span className="text-muted-foreground mt-1.5">•</span>
-                          <span className="text-base text-muted-foreground leading-relaxed">
+                        <li key={i} className="flex items-start gap-3 group/item">
+                          <XCircle className={`w-5 h-5 ${solution.iconColor} opacity-60 group-hover/item:opacity-100 transition-opacity mt-0.5 shrink-0`} />
+                          <span className="text-base text-muted-foreground leading-relaxed group-hover/item:text-foreground transition-colors">
                             {bullet}
                           </span>
                         </li>
                       ))}
                     </ul>
 
-                    <Badge 
-                      variant={solution.badgeColor as any}
-                      className="text-sm px-4 py-1.5"
-                    >
-                      {solution.badge}
-                    </Badge>
+                    {/* Verdict Footer */}
+                    <div className={`mt-auto pt-6 border-t border-border/50 text-center`}>
+                      <p className="text-xs text-muted-foreground uppercase tracking-widest mb-2">Verdict</p>
+                      <p className={`text-2xl font-bold ${solution.verdictColor}`}>
+                        {solution.verdict}
+                      </p>
+                    </div>
                   </div>
                 </Card>
               </motion.div>
