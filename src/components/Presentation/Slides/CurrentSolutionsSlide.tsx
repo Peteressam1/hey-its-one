@@ -72,7 +72,7 @@ const CurrentSolutionsSlide = () => {
           className="text-center mb-20"
         >
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-            Eliminate the Bottlenecks of Traditional Inspection
+            Current Solutions? No Thanks!
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Existing solutions force you to choose between quality, speed, and cost.
