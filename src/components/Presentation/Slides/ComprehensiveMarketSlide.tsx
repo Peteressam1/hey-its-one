@@ -40,7 +40,7 @@ const ComprehensiveMarketSlide = () => {
             <div className="text-center space-y-4">
               <h3 className="text-xl font-semibold text-muted-foreground">Machine Vision Market</h3>
               <div className="space-y-2">
-                <div className="text-5xl font-bold text-primary">$15B → $41.7B</div>
+                <div className="text-5xl font-bold text-primary">$21B → $41.7B</div>
                 <div className="text-lg text-muted-foreground">by 2030</div>
               </div>
               <div className="text-2xl font-bold text-accent">13% CAGR</div>
