@@ -124,36 +124,36 @@ const ComprehensiveMarketSlide = () => {
         </motion.div>
 
         {/* Bottom Row: Business Model & Financials */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 flex-1">
           
           {/* Business Model Column */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col"
+            className="flex flex-col h-full"
           >
-            <h3 className="text-xl font-bold flex items-center gap-2 text-foreground mb-4">
-              <DollarSign className="w-6 h-6 text-primary" /> Business Model
+            <h3 className="text-2xl font-bold flex items-center gap-2 text-foreground mb-5">
+              <DollarSign className="w-7 h-7 text-primary" /> Business Model
             </h3>
-            <div className="space-y-3">
+            <div className="flex flex-col gap-4 flex-1">
               {revenueStreams.map((stream, index) => {
                 const Icon = stream.icon;
                 return (
-                  <Card key={index} className="p-4 flex items-center gap-4 hover:shadow-md transition-all bg-card/60 border-border/50">
-                    <div className="p-2.5 rounded-lg bg-primary/10 border border-primary/20">
-                      <Icon className="w-5 h-5 text-primary" />
+                  <Card key={index} className="p-6 flex items-center gap-5 hover:shadow-md transition-all bg-card/60 border-border/50 flex-1">
+                    <div className="p-4 rounded-xl bg-primary/10 border border-primary/20">
+                      <Icon className="w-7 h-7 text-primary" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="flex justify-between items-center mb-1">
-                        <span className="font-bold text-sm text-foreground">{stream.title}</span>
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-accent/10 text-accent border border-accent/20">
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-bold text-lg text-foreground">{stream.title}</span>
+                        <span className="text-xs font-bold px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
                           {stream.model}
                         </span>
                       </div>
-                      <div className="flex justify-between text-xs">
+                      <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">{stream.description}</span>
-                        <span className="font-bold text-foreground">{stream.price}</span>
+                        <span className="font-bold text-foreground text-base">{stream.price}</span>
                       </div>
                     </div>
                   </Card>
@@ -167,18 +167,18 @@ const ComprehensiveMarketSlide = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-col"
+            className="flex flex-col h-full"
           >
-            <h3 className="text-xl font-bold flex items-center gap-2 text-foreground mb-4">
-              <TrendingUp className="w-6 h-6 text-accent" /> Financial Projections
+            <h3 className="text-2xl font-bold flex items-center gap-2 text-foreground mb-5">
+              <TrendingUp className="w-7 h-7 text-accent" /> Financial Projections
             </h3>
-            <Card className="bg-card/80 backdrop-blur-sm border-border/50 relative overflow-hidden p-6 h-[280px]">
+            <Card className="bg-card/80 backdrop-blur-sm border-border/50 relative overflow-hidden p-8 flex-1 min-h-[300px]">
               {/* Grid Lines */}
               <div className="absolute inset-0 w-full h-full pointer-events-none opacity-5" 
                    style={{ backgroundImage: 'linear-gradient(to bottom, currentColor 1px, transparent 1px)', backgroundSize: '100% 50px' }}>
               </div>
 
-              <div className="flex items-end justify-around h-full pb-8 pt-4">
+              <div className="flex items-end justify-around h-full pb-10 pt-6">
                 {projections.map((item, index) => (
                   <motion.div
                     key={index}
@@ -186,26 +186,26 @@ const ComprehensiveMarketSlide = () => {
                     animate={{ scaleY: 1, opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.8 + index * 0.2, ease: "easeOut" }}
                     className="relative flex flex-col justify-end items-center group"
-                    style={{ height: '100%', width: '25%', transformOrigin: 'bottom' }}
+                    style={{ height: '100%', width: '28%', transformOrigin: 'bottom' }}
                   >
                     {/* Bar */}
                     <div 
-                      className={`w-16 rounded-t-lg relative transition-all duration-300 group-hover:scale-105 shadow-lg`}
-                      style={{ height: `${item.heightPercent}%`, minHeight: '40px' }}
+                      className={`w-20 rounded-t-xl relative transition-all duration-300 group-hover:scale-105 shadow-xl`}
+                      style={{ height: `${item.heightPercent}%`, minHeight: '50px' }}
                     >
-                      <div className={`absolute inset-0 bg-gradient-to-t ${item.gradient} rounded-t-lg`} />
-                      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white/20 to-transparent rounded-t-lg" />
-                      <div className="absolute top-0 right-0 w-1.5 h-full bg-black/20 rounded-tr-lg" />
+                      <div className={`absolute inset-0 bg-gradient-to-t ${item.gradient} rounded-t-xl`} />
+                      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white/20 to-transparent rounded-t-xl" />
+                      <div className="absolute top-0 right-0 w-2 h-full bg-black/20 rounded-tr-xl" />
                       
                       {/* Floating Label */}
-                      <div className="absolute -top-14 left-1/2 transform -translate-x-1/2 text-center whitespace-nowrap">
-                        <div className="text-lg font-bold text-foreground">{item.amount}</div>
-                        <div className="text-[10px] text-muted-foreground uppercase tracking-wider">{item.label}</div>
+                      <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 text-center whitespace-nowrap">
+                        <div className="text-xl font-bold text-foreground">{item.amount}</div>
+                        <div className="text-xs text-muted-foreground uppercase tracking-wider">{item.label}</div>
                       </div>
                     </div>
                     
                     {/* X-Axis Label */}
-                    <div className="absolute -bottom-6 text-xs font-bold text-muted-foreground whitespace-nowrap">
+                    <div className="absolute -bottom-8 text-sm font-bold text-muted-foreground whitespace-nowrap">
                       {item.year}
                     </div>
                   </motion.div>
