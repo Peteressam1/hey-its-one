@@ -1,47 +1,27 @@
 import PresentationSlider from "@/components/Presentation/PresentationSlider";
 import TitleSlide from "@/components/Presentation/Slides/TitleSlide";
-import AudienceEngagementSlide from "@/components/Presentation/Slides/AudienceEngagementSlide";
-import OpenChallengesSlide from "@/components/Presentation/Slides/OpenChallengesSlide";
-import EventCameraExplainerSlide from "@/components/Presentation/Slides/EventCameraExplainerSlide";
-import EventMathematicsSlide from "@/components/Presentation/Slides/EventMathematicsSlide";
-import EventVsRGBComparisonSlide from "@/components/Presentation/Slides/EventVsRGBComparisonSlide";
-import IndustryPainPointsSlide from "@/components/Presentation/Slides/IndustryPainPointsSlide";
-import IcebergSlide from "@/components/Presentation/Slides/IcebergSlide";
-import FactoryApplicationsSlide from "@/components/Presentation/Slides/FactoryApplicationsSlide";
+import ProblemSlideV2 from "@/components/Presentation/Slides/ProblemSlideV2";
+import CurrentSolutionsSlide from "@/components/Presentation/Slides/CurrentSolutionsSlide";
 import WeAreLuminaSlide from "@/components/Presentation/Slides/WeAreLuminaSlide";
 import TeamSlide from "@/components/Presentation/Slides/TeamSlide";
-import SolutionSlide from "@/components/Presentation/Slides/SolutionSlide";
-import MultimodalApproachSlide from "@/components/Presentation/Slides/MultimodalApproachSlide";
+import SolutionAndCompetitiveEdgeSlide from "@/components/Presentation/Slides/SolutionAndCompetitiveEdgeSlide";
 import DemoSlide from "@/components/Presentation/Slides/DemoSlide";
-import MarketSlide from "@/components/Presentation/Slides/MarketSlide";
-import GoToMarketSlide from "@/components/Presentation/Slides/GoToMarketSlide";
-import CompetitionSlide from "@/components/Presentation/Slides/CompetitionSlide";
-import RoadmapSlide from "@/components/Presentation/Slides/RoadmapSlide";
-import AskSlideV2 from "@/components/Presentation/Slides/AskSlideV2";
-import { CustomCursor } from "@/components/ui/custom-cursor";
+import ComprehensiveMarketSlide from "@/components/Presentation/Slides/ComprehensiveMarketSlide";
 import FinalSlide from "@/components/Presentation/Slides/FinalSlide";
+import { CustomCursor } from "@/components/ui/custom-cursor";
 
-// Compact Pre-Seed Deck with Premium Design
+// Compact Pre-Seed Deck - 9 Slide Investor Pitch
 const CompactDeck = () => {
   const slides = [
     { id: 'title', title: 'Lumina Tech', component: TitleSlide },
-    { id: 'engagement', title: 'Audience Engagement', component: AudienceEngagementSlide },
-    { id: 'open-challenges', title: 'Open Challenges', component: OpenChallengesSlide },
-    { id: 'event-explainer', title: 'What Are Event Cameras', component: EventCameraExplainerSlide },
-    { id: 'event-mathematics', title: 'Mathematical Model', component: EventMathematicsSlide },
-    { id: 'event-vs-rgb', title: 'Event vs RGB', component: EventVsRGBComparisonSlide },
-    { id: 'industry-pain', title: 'Industry Challenges', component: IndustryPainPointsSlide },
-    { id: 'iceberg', title: 'Hidden Complexity', component: IcebergSlide },
-    { id: 'factory-applications', title: 'Factory Applications', component: FactoryApplicationsSlide },
+    { id: 'problem', title: 'The Problem', component: ProblemSlideV2 },
+    { id: 'current-solutions', title: 'Current Solutions', component: CurrentSolutionsSlide },
     { id: 'we-are-lumina', title: 'We Are Lumina', component: WeAreLuminaSlide },
     { id: 'team', title: 'Team', component: TeamSlide },
-    { id: 'solution', title: 'Our Solution', component: SolutionSlide },
-    { id: 'multimodal', title: 'Multimodal Approach', component: MultimodalApproachSlide },
+    { id: 'solution', title: 'Our Solution', component: SolutionAndCompetitiveEdgeSlide },
     { id: 'demo', title: 'Demo', component: DemoSlide },
-    { id: 'market', title: 'Market Opportunity', component: MarketSlide },
-    { id: 'competition', title: 'Why We Win', component: CompetitionSlide },
-    { id: 'final', title: 'See the Invisible', component: FinalSlide },
-    // { id: 'ask', title: 'The Ask', component: AskSlideV2 } // Commented out for FAPS FAU pitch
+    { id: 'market', title: 'Market Opportunity', component: ComprehensiveMarketSlide },
+    { id: 'final', title: 'Thank You', component: FinalSlide },
   ];
 
   return (
