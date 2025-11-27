@@ -7,7 +7,6 @@ import TeamSlide from "@/components/Presentation/Slides/TeamSlide";
 import SolutionAndCompetitiveEdgeSlide from "@/components/Presentation/Slides/SolutionAndCompetitiveEdgeSlide";
 import DemoSlide from "@/components/Presentation/Slides/DemoSlide";
 import ComprehensiveMarketSlide from "@/components/Presentation/Slides/ComprehensiveMarketSlide";
-import BusinessModelSlideV2 from "@/components/Presentation/Slides/BusinessModelSlideV2";
 import FinalSlide from "@/components/Presentation/Slides/FinalSlide";
 
 const Index = () => {
@@ -20,7 +19,6 @@ const Index = () => {
     { id: 'solution-edge', title: 'Solution & Why We Win', component: SolutionAndCompetitiveEdgeSlide },
     { id: 'demo', title: 'Demo', component: DemoSlide },
     { id: 'market', title: 'Market Analysis', component: ComprehensiveMarketSlide },
-    { id: 'business-model', title: 'Business Model', component: BusinessModelSlideV2 },
     { id: 'final', title: 'Connect With Us', component: FinalSlide },
   ];
 
