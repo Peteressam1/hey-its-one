@@ -44,7 +44,7 @@ const ProblemSlideV2 = () => {
           className="text-center mb-16"
         >
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-            Quality Losses Quietly Drain Millions
+            Quality Losses Drain €1.2 Trillion Annually
           </h1>
         </motion.div>
 
