@@ -34,7 +34,7 @@ const ComprehensiveMarketSlide = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen flex flex-col px-6 py-8 bg-background relative overflow-hidden">
+    <div className="w-full min-h-screen flex flex-col px-8 py-10 bg-background relative overflow-hidden">
       {/* Animated Background */}
       <div className="animated-bg">
         <div className="floating-orb orb-primary" />
@@ -44,19 +44,19 @@ const ComprehensiveMarketSlide = () => {
       <div className="geometric-pattern" />
 
       {/* Content Container */}
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto flex flex-col h-full space-y-6">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto flex flex-col flex-1 space-y-8">
         
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-2"
+          className="text-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
+          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-3">
             Capitalize on a $48B AI Manufacturing Shift
           </h1>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-xl text-muted-foreground">
             <span className="text-primary font-semibold">Vertical:</span> Electronics → Automotive → Medical | <span className="text-accent font-semibold">Horizontal:</span> EU → US → MENA
           </p>
         </motion.div>
@@ -66,92 +66,92 @@ const ComprehensiveMarketSlide = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-4"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {/* TAM */}
-          <Card className="p-4 bg-card/80 backdrop-blur-sm border border-border hover:border-primary/30 transition-all duration-300">
+          <Card className="p-6 bg-card/80 backdrop-blur-sm border border-border hover:border-primary/30 transition-all duration-300">
             <div className="flex items-start justify-between">
               <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <Globe className="w-4 h-4 text-muted-foreground" />
-                  <span className="text-xs font-bold text-muted-foreground tracking-wider">TAM (Serviceable Regions)</span>
+                <div className="flex items-center gap-2 mb-3">
+                  <Globe className="w-5 h-5 text-muted-foreground" />
+                  <span className="text-sm font-bold text-muted-foreground tracking-wider">TAM (Serviceable Regions)</span>
                 </div>
-                <div className="text-3xl font-bold text-foreground">200,000</div>
-                <div className="text-xs text-muted-foreground">Factories in EU + DACH</div>
+                <div className="text-4xl font-bold text-foreground">200,000</div>
+                <div className="text-sm text-muted-foreground">Factories in EU + DACH</div>
               </div>
               <div className="text-right">
-                 <div className="text-lg font-semibold text-foreground">€18 Billion</div>
-                 <div className="text-[10px] text-muted-foreground">Annual Revenue Potential</div>
+                 <div className="text-xl font-semibold text-foreground">€18 Billion</div>
+                 <div className="text-xs text-muted-foreground">Annual Revenue Potential</div>
               </div>
             </div>
           </Card>
 
           {/* SAM */}
-          <Card className="p-4 bg-card/80 backdrop-blur-sm border border-accent/40 hover:shadow-lg transition-all duration-300">
+          <Card className="p-6 bg-card/80 backdrop-blur-sm border border-accent/40 hover:shadow-lg transition-all duration-300">
              <div className="flex items-start justify-between">
               <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <Factory className="w-4 h-4 text-accent" />
-                  <span className="text-xs font-bold text-accent tracking-wider">SAM (Target Sectors)</span>
+                <div className="flex items-center gap-2 mb-3">
+                  <Factory className="w-5 h-5 text-accent" />
+                  <span className="text-sm font-bold text-accent tracking-wider">SAM (Target Sectors)</span>
                 </div>
-                <div className="text-3xl font-bold text-accent">~20,000</div>
-                <div className="text-xs text-muted-foreground">High-Value Electronics & Auto</div>
+                <div className="text-4xl font-bold text-accent">~20,000</div>
+                <div className="text-sm text-muted-foreground">High-Value Electronics & Auto</div>
               </div>
               <div className="text-right">
-                <div className="text-lg font-semibold text-accent">€1.44 Billion</div>
-                <div className="text-[10px] text-muted-foreground">Based on Growth Plan</div>
+                <div className="text-xl font-semibold text-accent">€1.44 Billion</div>
+                <div className="text-xs text-muted-foreground">Based on Growth Plan</div>
               </div>
             </div>
           </Card>
 
           {/* SOM */}
-          <Card className="p-4 bg-primary/10 backdrop-blur-sm border border-primary/50 hover:scale-105 transition-all duration-300 shadow-xl">
+          <Card className="p-6 bg-primary/10 backdrop-blur-sm border border-primary/50 hover:scale-105 transition-all duration-300 shadow-xl">
              <div className="flex items-start justify-between">
               <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <Target className="w-4 h-4 text-primary" />
-                  <span className="text-xs font-bold text-primary tracking-wider">SOM (Year 3 Goal)</span>
+                <div className="flex items-center gap-2 mb-3">
+                  <Target className="w-5 h-5 text-primary" />
+                  <span className="text-sm font-bold text-primary tracking-wider">SOM (Year 3 Goal)</span>
                 </div>
-                <div className="text-4xl font-bold text-primary">100</div>
-                <div className="text-xs text-foreground font-medium">Strategic Factories Secured</div>
+                <div className="text-5xl font-bold text-primary">100</div>
+                <div className="text-sm text-foreground font-medium">Strategic Factories Secured</div>
               </div>
               <div className="text-right">
                 <div className="text-2xl font-bold text-primary">€7.2 Million</div>
-                <div className="text-[10px] text-muted-foreground">Projected ARR (0.5% Share)</div>
+                <div className="text-xs text-muted-foreground">Projected ARR (0.5% Share)</div>
               </div>
             </div>
           </Card>
         </motion.div>
 
         {/* Bottom Row: Business Model & Financials */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 flex-1">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 flex-1 min-h-0">
           
           {/* Business Model Column */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col space-y-4"
+            className="flex flex-col h-full"
           >
-            <h3 className="text-lg font-bold flex items-center gap-2 text-foreground">
-              <DollarSign className="w-5 h-5 text-primary" /> Business Model
+            <h3 className="text-xl font-bold flex items-center gap-2 text-foreground mb-6">
+              <DollarSign className="w-6 h-6 text-primary" /> Business Model
             </h3>
-            <div className="grid grid-cols-1 gap-3 flex-1">
+            <div className="grid grid-cols-1 gap-4 flex-1">
               {revenueStreams.map((stream, index) => {
                 const Icon = stream.icon;
                 return (
-                  <Card key={index} className="p-3 flex items-center gap-4 hover:shadow-md transition-all bg-card/60 border-border/50">
-                    <div className="p-2 rounded-lg bg-primary/10 border border-primary/20">
-                      <Icon className="w-5 h-5 text-primary" />
+                  <Card key={index} className="p-5 flex items-center gap-5 hover:shadow-md transition-all bg-card/60 border-border/50 flex-1">
+                    <div className="p-3 rounded-lg bg-primary/10 border border-primary/20">
+                      <Icon className="w-6 h-6 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <div className="flex justify-between items-center mb-1">
-                        <span className="font-bold text-sm text-foreground">{stream.title}</span>
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-accent/10 text-accent border border-accent/20">
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="font-bold text-base text-foreground">{stream.title}</span>
+                        <span className="text-xs font-bold px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
                           {stream.model}
                         </span>
                       </div>
-                      <div className="flex justify-between text-xs">
+                      <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">{stream.description}</span>
                         <span className="font-bold text-foreground">{stream.price}</span>
                       </div>
@@ -169,10 +169,10 @@ const ComprehensiveMarketSlide = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-col h-full"
           >
-            <h3 className="text-lg font-bold flex items-center gap-2 text-foreground mb-4">
-              <TrendingUp className="w-5 h-5 text-accent" /> Financial Growth (Directed Spatial Analysis)
+            <h3 className="text-xl font-bold flex items-center gap-2 text-foreground mb-6">
+              <TrendingUp className="w-6 h-6 text-accent" /> Financial Projections
             </h3>
-            <Card className="flex-1 bg-card/80 backdrop-blur-sm border-border/50 relative overflow-hidden flex items-end justify-around pb-8 pt-8">
+            <Card className="flex-1 bg-card/80 backdrop-blur-sm border-border/50 relative overflow-hidden flex items-end justify-around pb-10 pt-10">
                {/* Grid Lines */}
               <div className="absolute inset-0 w-full h-full pointer-events-none opacity-10" 
                    style={{ backgroundImage: 'linear-gradient(to bottom, #888 1px, transparent 1px)', backgroundSize: '100% 40px' }}>
