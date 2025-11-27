@@ -1,29 +1,8 @@
 import { motion } from "framer-motion";
-import { AlertCircle, Clock, Users, RefreshCw } from "lucide-react";
+import { AlertTriangle, Clock, TrendingDown, Activity } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const ProblemSlideV2 = () => {
-  const painPoints = [
-    {
-      icon: AlertCircle,
-      title: "Quality Failures Drain Millions & Keep Repeating",
-      description: "Factories lose €300K–€3M per site annually from defects. Systems detect issues but can't diagnose root causes—so problems repeat weekly.",
-      stat: "COPQ = 15–20% of revenue • Chronic recurring failures",
-      source: "ASQ, IEEE Quality Studies",
-      color: "text-destructive",
-      borderColor: "border-destructive/30"
-    },
-    {
-      icon: Clock,
-      title: "Teams Can't Find Why Fast Enough",
-      description: "Root cause analysis takes 2–5 days. Daily alerts overwhelm operators—52–83% are false positives. Teams stay reactive and can't fix issues at the source.",
-      stat: "2–5 days per RCA • 52–83% false alerts",
-      source: "IEEE, Lean Six Sigma, Atlassian",
-      color: "text-warning",
-      borderColor: "border-warning/30"
-    }
-  ];
-
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center px-8 py-12 bg-background relative overflow-hidden">
       {/* Animated Background */}
@@ -41,65 +20,88 @@ const ProblemSlideV2 = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-            Quality Losses Drain €1.2 Trillion Annually
+          <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6 tracking-tight">
+            Quality Losses Drain <span className="text-destructive">€1.2 Trillion</span>
           </h1>
-        </motion.div>
-
-        {/* Pain Points Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {painPoints.map((point, index) => {
-            const Icon = point.icon;
-            return (
-              <motion.div
-                key={point.title}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.6, 
-                  delay: 0.2 + index * 0.15,
-                  ease: [0.22, 1, 0.36, 1]
-                }}
-              >
-                <Card className={`p-8 bg-card/80 backdrop-blur-sm border-2 ${point.borderColor} hover:border-primary/50 transition-all duration-300 h-full`}>
-                  <div className="flex flex-col items-start space-y-4">
-                    <div className={`p-4 rounded-xl bg-background/50 ${point.color}`}>
-                      <Icon className="w-10 h-10" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-foreground">
-                      {point.title}
-                    </h3>
-                    <p className="text-base text-muted-foreground leading-relaxed">
-                      {point.description}
-                    </p>
-                    <div className="mt-auto pt-4 border-t border-border/30 w-full space-y-2">
-                      <p className="text-lg font-semibold text-primary">
-                        {point.stat}
-                      </p>
-                      <p className="text-xs text-muted-foreground/60 italic">
-                        {point.source}
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-              </motion.div>
-            );
-          })}
-        </div>
-
-        {/* Footer Statement */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="text-center mt-12"
-        >
-          <p className="text-xl text-muted-foreground italic">
-            Factories don't struggle to <span className="text-foreground font-semibold">see</span> defects—they struggle to understand <span className="text-primary font-semibold">why</span> they happen.
+          <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
+            Global manufacturing loses 15-20% of revenue to defects and waste every year.
           </p>
         </motion.div>
+
+        {/* Pain Points Grid - Redesigned */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+          
+          {/* Card 1: Cost of Quality */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <Card className="relative h-full overflow-hidden border-0 bg-gradient-to-b from-destructive/10 to-background ring-1 ring-destructive/20 hover:ring-destructive/50 transition-all duration-500 group">
+              <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                <TrendingDown className="w-40 h-40 text-destructive" />
+              </div>
+              
+              <div className="p-10 flex flex-col h-full relative z-10">
+                <div className="w-14 h-14 rounded-2xl bg-destructive/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <AlertTriangle className="w-7 h-7 text-destructive" />
+                </div>
+                
+                <h3 className="text-3xl font-bold text-foreground mb-4">
+                  Recurring Defects Bleed Profit
+                </h3>
+                
+                <p className="text-lg text-muted-foreground leading-relaxed mb-8 flex-grow">
+                  Factories don't just lose material—they lose capacity. Defects repeat weekly because systems detect failures but never explain the <span className="text-foreground font-semibold">root cause</span>.
+                </p>
+
+                <div className="pt-6 border-t border-destructive/20">
+                  <div className="flex items-baseline gap-3">
+                    <span className="text-4xl font-bold text-destructive">€3M+</span>
+                    <span className="text-muted-foreground">lost per facility / year</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+
+          {/* Card 2: Inefficiency of RCA */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <Card className="relative h-full overflow-hidden border-0 bg-gradient-to-b from-warning/10 to-background ring-1 ring-warning/20 hover:ring-warning/50 transition-all duration-500 group">
+              <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                <Activity className="w-40 h-40 text-warning" />
+              </div>
+              
+              <div className="p-10 flex flex-col h-full relative z-10">
+                <div className="w-14 h-14 rounded-2xl bg-warning/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Clock className="w-7 h-7 text-warning" />
+                </div>
+                
+                <h3 className="text-3xl font-bold text-foreground mb-4">
+                  Engineers Are Overwhelmed
+                </h3>
+                
+                <p className="text-lg text-muted-foreground leading-relaxed mb-8 flex-grow">
+                  Root cause analysis is manual and slow. Operators are flooded with false alarms, leaving them reactive instead of proactive.
+                </p>
+
+                <div className="pt-6 border-t border-warning/20">
+                  <div className="flex items-baseline gap-3">
+                    <span className="text-4xl font-bold text-warning">2-5 Days</span>
+                    <span className="text-muted-foreground">to diagnose one issue</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+
+        </div>
       </div>
     </div>
   );

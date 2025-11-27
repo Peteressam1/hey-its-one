@@ -79,7 +79,7 @@ const SolutionAndCompetitiveEdgeSlide = () => {
           className="text-center"
         >
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-            Our Solution & Why We Win
+            Close the Loop from Defect to Action
           </h1>
           <p className="text-2xl text-muted-foreground">
             Defect → Cause → Action, in One System

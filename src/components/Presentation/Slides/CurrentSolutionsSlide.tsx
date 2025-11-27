@@ -61,7 +61,7 @@ const CurrentSolutionsSlide = () => {
           className="text-center mb-16"
         >
           <h1 className="text-5xl md:text-6xl font-bold text-foreground">
-            Why Current Solutions Fall Short
+            Eliminate the Bottlenecks of Traditional Inspection
           </h1>
         </motion.div>
 
