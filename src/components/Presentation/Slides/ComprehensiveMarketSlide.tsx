@@ -54,7 +54,7 @@ const ComprehensiveMarketSlide = () => {
           className="text-center mb-2"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
-            Scale into a Massive, Underserved Market
+            Capitalize on a $48B AI Manufacturing Shift
           </h1>
           <p className="text-lg text-muted-foreground">
             Bottom-Up Strategy: From <span className="text-primary font-bold">€10T Global Output</span> to <span className="text-accent font-bold">€10M ARR</span>
