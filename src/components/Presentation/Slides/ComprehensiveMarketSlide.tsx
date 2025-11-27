@@ -73,15 +73,15 @@ const ComprehensiveMarketSlide = () => {
             <div className="flex items-start justify-between">
               <div>
                 <div className="flex items-center gap-2 mb-3">
-                  <Globe className="w-5 h-5 text-muted-foreground" />
-                  <span className="text-sm font-bold text-muted-foreground tracking-wider">TAM (Serviceable Regions)</span>
+                  <Globe className="w-7 h-7 text-muted-foreground" />
+                  <span className="text-base font-bold text-muted-foreground tracking-wider">TAM</span>
                 </div>
-                <div className="text-4xl font-bold text-foreground">200,000</div>
-                <div className="text-sm text-muted-foreground">Factories in EU + DACH</div>
+                <div className="text-5xl font-bold text-foreground">200,000</div>
+                <div className="text-base text-muted-foreground mt-1">Factories in EU + DACH</div>
               </div>
               <div className="text-right">
-                 <div className="text-xl font-semibold text-foreground">€18 Billion</div>
-                 <div className="text-xs text-muted-foreground">Annual Revenue Potential</div>
+                 <div className="text-2xl font-semibold text-foreground">€18B</div>
+                 <div className="text-sm text-muted-foreground">Revenue Potential</div>
               </div>
             </div>
           </Card>
@@ -91,15 +91,15 @@ const ComprehensiveMarketSlide = () => {
              <div className="flex items-start justify-between">
               <div>
                 <div className="flex items-center gap-2 mb-3">
-                  <Factory className="w-5 h-5 text-accent" />
-                  <span className="text-sm font-bold text-accent tracking-wider">SAM (Target Sectors)</span>
+                  <Factory className="w-7 h-7 text-accent" />
+                  <span className="text-base font-bold text-accent tracking-wider">SAM</span>
                 </div>
-                <div className="text-4xl font-bold text-accent">~20,000</div>
-                <div className="text-sm text-muted-foreground">High-Value Electronics & Auto</div>
+                <div className="text-5xl font-bold text-accent">~20,000</div>
+                <div className="text-base text-muted-foreground mt-1">Electronics & Automotive</div>
               </div>
               <div className="text-right">
-                <div className="text-xl font-semibold text-accent">€1.44 Billion</div>
-                <div className="text-xs text-muted-foreground">Based on Growth Plan</div>
+                <div className="text-2xl font-semibold text-accent">€1.44B</div>
+                <div className="text-sm text-muted-foreground">Growth Plan</div>
               </div>
             </div>
           </Card>
@@ -109,15 +109,15 @@ const ComprehensiveMarketSlide = () => {
              <div className="flex items-start justify-between">
               <div>
                 <div className="flex items-center gap-2 mb-3">
-                  <Target className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-bold text-primary tracking-wider">SOM (Year 3 Goal)</span>
+                  <Target className="w-7 h-7 text-primary" />
+                  <span className="text-base font-bold text-primary tracking-wider">SOM (Year 3)</span>
                 </div>
-                <div className="text-5xl font-bold text-primary">100</div>
-                <div className="text-sm text-foreground font-medium">Strategic Factories Secured</div>
+                <div className="text-6xl font-bold text-primary">100</div>
+                <div className="text-base text-foreground font-medium mt-1">Factories Secured</div>
               </div>
               <div className="text-right">
-                <div className="text-2xl font-bold text-primary">€7.2 Million</div>
-                <div className="text-xs text-muted-foreground">Projected ARR (0.5% Share)</div>
+                <div className="text-3xl font-bold text-primary">€7.2M</div>
+                <div className="text-sm text-muted-foreground">ARR Target</div>
               </div>
             </div>
           </Card>
@@ -140,20 +140,20 @@ const ComprehensiveMarketSlide = () => {
               {revenueStreams.map((stream, index) => {
                 const Icon = stream.icon;
                 return (
-                  <Card key={index} className="p-6 flex items-center gap-5 hover:shadow-md transition-all bg-card/60 border-border/50 flex-1">
-                    <div className="p-4 rounded-xl bg-primary/10 border border-primary/20">
-                      <Icon className="w-7 h-7 text-primary" />
+                  <Card key={index} className="p-6 flex items-center gap-6 hover:shadow-md transition-all bg-card/60 border-border/50 flex-1">
+                    <div className="p-5 rounded-xl bg-primary/10 border border-primary/20">
+                      <Icon className="w-10 h-10 text-primary" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex justify-between items-center mb-2">
-                        <span className="font-bold text-lg text-foreground">{stream.title}</span>
-                        <span className="text-xs font-bold px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
+                        <span className="font-bold text-xl text-foreground">{stream.title}</span>
+                        <span className="text-sm font-bold px-4 py-1.5 rounded-full bg-accent/10 text-accent border border-accent/20">
                           {stream.model}
                         </span>
                       </div>
-                      <div className="flex justify-between text-sm">
+                      <div className="flex justify-between text-base">
                         <span className="text-muted-foreground">{stream.description}</span>
-                        <span className="font-bold text-foreground text-base">{stream.price}</span>
+                        <span className="font-bold text-foreground text-lg">{stream.price}</span>
                       </div>
                     </div>
                   </Card>
@@ -178,7 +178,7 @@ const ComprehensiveMarketSlide = () => {
                    style={{ backgroundImage: 'linear-gradient(to bottom, currentColor 1px, transparent 1px)', backgroundSize: '100% 50px' }}>
               </div>
 
-              <div className="flex items-end justify-around h-full pb-10 pt-6">
+              <div className="flex items-end justify-around h-full pb-12 pt-8">
                 {projections.map((item, index) => (
                   <motion.div
                     key={index}
@@ -190,7 +190,7 @@ const ComprehensiveMarketSlide = () => {
                   >
                     {/* Bar */}
                     <div 
-                      className={`w-20 rounded-t-xl relative transition-all duration-300 group-hover:scale-105 shadow-xl`}
+                      className={`w-24 rounded-t-xl relative transition-all duration-300 group-hover:scale-105 shadow-xl`}
                       style={{ height: `${item.heightPercent}%`, minHeight: '50px' }}
                     >
                       <div className={`absolute inset-0 bg-gradient-to-t ${item.gradient} rounded-t-xl`} />
@@ -198,14 +198,14 @@ const ComprehensiveMarketSlide = () => {
                       <div className="absolute top-0 right-0 w-2 h-full bg-black/20 rounded-tr-xl" />
                       
                       {/* Floating Label */}
-                      <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 text-center whitespace-nowrap">
-                        <div className="text-xl font-bold text-foreground">{item.amount}</div>
-                        <div className="text-xs text-muted-foreground uppercase tracking-wider">{item.label}</div>
+                      <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 text-center whitespace-nowrap">
+                        <div className="text-3xl font-bold text-foreground">{item.amount}</div>
+                        <div className="text-sm text-muted-foreground uppercase tracking-wider">{item.label}</div>
                       </div>
                     </div>
                     
                     {/* X-Axis Label */}
-                    <div className="absolute -bottom-8 text-sm font-bold text-muted-foreground whitespace-nowrap">
+                    <div className="absolute -bottom-8 text-base font-bold text-muted-foreground whitespace-nowrap">
                       {item.year}
                     </div>
                   </motion.div>
