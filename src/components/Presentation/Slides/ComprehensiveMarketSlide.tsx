@@ -8,21 +8,18 @@ const ComprehensiveMarketSlide = () => {
       icon: Zap,
       title: "Integration Fees",
       description: "Setup & Customization",
-      price: "€15k - €50k / site",
       model: "One-time"
     },
     {
       icon: Repeat,
       title: "Recurring SaaS",
       description: "Software & Analytics",
-      price: "€2.5k - €7.5k / mo",
       model: "Monthly Subscription"
     },
     {
       icon: Users,
       title: "Support Services",
       description: "Maintenance & SLAs",
-      price: "15-20% of contract",
       model: "Annual"
     }
   ];
@@ -159,9 +156,8 @@ const ComprehensiveMarketSlide = () => {
                           {stream.model}
                         </span>
                       </div>
-                      <div className="flex justify-between text-base">
+                      <div className="text-base">
                         <span className="text-muted-foreground">{stream.description}</span>
-                        <span className="font-bold text-foreground text-lg">{stream.price}</span>
                       </div>
                     </div>
                   </Card>
