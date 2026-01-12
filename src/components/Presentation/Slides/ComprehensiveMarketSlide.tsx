@@ -65,7 +65,7 @@ const ComprehensiveMarketSlide = () => {
             </span>
           </div>
           <p className="text-lg text-muted-foreground">
-            <span className="text-primary font-semibold">Vertical:</span> Electronics → Automotive → Medical | <span className="text-accent font-semibold">Horizontal:</span> EU → US → MENA
+            <span className="text-primary font-semibold">Vertical:</span> Electronics → F&B → Automotive | <span className="text-accent font-semibold">Horizontal:</span> EU → MENA → US
           </p>
         </motion.div>
 
