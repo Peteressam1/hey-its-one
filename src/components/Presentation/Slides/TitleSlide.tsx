@@ -127,7 +127,7 @@ const TitleSlide = () => {
           scale: 1.1,
           filter: "brightness(1.2)"
         }}>
-            <img src={tumLogo} alt="TUM" className="h-24 opacity-80 object-contain" />
+            <img src={tumLogo} alt="TUM" className="h-24 opacity-80 object-scale-down" />
           </motion.div>
         </motion.div>
       </div>
