@@ -65,18 +65,18 @@ const ComprehensiveMarketSlide = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
+          <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6">
             Capitalize on a $90B Combined Market Opportunity
           </h1>
-          <div className="flex flex-wrap justify-center gap-3 mb-3">
-            <span className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-sm font-medium text-foreground">
+          <div className="flex flex-wrap justify-center gap-4 mb-4">
+            <span className="px-5 py-2 rounded-full bg-primary/10 border border-primary/30 text-base font-medium text-foreground">
               Machine Vision: $21B → $41B by 2030 | 13% CAGR
             </span>
-            <span className="px-4 py-1.5 rounded-full bg-accent/10 border border-accent/30 text-sm font-medium text-foreground">
+            <span className="px-5 py-2 rounded-full bg-accent/10 border border-accent/30 text-base font-medium text-foreground">
               AI in Manufacturing: $6B → $48B | 46% CAGR
             </span>
           </div>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-xl text-muted-foreground">
             <span className="text-primary font-semibold">Vertical:</span> Electronics → F&B → Automotive | <span className="text-accent font-semibold">Horizontal:</span> EU → MENA → US
           </p>
         </motion.div>
@@ -89,43 +89,43 @@ const ComprehensiveMarketSlide = () => {
           className="grid grid-cols-3 gap-4"
         >
           {/* TAM */}
-          <Card className="p-4 bg-card/80 backdrop-blur-sm border border-border hover:border-primary/30 transition-all duration-300">
-            <div className="flex items-center gap-3">
-              <Globe className="w-6 h-6 text-muted-foreground" />
+          <Card className="p-5 bg-card/80 backdrop-blur-sm border border-border hover:border-primary/30 transition-all duration-300">
+            <div className="flex items-center gap-4">
+              <Globe className="w-8 h-8 text-muted-foreground" />
               <div>
-                <span className="text-xs font-bold text-muted-foreground tracking-wider">TAM</span>
-                <div className="text-2xl font-bold text-foreground">200K <span className="text-base font-normal text-muted-foreground">factories</span></div>
+                <span className="text-sm font-bold text-muted-foreground tracking-wider">TAM</span>
+                <div className="text-3xl font-bold text-foreground">200K <span className="text-lg font-normal text-muted-foreground">factories</span></div>
               </div>
               <div className="ml-auto text-right">
-                <div className="text-xl font-semibold text-foreground">~€18B</div>
+                <div className="text-2xl font-semibold text-foreground">~€18B</div>
               </div>
             </div>
           </Card>
 
           {/* SAM */}
-          <Card className="p-4 bg-card/80 backdrop-blur-sm border border-accent/40 transition-all duration-300">
-            <div className="flex items-center gap-3">
-              <Factory className="w-6 h-6 text-accent" />
+          <Card className="p-5 bg-card/80 backdrop-blur-sm border border-accent/40 transition-all duration-300">
+            <div className="flex items-center gap-4">
+              <Factory className="w-8 h-8 text-accent" />
               <div>
-                <span className="text-xs font-bold text-accent tracking-wider">SAM</span>
-                <div className="text-2xl font-bold text-accent">~20K <span className="text-base font-normal text-muted-foreground">factories</span></div>
+                <span className="text-sm font-bold text-accent tracking-wider">SAM</span>
+                <div className="text-3xl font-bold text-accent">~20K <span className="text-lg font-normal text-muted-foreground">factories</span></div>
               </div>
               <div className="ml-auto text-right">
-                <div className="text-xl font-semibold text-accent">~€1.44B</div>
+                <div className="text-2xl font-semibold text-accent">~€1.44B</div>
               </div>
             </div>
           </Card>
 
           {/* SOM */}
-          <Card className="p-4 bg-primary/10 backdrop-blur-sm border border-primary/50 transition-all duration-300 shadow-lg">
-            <div className="flex items-center gap-3">
-              <Target className="w-6 h-6 text-primary" />
+          <Card className="p-5 bg-primary/10 backdrop-blur-sm border border-primary/50 transition-all duration-300 shadow-lg">
+            <div className="flex items-center gap-4">
+              <Target className="w-8 h-8 text-primary" />
               <div>
-                <span className="text-xs font-bold text-primary tracking-wider">SOM (3Y)</span>
-                <div className="text-2xl font-bold text-primary">100 <span className="text-base font-normal text-foreground">factories</span></div>
+                <span className="text-sm font-bold text-primary tracking-wider">SOM (3Y)</span>
+                <div className="text-3xl font-bold text-primary">100 <span className="text-lg font-normal text-foreground">factories</span></div>
               </div>
               <div className="ml-auto text-right">
-                <div className="text-xl font-bold text-primary">~€10M</div>
+                <div className="text-2xl font-bold text-primary">~€10M</div>
               </div>
             </div>
           </Card>
@@ -141,25 +141,25 @@ const ComprehensiveMarketSlide = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col h-full"
           >
-            <h3 className="text-2xl font-bold flex items-center gap-2 text-foreground mb-5">
-              <DollarSign className="w-7 h-7 text-primary" /> Business Model
+            <h3 className="text-3xl font-bold flex items-center gap-3 text-foreground mb-6">
+              <DollarSign className="w-8 h-8 text-primary" /> Business Model
             </h3>
             <div className="flex flex-col gap-4 flex-1">
               {revenueStreams.map((stream, index) => {
                 const Icon = stream.icon;
                 return (
-                  <Card key={index} className="p-6 flex items-center gap-6 hover:shadow-md transition-all bg-card/60 border-border/50 flex-1">
-                    <div className="p-5 rounded-xl bg-primary/10 border border-primary/20">
-                      <Icon className="w-10 h-10 text-primary" />
+                  <Card key={index} className="p-8 flex items-center gap-8 hover:shadow-md transition-all bg-card/60 border-border/50 flex-1">
+                    <div className="p-6 rounded-xl bg-primary/10 border border-primary/20">
+                      <Icon className="w-12 h-12 text-primary" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-bold text-xl text-foreground">{stream.title}</span>
-                        <span className="text-sm font-bold px-4 py-1.5 rounded-full bg-accent/10 text-accent border border-accent/20">
+                      <div className="flex justify-between items-center mb-3">
+                        <span className="font-bold text-2xl text-foreground">{stream.title}</span>
+                        <span className="text-base font-bold px-5 py-2 rounded-full bg-accent/10 text-accent border border-accent/20">
                           {stream.model}
                         </span>
                       </div>
-                      <div className="text-base">
+                      <div className="text-lg">
                         <span className="text-muted-foreground">{stream.description}</span>
                       </div>
                     </div>
@@ -176,8 +176,8 @@ const ComprehensiveMarketSlide = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-col h-full"
           >
-            <h3 className="text-2xl font-bold flex items-center gap-2 text-foreground mb-5">
-              <Handshake className="w-7 h-7 text-accent" /> Traction & Funding
+            <h3 className="text-3xl font-bold flex items-center gap-3 text-foreground mb-6">
+              <Handshake className="w-8 h-8 text-accent" /> Traction & Funding
             </h3>
             <div className="flex flex-col gap-4 flex-1">
               {traction.map((item, index) => {
@@ -185,21 +185,21 @@ const ComprehensiveMarketSlide = () => {
                 return (
                   <Card 
                     key={index} 
-                    className="p-6 flex items-center gap-6 hover:shadow-md transition-all flex-1 bg-card/60 border-border/50"
+                    className="p-8 flex items-center gap-8 hover:shadow-md transition-all flex-1 bg-card/60 border-border/50"
                   >
-                    <div className="p-5 rounded-xl bg-accent/10 border border-accent/20">
-                      <Icon className="w-10 h-10 text-accent" />
+                    <div className="p-6 rounded-xl bg-accent/10 border border-accent/20">
+                      <Icon className="w-12 h-12 text-accent" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-bold text-xl text-foreground">
+                      <div className="flex justify-between items-center mb-3">
+                        <span className="font-bold text-2xl text-foreground">
                           {item.title}
                         </span>
-                        <span className="text-sm font-bold px-4 py-1.5 rounded-full bg-accent/10 text-accent border border-accent/20">
+                        <span className="text-base font-bold px-5 py-2 rounded-full bg-accent/10 text-accent border border-accent/20">
                           {item.type}
                         </span>
                       </div>
-                      <div className="text-base">
+                      <div className="text-lg">
                         <span className="text-muted-foreground">{item.description}</span>
                       </div>
                     </div>

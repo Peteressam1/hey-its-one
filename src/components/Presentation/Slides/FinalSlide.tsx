@@ -35,12 +35,12 @@ const FinalSlide = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="text-5xl md:text-6xl lg:text-7xl font-heading text-center tracking-tight"
+          className="text-6xl md:text-7xl lg:text-8xl font-heading text-center tracking-tight"
         >
           <span className="block text-gradient text-glow-animate">
             See the Invisible.
           </span>
-          <span className="block text-gradient text-glow-animate mt-4">
+          <span className="block text-gradient text-glow-animate mt-6">
             Know the Why.
           </span>
         </motion.h1>
@@ -52,14 +52,14 @@ const FinalSlide = () => {
           transition={{ duration: 0.8, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="flex flex-col items-center gap-6"
         >
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
+          <h2 className="text-4xl md:text-5xl font-semibold text-foreground">
             Connect with Us
           </h2>
-          <div className="bg-white p-4 rounded-2xl shadow-2xl">
+          <div className="bg-white p-5 rounded-2xl shadow-2xl">
             <img
               src={qrCode}
               alt="Lumina QR Code"
-              className="w-48 h-48 md:w-56 md:h-56"
+              className="w-56 h-56 md:w-64 md:h-64"
             />
           </div>
         </motion.div>

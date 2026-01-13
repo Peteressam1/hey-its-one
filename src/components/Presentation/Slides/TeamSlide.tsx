@@ -65,11 +65,11 @@ const TeamSlide = () => {
       <div className="geometric-pattern" />
 
       {/* Header */}
-      <div className="relative z-10 text-center space-y-4 mb-12 ml-24">
-        <h1 className="text-5xl md:text-6xl font-bold text-white tracking-[-0.01em]">
+      <div className="relative z-10 text-center space-y-5 mb-14 ml-24">
+        <h1 className="text-6xl md:text-7xl font-bold text-white tracking-[-0.01em]">
           <span className="text-primary">Meet the Founding Team</span>
         </h1>
-        <p className="text-xl text-muted max-w-4xl mx-auto">
+        <p className="text-2xl text-muted max-w-4xl mx-auto">
           Founded by experts from DLR, NASA, OnSemi, SAP, and TUM
         </p>
       </div>
@@ -83,21 +83,21 @@ const TeamSlide = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2, duration: 0.6 }}
           >
-            <Card className="p-6 bg-card/80 backdrop-blur-sm border-border hover:border-primary/40 hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
+            <Card className="p-8 bg-card/80 backdrop-blur-sm border-border hover:border-primary/40 hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
               {/* Photo */}
-              <div className="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-primary-glow flex items-center justify-center ring-4 ring-primary/30 shadow-2xl overflow-hidden">
+              <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-r from-primary to-primary-glow flex items-center justify-center ring-4 ring-primary/30 shadow-2xl overflow-hidden">
                 <img src={founder.photo} alt={founder.name} className="w-full h-full object-cover" />
               </div>
 
               {/* Name & Role */}
-              <div className="text-center mb-4">
-                <h3 className="text-2xl font-bold text-white mb-2">{founder.name}</h3>
-                <p className="text-lg font-medium text-primary mb-4">{founder.role}</p>
+              <div className="text-center mb-6">
+                <h3 className="text-3xl font-bold text-white mb-3">{founder.name}</h3>
+                <p className="text-xl font-medium text-primary mb-5">{founder.role}</p>
                 
                 {/* Bullet Points */}
-                <ul className="text-sm text-muted-foreground space-y-2 text-left max-w-xs mx-auto">
+                <ul className="text-base text-muted-foreground space-y-3 text-left max-w-xs mx-auto">
                   {founder.bullets.map((bullet, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
+                    <li key={idx} className="flex items-start gap-3">
                       <span className="text-primary mt-1.5 shrink-0">•</span>
                       <span>{bullet}</span>
                     </li>
@@ -106,14 +106,14 @@ const TeamSlide = () => {
               </div>
 
               {/* Company Logos */}
-              <div className="mt-auto pt-6 border-t border-border/30">
-                <div className="flex items-center justify-center gap-4 flex-wrap">
+              <div className="mt-auto pt-8 border-t border-border/30">
+                <div className="flex items-center justify-center gap-5 flex-wrap">
                   {founder.logos.map((logo, idx) => (
                     <img
                       key={idx}
                       src={logo.src}
                       alt={logo.alt}
-                      className={`${logo.size || 'h-6'} w-auto object-contain mix-blend-normal`}
+                      className={`${logo.size || 'h-8'} w-auto object-contain mix-blend-normal`}
                       style={{ background: 'transparent' }}
                     />
                   ))}

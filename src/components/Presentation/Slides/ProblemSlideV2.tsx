@@ -22,10 +22,10 @@ const ProblemSlideV2 = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-center mb-20"
         >
-          <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6 tracking-tight">
+          <h1 className="text-7xl md:text-8xl font-bold text-foreground mb-8 tracking-tight">
             Quality Losses Drain <span className="text-destructive">€1.2 Trillion</span>
           </h1>
-          <p className="text-2xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-2xl md:text-3xl text-muted-foreground max-w-4xl mx-auto">
             Global manufacturing loses 15-20% of revenue to defects and waste every year.
           </p>
         </motion.div>
@@ -44,23 +44,23 @@ const ProblemSlideV2 = () => {
                 <TrendingDown className="w-40 h-40 text-destructive" />
               </div>
               
-              <div className="p-10 flex flex-col h-full relative z-10">
-                <div className="w-14 h-14 rounded-2xl bg-destructive/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <AlertTriangle className="w-7 h-7 text-destructive" />
+              <div className="p-12 flex flex-col h-full relative z-10">
+                <div className="w-16 h-16 rounded-2xl bg-destructive/20 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                  <AlertTriangle className="w-9 h-9 text-destructive" />
                 </div>
                 
-                <h3 className="text-3xl font-bold text-foreground mb-4">
+                <h3 className="text-4xl font-bold text-foreground mb-6">
                   Recurring Defects Bleed Profit
                 </h3>
                 
-                <p className="text-lg text-muted-foreground leading-relaxed mb-8 flex-grow">
+                <p className="text-xl text-muted-foreground leading-relaxed mb-10 flex-grow">
                   Factories don't just lose material—they lose capacity. Defects repeat weekly because systems detect failures but never explain the <span className="text-foreground font-semibold">root cause</span>.
                 </p>
 
-                <div className="pt-6 border-t border-destructive/20">
-                  <div className="flex items-baseline gap-3">
-                    <span className="text-4xl font-bold text-destructive">€3M+</span>
-                    <span className="text-muted-foreground">lost per facility / year</span>
+                <div className="pt-8 border-t border-destructive/20">
+                  <div className="flex items-baseline gap-4">
+                    <span className="text-5xl font-bold text-destructive">€3M+</span>
+                    <span className="text-xl text-muted-foreground">lost per facility / year</span>
                   </div>
                 </div>
               </div>
@@ -78,23 +78,23 @@ const ProblemSlideV2 = () => {
                 <Activity className="w-40 h-40 text-warning" />
               </div>
               
-              <div className="p-10 flex flex-col h-full relative z-10">
-                <div className="w-14 h-14 rounded-2xl bg-warning/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Clock className="w-7 h-7 text-warning" />
+              <div className="p-12 flex flex-col h-full relative z-10">
+                <div className="w-16 h-16 rounded-2xl bg-warning/20 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                  <Clock className="w-9 h-9 text-warning" />
                 </div>
                 
-                <h3 className="text-3xl font-bold text-foreground mb-4">
+                <h3 className="text-4xl font-bold text-foreground mb-6">
                   Engineers Are Overwhelmed
                 </h3>
                 
-                <p className="text-lg text-muted-foreground leading-relaxed mb-8 flex-grow">
+                <p className="text-xl text-muted-foreground leading-relaxed mb-10 flex-grow">
                   Root cause analysis is manual and slow. Operators are flooded with false alarms, leaving them reactive instead of proactive.
                 </p>
 
-                <div className="pt-6 border-t border-warning/20">
-                  <div className="flex items-baseline gap-3">
-                    <span className="text-4xl font-bold text-warning">2-5 Days</span>
-                    <span className="text-muted-foreground">to diagnose one issue</span>
+                <div className="pt-8 border-t border-warning/20">
+                  <div className="flex items-baseline gap-4">
+                    <span className="text-5xl font-bold text-warning">2-5 Days</span>
+                    <span className="text-xl text-muted-foreground">to diagnose one issue</span>
                   </div>
                 </div>
               </div>
