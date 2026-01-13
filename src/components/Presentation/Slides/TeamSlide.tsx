@@ -97,8 +97,8 @@ const TeamSlide = () => {
                 {/* Bullet Points */}
                 <ul className="text-base text-muted-foreground space-y-3 text-left max-w-xs mx-auto">
                   {founder.bullets.map((bullet, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <span className="text-primary mt-1.5 shrink-0">•</span>
+                    <li key={idx} className="flex items-center gap-3">
+                      <span className="text-primary shrink-0">•</span>
                       <span>{bullet}</span>
                     </li>
                   ))}
