@@ -45,10 +45,10 @@ const TitleSlide = () => {
       }} className="space-y-6 mb-12">
           {/* Tagline */}
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading text-center tracking-tight">
-            <span className="block text-gradient text-glow-animate">
+            <span className="block text-gradient text-glow-animate text-9xl">
               See the Invisible.
             </span>
-            <span className="block text-gradient text-glow-animate mt-4">
+            <span className="block text-gradient text-glow-animate mt-4 text-9xl text-center">
               Know the Why.
             </span>
           </h1>
