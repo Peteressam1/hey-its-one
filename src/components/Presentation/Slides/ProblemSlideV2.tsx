@@ -28,7 +28,7 @@ const ProblemSlideV2 = () => {
           <h2 className="text-7xl md:text-8xl font-bold text-destructive mb-8 tracking-tight text-center">
             €1.2 Trillion
           </h2>
-          <p className="text-2xl md:text-3xl text-muted-foreground max-w-4xl mx-auto text-center">
+          <p className="text-2xl md:text-3xl text-muted-foreground mx-auto text-center whitespace-nowrap">
             Global manufacturing loses 15-20% of revenue to defects and waste every year.
           </p>
         </motion.div>
