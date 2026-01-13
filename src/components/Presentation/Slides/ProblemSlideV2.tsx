@@ -24,7 +24,7 @@ const ProblemSlideV2 = () => {
         duration: 0.8,
         ease: [0.22, 1, 0.36, 1]
       }} className="text-center mb-20">
-          <h1 className="text-7xl md:text-8xl font-bold text-foreground mb-8 tracking-tight text-center">Quality Losses Drain €1.2 Trillion<span className="text-destructive text-center">€1.2 Trillion</span>
+          <h1 className="text-7xl md:text-8xl font-bold text-foreground mb-8 tracking-tight text-center">Quality Losses Drain <span className="text-destructive text-center">€1.2 Trillion</span>
           </h1>
           <p className="text-2xl md:text-3xl text-muted-foreground max-w-4xl mx-auto text-center">Global manufacturing loses 15-20% of revenue to defects and waste every year.</p>
         </motion.div>
