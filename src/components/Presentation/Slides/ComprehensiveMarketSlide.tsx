@@ -182,33 +182,20 @@ const ComprehensiveMarketSlide = () => {
             <div className="flex flex-col gap-4 flex-1">
               {traction.map((item, index) => {
                 const Icon = item.icon;
-                const isInvestment = item.type === "Investment";
                 return (
                   <Card 
                     key={index} 
-                    className={`p-6 flex items-center gap-6 hover:shadow-md transition-all flex-1 ${
-                      isInvestment 
-                        ? "bg-gradient-to-r from-primary/20 to-accent/10 border-primary/50" 
-                        : "bg-card/60 border-border/50"
-                    }`}
+                    className="p-6 flex items-center gap-6 hover:shadow-md transition-all flex-1 bg-card/60 border-border/50"
                   >
-                    <div className={`p-5 rounded-xl ${
-                      isInvestment 
-                        ? "bg-primary/20 border border-primary/40" 
-                        : "bg-accent/10 border border-accent/20"
-                    }`}>
-                      <Icon className={`w-10 h-10 ${isInvestment ? "text-primary" : "text-accent"}`} />
+                    <div className="p-5 rounded-xl bg-accent/10 border border-accent/20">
+                      <Icon className="w-10 h-10 text-accent" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex justify-between items-center mb-2">
-                        <span className={`font-bold text-xl ${isInvestment ? "text-primary" : "text-foreground"}`}>
+                        <span className="font-bold text-xl text-foreground">
                           {item.title}
                         </span>
-                        <span className={`text-sm font-bold px-4 py-1.5 rounded-full ${
-                          isInvestment 
-                            ? "bg-primary/20 text-primary border border-primary/30" 
-                            : "bg-accent/10 text-accent border border-accent/20"
-                        }`}>
+                        <span className="text-sm font-bold px-4 py-1.5 rounded-full bg-accent/10 text-accent border border-accent/20">
                           {item.type}
                         </span>
                       </div>
