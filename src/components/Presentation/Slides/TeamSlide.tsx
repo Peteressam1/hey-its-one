@@ -17,10 +17,10 @@ const TeamSlide = () => {
       ],
       photo: alyPhoto,
       logos: [
-        { alt: "TUM", src: "/logos/tum-white.png", size: "h-6" },
-        { alt: "OnSemi", src: "/logos/onsemi-white.png", size: "h-4" },
-        { alt: "Rohde & Schwarz", src: "/logos/rs-white.png", size: "h-6" },
-        { alt: "Mouser", src: "/logos/mouser-white.png", size: "h-5" },
+        { alt: "TUM", src: "/logos/tum-white.png" },
+        { alt: "OnSemi", src: "/logos/onsemi-white.png" },
+        { alt: "Rohde & Schwarz", src: "/logos/rs-white.png" },
+        { alt: "Mouser", src: "/logos/mouser-white.png" },
       ]
     },
     {
@@ -32,10 +32,10 @@ const TeamSlide = () => {
       ],
       photo: mohamedPhoto,
       logos: [
-        { alt: "FAU", src: "/logos/fau-white.png", size: "h-8" },
-        { alt: "DLR", src: "/logos/dlr-white.png", size: "h-12" },
-        { alt: "Airbus", src: "/logos/airbus-white.png", size: "h-10" },
-        { alt: "BMW", src: "/logos/bmw-white-new.png", size: "h-10" },
+        { alt: "FAU", src: "/logos/fau-white.png" },
+        { alt: "DLR", src: "/logos/dlr-white.png" },
+        { alt: "Airbus", src: "/logos/airbus-white.png" },
+        { alt: "BMW", src: "/logos/bmw-white-new.png" },
       ]
     },
     {
@@ -47,9 +47,9 @@ const TeamSlide = () => {
       ],
       photo: peterPhoto,
       logos: [
-        { alt: "Uni Bremen", src: "/logos/uni-bremen-white.png", size: "h-6" },
-        { alt: "SAP", src: "/logos/sap-white.png", size: "h-5" },
-        { alt: "BestSecret", src: "/logos/bestsecret-white.png", size: "h-8" },
+        { alt: "Uni Bremen", src: "/logos/uni-bremen-white.png" },
+        { alt: "SAP", src: "/logos/sap-white.png" },
+        { alt: "BestSecret", src: "/logos/bestsecret-white.png" },
       ]
     }
   ];
@@ -113,7 +113,7 @@ const TeamSlide = () => {
                       key={idx}
                       src={logo.src}
                       alt={logo.alt}
-                      className={`${logo.size || 'h-8'} w-auto object-contain mix-blend-normal shrink-0`}
+                      className="h-8 w-auto object-contain mix-blend-normal shrink-0"
                       style={{ background: 'transparent' }}
                     />
                   ))}
