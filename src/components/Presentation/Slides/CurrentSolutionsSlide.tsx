@@ -69,12 +69,12 @@ const CurrentSolutionsSlide = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="text-center mb-20"
+          className="text-center mb-12"
         >
-          <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-8">
+          <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6">
             Current Solutions? No Thanks!
           </h1>
-          <p className="text-2xl md:text-3xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-2xl md:text-3xl text-muted-foreground mx-auto text-center whitespace-nowrap">
             Existing solutions force you to choose between quality, speed, and cost.
           </p>
         </motion.div>
