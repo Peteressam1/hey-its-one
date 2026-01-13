@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 import { AlertTriangle, Clock, TrendingDown, Activity } from "lucide-react";
 import { Card } from "@/components/ui/card";
-
 const ProblemSlideV2 = () => {
-  return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center px-8 py-12 bg-background relative overflow-hidden">
+  return <div className="w-full min-h-screen flex flex-col justify-center items-center px-8 py-12 bg-background relative overflow-hidden">
       {/* Animated Background */}
       <div className="animated-bg">
         <div className="floating-orb orb-primary" />
@@ -16,29 +14,35 @@ const ProblemSlideV2 = () => {
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="text-center mb-20"
-        >
-          <h1 className="text-7xl md:text-8xl font-bold text-foreground mb-8 tracking-tight">
-            Quality Losses Drain <span className="text-destructive">€1.2 Trillion</span>
+        <motion.div initial={{
+        opacity: 0,
+        y: 30
+      }} animate={{
+        opacity: 1,
+        y: 0
+      }} transition={{
+        duration: 0.8,
+        ease: [0.22, 1, 0.36, 1]
+      }} className="text-center mb-20">
+          <h1 className="text-7xl md:text-8xl font-bold text-foreground mb-8 tracking-tight text-center">Quality Losses Drain €1.2 Trillion<span className="text-destructive text-center">€1.2 Trillion</span>
           </h1>
-          <p className="text-2xl md:text-3xl text-muted-foreground max-w-4xl mx-auto">
-            Global manufacturing loses 15-20% of revenue to defects and waste every year.
-          </p>
+          <p className="text-2xl md:text-3xl text-muted-foreground max-w-4xl mx-auto text-center">Global manufacturing loses 15-20% of revenue to defects and waste every year.</p>
         </motion.div>
 
         {/* Pain Points Grid - Redesigned */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           
           {/* Card 1: Cost of Quality */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
+          <motion.div initial={{
+          opacity: 0,
+          x: -30
+        }} animate={{
+          opacity: 1,
+          x: 0
+        }} transition={{
+          duration: 0.6,
+          delay: 0.2
+        }}>
             <Card className="relative h-full overflow-hidden border-0 bg-gradient-to-b from-destructive/10 to-background ring-1 ring-destructive/20 hover:ring-destructive/50 transition-all duration-500 group">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <TrendingDown className="w-40 h-40 text-destructive" />
@@ -68,11 +72,16 @@ const ProblemSlideV2 = () => {
           </motion.div>
 
           {/* Card 2: Inefficiency of RCA */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
+          <motion.div initial={{
+          opacity: 0,
+          x: 30
+        }} animate={{
+          opacity: 1,
+          x: 0
+        }} transition={{
+          duration: 0.6,
+          delay: 0.4
+        }}>
             <Card className="relative h-full overflow-hidden border-0 bg-gradient-to-b from-warning/10 to-background ring-1 ring-warning/20 hover:ring-warning/50 transition-all duration-500 group">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Activity className="w-40 h-40 text-warning" />
@@ -103,8 +112,6 @@ const ProblemSlideV2 = () => {
 
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default ProblemSlideV2;
