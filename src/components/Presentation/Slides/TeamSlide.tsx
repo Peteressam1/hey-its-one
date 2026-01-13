@@ -107,13 +107,13 @@ const TeamSlide = () => {
 
               {/* Company Logos */}
               <div className="mt-auto pt-8 border-t border-border/30">
-                <div className="flex items-center justify-center gap-4 flex-wrap">
+                <div className="flex items-center justify-center gap-3">
                   {founder.logos.map((logo, idx) => (
                     <img
                       key={idx}
                       src={logo.src}
                       alt={logo.alt}
-                      className="h-6 w-auto object-contain mix-blend-normal"
+                      className="h-5 max-w-[60px] object-contain mix-blend-normal shrink-0"
                       style={{ background: 'transparent' }}
                     />
                   ))}
