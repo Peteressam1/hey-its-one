@@ -65,8 +65,8 @@ const ComprehensiveMarketSlide = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6">
-            Capitalize on a $90B Combined Market Opportunity
+        <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6">
+            Market Tailwinds & Early Traction
           </h1>
           <div className="flex flex-wrap justify-center gap-4 mb-4">
             <span className="px-5 py-2 rounded-full bg-primary/10 border border-primary/30 text-base font-medium text-foreground">
