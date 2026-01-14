@@ -81,55 +81,6 @@ const ComprehensiveMarketSlide = () => {
           </p>
         </motion.div>
 
-        {/* TAM/SAM/SOM Row - Compact */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-3 gap-4"
-        >
-          {/* TAM */}
-          <Card className="p-5 bg-card/80 backdrop-blur-sm border border-border hover:border-primary/30 transition-all duration-300">
-            <div className="flex items-center gap-4">
-              <Globe className="w-8 h-8 text-muted-foreground" />
-              <div>
-                <span className="text-sm font-bold text-muted-foreground tracking-wider">TAM</span>
-                <div className="text-3xl font-bold text-foreground">200K <span className="text-lg font-normal text-muted-foreground">factories</span></div>
-              </div>
-              <div className="ml-auto text-right">
-                <div className="text-2xl font-semibold text-foreground">~€18B</div>
-              </div>
-            </div>
-          </Card>
-
-          {/* SAM */}
-          <Card className="p-5 bg-card/80 backdrop-blur-sm border border-accent/40 transition-all duration-300">
-            <div className="flex items-center gap-4">
-              <Factory className="w-8 h-8 text-accent" />
-              <div>
-                <span className="text-sm font-bold text-accent tracking-wider">SAM</span>
-                <div className="text-3xl font-bold text-accent">~20K <span className="text-lg font-normal text-muted-foreground">factories</span></div>
-              </div>
-              <div className="ml-auto text-right">
-                <div className="text-2xl font-semibold text-accent">~€1.44B</div>
-              </div>
-            </div>
-          </Card>
-
-          {/* SOM */}
-          <Card className="p-5 bg-primary/10 backdrop-blur-sm border border-primary/50 transition-all duration-300 shadow-lg">
-            <div className="flex items-center gap-4">
-              <Target className="w-8 h-8 text-primary" />
-              <div>
-                <span className="text-sm font-bold text-primary tracking-wider">SOM (3Y)</span>
-                <div className="text-3xl font-bold text-primary">100 <span className="text-lg font-normal text-foreground">factories</span></div>
-              </div>
-              <div className="ml-auto text-right">
-                <div className="text-2xl font-bold text-primary">~€10M</div>
-              </div>
-            </div>
-          </Card>
-        </motion.div>
 
         {/* Bottom Row: Business Model & Traction */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 flex-1">
