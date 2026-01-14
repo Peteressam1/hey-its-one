@@ -39,7 +39,7 @@ const ComprehensiveMarketSlide = () => {
     },
     {
       icon: Banknote,
-      title: "€300K Angel Investment",
+      title: "Angel Investment",
       description: "Secured funding",
       type: "Investment"
     }
