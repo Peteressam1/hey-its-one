@@ -38,6 +38,12 @@ const ComprehensiveMarketSlide = () => {
       type: "Partnership"
     },
     {
+      icon: Factory,
+      title: "FAPS FAU",
+      description: "University research partnership",
+      type: "Partnership"
+    },
+    {
       icon: Banknote,
       title: "Angel Investment",
       description: "Secured funding",
