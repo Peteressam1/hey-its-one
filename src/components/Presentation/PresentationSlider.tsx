@@ -1,10 +1,9 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ChevronLeft, ChevronRight, Play, Pause, RotateCcw, Maximize, Minimize2, ChevronUp, Download, Loader2 } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, Pause, RotateCcw, Maximize, Minimize2, ChevronUp } from 'lucide-react';
 import luminaEmblem from '@/assets/lumina-emblem.png';
-import html2pdf from 'html2pdf.js';
 
 interface Slide {
   id: string;
@@ -27,8 +26,6 @@ const PresentationSlider = ({
   const [isPlaying, setIsPlaying] = useState(autoPlay);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
-  const [isExporting, setIsExporting] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -54,80 +51,6 @@ const PresentationSlider = ({
     } else {
       document.exitFullscreen();
       setIsFullscreen(false);
-    }
-  };
-
-  const exportToPdf = async () => {
-    setIsExporting(true);
-    
-    // Create a container for all slides
-    const pdfContainer = document.createElement('div');
-    pdfContainer.style.width = '1920px';
-    pdfContainer.style.background = '#000';
-    
-    // Store original slide
-    const originalSlide = currentSlide;
-    
-    // Render each slide into the container
-    for (let i = 0; i < slides.length; i++) {
-      const slideDiv = document.createElement('div');
-      slideDiv.style.width = '1920px';
-      slideDiv.style.height = '1080px';
-      slideDiv.style.position = 'relative';
-      slideDiv.style.overflow = 'hidden';
-      slideDiv.style.pageBreakAfter = 'always';
-      slideDiv.style.background = '#000';
-      
-      // Navigate to slide and capture
-      setCurrentSlide(i);
-      
-      // Wait for render
-      await new Promise(resolve => setTimeout(resolve, 500));
-      
-      // Clone the slide content
-      const slideContent = containerRef.current?.querySelector('.min-h-screen');
-      if (slideContent) {
-        const clone = slideContent.cloneNode(true) as HTMLElement;
-        clone.style.minHeight = '1080px';
-        clone.style.width = '1920px';
-        slideDiv.appendChild(clone);
-      }
-      
-      pdfContainer.appendChild(slideDiv);
-    }
-    
-    // Temporarily add to DOM
-    document.body.appendChild(pdfContainer);
-    
-    const opt = {
-      margin: 0,
-      filename: 'Lumina-Pitch-Deck.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { 
-        scale: 2,
-        useCORS: true,
-        logging: false,
-        width: 1920,
-        height: 1080 * slides.length
-      },
-      jsPDF: { 
-        unit: 'px', 
-        format: [1920, 1080], 
-        orientation: 'landscape',
-        hotfixes: ['px_scaling']
-      },
-      pagebreak: { mode: 'avoid-all', after: '.page-break' }
-    };
-    
-    try {
-      await html2pdf().set(opt).from(pdfContainer).save();
-    } catch (error) {
-      console.error('PDF export failed:', error);
-    } finally {
-      // Cleanup
-      document.body.removeChild(pdfContainer);
-      setCurrentSlide(originalSlide);
-      setIsExporting(false);
     }
   };
 
@@ -195,7 +118,7 @@ const PresentationSlider = ({
   return (
     <div className={`relative w-full min-h-screen bg-background ${isFullscreen ? 'z-50' : ''}`}>
       {/* Slide Content */}
-      <div ref={containerRef} className="relative w-full min-h-screen">
+      <div className="relative w-full min-h-screen">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
@@ -328,18 +251,6 @@ const PresentationSlider = ({
             className="rounded-full p-2"
           >
             <Maximize className="w-4 h-4" />
-          </Button>
-
-          {/* PDF Export */}
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={exportToPdf}
-            disabled={isExporting}
-            className="rounded-full p-2"
-            title="Export to PDF"
-          >
-            {isExporting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
           </Button>
 
           {/* Minimize */}
