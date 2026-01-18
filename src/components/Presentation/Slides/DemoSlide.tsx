@@ -13,7 +13,7 @@ const DemoSlide = () => {
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="relative z-10 text-center"
       >
-        <h1 className="text-9xl md:text-[12rem] font-bold text-foreground tracking-tight">
+        <h1 className="text-8xl md:text-9xl font-bold text-foreground tracking-tight">
           DEMO
         </h1>
       </motion.div>

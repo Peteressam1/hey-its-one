@@ -26,7 +26,7 @@ const WeAreLuminaSlide = () => {
             type: "spring",
             stiffness: 120
           }}
-          className="text-7xl md:text-8xl font-bold text-center"
+          className="text-6xl md:text-7xl font-bold text-center"
         >
           <span className="text-foreground">We Are</span>
         </motion.h1>
@@ -43,7 +43,7 @@ const WeAreLuminaSlide = () => {
             delay: 0.6, 
             ease: [0.22, 1, 0.36, 1] 
           }}
-          className="w-full max-w-4xl"
+          className="w-full max-w-3xl"
         >
           <img
             src={luminaLogo}
@@ -60,7 +60,7 @@ const WeAreLuminaSlide = () => {
           className="text-center"
         >
           <motion.p
-            className="text-4xl md:text-5xl font-heading tracking-tight"
+            className="text-3xl md:text-4xl font-heading tracking-tight"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.4 }}

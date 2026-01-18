@@ -61,10 +61,10 @@ const SolutionAndCompetitiveEdgeSlide = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-center"
         >
-          <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-4">
             Close the Loop from Defect to Action
           </h1>
-          <p className="text-3xl md:text-4xl text-muted-foreground">
+          <p className="text-2xl md:text-3xl text-muted-foreground">
             Defect → Cause → Action, in One System
           </p>
         </motion.div>
@@ -75,7 +75,7 @@ const SolutionAndCompetitiveEdgeSlide = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl font-bold text-foreground mb-10 text-center"
+            className="text-3xl font-bold text-foreground mb-8 text-center"
           >
             How Lumina Works
           </motion.h2>
@@ -95,16 +95,16 @@ const SolutionAndCompetitiveEdgeSlide = () => {
                   }}
                   className="relative"
                 >
-                  <Card className="p-8 bg-card/80 backdrop-blur-sm border-2 border-primary/30 hover:border-primary/60 transition-all duration-300 h-full flex flex-col items-center text-center space-y-5">
-                    <div className={`p-5 rounded-xl bg-background/50 ${stage.color}`}>
-                      <Icon className="w-12 h-12" />
+                  <Card className="p-6 bg-card/80 backdrop-blur-sm border-2 border-primary/30 hover:border-primary/60 transition-all duration-300 h-full flex flex-col items-center text-center space-y-4">
+                    <div className={`p-4 rounded-xl bg-background/50 ${stage.color}`}>
+                      <Icon className="w-10 h-10" />
                     </div>
                     
-                    <h3 className="text-2xl font-bold text-foreground">
+                    <h3 className="text-xl font-bold text-foreground">
                       {stage.title}
                     </h3>
                     
-                    <p className="text-base text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {stage.description}
                     </p>
                   </Card>
@@ -134,21 +134,21 @@ const SolutionAndCompetitiveEdgeSlide = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <h2 className="text-4xl font-bold text-foreground mb-10 text-center">
+            <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
               Why Lumina Wins
             </h2>
-            <Card className="p-12 bg-primary/10 backdrop-blur-sm border-2 border-primary/40">
-              <div className="flex flex-wrap justify-center gap-12">
+            <Card className="p-10 bg-primary/10 backdrop-blur-sm border-2 border-primary/40">
+              <div className="flex flex-wrap justify-center gap-10">
                 {luminaEdge.map((advantage, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 + index * 0.1 }}
-                    className="flex items-center space-x-5"
+                    className="flex items-center space-x-4"
                   >
-                    <Check className="w-8 h-8 text-primary flex-shrink-0" />
-                    <span className="text-2xl text-foreground font-medium">{advantage}</span>
+                    <Check className="w-7 h-7 text-primary flex-shrink-0" />
+                    <span className="text-xl text-foreground font-medium">{advantage}</span>
                   </motion.div>
                 ))}
               </div>
