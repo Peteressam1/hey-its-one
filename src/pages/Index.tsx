@@ -8,6 +8,7 @@ import SolutionAndCompetitiveEdgeSlide from "@/components/Presentation/Slides/So
 import DemoSlide from "@/components/Presentation/Slides/DemoSlide";
 import ComprehensiveMarketSlide from "@/components/Presentation/Slides/ComprehensiveMarketSlide";
 import TractionSlide from "@/components/Presentation/Slides/TractionSlide";
+import XpreneursSlide from "@/components/Presentation/Slides/XpreneursSlide";
 import FinalSlide from "@/components/Presentation/Slides/FinalSlide";
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
     { id: 'demo', title: 'Demo', component: DemoSlide },
     { id: 'market', title: 'Market Analysis', component: ComprehensiveMarketSlide },
     { id: 'traction', title: 'Traction', component: TractionSlide },
+    { id: 'xpreneurs', title: 'Why XPRENEURS', component: XpreneursSlide },
     { id: 'final', title: 'Connect With Us', component: FinalSlide },
   ];
 
