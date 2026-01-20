@@ -156,22 +156,22 @@ const ComprehensiveMarketSlide = () => {
                   className="flex"
                 >
                   <Card 
-                    className="w-full p-6 flex items-center gap-5 transition-all duration-300 backdrop-blur-sm bg-accent/10 border-2 border-accent/60 shadow-[0_0_25px_hsl(var(--accent)/0.25)] hover:shadow-[0_0_35px_hsl(var(--accent)/0.35)]"
+                    className="w-full p-4 flex items-center gap-4 transition-all duration-300 backdrop-blur-sm bg-accent/10 border-2 border-accent/60 shadow-[0_0_25px_hsl(var(--accent)/0.25)] hover:shadow-[0_0_35px_hsl(var(--accent)/0.35)]"
                   >
-                    <div className="p-4 rounded-xl bg-accent/20 border border-accent/50">
-                      <Icon className="w-10 h-10 text-accent" />
+                    <div className="p-3 rounded-xl bg-accent/20 border border-accent/50">
+                      <Icon className="w-8 h-8 text-accent" />
                     </div>
                     
                     <div className="flex-1">
-                      <span className="font-bold text-foreground text-3xl">
+                      <span className="font-bold text-foreground text-2xl">
                         {item.title}
                       </span>
-                      <p className="text-muted-foreground text-xl mt-1">
+                      <p className="text-muted-foreground text-lg">
                         {item.description}
                       </p>
                     </div>
 
-                    <span className="text-base font-semibold px-5 py-2.5 rounded-full bg-accent/20 text-accent border border-accent/50">
+                    <span className="text-sm font-semibold px-4 py-2 rounded-full bg-accent/20 text-accent border border-accent/50">
                       {item.type}
                     </span>
                   </Card>
