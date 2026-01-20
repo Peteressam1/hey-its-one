@@ -52,7 +52,7 @@ const ComprehensiveMarketSlide = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen flex flex-col px-10 py-8 bg-background relative overflow-hidden">
+    <div className="w-full h-screen flex flex-col px-12 py-6 bg-background relative overflow-hidden">
       {/* Animated Background */}
       <div className="animated-bg">
         <div className="floating-orb orb-primary" />
@@ -61,43 +61,43 @@ const ComprehensiveMarketSlide = () => {
       <div className="geometric-pattern" />
 
       {/* Content Container */}
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto flex flex-col flex-1">
+      <div className="relative z-10 w-full max-w-[1600px] mx-auto flex flex-col h-full">
         
-        {/* Header */}
+        {/* Header - Compact */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-6"
+          className="text-center mb-4"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-3">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
             $90B Opportunity & Early Traction
           </h1>
-          <div className="flex flex-wrap justify-center gap-4">
-            <span className="px-5 py-2 rounded-full bg-primary/10 border border-primary/30 text-base font-medium text-foreground">
+          <div className="flex flex-wrap justify-center gap-3">
+            <span className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-sm font-medium text-foreground">
               Machine Vision: $21B → $41B by 2030 | 13% CAGR
             </span>
-            <span className="px-5 py-2 rounded-full bg-accent/10 border border-accent/30 text-base font-medium text-foreground">
+            <span className="px-4 py-1.5 rounded-full bg-accent/10 border border-accent/30 text-sm font-medium text-foreground">
               AI in Manufacturing: $6B → $48B | 46% CAGR
             </span>
           </div>
         </motion.div>
 
-        {/* Business Model Section - Premium Styling */}
+        {/* Business Model Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-6"
+          className="mb-4"
         >
-          <div className="flex items-center gap-3 mb-4">
-            <div className="p-2 rounded-lg bg-primary/10 border border-primary/30">
-              <DollarSign className="w-7 h-7 text-primary" />
+          <div className="flex items-center gap-2 mb-3">
+            <div className="p-1.5 rounded-lg bg-primary/10 border border-primary/30">
+              <DollarSign className="w-5 h-5 text-primary" />
             </div>
-            <h2 className="text-3xl font-bold text-foreground">Business Model</h2>
+            <h2 className="text-2xl font-bold text-foreground">Business Model</h2>
           </div>
           
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-3 gap-4">
             {revenueStreams.map((stream, index) => {
               const Icon = stream.icon;
               return (
@@ -107,18 +107,18 @@ const ComprehensiveMarketSlide = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                 >
-                  <Card className="p-6 bg-primary/5 backdrop-blur-sm border-2 border-primary/40 hover:border-primary/60 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] transition-all duration-300">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 rounded-xl bg-primary/15 border-2 border-primary/40">
-                        <Icon className="w-7 h-7 text-primary" />
+                  <Card className="p-4 bg-primary/5 backdrop-blur-sm border border-primary/30 hover:border-primary/50 hover:shadow-[0_0_20px_hsl(var(--primary)/0.15)] transition-all duration-300">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 rounded-lg bg-primary/15 border border-primary/30">
+                        <Icon className="w-5 h-5 text-primary" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-foreground">{stream.title}</h3>
-                        <p className="text-lg text-muted-foreground mt-1">{stream.subtitle}</p>
-                        <span className="inline-block mt-3 px-4 py-1.5 rounded-full bg-primary/15 text-primary text-base font-semibold border-2 border-primary/40">
-                          {stream.model}
-                        </span>
+                        <h3 className="text-lg font-bold text-foreground">{stream.title}</h3>
+                        <p className="text-sm text-muted-foreground">{stream.subtitle}</p>
                       </div>
+                      <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold border border-primary/30">
+                        {stream.model}
+                      </span>
                     </div>
                   </Card>
                 </motion.div>
@@ -128,21 +128,21 @@ const ComprehensiveMarketSlide = () => {
         </motion.div>
 
         {/* Traction & Funding Section */}
-        <div className="flex-1 flex flex-col">
+        <div className="flex-1 flex flex-col min-h-0">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="flex items-center gap-3 mb-4"
+            className="flex items-center gap-2 mb-3"
           >
-            <div className="p-2 rounded-lg bg-destructive/15 border border-destructive/40">
-              <TrendingUp className="w-7 h-7 text-destructive" />
+            <div className="p-1.5 rounded-lg bg-accent/15 border border-accent/40">
+              <TrendingUp className="w-5 h-5 text-accent" />
             </div>
-            <h2 className="text-3xl font-bold text-foreground">Traction & Funding</h2>
+            <h2 className="text-2xl font-bold text-foreground">Traction & Funding</h2>
           </motion.div>
 
-          {/* Orange Glowy Traction Cards - 2x2 Grid */}
-          <div className="grid grid-cols-2 gap-5 flex-1">
+          {/* Traction Cards - 2x2 Grid with Accent Color */}
+          <div className="grid grid-cols-2 gap-4 flex-1">
             {traction.map((item, index) => {
               const Icon = item.icon;
               const isInvestment = item.type === "Investment";
@@ -155,33 +155,33 @@ const ComprehensiveMarketSlide = () => {
                   transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
                 >
                   <Card 
-                    className={`h-full p-6 flex items-center gap-5 transition-all duration-300 backdrop-blur-sm ${
+                    className={`h-full p-4 flex items-center gap-4 transition-all duration-300 backdrop-blur-sm ${
                       isInvestment 
-                        ? "bg-destructive/15 border-2 border-destructive shadow-[0_0_40px_hsl(var(--destructive)/0.5)] hover:shadow-[0_0_60px_hsl(var(--destructive)/0.6)]"
-                        : "bg-destructive/10 border-2 border-destructive/60 shadow-[0_0_30px_hsl(var(--destructive)/0.3)] hover:shadow-[0_0_45px_hsl(var(--destructive)/0.45)] hover:border-destructive"
+                        ? "bg-accent/10 border-2 border-accent/60 shadow-[0_0_25px_hsl(var(--accent)/0.25)] hover:shadow-[0_0_35px_hsl(var(--accent)/0.35)]"
+                        : "bg-card/60 border border-muted-foreground/20 hover:border-accent/40 hover:shadow-[0_0_20px_hsl(var(--accent)/0.15)]"
                     }`}
                   >
-                    <div className={`p-4 rounded-xl ${
+                    <div className={`p-3 rounded-xl ${
                       isInvestment 
-                        ? "bg-destructive/25 border-2 border-destructive/70"
-                        : "bg-destructive/15 border border-destructive/50"
+                        ? "bg-accent/20 border border-accent/50"
+                        : "bg-muted/50 border border-muted-foreground/20"
                     }`}>
-                      <Icon className={`w-9 h-9 text-destructive`} />
+                      <Icon className={`w-7 h-7 ${isInvestment ? "text-accent" : "text-foreground/70"}`} />
                     </div>
                     
-                    <div className="flex-1">
-                      <span className={`font-bold text-foreground ${isInvestment ? "text-2xl" : "text-xl"}`}>
+                    <div className="flex-1 min-w-0">
+                      <span className={`font-bold text-foreground ${isInvestment ? "text-xl" : "text-lg"}`}>
                         {item.title}
                       </span>
-                      <p className="text-muted-foreground text-lg mt-1">
+                      <p className="text-muted-foreground text-sm truncate">
                         {item.description}
                       </p>
                     </div>
 
-                    <span className={`text-base font-semibold px-5 py-2.5 rounded-full ${
+                    <span className={`text-sm font-semibold px-4 py-2 rounded-full whitespace-nowrap ${
                       isInvestment 
-                        ? "bg-destructive/30 text-destructive border-2 border-destructive/70"
-                        : "bg-destructive/20 text-destructive border border-destructive/50"
+                        ? "bg-accent/20 text-accent border border-accent/50"
+                        : "bg-muted/50 text-muted-foreground border border-muted-foreground/20"
                     }`}>
                       {item.type}
                     </span>
@@ -197,11 +197,11 @@ const ComprehensiveMarketSlide = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
-          className="mt-5 text-center"
+          className="mt-3 text-center"
         >
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base text-muted-foreground">
             <span className="text-primary font-semibold">Vertical:</span> Electronics → F&B → Automotive
-            <span className="mx-6">|</span>
+            <span className="mx-4">|</span>
             <span className="text-accent font-semibold">Horizontal:</span> EU → MENA → US
           </p>
         </motion.div>
