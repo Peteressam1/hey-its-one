@@ -156,22 +156,14 @@ const ComprehensiveMarketSlide = () => {
                   className="flex"
                 >
                   <Card 
-                    className={`w-full p-6 flex items-center gap-5 transition-all duration-300 backdrop-blur-sm ${
-                      isInvestment 
-                        ? "bg-accent/10 border-2 border-accent/60 shadow-[0_0_25px_hsl(var(--accent)/0.25)] hover:shadow-[0_0_35px_hsl(var(--accent)/0.35)]"
-                        : "bg-card/60 border border-muted-foreground/20 hover:border-accent/40 hover:shadow-[0_0_20px_hsl(var(--accent)/0.15)]"
-                    }`}
+                    className="w-full p-6 flex items-center gap-5 transition-all duration-300 backdrop-blur-sm bg-accent/10 border-2 border-accent/60 shadow-[0_0_25px_hsl(var(--accent)/0.25)] hover:shadow-[0_0_35px_hsl(var(--accent)/0.35)]"
                   >
-                    <div className={`p-4 rounded-xl ${
-                      isInvestment 
-                        ? "bg-accent/20 border border-accent/50"
-                        : "bg-muted/50 border border-muted-foreground/20"
-                    }`}>
-                      <Icon className={`w-10 h-10 ${isInvestment ? "text-accent" : "text-foreground/70"}`} />
+                    <div className="p-4 rounded-xl bg-accent/20 border border-accent/50">
+                      <Icon className="w-10 h-10 text-accent" />
                     </div>
                     
                     <div className="flex-1">
-                      <span className={`font-bold text-foreground ${isInvestment ? "text-2xl" : "text-xl"}`}>
+                      <span className="font-bold text-foreground text-xl">
                         {item.title}
                       </span>
                       <p className="text-muted-foreground text-lg mt-1">
@@ -179,11 +171,7 @@ const ComprehensiveMarketSlide = () => {
                       </p>
                     </div>
 
-                    <span className={`text-base font-semibold px-5 py-2.5 rounded-full ${
-                      isInvestment 
-                        ? "bg-accent/20 text-accent border border-accent/50"
-                        : "bg-muted/50 text-muted-foreground border border-muted-foreground/20"
-                    }`}>
+                    <span className="text-base font-semibold px-5 py-2.5 rounded-full bg-accent/20 text-accent border border-accent/50">
                       {item.type}
                     </span>
                   </Card>
