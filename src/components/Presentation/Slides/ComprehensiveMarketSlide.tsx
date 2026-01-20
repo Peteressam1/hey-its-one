@@ -153,16 +153,16 @@ const ComprehensiveMarketSlide = () => {
                   <Card 
                     className={`h-full p-6 flex items-center gap-5 transition-all duration-300 backdrop-blur-sm ${
                       isInvestment 
-                        ? "bg-warning/15 border-2 border-warning shadow-[0_0_40px_hsl(var(--warning)/0.5)] hover:shadow-[0_0_60px_hsl(var(--warning)/0.6)]"
-                        : "bg-warning/10 border-2 border-warning/60 shadow-[0_0_30px_hsl(var(--warning)/0.3)] hover:shadow-[0_0_45px_hsl(var(--warning)/0.45)] hover:border-warning"
+                        ? "bg-destructive/15 border-2 border-destructive shadow-[0_0_40px_hsl(var(--destructive)/0.5)] hover:shadow-[0_0_60px_hsl(var(--destructive)/0.6)]"
+                        : "bg-destructive/10 border-2 border-destructive/60 shadow-[0_0_30px_hsl(var(--destructive)/0.3)] hover:shadow-[0_0_45px_hsl(var(--destructive)/0.45)] hover:border-destructive"
                     }`}
                   >
                     <div className={`p-4 rounded-xl ${
                       isInvestment 
-                        ? "bg-warning/25 border-2 border-warning/70"
-                        : "bg-warning/15 border border-warning/50"
+                        ? "bg-destructive/25 border-2 border-destructive/70"
+                        : "bg-destructive/15 border border-destructive/50"
                     }`}>
-                      <Icon className={`w-9 h-9 ${isInvestment ? "text-warning" : "text-warning"}`} />
+                      <Icon className={`w-9 h-9 text-destructive`} />
                     </div>
                     
                     <div className="flex-1">
@@ -176,8 +176,8 @@ const ComprehensiveMarketSlide = () => {
 
                     <span className={`text-base font-semibold px-5 py-2.5 rounded-full ${
                       isInvestment 
-                        ? "bg-warning/30 text-warning border-2 border-warning/70"
-                        : "bg-warning/20 text-warning border border-warning/50"
+                        ? "bg-destructive/30 text-destructive border-2 border-destructive/70"
+                        : "bg-destructive/20 text-destructive border border-destructive/50"
                     }`}>
                       {item.type}
                     </span>
