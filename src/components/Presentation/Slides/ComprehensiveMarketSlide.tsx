@@ -153,16 +153,16 @@ const ComprehensiveMarketSlide = () => {
                   <Card 
                     className={`h-full p-6 flex items-center gap-5 transition-all duration-300 backdrop-blur-sm ${
                       isInvestment 
-                        ? "bg-accent/10 border-2 border-accent shadow-[0_0_40px_hsl(var(--accent)/0.4)] hover:shadow-[0_0_60px_hsl(var(--accent)/0.5)]"
-                        : "bg-accent/5 border-2 border-accent/50 shadow-[0_0_25px_hsl(var(--accent)/0.2)] hover:shadow-[0_0_40px_hsl(var(--accent)/0.35)] hover:border-accent"
+                        ? "bg-warning/15 border-2 border-warning shadow-[0_0_40px_hsl(var(--warning)/0.5)] hover:shadow-[0_0_60px_hsl(var(--warning)/0.6)]"
+                        : "bg-warning/10 border-2 border-warning/60 shadow-[0_0_30px_hsl(var(--warning)/0.3)] hover:shadow-[0_0_45px_hsl(var(--warning)/0.45)] hover:border-warning"
                     }`}
                   >
                     <div className={`p-4 rounded-xl ${
                       isInvestment 
-                        ? "bg-accent/20 border-2 border-accent/60"
-                        : "bg-accent/10 border border-accent/40"
+                        ? "bg-warning/25 border-2 border-warning/70"
+                        : "bg-warning/15 border border-warning/50"
                     }`}>
-                      <Icon className={`w-9 h-9 ${isInvestment ? "text-accent" : "text-accent"}`} />
+                      <Icon className={`w-9 h-9 ${isInvestment ? "text-warning" : "text-warning"}`} />
                     </div>
                     
                     <div className="flex-1">
@@ -176,8 +176,8 @@ const ComprehensiveMarketSlide = () => {
 
                     <span className={`text-base font-semibold px-5 py-2.5 rounded-full ${
                       isInvestment 
-                        ? "bg-accent/25 text-accent border-2 border-accent/60"
-                        : "bg-accent/15 text-accent border border-accent/40"
+                        ? "bg-warning/30 text-warning border-2 border-warning/70"
+                        : "bg-warning/20 text-warning border border-warning/50"
                     }`}>
                       {item.type}
                     </span>
