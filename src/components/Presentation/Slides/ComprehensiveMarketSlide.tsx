@@ -113,7 +113,7 @@ const ComprehensiveMarketSlide = () => {
                         <Icon className="w-5 h-5 text-primary" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-lg font-bold text-foreground">{stream.title}</h3>
+                        <h3 className="text-xl font-bold text-foreground">{stream.title}</h3>
                         <p className="text-sm text-muted-foreground">{stream.subtitle}</p>
                       </div>
                       <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-semibold border border-primary/30">
