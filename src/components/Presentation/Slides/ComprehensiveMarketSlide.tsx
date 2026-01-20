@@ -4,9 +4,24 @@ import { DollarSign, Zap, Repeat, Users, Handshake, Banknote, Shield, Graduation
 
 const ComprehensiveMarketSlide = () => {
   const revenueStreams = [
-    { icon: Zap, title: "Integration Fees", model: "One-time" },
-    { icon: Repeat, title: "Recurring SaaS", model: "Monthly" },
-    { icon: Users, title: "Support & SLAs", model: "Annual" }
+    { 
+      icon: Zap, 
+      title: "Integration Fees", 
+      subtitle: "Setup & Customization",
+      model: "One-time" 
+    },
+    { 
+      icon: Repeat, 
+      title: "Recurring SaaS", 
+      subtitle: "Software & Analytics",
+      model: "Monthly" 
+    },
+    { 
+      icon: Users, 
+      title: "Support Services", 
+      subtitle: "Maintenance & SLAs",
+      model: "Annual" 
+    }
   ];
 
   const traction = [
@@ -37,7 +52,7 @@ const ComprehensiveMarketSlide = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen flex flex-col px-10 py-10 bg-background relative overflow-hidden">
+    <div className="w-full min-h-screen flex flex-col px-10 py-8 bg-background relative overflow-hidden">
       {/* Animated Background */}
       <div className="animated-bg">
         <div className="floating-orb orb-primary" />
@@ -53,9 +68,9 @@ const ComprehensiveMarketSlide = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-8"
+          className="text-center mb-6"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-3">
             $90B Opportunity & Early Traction
           </h1>
           <div className="flex flex-wrap justify-center gap-4">
@@ -68,31 +83,46 @@ const ComprehensiveMarketSlide = () => {
           </div>
         </motion.div>
 
-        {/* Business Model - Compact Bar */}
+        {/* Business Model Section - Larger & More Organized */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-8"
+          className="mb-6"
         >
-          <Card className="p-4 bg-card/50 backdrop-blur-sm border border-border/40">
-            <div className="flex items-center justify-center gap-12">
-              <div className="flex items-center gap-2">
-                <DollarSign className="w-5 h-5 text-primary" />
-                <span className="text-lg font-semibold text-foreground">Business Model:</span>
-              </div>
-              {revenueStreams.map((stream, index) => {
-                const Icon = stream.icon;
-                return (
-                  <div key={index} className="flex items-center gap-2">
-                    <Icon className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-foreground font-medium">{stream.title}</span>
-                    <span className="text-muted-foreground text-sm">({stream.model})</span>
-                  </div>
-                );
-              })}
-            </div>
-          </Card>
+          <div className="flex items-center gap-3 mb-4">
+            <DollarSign className="w-8 h-8 text-primary" />
+            <h2 className="text-3xl font-bold text-foreground">Business Model</h2>
+          </div>
+          
+          <div className="grid grid-cols-3 gap-5">
+            {revenueStreams.map((stream, index) => {
+              const Icon = stream.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                >
+                  <Card className="p-6 bg-card/60 backdrop-blur-sm border-2 border-primary/30 hover:border-primary/50 transition-all duration-300">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 rounded-xl bg-primary/10 border border-primary/20">
+                        <Icon className="w-7 h-7 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-foreground">{stream.title}</h3>
+                        <p className="text-lg text-muted-foreground mt-1">{stream.subtitle}</p>
+                        <span className="inline-block mt-3 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-base font-semibold border border-primary/20">
+                          {stream.model}
+                        </span>
+                      </div>
+                    </div>
+                  </Card>
+                </motion.div>
+              );
+            })}
+          </div>
         </motion.div>
 
         {/* Traction & Funding Section */}
@@ -100,15 +130,15 @@ const ComprehensiveMarketSlide = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex items-center gap-3 mb-6"
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="flex items-center gap-3 mb-4"
           >
-            <TrendingUp className="w-7 h-7 text-accent" />
+            <TrendingUp className="w-8 h-8 text-accent" />
             <h2 className="text-3xl font-bold text-foreground">Traction & Funding</h2>
           </motion.div>
 
-          {/* Full-width Traction Cards */}
-          <div className="flex flex-col gap-4 flex-1">
+          {/* Orange Glowy Traction Cards - 2x2 Grid */}
+          <div className="grid grid-cols-2 gap-5 flex-1">
             {traction.map((item, index) => {
               const Icon = item.icon;
               const isInvestment = item.type === "Investment";
@@ -116,39 +146,38 @@ const ComprehensiveMarketSlide = () => {
               return (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, x: -30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                  className="flex-1"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
                 >
                   <Card 
-                    className={`h-full p-6 flex items-center gap-6 transition-all duration-300 bg-card/60 backdrop-blur-sm border-2 hover:translate-x-1 ${
+                    className={`h-full p-6 flex items-center gap-5 transition-all duration-300 backdrop-blur-sm ${
                       isInvestment 
-                        ? "border-accent/60 hover:border-accent shadow-[0_0_25px_hsl(var(--accent)/0.2)]"
-                        : "border-accent/30 hover:border-accent/60"
+                        ? "bg-accent/10 border-2 border-accent shadow-[0_0_40px_hsl(var(--accent)/0.4)] hover:shadow-[0_0_60px_hsl(var(--accent)/0.5)]"
+                        : "bg-accent/5 border-2 border-accent/50 shadow-[0_0_25px_hsl(var(--accent)/0.2)] hover:shadow-[0_0_40px_hsl(var(--accent)/0.35)] hover:border-accent"
                     }`}
                   >
-                    <div className={`p-4 rounded-xl border ${
+                    <div className={`p-4 rounded-xl ${
                       isInvestment 
-                        ? "bg-accent/15 border-accent/40"
-                        : "bg-accent/10 border-accent/20"
+                        ? "bg-accent/20 border-2 border-accent/60"
+                        : "bg-accent/10 border border-accent/40"
                     }`}>
-                      <Icon className="w-8 h-8 text-accent" />
+                      <Icon className={`w-9 h-9 ${isInvestment ? "text-accent" : "text-accent"}`} />
                     </div>
                     
                     <div className="flex-1">
                       <span className={`font-bold text-foreground ${isInvestment ? "text-2xl" : "text-xl"}`}>
                         {item.title}
                       </span>
-                      <p className="text-muted-foreground text-base mt-1">
+                      <p className="text-muted-foreground text-lg mt-1">
                         {item.description}
                       </p>
                     </div>
 
-                    <span className={`text-sm font-semibold px-4 py-2 rounded-full ${
+                    <span className={`text-base font-semibold px-5 py-2.5 rounded-full ${
                       isInvestment 
-                        ? "bg-accent/20 text-accent border border-accent/40"
-                        : "bg-accent/10 text-accent border border-accent/20"
+                        ? "bg-accent/25 text-accent border-2 border-accent/60"
+                        : "bg-accent/15 text-accent border border-accent/40"
                     }`}>
                       {item.type}
                     </span>
@@ -163,12 +192,12 @@ const ComprehensiveMarketSlide = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-6 text-center"
+          transition={{ duration: 0.6, delay: 1 }}
+          className="mt-5 text-center"
         >
-          <p className="text-lg text-muted-foreground">
+          <p className="text-xl text-muted-foreground">
             <span className="text-primary font-semibold">Vertical:</span> Electronics → F&B → Automotive
-            <span className="mx-4">|</span>
+            <span className="mx-6">|</span>
             <span className="text-accent font-semibold">Horizontal:</span> EU → MENA → US
           </p>
         </motion.div>
