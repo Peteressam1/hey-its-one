@@ -107,7 +107,7 @@ const ComprehensiveMarketSlide = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                 >
-                  <Card className="p-4 bg-primary/5 backdrop-blur-sm border border-primary/30 hover:border-primary/50 hover:shadow-[0_0_20px_hsl(var(--primary)/0.15)] transition-all duration-300">
+                  <Card className="p-6 bg-primary/5 backdrop-blur-sm border border-primary/30 hover:border-primary/50 hover:shadow-[0_0_20px_hsl(var(--primary)/0.15)] transition-all duration-300">
                     <div className="flex items-center gap-3">
                       <div className="p-2 rounded-lg bg-primary/15 border border-primary/30">
                         <Icon className="w-5 h-5 text-primary" />
