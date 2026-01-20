@@ -1,25 +1,22 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { Factory, Globe, Target, DollarSign, Zap, Repeat, Users, Handshake, Banknote, Shield } from "lucide-react";
+import { Factory, Globe, Target, DollarSign, Zap, Repeat, Users, Handshake, Banknote, Shield, GraduationCap, TrendingUp } from "lucide-react";
 
 const ComprehensiveMarketSlide = () => {
   const revenueStreams = [
     {
       icon: Zap,
       title: "Integration Fees",
-      description: "Setup & Customization",
       model: "One-time"
     },
     {
       icon: Repeat,
       title: "Recurring SaaS",
-      description: "Software & Analytics",
-      model: "Monthly Subscription"
+      model: "Monthly"
     },
     {
       icon: Users,
-      title: "Support Services",
-      description: "Maintenance & SLAs",
+      title: "Support & SLAs",
       model: "Annual"
     }
   ];
@@ -38,7 +35,7 @@ const ComprehensiveMarketSlide = () => {
       type: "Partnership"
     },
     {
-      icon: Factory,
+      icon: GraduationCap,
       title: "FAPS FAU",
       description: "University research partnership",
       type: "Partnership"
@@ -46,13 +43,13 @@ const ComprehensiveMarketSlide = () => {
     {
       icon: Banknote,
       title: "Angel Investment",
-      description: "Secured funding",
+      description: "€300K secured funding",
       type: "Investment"
     }
   ];
 
   return (
-    <div className="w-full min-h-screen flex flex-col px-8 py-10 bg-background relative overflow-hidden">
+    <div className="w-full min-h-screen flex flex-col px-8 py-8 bg-background relative overflow-hidden">
       {/* Animated Background */}
       <div className="animated-bg">
         <div className="floating-orb orb-primary" />
@@ -62,7 +59,7 @@ const ComprehensiveMarketSlide = () => {
       <div className="geometric-pattern" />
 
       {/* Content Container */}
-      <div className="relative z-10 w-full max-w-[1400px] mx-auto flex flex-col flex-1 space-y-6">
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto flex flex-col flex-1 gap-6">
         
         {/* Header */}
         <motion.div
@@ -71,101 +68,127 @@ const ComprehensiveMarketSlide = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-        <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
             $90B Opportunity & Early Traction
           </h1>
-          <div className="flex flex-wrap justify-center gap-4 mb-4">
-            <span className="px-5 py-2 rounded-full bg-primary/10 border border-primary/30 text-base font-medium text-foreground">
+          <div className="flex flex-wrap justify-center gap-3 mb-3">
+            <span className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-sm font-medium text-foreground">
               Machine Vision: $21B → $41B by 2030 | 13% CAGR
             </span>
-            <span className="px-5 py-2 rounded-full bg-accent/10 border border-accent/30 text-base font-medium text-foreground">
+            <span className="px-4 py-1.5 rounded-full bg-accent/10 border border-accent/30 text-sm font-medium text-foreground">
               AI in Manufacturing: $6B → $48B | 46% CAGR
             </span>
           </div>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg text-muted-foreground">
             <span className="text-primary font-semibold">Vertical:</span> Electronics → F&B → Automotive | <span className="text-accent font-semibold">Horizontal:</span> EU → MENA → US
           </p>
         </motion.div>
 
-
-        {/* Bottom Row: Business Model & Traction */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 flex-1">
-          
-          {/* Business Model Column */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col h-full"
-          >
-            <h3 className="text-3xl font-bold flex items-center gap-3 text-foreground mb-6">
-              <DollarSign className="w-8 h-8 text-primary" /> Business Model
-            </h3>
-            <div className="flex flex-col gap-4 flex-1">
-              {revenueStreams.map((stream, index) => {
-                const Icon = stream.icon;
-                return (
-                  <Card key={index} className="p-8 flex items-center gap-8 hover:shadow-md transition-all bg-card/60 border-border/50 flex-1">
-                    <div className="p-6 rounded-xl bg-primary/10 border border-primary/20">
-                      <Icon className="w-12 h-12 text-primary" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex justify-between items-center mb-3">
-                        <span className="font-bold text-2xl text-foreground">{stream.title}</span>
-                        <span className="text-base font-bold px-5 py-2 rounded-full bg-accent/10 text-accent border border-accent/20">
-                          {stream.model}
-                        </span>
+        {/* Business Model - Compact Horizontal Strip */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <Card className="p-5 bg-card/60 backdrop-blur-sm border border-border/50">
+            <div className="flex items-center justify-between gap-6">
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 rounded-lg bg-primary/10 border border-primary/20">
+                  <DollarSign className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Business Model</h3>
+              </div>
+              
+              <div className="flex items-center gap-8 flex-1 justify-center">
+                {revenueStreams.map((stream, index) => {
+                  const Icon = stream.icon;
+                  return (
+                    <div key={index} className="flex items-center gap-3">
+                      <div className="p-2 rounded-lg bg-muted/50">
+                        <Icon className="w-5 h-5 text-primary" />
                       </div>
-                      <div className="text-lg">
-                        <span className="text-muted-foreground">{stream.description}</span>
+                      <div>
+                        <span className="font-semibold text-foreground">{stream.title}</span>
+                        <span className="text-muted-foreground ml-2 text-sm">({stream.model})</span>
                       </div>
+                      {index < revenueStreams.length - 1 && (
+                        <div className="w-px h-8 bg-border/50 ml-5" />
+                      )}
                     </div>
-                  </Card>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </motion.div>
+          </Card>
+        </motion.div>
 
-          {/* Traction & Funding Column */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-col h-full"
-          >
-            <h3 className="text-3xl font-bold flex items-center gap-3 text-foreground mb-6">
-              <Handshake className="w-8 h-8 text-accent" /> Traction & Funding
-            </h3>
-            <div className="flex flex-col gap-4 flex-1">
-              {traction.map((item, index) => {
-                const Icon = item.icon;
-                return (
+        {/* Traction & Funding - Main Focus */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="flex-1 flex flex-col"
+        >
+          <div className="flex items-center gap-3 mb-5">
+            <div className="p-3 rounded-xl bg-accent/10 border border-accent/30">
+              <TrendingUp className="w-7 h-7 text-accent" />
+            </div>
+            <h2 className="text-3xl font-bold text-foreground">Traction & Funding</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 flex-1">
+            {traction.map((item, index) => {
+              const Icon = item.icon;
+              const isInvestment = item.type === "Investment";
+              
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+                >
                   <Card 
-                    key={index} 
-                    className="p-8 flex items-center gap-8 hover:shadow-md transition-all flex-1 bg-card/60 border-border/50"
+                    className={`p-6 h-full flex items-center gap-6 transition-all duration-500 group relative overflow-hidden border-0 ${
+                      isInvestment 
+                        ? "bg-gradient-to-br from-accent/15 to-background ring-2 ring-accent/40 hover:ring-accent/70 shadow-[0_0_30px_hsl(var(--accent)/0.15)] hover:shadow-[0_0_50px_hsl(var(--accent)/0.25)]"
+                        : "bg-gradient-to-br from-accent/10 to-background ring-1 ring-accent/25 hover:ring-accent/50 shadow-[0_0_20px_hsl(var(--accent)/0.1)] hover:shadow-[0_0_40px_hsl(var(--accent)/0.2)]"
+                    }`}
                   >
-                    <div className="p-6 rounded-xl bg-accent/10 border border-accent/20">
-                      <Icon className="w-12 h-12 text-accent" />
+                    {/* Glow overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-accent/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    
+                    <div className={`relative z-10 p-5 rounded-xl border transition-all duration-300 group-hover:scale-105 ${
+                      isInvestment 
+                        ? "bg-accent/20 border-accent/40"
+                        : "bg-accent/10 border-accent/25"
+                    }`}>
+                      <Icon className={`w-10 h-10 ${isInvestment ? "text-accent" : "text-accent"}`} />
                     </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex justify-between items-center mb-3">
-                        <span className="font-bold text-2xl text-foreground">
+                    
+                    <div className="flex-1 min-w-0 relative z-10">
+                      <div className="flex justify-between items-center mb-2">
+                        <span className={`font-bold text-foreground ${isInvestment ? "text-2xl" : "text-xl"}`}>
                           {item.title}
                         </span>
-                        <span className="text-base font-bold px-5 py-2 rounded-full bg-accent/10 text-accent border border-accent/20">
+                        <span className={`text-sm font-bold px-4 py-1.5 rounded-full border ${
+                          isInvestment 
+                            ? "bg-accent/20 text-accent border-accent/40"
+                            : "bg-accent/10 text-accent border-accent/25"
+                        }`}>
                           {item.type}
                         </span>
                       </div>
-                      <div className="text-lg">
-                        <span className="text-muted-foreground">{item.description}</span>
-                      </div>
+                      <p className={`text-muted-foreground ${isInvestment ? "text-lg" : "text-base"}`}>
+                        {item.description}
+                      </p>
                     </div>
                   </Card>
-                );
-              })}
-            </div>
-          </motion.div>
-        </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </motion.div>
       </div>
     </div>
   );
