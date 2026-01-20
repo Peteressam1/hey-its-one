@@ -163,10 +163,10 @@ const ComprehensiveMarketSlide = () => {
                     </div>
                     
                     <div className="flex-1">
-                      <span className="font-bold text-foreground text-xl">
+                      <span className="font-bold text-foreground text-3xl">
                         {item.title}
                       </span>
-                      <p className="text-muted-foreground text-lg mt-1">
+                      <p className="text-muted-foreground text-xl mt-1">
                         {item.description}
                       </p>
                     </div>
