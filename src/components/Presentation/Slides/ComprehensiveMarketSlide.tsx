@@ -83,7 +83,7 @@ const ComprehensiveMarketSlide = () => {
           </div>
         </motion.div>
 
-        {/* Business Model Section - Larger & More Organized */}
+        {/* Business Model Section - Premium Styling */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -91,7 +91,9 @@ const ComprehensiveMarketSlide = () => {
           className="mb-6"
         >
           <div className="flex items-center gap-3 mb-4">
-            <DollarSign className="w-8 h-8 text-primary" />
+            <div className="p-2 rounded-lg bg-primary/10 border border-primary/30">
+              <DollarSign className="w-7 h-7 text-primary" />
+            </div>
             <h2 className="text-3xl font-bold text-foreground">Business Model</h2>
           </div>
           
@@ -105,15 +107,15 @@ const ComprehensiveMarketSlide = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                 >
-                  <Card className="p-6 bg-card/60 backdrop-blur-sm border-2 border-primary/30 hover:border-primary/50 transition-all duration-300">
+                  <Card className="p-6 bg-primary/5 backdrop-blur-sm border-2 border-primary/40 hover:border-primary/60 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] transition-all duration-300">
                     <div className="flex items-start gap-4">
-                      <div className="p-3 rounded-xl bg-primary/10 border border-primary/20">
+                      <div className="p-3 rounded-xl bg-primary/15 border-2 border-primary/40">
                         <Icon className="w-7 h-7 text-primary" />
                       </div>
                       <div className="flex-1">
                         <h3 className="text-2xl font-bold text-foreground">{stream.title}</h3>
                         <p className="text-lg text-muted-foreground mt-1">{stream.subtitle}</p>
-                        <span className="inline-block mt-3 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-base font-semibold border border-primary/20">
+                        <span className="inline-block mt-3 px-4 py-1.5 rounded-full bg-primary/15 text-primary text-base font-semibold border-2 border-primary/40">
                           {stream.model}
                         </span>
                       </div>
@@ -133,7 +135,9 @@ const ComprehensiveMarketSlide = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="flex items-center gap-3 mb-4"
           >
-            <TrendingUp className="w-8 h-8 text-accent" />
+            <div className="p-2 rounded-lg bg-destructive/15 border border-destructive/40">
+              <TrendingUp className="w-7 h-7 text-destructive" />
+            </div>
             <h2 className="text-3xl font-bold text-foreground">Traction & Funding</h2>
           </motion.div>
 
