@@ -37,7 +37,7 @@ const SolutionAndCompetitiveEdgeSlide = () => {
   ];
 
   const luminaEdge = [
-    "Closed-loop system: Defect → Cause → Action",
+    "Closed-loop system:\nDefect → Cause → Action",
     "Adapts as production drifts—minimal retraining",
     "No disruption: Works with existing cameras"
   ];
@@ -187,7 +187,7 @@ const SolutionAndCompetitiveEdgeSlide = () => {
                         <Check style={{ width: 'clamp(1.25rem, 2vw, 2rem)', height: 'clamp(1.25rem, 2vw, 2rem)' }} className="text-primary" />
                       </div>
                       <p 
-                        className="text-foreground font-medium leading-relaxed"
+                        className="text-foreground font-medium leading-relaxed whitespace-pre-line"
                         style={{ fontSize: 'clamp(0.75rem, 1.25vw, 1.25rem)' }}
                       >
                         {advantage}
