@@ -128,33 +128,36 @@ const SolutionAndCompetitiveEdgeSlide = () => {
 
         {/* Competitive Edge */}
         <div>
-          {/* Why Lumina Wins - Full Width Rectangle */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <h2 className="text-4xl font-bold text-foreground mb-10 text-center">
+            <h2 className="text-4xl font-bold text-foreground mb-8 text-center">
               Why Lumina Wins
             </h2>
-            <Card className="p-12 bg-primary/10 backdrop-blur-sm border-2 border-primary/40">
-              <div className="flex flex-wrap justify-center gap-12">
-                {luminaEdge.map((advantage, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 + index * 0.1 }}
-                    className="flex items-center space-x-5"
-                  >
-                    <Check className="w-8 h-8 text-primary flex-shrink-0" />
-                    <span className="text-2xl text-foreground font-medium">{advantage}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </Card>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {luminaEdge.map((advantage, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ delay: 1 + index * 0.15, duration: 0.5 }}
+                >
+                  <Card className="p-8 h-full bg-gradient-to-br from-primary/15 to-primary/5 backdrop-blur-sm border-2 border-primary/30 hover:border-primary/60 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 group">
+                    <div className="flex flex-col items-center text-center space-y-4">
+                      <div className="p-4 rounded-full bg-primary/20 group-hover:bg-primary/30 transition-colors duration-300">
+                        <Check className="w-8 h-8 text-primary" />
+                      </div>
+                      <p className="text-xl text-foreground font-medium leading-relaxed">
+                        {advantage}
+                      </p>
+                    </div>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
-
         </div>
       </div>
     </div>
