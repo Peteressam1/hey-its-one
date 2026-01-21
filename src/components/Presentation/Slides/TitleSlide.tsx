@@ -7,7 +7,7 @@ import fapsLogo from "@/assets/logos/FAPS_white.png";
 import tumAiLogo from "@/assets/logos/TUM_AI_White.png";
 import tumLogo from "@/assets/logos/TUM_Logo_white.png";
 const TitleSlide = () => {
-  return <div className="w-full min-h-screen flex flex-col justify-center relative bg-background">
+  return <div className="w-full h-screen flex flex-col justify-center relative bg-background overflow-hidden">
       {/* Unified Animated Background */}
       <div className="animated-bg">
         <div className="floating-orb orb-primary" />
@@ -31,7 +31,7 @@ const TitleSlide = () => {
 
 
       {/* Content */}
-      <div className="relative z-10 text-center px-8 py-16">
+      <div className="relative z-10 text-center px-8 py-8">
         {/* Main Title */}
         <motion.div initial={{
         opacity: 0,

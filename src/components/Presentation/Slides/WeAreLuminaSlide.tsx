@@ -3,7 +3,10 @@ import luminaLogo from "@/assets/lumina-logo-full.png";
 
 const WeAreLuminaSlide = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center px-8 py-12 bg-background relative overflow-hidden">
+    <div 
+      className="w-full h-screen flex items-center justify-center bg-background relative overflow-hidden"
+      style={{ padding: '2.5cm' }}
+    >
       {/* Simplified Animated Background */}
       <div className="animated-bg">
         <div className="floating-orb orb-primary" />
@@ -13,8 +16,10 @@ const WeAreLuminaSlide = () => {
       <div className="geometric-pattern opacity-50" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-6xl flex flex-col items-center justify-center space-y-16">
-        
+      <div 
+        className="relative z-10 w-full h-full flex flex-col items-center justify-center"
+        style={{ gap: '3vh' }}
+      >
         {/* "We Are" Title with dramatic reveal */}
         <motion.h1
           initial={{ opacity: 0, scale: 0.5, rotateX: -90 }}
@@ -26,9 +31,10 @@ const WeAreLuminaSlide = () => {
             type: "spring",
             stiffness: 120
           }}
-          className="text-7xl md:text-8xl font-bold text-center"
+          className="font-bold text-center text-foreground"
+          style={{ fontSize: 'clamp(3rem, 8vw, 7rem)' }}
         >
-          <span className="text-foreground">We Are</span>
+          We Are
         </motion.h1>
 
         {/* Lumina Logo with simple reveal */}
@@ -43,7 +49,7 @@ const WeAreLuminaSlide = () => {
             delay: 0.6, 
             ease: [0.22, 1, 0.36, 1] 
           }}
-          className="w-full max-w-4xl"
+          style={{ width: 'clamp(300px, 60vw, 900px)' }}
         >
           <img
             src={luminaLogo}
@@ -60,7 +66,8 @@ const WeAreLuminaSlide = () => {
           className="text-center"
         >
           <motion.p
-            className="text-4xl md:text-5xl font-heading tracking-tight"
+            className="font-heading tracking-tight"
+            style={{ fontSize: 'clamp(1.5rem, 4vw, 4rem)' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.4 }}
