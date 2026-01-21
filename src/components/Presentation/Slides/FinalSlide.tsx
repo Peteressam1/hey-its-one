@@ -4,7 +4,10 @@ import qrCode from "@/assets/qr-lumina.png";
 
 const FinalSlide = () => {
   return (
-    <div className="w-full h-screen flex items-center justify-center bg-background relative overflow-hidden">
+    <div 
+      className="w-full h-screen flex items-center justify-center bg-background relative overflow-hidden"
+      style={{ padding: '1cm' }}
+    >
       {/* Unified Animated Background */}
       <div className="animated-bg">
         <div className="floating-orb orb-primary" />
@@ -15,12 +18,7 @@ const FinalSlide = () => {
 
       {/* 16:9 Aspect Ratio Container that scales proportionally */}
       <div 
-        className="relative z-10 flex flex-col items-center justify-center"
-        style={{
-          width: 'min(100vw, 177.78vh)', // 16:9 = 1.7778
-          height: 'min(56.25vw, 100vh)', // 9:16 = 0.5625
-          padding: '12vh 15vw',
-        }}
+        className="relative z-10 flex flex-col items-center justify-center w-full h-full"
       >
         
         {/* Lumina Logo */}
