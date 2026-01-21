@@ -6,7 +6,7 @@ const FinalSlide = () => {
   return (
     <div 
       className="w-full h-screen flex items-center justify-center bg-background relative overflow-hidden"
-      style={{ padding: '1cm' }}
+      style={{ padding: '2.5cm' }}
     >
       {/* Unified Animated Background */}
       <div className="animated-bg">
@@ -16,9 +16,10 @@ const FinalSlide = () => {
       </div>
       <div className="geometric-pattern" />
 
-      {/* 16:9 Aspect Ratio Container that scales proportionally */}
+      {/* Content Container - centered with justify-center */}
       <div 
         className="relative z-10 flex flex-col items-center justify-center w-full h-full"
+        style={{ gap: '2.5vh' }}
       >
         
         {/* Lumina Logo */}
@@ -26,10 +27,7 @@ const FinalSlide = () => {
           initial={{ opacity: 0, scale: 0.8 }} 
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          style={{ 
-            width: 'clamp(300px, 50vw, 800px)',
-            marginBottom: '3vh'
-          }}
+          style={{ width: 'clamp(200px, 35vw, 500px)' }}
         >
           <img src={luminaLogoText} alt="Lumina" className="w-full h-auto object-contain" />
         </motion.div>
@@ -40,17 +38,16 @@ const FinalSlide = () => {
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }} 
           className="font-heading text-center tracking-tight"
-          style={{ marginBottom: '4vh' }}
         >
           <span 
             className="block text-gradient text-glow-animate"
-            style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)' }}
+            style={{ fontSize: 'clamp(1.8rem, 4vw, 4rem)' }}
           >
             See the Invisible.
           </span>
           <span 
             className="block text-gradient text-glow-animate"
-            style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)', marginTop: '1.5vh' }}
+            style={{ fontSize: 'clamp(1.8rem, 4vw, 4rem)', marginTop: '0.5vh' }}
           >
             Know the Why.
           </span>
@@ -62,24 +59,24 @@ const FinalSlide = () => {
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.8, delay: 0.8, ease: [0.22, 1, 0.36, 1] }} 
           className="flex flex-col items-center"
-          style={{ gap: '1.5vh' }}
+          style={{ gap: '1vh' }}
         >
           <h2 
             className="font-semibold text-foreground"
-            style={{ fontSize: 'clamp(1.5rem, 3.5vw, 3.5rem)' }}
+            style={{ fontSize: 'clamp(1.2rem, 2.5vw, 2.5rem)' }}
           >
             Connect with Us
           </h2>
           <div 
-            className="bg-white rounded-2xl shadow-2xl"
-            style={{ padding: 'clamp(0.75rem, 1.5vw, 1.5rem)' }}
+            className="bg-white rounded-xl shadow-xl"
+            style={{ padding: 'clamp(0.5rem, 1vw, 1rem)' }}
           >
             <img 
               src={qrCode} 
               alt="Lumina QR Code" 
               style={{ 
-                width: 'clamp(10rem, 18vw, 18rem)', 
-                height: 'clamp(10rem, 18vw, 18rem)' 
+                width: 'clamp(6rem, 12vw, 12rem)', 
+                height: 'clamp(6rem, 12vw, 12rem)' 
               }}
             />
           </div>
