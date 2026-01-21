@@ -27,7 +27,7 @@ const FinalSlide = () => {
           initial={{ opacity: 0, scale: 0.8 }} 
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          style={{ width: 'clamp(200px, 35vw, 500px)' }}
+          style={{ width: 'clamp(250px, 45vw, 650px)' }}
         >
           <img src={luminaLogoText} alt="Lumina" className="w-full h-auto object-contain" />
         </motion.div>
@@ -41,13 +41,13 @@ const FinalSlide = () => {
         >
           <span 
             className="block text-gradient text-glow-animate"
-            style={{ fontSize: 'clamp(1.8rem, 4vw, 4rem)' }}
+            style={{ fontSize: 'clamp(2.2rem, 5vw, 5rem)' }}
           >
             See the Invisible.
           </span>
           <span 
             className="block text-gradient text-glow-animate"
-            style={{ fontSize: 'clamp(1.8rem, 4vw, 4rem)', marginTop: '0.5vh' }}
+            style={{ fontSize: 'clamp(2.2rem, 5vw, 5rem)', marginTop: '0.5vh' }}
           >
             Know the Why.
           </span>
@@ -63,7 +63,7 @@ const FinalSlide = () => {
         >
           <h2 
             className="font-semibold text-foreground"
-            style={{ fontSize: 'clamp(1.2rem, 2.5vw, 2.5rem)' }}
+            style={{ fontSize: 'clamp(1.5rem, 3vw, 3rem)' }}
           >
             Connect with Us
           </h2>
@@ -75,8 +75,8 @@ const FinalSlide = () => {
               src={qrCode} 
               alt="Lumina QR Code" 
               style={{ 
-                width: 'clamp(6rem, 12vw, 12rem)', 
-                height: 'clamp(6rem, 12vw, 12rem)' 
+                width: 'clamp(8rem, 15vw, 15rem)', 
+                height: 'clamp(8rem, 15vw, 15rem)' 
               }}
             />
           </div>
