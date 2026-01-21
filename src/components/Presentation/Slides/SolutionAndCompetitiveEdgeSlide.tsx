@@ -39,7 +39,7 @@ const SolutionAndCompetitiveEdgeSlide = () => {
   const luminaEdge = [
     "Closed-loop system:\nDefect → Cause → Action",
     "Adapts as production drifts—minimal retraining",
-    "No disruption: Works with existing cameras"
+    "No disruption:\nWorks with existing cameras"
   ];
 
   return (
