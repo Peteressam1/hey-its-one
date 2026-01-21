@@ -19,7 +19,7 @@ const FinalSlide = () => {
         style={{
           width: 'min(100vw, 177.78vh)', // 16:9 = 1.7778
           height: 'min(56.25vw, 100vh)', // 9:16 = 0.5625
-          padding: '6vh 8vw',
+          padding: '12vh 15vw',
         }}
       >
         
