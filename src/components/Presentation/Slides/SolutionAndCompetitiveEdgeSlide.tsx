@@ -140,10 +140,9 @@ const SolutionAndCompetitiveEdgeSlide = () => {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.5 + index * 0.1 }}
-                      className="absolute top-1/2 z-20"
+                      className="absolute top-1/2 right-0 z-20"
                       style={{ 
-                        right: 'calc(-0.75rem - clamp(0.5rem, 0.75vw, 0.75rem))',
-                        transform: 'translateY(-50%)'
+                        transform: 'translate(calc(50% + 0.375rem), -50%)'
                       }}
                     >
                       <ArrowRight style={{ width: 'clamp(1rem, 1.5vw, 1.5rem)', height: 'clamp(1rem, 1.5vw, 1.5rem)' }} className="text-primary" />
