@@ -112,51 +112,51 @@ const CurrentSolutionsSlide = () => {
 
                   <div 
                     className="flex flex-col h-full"
-                    style={{ padding: 'clamp(1rem, 2vw, 2rem)' }}
+                    style={{ padding: 'clamp(1.25rem, 2.5vw, 2.5rem)' }}
                   >
                     
                     {/* Icon Header */}
                     <div 
                       className="flex flex-col items-center text-center"
-                      style={{ marginBottom: 'clamp(0.5rem, 1.5vh, 1.5rem)' }}
+                      style={{ marginBottom: 'clamp(0.75rem, 2vh, 2rem)' }}
                     >
                       <div 
                         className={`rounded-2xl ${solution.iconBg} ring-1 ring-inset ring-white/10 group-hover:scale-110 transition-transform duration-500`}
-                        style={{ padding: 'clamp(0.5rem, 1vw, 1rem)', marginBottom: 'clamp(0.5rem, 1vh, 1rem)' }}
+                        style={{ padding: 'clamp(0.75rem, 1.5vw, 1.5rem)', marginBottom: 'clamp(0.75rem, 1.5vh, 1.5rem)' }}
                       >
-                        <Icon style={{ width: 'clamp(1.5rem, 3vw, 3rem)', height: 'clamp(1.5rem, 3vw, 3rem)' }} className={solution.iconColor} />
+                        <Icon style={{ width: 'clamp(2rem, 4vw, 4rem)', height: 'clamp(2rem, 4vw, 4rem)' }} className={solution.iconColor} />
                       </div>
                       <h3 
                         className="font-bold text-foreground"
-                        style={{ fontSize: 'clamp(1rem, 2vw, 2rem)', marginBottom: '0.25vh' }}
+                        style={{ fontSize: 'clamp(1.25rem, 2.5vw, 2.5rem)', marginBottom: '0.5vh' }}
                       >
                         {solution.title}
                       </h3>
                       <p 
                         className="text-muted-foreground uppercase tracking-wider font-medium"
-                        style={{ fontSize: 'clamp(0.6rem, 1vw, 1rem)' }}
+                        style={{ fontSize: 'clamp(0.75rem, 1.25vw, 1.25rem)' }}
                       >
                         {solution.subtitle}
                       </p>
                     </div>
 
-                    <Separator className="bg-border/50" style={{ marginBottom: 'clamp(0.5rem, 1.5vh, 1.5rem)' }} />
+                    <Separator className="bg-border/50" style={{ marginBottom: 'clamp(0.75rem, 2vh, 2rem)' }} />
 
                     {/* Bullets */}
-                    <ul className="flex-1" style={{ marginBottom: 'clamp(0.5rem, 1vh, 1rem)' }}>
+                    <ul className="flex-1" style={{ marginBottom: 'clamp(0.75rem, 1.5vh, 1.5rem)' }}>
                       {solution.bullets.map((bullet, i) => (
                         <li 
                           key={i} 
                           className="flex items-start group/item"
-                          style={{ gap: 'clamp(0.25rem, 0.5vw, 0.5rem)', marginBottom: 'clamp(0.25rem, 0.5vh, 0.5rem)' }}
+                          style={{ gap: 'clamp(0.4rem, 0.75vw, 0.75rem)', marginBottom: 'clamp(0.5rem, 0.75vh, 0.75rem)' }}
                         >
                           <XCircle 
                             className={`${solution.iconColor} opacity-60 group-hover/item:opacity-100 transition-opacity mt-0.5 shrink-0`}
-                            style={{ width: 'clamp(0.875rem, 1.25vw, 1.25rem)', height: 'clamp(0.875rem, 1.25vw, 1.25rem)' }}
+                            style={{ width: 'clamp(1.1rem, 1.75vw, 1.75rem)', height: 'clamp(1.1rem, 1.75vw, 1.75rem)' }}
                           />
                           <span 
                             className="text-muted-foreground leading-relaxed group-hover/item:text-foreground transition-colors"
-                            style={{ fontSize: 'clamp(0.7rem, 1.1vw, 1.1rem)' }}
+                            style={{ fontSize: 'clamp(0.9rem, 1.4vw, 1.4rem)' }}
                           >
                             {bullet}
                           </span>
@@ -167,17 +167,17 @@ const CurrentSolutionsSlide = () => {
                     {/* Verdict Footer */}
                     <div 
                       className="mt-auto border-t border-border/50 text-center"
-                      style={{ paddingTop: 'clamp(0.5rem, 1vh, 1rem)' }}
+                      style={{ paddingTop: 'clamp(0.75rem, 1.5vh, 1.5rem)' }}
                     >
                       <p 
                         className="text-muted-foreground uppercase tracking-widest"
-                        style={{ fontSize: 'clamp(0.5rem, 0.8vw, 0.8rem)', marginBottom: '0.25vh' }}
+                        style={{ fontSize: 'clamp(0.65rem, 1vw, 1rem)', marginBottom: '0.5vh' }}
                       >
                         Verdict
                       </p>
                       <p 
                         className={`font-bold ${solution.verdictColor}`}
-                        style={{ fontSize: 'clamp(1rem, 2vw, 2rem)' }}
+                        style={{ fontSize: 'clamp(1.25rem, 2.5vw, 2.5rem)' }}
                       >
                         {solution.verdict}
                       </p>
