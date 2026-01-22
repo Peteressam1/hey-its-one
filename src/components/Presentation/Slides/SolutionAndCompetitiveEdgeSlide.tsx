@@ -110,25 +110,25 @@ const SolutionAndCompetitiveEdgeSlide = () => {
                 >
                   <Card 
                     className="bg-card/80 backdrop-blur-sm border-2 border-primary/30 hover:border-primary/60 transition-all duration-300 h-full flex flex-col items-center text-center"
-                    style={{ padding: 'clamp(0.75rem, 1.5vw, 1.5rem)' }}
+                    style={{ padding: 'clamp(1rem, 2vw, 2.5rem)' }}
                   >
                     <div 
                       className={`rounded-xl bg-background/50 ${stage.color}`}
-                      style={{ padding: 'clamp(0.5rem, 1vw, 1rem)', marginBottom: '0.75vh' }}
+                      style={{ padding: 'clamp(0.75rem, 1.5vw, 1.5rem)', marginBottom: '1vh' }}
                     >
-                      <Icon style={{ width: 'clamp(1.5rem, 3vw, 2.5rem)', height: 'clamp(1.5rem, 3vw, 2.5rem)' }} />
+                      <Icon style={{ width: 'clamp(2rem, 4vw, 3.5rem)', height: 'clamp(2rem, 4vw, 3.5rem)' }} />
                     </div>
                     
                     <h3 
                       className="font-bold text-foreground"
-                      style={{ fontSize: 'clamp(0.9rem, 1.5vw, 1.5rem)', marginBottom: '0.25vh' }}
+                      style={{ fontSize: 'clamp(1.1rem, 2vw, 2rem)', marginBottom: '0.5vh' }}
                     >
                       {stage.title}
                     </h3>
                     
                     <p 
                       className="text-muted-foreground leading-relaxed"
-                      style={{ fontSize: 'clamp(0.65rem, 1vw, 1rem)' }}
+                      style={{ fontSize: 'clamp(0.8rem, 1.3vw, 1.25rem)' }}
                     >
                       {stage.description}
                     </p>
