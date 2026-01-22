@@ -118,35 +118,35 @@ const TeamSlide = () => {
                 <div className="text-center" style={{ marginBottom: '1vh' }}>
                   <h3 
                     className="font-bold text-white"
-                    style={{ fontSize: 'clamp(1rem, 1.8vw, 2rem)', marginBottom: '0.25vh' }}
+                    style={{ fontSize: 'clamp(1.25rem, 2.2vw, 2.5rem)', marginBottom: '0.5vh' }}
                   >
                     {founder.name}
                   </h3>
                   <p 
                     className="font-medium text-primary"
-                    style={{ fontSize: 'clamp(0.75rem, 1.2vw, 1.25rem)', marginBottom: '0.75vh' }}
+                    style={{ fontSize: 'clamp(0.9rem, 1.5vw, 1.5rem)', marginBottom: '1vh' }}
                   >
                     {founder.role}
                   </p>
                   
                   {/* Bullet Points */}
-                  <ul className="text-muted-foreground text-left max-w-xs mx-auto">
+                  <ul className="text-muted-foreground text-left max-w-sm mx-auto">
                     {founder.bullets.map((bullet, idx) => (
                       <li 
                         key={idx} 
-                        className="flex items-center"
-                        style={{ gap: 'clamp(0.25rem, 0.5vw, 0.5rem)', marginBottom: '0.25vh' }}
+                        className="flex items-start"
+                        style={{ gap: 'clamp(0.4rem, 0.6vw, 0.75rem)', marginBottom: '0.5vh' }}
                       >
                         <span className="text-primary shrink-0">•</span>
-                        <span style={{ fontSize: 'clamp(0.6rem, 1vw, 1rem)' }}>{bullet}</span>
+                        <span style={{ fontSize: 'clamp(0.8rem, 1.3vw, 1.25rem)' }}>{bullet}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 {/* Company Logos */}
-                <div className="mt-auto border-t border-border/30" style={{ paddingTop: '1vh' }}>
-                  <div className="flex items-center justify-center" style={{ gap: 'clamp(0.5rem, 1vw, 1rem)' }}>
+                <div className="mt-auto border-t border-border/30" style={{ paddingTop: '1.5vh' }}>
+                  <div className="flex items-center justify-center" style={{ gap: 'clamp(0.75rem, 1.5vw, 1.5rem)' }}>
                     {founder.logos.map((logo, idx) => (
                       <img 
                         key={idx} 
@@ -154,8 +154,8 @@ const TeamSlide = () => {
                         alt={logo.alt} 
                         className="object-contain mix-blend-normal shrink-0" 
                         style={{ 
-                          height: 'clamp(1rem, 1.5vw, 1.5rem)',
-                          maxWidth: 'clamp(3rem, 5vw, 5rem)',
+                          height: 'clamp(1.5rem, 2.2vw, 2.5rem)',
+                          maxWidth: 'clamp(4rem, 7vw, 7rem)',
                           background: 'transparent'
                         }} 
                       />
