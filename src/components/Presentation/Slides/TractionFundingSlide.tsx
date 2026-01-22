@@ -112,7 +112,7 @@ const TractionFundingSlide = () => {
                     >
                       {item.description}
                     </p>
-                    <div className="flex items-center" style={{ marginTop: '0.3vh', gap: '0.8vw' }}>
+                    <div className="flex items-center" style={{ marginTop: '1vh', gap: '0.8vw' }}>
                       {item.highlight && (
                         <span 
                           className="inline-block font-bold text-primary bg-primary/15 border border-primary/40 rounded-md"
