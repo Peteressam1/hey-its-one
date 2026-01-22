@@ -196,7 +196,7 @@ const ComprehensiveMarketSlide = () => {
           </motion.div>
 
           {/* Traction Cards - 2x2 Grid */}
-          <div className="grid grid-cols-2 flex-1" style={{ gap: '1vw' }}>
+          <div className="grid grid-cols-2 grid-rows-2 flex-1 items-stretch" style={{ gap: '1vw' }}>
             {traction.map((item, index) => {
               const Icon = item.icon;
               
