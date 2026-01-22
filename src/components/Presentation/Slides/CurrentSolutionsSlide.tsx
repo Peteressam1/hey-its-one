@@ -75,7 +75,8 @@ const CurrentSolutionsSlide = () => {
 
         {/* Solutions Grid */}
         <div className="grid grid-cols-3 w-full" style={{
-        gap: 'clamp(0.75rem, 1.5vw, 2rem)'
+        gap: 'clamp(0.75rem, 1.5vw, 2rem)',
+        marginTop: '2vh'
       }}>
           {solutions.map((solution, index) => {
           const Icon = solution.icon;
