@@ -28,7 +28,8 @@ const ComprehensiveMarketSlide = () => {
     {
       icon: Handshake,
       title: "Global F&B Manufacturer",
-      description: "60% of jam & honey supply in MENA • 35-50K€ ARR",
+      description: "60% of jam & honey supply in MENA",
+      highlight: "35-50K€ ARR",
       type: "Partnership"
     },
     {
@@ -231,9 +232,20 @@ const ComprehensiveMarketSlide = () => {
                       >
                         {item.description}
                       </p>
+                      {item.highlight && (
+                        <span 
+                          className="inline-block font-bold text-primary bg-primary/15 border border-primary/40 rounded-md mt-1"
+                          style={{ 
+                            fontSize: 'clamp(1rem, 1.5vw, 1.6rem)', 
+                            padding: '0.3vh 0.8vw' 
+                          }}
+                        >
+                          {item.highlight}
+                        </span>
+                      )}
                     </div>
 
-                    <span 
+                    <span
                       className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50"
                       style={{ padding: '0.5vh 1vw', fontSize: 'clamp(0.7rem, 1vw, 1rem)' }}
                     >
