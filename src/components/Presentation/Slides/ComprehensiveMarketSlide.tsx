@@ -28,30 +28,26 @@ const ComprehensiveMarketSlide = () => {
     {
       icon: Handshake,
       title: "Global F&B Manufacturer",
-      description: "60% of jam & honey supply in MENA",
-      type: "Partnership",
-      highlight: "35-50K€ ARR"
+      description: "60% of jam & honey supply in MENA • 35-50K€ ARR",
+      type: "Partnership"
     },
     {
       icon: Shield,
       title: "Ministry of Defence Egypt",
       description: "Optronics sector collaboration",
-      type: "Partnership",
-      highlight: null
+      type: "Partnership"
     },
     {
       icon: GraduationCap,
       title: "FAPS FAU",
       description: "University research partnership",
-      type: "Partnership",
-      highlight: null
+      type: "Partnership"
     },
     {
       icon: Banknote,
       title: "€300K Angel Investment",
       description: "Secured funding",
-      type: "Investment",
-      highlight: null
+      type: "Investment"
     }
   ];
 
@@ -237,22 +233,12 @@ const ComprehensiveMarketSlide = () => {
                       </p>
                     </div>
 
-                    <div className="flex flex-col items-end gap-1">
-                      <span 
-                        className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50"
-                        style={{ padding: '0.5vh 1vw', fontSize: 'clamp(0.7rem, 1vw, 1rem)' }}
-                      >
-                        {item.type}
-                      </span>
-                      {item.highlight && (
-                        <span 
-                          className="font-bold rounded-full bg-primary/30 text-primary border border-primary/60"
-                          style={{ padding: '0.4vh 0.8vw', fontSize: 'clamp(0.65rem, 0.9vw, 0.9rem)' }}
-                        >
-                          {item.highlight}
-                        </span>
-                      )}
-                    </div>
+                    <span 
+                      className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50"
+                      style={{ padding: '0.5vh 1vw', fontSize: 'clamp(0.7rem, 1vw, 1rem)' }}
+                    >
+                      {item.type}
+                    </span>
                   </Card>
                 </motion.div>
               );
