@@ -138,7 +138,8 @@ const PresentationSlider = ({
         </AnimatePresence>
       </div>
 
-      {/* Presentation Controls */}
+      {/* Presentation Controls - Hidden in fullscreen */}
+      {!isFullscreen && (
       <motion.div 
         className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50"
         initial={{ opacity: 0, y: 100 }}
@@ -262,6 +263,7 @@ const PresentationSlider = ({
           )}
         </AnimatePresence>
       </motion.div>
+      )}
 
       {/* Lumina Emblem - appears on all slides */}
       <div className="fixed top-6 left-6 z-50">
