@@ -101,7 +101,7 @@ const TractionFundingSlide = () => {
                   
                   <div className="flex-1 min-w-0">
                     <span 
-                      className="font-bold text-foreground block w-full"
+                      className="font-bold text-foreground block w-full whitespace-nowrap"
                       style={{ fontSize: 'clamp(1.3rem, 2.2vw, 2.5rem)' }}
                     >
                       {item.title}
