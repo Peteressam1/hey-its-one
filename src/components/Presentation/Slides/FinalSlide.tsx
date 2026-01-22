@@ -47,7 +47,7 @@ const FinalSlide = () => {
           </span>
           <span 
             className="block text-gradient text-glow-animate"
-            style={{ fontSize: 'clamp(3rem, 7vw, 7rem)', marginTop: '0.5vh' }}
+            style={{ fontSize: 'clamp(3rem, 7vw, 7rem)', marginTop: '-0.5vh' }}
           >
             Know the Why.
           </span>
