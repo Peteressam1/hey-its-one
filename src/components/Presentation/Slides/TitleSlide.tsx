@@ -44,11 +44,11 @@ const TitleSlide = () => {
         ease: [0.22, 1, 0.36, 1]
       }} className="space-y-6 mb-12">
           {/* Tagline */}
-          <h1 className="font-heading text-center tracking-tight" style={{ fontSize: 'clamp(4rem, 12vw, 10rem)' }}>
+          <h1 className="font-heading text-center tracking-tight" style={{ fontSize: 'clamp(4rem, 12vw, 10rem)', lineHeight: 1.1 }}>
             <span className="block text-gradient text-glow-animate">
               See the Invisible.
             </span>
-            <span className="block text-gradient text-glow-animate mt-4 text-center">
+            <span className="block text-gradient text-glow-animate text-center">
               Know the Why.
             </span>
           </h1>
