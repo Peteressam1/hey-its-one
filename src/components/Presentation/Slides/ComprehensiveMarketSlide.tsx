@@ -28,26 +28,30 @@ const ComprehensiveMarketSlide = () => {
     {
       icon: Handshake,
       title: "Global F&B Manufacturer",
-      description: "60% of jam & honey supply in MENA • 35-50K€ ARR",
-      type: "Partnership"
+      description: "60% of jam & honey supply in MENA",
+      type: "Partnership",
+      highlight: "35-50K€ ARR"
     },
     {
       icon: Shield,
       title: "Ministry of Defence Egypt",
       description: "Optronics sector collaboration",
-      type: "Partnership"
+      type: "Partnership",
+      highlight: null
     },
     {
       icon: GraduationCap,
       title: "FAPS FAU",
       description: "University research partnership",
-      type: "Partnership"
+      type: "Partnership",
+      highlight: null
     },
     {
       icon: Banknote,
       title: "€300K Angel Investment",
       description: "Secured funding",
-      type: "Investment"
+      type: "Investment",
+      highlight: null
     }
   ];
 
@@ -233,12 +237,22 @@ const ComprehensiveMarketSlide = () => {
                       </p>
                     </div>
 
-                    <span 
-                      className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50"
-                      style={{ padding: '0.5vh 1vw', fontSize: 'clamp(0.7rem, 1vw, 1rem)' }}
-                    >
-                      {item.type}
-                    </span>
+                    <div className="flex flex-col items-end gap-1">
+                      <span 
+                        className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50"
+                        style={{ padding: '0.5vh 1vw', fontSize: 'clamp(0.7rem, 1vw, 1rem)' }}
+                      >
+                        {item.type}
+                      </span>
+                      {item.highlight && (
+                        <span 
+                          className="font-bold rounded-full bg-primary/30 text-primary border border-primary/60"
+                          style={{ padding: '0.4vh 0.8vw', fontSize: 'clamp(0.65rem, 0.9vw, 0.9rem)' }}
+                        >
+                          {item.highlight}
+                        </span>
+                      )}
+                    </div>
                   </Card>
                 </motion.div>
               );
