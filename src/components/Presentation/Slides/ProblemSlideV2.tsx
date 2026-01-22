@@ -30,13 +30,13 @@ const ProblemSlideV2 = () => {
         >
           <h1 
             className="font-bold text-foreground tracking-tight text-center"
-            style={{ fontSize: 'clamp(3rem, 7vw, 6rem)', marginBottom: '0.5vh' }}
+            style={{ fontSize: 'clamp(3rem, 7vw, 6rem)', marginBottom: '0', lineHeight: 1.1 }}
           >
             Quality Losses Drain
           </h1>
           <h2 
             className="font-bold text-destructive tracking-tight text-center"
-            style={{ fontSize: 'clamp(3rem, 7vw, 6rem)', marginBottom: '1vh' }}
+            style={{ fontSize: 'clamp(3rem, 7vw, 6rem)', marginBottom: '1vh', lineHeight: 1.1 }}
           >
             €1.2 Trillion
           </h2>
