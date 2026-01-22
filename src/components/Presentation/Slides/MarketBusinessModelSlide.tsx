@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { DollarSign, Zap, Repeat, Users, TrendingUp } from "lucide-react";
+import { DollarSign, Zap, Repeat, Users } from "lucide-react";
 
 const MarketBusinessModelSlide = () => {
   const revenueStreams = [
@@ -51,20 +51,12 @@ const MarketBusinessModelSlide = () => {
           className="text-center"
           style={{ marginBottom: '4vh' }}
         >
-          <div className="flex items-center justify-center" style={{ gap: '1vw', marginBottom: '2vh' }}>
-            <div 
-              className="rounded-xl bg-primary/15 border border-primary/40"
-              style={{ padding: '1vh' }}
-            >
-              <TrendingUp style={{ width: 'clamp(1.5rem, 2.5vw, 3rem)', height: 'clamp(1.5rem, 2.5vw, 3rem)' }} className="text-primary" />
-            </div>
-            <h1 
-              className="font-bold text-foreground"
-              style={{ fontSize: 'clamp(2.5rem, 5vw, 5rem)' }}
-            >
-              $90B Market Opportunity
-            </h1>
-          </div>
+          <h1 
+            className="font-bold text-foreground"
+            style={{ fontSize: 'clamp(2.5rem, 5vw, 5rem)', marginBottom: '2vh' }}
+          >
+            $90B Market Opportunity
+          </h1>
           
           {/* Market Pills */}
           <div className="flex flex-wrap justify-center" style={{ gap: '1.5vw' }}>
