@@ -60,7 +60,7 @@ const CurrentSolutionsSlide = () => {
       }} className="text-center" style={{
         marginBottom: '2vh'
       }}>
-          <h1 className="font-bold text-foreground text-8xl" style={{
+          <h1 className="font-bold text-foreground text-9xl" style={{
           fontSize: 'clamp(2rem, 5vw, 4.5rem)',
           marginBottom: '1vh'
         }}>
