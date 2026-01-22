@@ -99,7 +99,7 @@ const TractionFundingSlide = () => {
                     <Icon style={{ width: 'clamp(2rem, 3vw, 4rem)', height: 'clamp(2rem, 3vw, 4rem)' }} className="text-accent" />
                   </div>
                   
-                  <div className="flex-1 min-w-0 flex flex-col justify-center">
+                  <div className="flex-1 min-w-0 flex flex-col justify-start">
                     <span 
                       className="font-bold text-foreground block w-full whitespace-nowrap"
                       style={{ fontSize: 'clamp(1.3rem, 2.2vw, 2.5rem)' }}
