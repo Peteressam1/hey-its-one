@@ -32,7 +32,7 @@ const WeAreLuminaSlide = () => {
             stiffness: 120
           }}
           className="font-bold text-center text-foreground"
-          style={{ fontSize: 'clamp(3rem, 8vw, 7rem)' }}
+          style={{ fontSize: 'clamp(4rem, 12vw, 10rem)' }}
         >
           We Are
         </motion.h1>
@@ -49,7 +49,7 @@ const WeAreLuminaSlide = () => {
             delay: 0.6, 
             ease: [0.22, 1, 0.36, 1] 
           }}
-          style={{ width: 'clamp(300px, 60vw, 900px)' }}
+          style={{ width: 'clamp(400px, 75vw, 1100px)' }}
         >
           <img
             src={luminaLogo}
@@ -67,7 +67,7 @@ const WeAreLuminaSlide = () => {
         >
           <motion.p
             className="font-heading tracking-tight"
-            style={{ fontSize: 'clamp(1.5rem, 4vw, 4rem)' }}
+            style={{ fontSize: 'clamp(2rem, 5vw, 5rem)' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.4 }}
