@@ -106,12 +106,20 @@ const TractionFundingSlide = () => {
                     >
                       {item.title}
                     </span>
-                    <p 
-                      className="text-muted-foreground"
-                      style={{ fontSize: 'clamp(0.9rem, 1.4vw, 1.5rem)' }}
-                    >
-                      {item.description}
-                    </p>
+                    <div className="flex items-center gap-2" style={{ marginTop: '0.3vh' }}>
+                      <p 
+                        className="text-muted-foreground"
+                        style={{ fontSize: 'clamp(0.9rem, 1.4vw, 1.5rem)' }}
+                      >
+                        {item.description}
+                      </p>
+                      <span 
+                        className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50 whitespace-nowrap"
+                        style={{ padding: '0.4vh 1vw', fontSize: 'clamp(0.7rem, 1vw, 1rem)' }}
+                      >
+                        {item.type}
+                      </span>
+                    </div>
                     {item.highlight && (
                       <span 
                         className="inline-block font-bold text-primary bg-primary/15 border border-primary/40 rounded-md mt-1"
@@ -124,13 +132,6 @@ const TractionFundingSlide = () => {
                       </span>
                     )}
                   </div>
-
-                  <span 
-                    className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50"
-                    style={{ padding: '0.6vh 1.2vw', fontSize: 'clamp(0.8rem, 1.2vw, 1.25rem)' }}
-                  >
-                    {item.type}
-                  </span>
                 </Card>
               </motion.div>
             );
