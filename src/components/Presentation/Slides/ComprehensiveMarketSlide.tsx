@@ -206,11 +206,11 @@ const ComprehensiveMarketSlide = () => {
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                  className="flex"
+                  className="flex h-full"
                 >
                   <Card 
-                    className="w-full flex items-center transition-all duration-300 backdrop-blur-sm bg-accent/10 border-2 border-accent/60 shadow-[0_0_25px_hsl(var(--accent)/0.25)] hover:shadow-[0_0_35px_hsl(var(--accent)/0.35)]"
-                    style={{ padding: '1.5vh 1.2vw', gap: '1vw' }}
+                    className="w-full h-full flex items-center transition-all duration-300 backdrop-blur-sm bg-accent/10 border-2 border-accent/60 shadow-[0_0_25px_hsl(var(--accent)/0.25)] hover:shadow-[0_0_35px_hsl(var(--accent)/0.35)]"
+                    style={{ padding: '1.5vh 1.2vw', gap: '1vw', minHeight: 'clamp(5rem, 10vh, 10rem)' }}
                   >
                     <div 
                       className="rounded-xl bg-accent/20 border border-accent/50"
