@@ -89,37 +89,29 @@ const TractionFundingSlide = () => {
                 className="flex h-full"
               >
                 <Card 
-                  className="w-full h-full flex items-start transition-all duration-300 backdrop-blur-sm bg-accent/10 border-2 border-accent/60 shadow-[0_0_25px_hsl(var(--accent)/0.25)] hover:shadow-[0_0_35px_hsl(var(--accent)/0.35)]"
+                  className="w-full h-full flex items-center transition-all duration-300 backdrop-blur-sm bg-accent/10 border-2 border-accent/60 shadow-[0_0_25px_hsl(var(--accent)/0.25)] hover:shadow-[0_0_35px_hsl(var(--accent)/0.35)]"
                   style={{ padding: '2.5vh 2vw', gap: '1.5vw' }}
                 >
                   <div 
                     className="rounded-xl bg-accent/20 border border-accent/50"
-                    style={{ padding: '1.5vh', marginTop: '0.5vh' }}
+                    style={{ padding: '1.5vh' }}
                   >
                     <Icon style={{ width: 'clamp(2rem, 3vw, 4rem)', height: 'clamp(2rem, 3vw, 4rem)' }} className="text-accent" />
                   </div>
                   
-                  <div className="flex-1 min-w-0 flex flex-col">
+                  <div className="flex-1 min-w-0 flex flex-col justify-center">
                     <span 
                       className="font-bold text-foreground block w-full whitespace-nowrap"
                       style={{ fontSize: 'clamp(1.3rem, 2.2vw, 2.5rem)' }}
                     >
                       {item.title}
                     </span>
-                    <div className="flex items-center" style={{ marginTop: '0.5vh', gap: '1vw' }}>
-                      <p 
-                        className="text-muted-foreground"
-                        style={{ fontSize: 'clamp(0.9rem, 1.4vw, 1.5rem)' }}
-                      >
-                        {item.description}
-                      </p>
-                      <span 
-                        className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50 whitespace-nowrap"
-                        style={{ padding: '0.6vh 1.2vw', fontSize: 'clamp(0.9rem, 1.4vw, 1.5rem)' }}
-                      >
-                        {item.type}
-                      </span>
-                    </div>
+                    <p 
+                      className="text-muted-foreground"
+                      style={{ fontSize: 'clamp(0.9rem, 1.4vw, 1.5rem)', marginTop: '0.3vh' }}
+                    >
+                      {item.description}
+                    </p>
                     {item.highlight && (
                       <span 
                         className="inline-block font-bold text-primary bg-primary/15 border border-primary/40 rounded-md"
@@ -133,6 +125,13 @@ const TractionFundingSlide = () => {
                       </span>
                     )}
                   </div>
+
+                  <span 
+                    className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50 whitespace-nowrap self-center"
+                    style={{ padding: '0.6vh 1.2vw', fontSize: 'clamp(0.9rem, 1.4vw, 1.5rem)' }}
+                  >
+                    {item.type}
+                  </span>
                 </Card>
               </motion.div>
             );
