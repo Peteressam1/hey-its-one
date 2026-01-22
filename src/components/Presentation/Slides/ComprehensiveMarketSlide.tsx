@@ -28,7 +28,7 @@ const ComprehensiveMarketSlide = () => {
     {
       icon: Handshake,
       title: "Global F&B Manufacturer",
-      description: "60% of jam & honey supply in MENA",
+      description: "60% of jam & honey supply in MENA • 35-50K€ ARR",
       type: "Partnership"
     },
     {
