@@ -112,26 +112,26 @@ const TractionFundingSlide = () => {
                     >
                       {item.description}
                     </p>
-                    {item.highlight && (
+                    <div className="flex items-center gap-3" style={{ marginTop: '0.5vh' }}>
+                      {item.highlight && (
+                        <span 
+                          className="inline-block font-bold text-primary bg-primary/15 border border-primary/40 rounded-md"
+                          style={{ 
+                            fontSize: 'clamp(1.1rem, 1.8vw, 2rem)', 
+                            padding: '0.5vh 1vw',
+                          }}
+                        >
+                          {item.highlight}
+                        </span>
+                      )}
                       <span 
-                        className="inline-block font-bold text-primary bg-primary/15 border border-primary/40 rounded-md"
-                        style={{ 
-                          fontSize: 'clamp(1.1rem, 1.8vw, 2rem)', 
-                          padding: '0.5vh 1vw',
-                          marginTop: '0.5vh'
-                        }}
+                        className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50 whitespace-nowrap"
+                        style={{ padding: '0.6vh 1.2vw', fontSize: 'clamp(0.9rem, 1.4vw, 1.5rem)' }}
                       >
-                        {item.highlight}
+                        {item.type}
                       </span>
-                    )}
+                    </div>
                   </div>
-
-                  <span 
-                    className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50 whitespace-nowrap self-center"
-                    style={{ padding: '0.6vh 1.2vw', fontSize: 'clamp(0.9rem, 1.4vw, 1.5rem)' }}
-                  >
-                    {item.type}
-                  </span>
                 </Card>
               </motion.div>
             );
