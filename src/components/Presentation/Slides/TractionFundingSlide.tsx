@@ -75,7 +75,7 @@ const TractionFundingSlide = () => {
         {/* Traction Cards - 2x2 Grid */}
         <div 
           className="grid grid-cols-2 grid-rows-2 items-stretch" 
-          style={{ gap: '2.5vw', maxWidth: '90%', margin: '0 auto', flex: 1, maxHeight: '65vh' }}
+          style={{ gap: '2vw', maxWidth: '95%', margin: '0 auto', flex: 1, maxHeight: '60vh' }}
         >
           {traction.map((item, index) => {
             const Icon = item.icon;
@@ -89,63 +89,48 @@ const TractionFundingSlide = () => {
                 className="flex h-full"
               >
                 <Card 
-                  className="w-full h-full relative flex flex-col transition-all duration-300 backdrop-blur-sm bg-accent/10 border-2 border-accent/60 shadow-[0_0_25px_hsl(var(--accent)/0.25)] hover:shadow-[0_0_35px_hsl(var(--accent)/0.35)]"
-                  style={{ padding: '2.5vh 2.5vw' }}
+                  className="w-full h-full flex items-center transition-all duration-300 backdrop-blur-sm bg-accent/10 border-2 border-accent/60 shadow-[0_0_25px_hsl(var(--accent)/0.25)] hover:shadow-[0_0_35px_hsl(var(--accent)/0.35)]"
+                  style={{ padding: '2.5vh 2vw', gap: '1.5vw' }}
                 >
-                  {/* Badge - Top Right Corner */}
-                  <span 
-                    className="absolute font-semibold rounded-full bg-accent/25 text-accent border border-accent/50 text-center whitespace-nowrap"
-                    style={{ 
-                      top: '1.5vh', 
-                      right: '1.5vw',
-                      padding: '0.4vh 1vw', 
-                      fontSize: 'clamp(0.65rem, 0.9vw, 0.9rem)'
-                    }}
+                  <div 
+                    className="rounded-xl bg-accent/20 border border-accent/50"
+                    style={{ padding: '1.5vh' }}
                   >
-                    {item.type}
-                  </span>
-
-                  {/* Main Content Area */}
-                  <div className="flex items-start flex-1" style={{ gap: '1.5vw' }}>
-                    {/* Icon */}
-                    <div 
-                      className="rounded-xl bg-accent/20 border border-accent/50 flex items-center justify-center shrink-0"
-                      style={{ padding: '1.5vh', width: 'clamp(4rem, 6vw, 7rem)', height: 'clamp(4rem, 6vw, 7rem)' }}
-                    >
-                      <Icon style={{ width: 'clamp(2rem, 3vw, 4rem)', height: 'clamp(2rem, 3vw, 4rem)' }} className="text-accent" />
-                    </div>
-                    
-                    {/* Text Content */}
-                    <div className="flex flex-col justify-center flex-1" style={{ paddingTop: '0.5vh' }}>
-                      <span 
-                        className="font-bold text-foreground block leading-tight"
-                        style={{ fontSize: 'clamp(1.2rem, 2vw, 2.25rem)', marginBottom: '1vh' }}
-                      >
-                        {item.title}
-                      </span>
-                      <p 
-                        className="text-muted-foreground leading-relaxed"
-                        style={{ fontSize: 'clamp(0.9rem, 1.3vw, 1.4rem)' }}
-                      >
-                        {item.description}
-                      </p>
-                    </div>
+                    <Icon style={{ width: 'clamp(2rem, 3vw, 4rem)', height: 'clamp(2rem, 3vw, 4rem)' }} className="text-accent" />
                   </div>
-
-                  {/* Highlight Badge - Bottom of Card */}
-                  {item.highlight && (
-                    <div style={{ marginTop: '1.5vh' }}>
+                  
+                  <div className="flex-1">
+                    <span 
+                      className="font-bold text-foreground block"
+                      style={{ fontSize: 'clamp(1.3rem, 2.2vw, 2.5rem)' }}
+                    >
+                      {item.title}
+                    </span>
+                    <p 
+                      className="text-muted-foreground"
+                      style={{ fontSize: 'clamp(0.9rem, 1.4vw, 1.5rem)' }}
+                    >
+                      {item.description}
+                    </p>
+                    {item.highlight && (
                       <span 
-                        className="inline-block font-bold text-primary bg-primary/15 border border-primary/40 rounded-lg"
+                        className="inline-block font-bold text-primary bg-primary/15 border border-primary/40 rounded-md mt-1"
                         style={{ 
-                          fontSize: 'clamp(1rem, 1.6vw, 1.75rem)', 
-                          padding: '0.6vh 1.2vw'
+                          fontSize: 'clamp(1.1rem, 1.8vw, 2rem)', 
+                          padding: '0.5vh 1vw' 
                         }}
                       >
                         {item.highlight}
                       </span>
-                    </div>
-                  )}
+                    )}
+                  </div>
+
+                  <span 
+                    className="font-semibold rounded-full bg-accent/20 text-accent border border-accent/50"
+                    style={{ padding: '0.6vh 1.2vw', fontSize: 'clamp(0.8rem, 1.2vw, 1.25rem)' }}
+                  >
+                    {item.type}
+                  </span>
                 </Card>
               </motion.div>
             );
