@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { TrendingUp, Handshake, Shield, GraduationCap, Banknote } from "lucide-react";
+import { Handshake, Shield, GraduationCap, Banknote } from "lucide-react";
 
 const TractionFundingSlide = () => {
   const traction = [
@@ -58,20 +58,12 @@ const TractionFundingSlide = () => {
           className="text-center"
           style={{ marginBottom: '5vh' }}
         >
-          <div className="flex items-center justify-center" style={{ gap: '1vw', marginBottom: '1vh' }}>
-            <div 
-              className="rounded-xl bg-accent/15 border border-accent/40"
-              style={{ padding: '1.2vh' }}
-            >
-              <TrendingUp style={{ width: 'clamp(2rem, 3vw, 3.5rem)', height: 'clamp(2rem, 3vw, 3.5rem)' }} className="text-accent" />
-            </div>
-            <h1 
-              className="font-bold text-foreground"
-              style={{ fontSize: 'clamp(2.5rem, 5vw, 5.5rem)' }}
-            >
-              Early Traction & Funding
-            </h1>
-          </div>
+          <h1 
+            className="font-bold text-foreground"
+            style={{ fontSize: 'clamp(2.5rem, 5vw, 5.5rem)', marginBottom: '1vh' }}
+          >
+            Early Traction & Funding
+          </h1>
           <p 
             className="text-muted-foreground"
             style={{ fontSize: 'clamp(1rem, 1.5vw, 1.75rem)' }}
