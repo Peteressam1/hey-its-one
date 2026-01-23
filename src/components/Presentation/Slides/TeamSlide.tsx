@@ -146,15 +146,16 @@ const TeamSlide = () => {
                   </ul>
                 </div>
 
+                {/* Company Logos */}
                 <div className="mt-auto border-t border-border/30" style={{
-              paddingTop: '1vh'
+              paddingTop: '1.5vh'
             }}>
-                  <div className="flex items-center justify-center flex-wrap" style={{
-                gap: 'clamp(0.5rem, 1vw, 1rem)'
+                  <div className="flex items-center justify-center" style={{
+                gap: 'clamp(1rem, 2vw, 2rem)'
               }}>
                     {founder.logos.map((logo, idx) => <img key={idx} src={logo.src} alt={logo.alt} className="object-contain mix-blend-normal shrink-0" style={{
-                  height: 'clamp(1.2rem, 2vw, 2rem)',
-                  maxWidth: 'clamp(3rem, 5vw, 5rem)',
+                  height: 'clamp(2rem, 3vw, 3.5rem)',
+                  maxWidth: 'clamp(5rem, 9vw, 9rem)',
                   background: 'transparent'
                 }} />)}
                   </div>
