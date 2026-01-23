@@ -44,11 +44,11 @@ const TitleSlide = () => {
         ease: [0.22, 1, 0.36, 1]
       }} className="space-y-6 mb-12">
           {/* Tagline */}
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-heading text-center tracking-tight">
-            <span className="block text-gradient text-glow-animate text-9xl">
+          <h1 className="font-heading text-center tracking-tight" style={{ fontSize: 'clamp(4rem, 12vw, 10rem)', lineHeight: 1.1 }}>
+            <span className="block text-gradient text-glow-animate">
               See the Invisible.
             </span>
-            <span className="block text-gradient text-glow-animate mt-4 text-9xl text-center">
+            <span className="block text-gradient text-glow-animate text-center">
               Know the Why.
             </span>
           </h1>
@@ -79,7 +79,7 @@ const TitleSlide = () => {
           scale: 1.1,
           filter: "brightness(1.2)"
         }}>
-            <img src={fauLogo} alt="FAU" className="h-20 opacity-80 object-contain" />
+            <img src={fauLogo} alt="FAU" className="opacity-80 object-contain" style={{ height: 'clamp(2rem, 5vw, 5rem)' }} />
           </motion.div>
           
           <motion.div initial={{
@@ -95,7 +95,7 @@ const TitleSlide = () => {
           scale: 1.1,
           filter: "brightness(1.2)"
         }}>
-            <img src={fapsLogo} alt="FAPS" className="h-20 opacity-80 object-contain" />
+            <img src={fapsLogo} alt="FAPS" className="opacity-80 object-contain" style={{ height: 'clamp(2rem, 5vw, 5rem)' }} />
           </motion.div>
           
           <motion.div initial={{
@@ -111,7 +111,7 @@ const TitleSlide = () => {
           scale: 1.1,
           filter: "brightness(1.2)"
         }}>
-            <img src={tumAiLogo} alt="TUM AI" className="h-20 opacity-80 object-contain" />
+            <img src={tumAiLogo} alt="TUM AI" className="opacity-80 object-contain" style={{ height: 'clamp(2rem, 5vw, 5rem)' }} />
           </motion.div>
           
           <motion.div initial={{
@@ -127,7 +127,7 @@ const TitleSlide = () => {
           scale: 1.1,
           filter: "brightness(1.2)"
         }}>
-            <img src={tumLogo} alt="TUM" className="h-24 opacity-80 object-contain" />
+            <img src={tumLogo} alt="TUM" className="opacity-80 object-contain" style={{ height: 'clamp(2.5rem, 6vw, 6rem)' }} />
           </motion.div>
         </motion.div>
       </div>
