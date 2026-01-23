@@ -67,15 +67,15 @@ const SolutionAndCompetitiveEdgeSlide = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-center"
         >
-        <h1 
+          <h1 
             className="font-bold text-foreground"
-            style={{ fontSize: 'clamp(2.5rem, 6vw, 5.5rem)', marginBottom: '0.5vh' }}
+            style={{ fontSize: 'clamp(2rem, 5vw, 4.5rem)', marginBottom: '0.5vh' }}
           >
             Close the Loop from Defect to Action
           </h1>
           <p 
             className="text-muted-foreground"
-            style={{ fontSize: 'clamp(1.25rem, 3vw, 2.5rem)' }}
+            style={{ fontSize: 'clamp(1rem, 2.5vw, 2rem)' }}
           >
             Defect → Cause → Action, in One System
           </p>

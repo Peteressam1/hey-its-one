@@ -27,7 +27,7 @@ const FinalSlide = () => {
           initial={{ opacity: 0, scale: 0.8 }} 
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          style={{ width: 'clamp(350px, 55vw, 850px)' }}
+          style={{ width: 'clamp(250px, 45vw, 650px)' }}
         >
           <img src={luminaLogoText} alt="Lumina" className="w-full h-auto object-contain" />
         </motion.div>
@@ -41,13 +41,13 @@ const FinalSlide = () => {
         >
           <span 
             className="block text-gradient text-glow-animate"
-            style={{ fontSize: 'clamp(3rem, 7vw, 7rem)' }}
+            style={{ fontSize: 'clamp(2.2rem, 5vw, 5rem)' }}
           >
             See the Invisible.
           </span>
           <span 
             className="block text-gradient text-glow-animate"
-            style={{ fontSize: 'clamp(3rem, 7vw, 7rem)', marginTop: '-2.5vh' }}
+            style={{ fontSize: 'clamp(2.2rem, 5vw, 5rem)', marginTop: '0.5vh' }}
           >
             Know the Why.
           </span>
@@ -59,24 +59,24 @@ const FinalSlide = () => {
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.8, delay: 0.8, ease: [0.22, 1, 0.36, 1] }} 
           className="flex flex-col items-center"
-          style={{ gap: '1.5vh' }}
+          style={{ gap: '1vh' }}
         >
           <h2 
             className="font-semibold text-foreground"
-            style={{ fontSize: 'clamp(2rem, 4vw, 4rem)' }}
+            style={{ fontSize: 'clamp(1.5rem, 3vw, 3rem)' }}
           >
             Connect with Us
           </h2>
           <div 
             className="bg-white rounded-xl shadow-xl"
-            style={{ padding: 'clamp(0.75rem, 1.5vw, 1.5rem)' }}
+            style={{ padding: 'clamp(0.5rem, 1vw, 1rem)' }}
           >
             <img 
               src={qrCode} 
               alt="Lumina QR Code" 
               style={{ 
-                width: 'clamp(10rem, 18vw, 18rem)', 
-                height: 'clamp(10rem, 18vw, 18rem)' 
+                width: 'clamp(8rem, 15vw, 15rem)', 
+                height: 'clamp(8rem, 15vw, 15rem)' 
               }}
             />
           </div>
